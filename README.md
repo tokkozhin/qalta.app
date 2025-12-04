@@ -1,2 +1,2 @@
-# qalta.github.io
-Qalta App
+# Qalta - AI Expense Tracker
+
