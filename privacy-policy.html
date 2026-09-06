@@ -26,12 +26,6 @@
       text-decoration: none;
       font-weight: 600;
     }
-    .langs a {
-      color: #555;
-      text-decoration: none;
-      margin-left: 12px;
-    }
-    .langs a:hover, .langs a[aria-current="true"] { color: #000; font-weight: 600; }
     h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; }
     .updated { color: #555; margin-bottom: 32px; }
     h2 { font-size: 1.2rem; margin: 28px 0 10px; }
@@ -39,8 +33,6 @@
     ul { padding-left: 1.2em; }
     li { margin-bottom: 6px; }
     a { color: #000; }
-    .lang { display: none; }
-    .lang:target, .lang.default { display: block; }
     footer {
       margin-top: 48px;
       padding-top: 20px;
@@ -54,192 +46,87 @@
   <div class="wrap">
     <header>
       <a class="home" href="index.html">Qalta</a>
-      <nav class="langs">
-        <a href="#en" aria-current="true">English</a>
-        <a href="#ru">Русский</a>
-      </nav>
     </header>
 
-    <article id="en" class="lang default">
-      <h1>Privacy Policy</h1>
-      <p class="updated">Effective date: 6 September 2026</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective date: 6 September 2026</p>
 
-      <p>This policy applies to the Qalta mobile app (“the app”) provided by Daniel Tokkozhin (“we”). It explains what stays on your device, what leaves the device, and which companies process that data.</p>
+    <p>This policy applies to the Qalta mobile app (“the app”) provided by Daniel Tokkozhin (“we”). It explains what stays on your device, what leaves the device, and which companies process that data.</p>
 
-      <h2>Your journal stays on your device</h2>
-      <p>Accounts, transactions, categories, budgets, goals, recurring items, and similar journal data are stored locally on your device (SQLite). We do not upload your journal to our servers as a cloud copy of the app.</p>
-      <p>If you use the optional backup feature, copies can be stored in your iCloud account. That storage is provided by Apple and is covered by Apple’s privacy policy.</p>
+    <h2>Your journal stays on your device</h2>
+    <p>Accounts, transactions, categories, budgets, goals, recurring items, and similar journal data are stored locally on your device (SQLite). We do not upload your journal to our servers as a cloud copy of the app.</p>
+    <p>If you use the optional backup feature, copies can be stored in your iCloud account. That storage is provided by Apple and is covered by Apple’s privacy policy.</p>
 
-      <h2>Account</h2>
-      <p>You sign in with Sign in with Apple. We receive an Apple identity token and create an account with our backend provider, Supabase. That account can include a user ID, an email address (including Apple’s Hide My Email relay), and your name if Apple provides it on first sign-in.</p>
-      <p>You can delete your account in the app. That removes the account and subscription records we store. Journal data on the device is separate; you can also clear local financial data in Settings.</p>
+    <h2>Account</h2>
+    <p>You sign in with Sign in with Apple. We receive an Apple identity token and create an account with our backend provider, Supabase. That account can include a user ID, an email address (including Apple’s Hide My Email relay), and your name if Apple provides it on first sign-in.</p>
+    <p>You can delete your account in the app. That removes the account and subscription records we store. Journal data on the device is separate; you can also clear local financial data in Settings.</p>
 
-      <h2>Subscriptions and purchases</h2>
-      <p>Purchases are processed by Apple. We use RevenueCat to read subscription status. We store a premium flag and AI usage counters (how many voice, image, and document requests you have used) in Supabase, linked to your user ID. We do not receive or store payment card numbers.</p>
+    <h2>Subscriptions and purchases</h2>
+    <p>Purchases are processed by Apple. We use RevenueCat to read subscription status. We store a premium flag and AI usage counters (how many voice, image, and document requests you have used) in Supabase, linked to your user ID. We do not receive or store payment card numbers.</p>
 
-      <h2>Voice, scan, documents, and other AI features</h2>
-      <p>When you use voice input, receipt or document scan, or other AI extraction, the app sends the content you submitted to our backend (Supabase Edge Functions). The backend forwards that content to OpenAI so the app can propose transactions.</p>
-      <p>Depending on the feature, that content may include:</p>
-      <ul>
-        <li>voice audio;</li>
-        <li>photos of receipts, bills, statements, or similar documents;</li>
-        <li>text extracted from documents;</li>
-        <li>text you typed;</li>
-        <li>names of accounts and categories on the device, plus related amounts and currency, so the model can match them.</li>
-      </ul>
-      <p>This is sent only to provide the feature you asked for. We do not store your journal in our database. The backend uses the request to return structured entries and to count usage against your limits.</p>
-      <p>OpenAI processes the request under its API terms. OpenAI states that, by default, API inputs are not used to train its models. OpenAI may retain data for a limited period to operate the API and for abuse monitoring. See OpenAI’s policies linked below.</p>
-      <p>AI features are optional. You can add transactions manually without sending this content.</p>
+    <h2>Voice, scan, documents, and other AI features</h2>
+    <p>When you use voice input, receipt or document scan, or other AI extraction, the app sends the content you submitted to our backend (Supabase Edge Functions). The backend forwards that content to OpenAI so the app can propose transactions.</p>
+    <p>Depending on the feature, that content may include:</p>
+    <ul>
+      <li>voice audio;</li>
+      <li>photos of receipts, bills, statements, or similar documents;</li>
+      <li>text extracted from documents;</li>
+      <li>text you typed;</li>
+      <li>names of accounts and categories on the device, plus related amounts and currency, so the model can match them.</li>
+    </ul>
+    <p>This is sent only to provide the feature you asked for. We do not store your journal in our database. The backend uses the request to return structured entries and to count usage against your limits.</p>
+    <p>OpenAI processes the request under its API terms. OpenAI states that, by default, API inputs are not used to train its models. OpenAI may retain data for a limited period to operate the API and for abuse monitoring. See OpenAI’s policies linked below.</p>
+    <p>AI features are optional. You can add transactions manually without sending this content.</p>
 
-      <h2>Analytics, crashes, and other network data</h2>
-      <ul>
-        <li><strong>Exchange rates.</strong> The app downloads public currency-rate snapshots from our servers. This is not your journal.</li>
-        <li><strong>Product analytics (PostHog).</strong> We record events such as which features you use, approximate usage counts (for example, number of transactions, not amounts), and app language. Events are associated with your user ID. We do not send transaction amounts, notes, photos, or audio to PostHog.</li>
-        <li><strong>Crash reports (Sentry).</strong> We send crash diagnostics to help fix bugs. We do not attach screenshots or extra personal information to those reports.</li>
-        <li><strong>Technical data.</strong> When the app talks to a server or SDK, that party typically receives technical information such as IP address, device type, and operating system version.</li>
-      </ul>
+    <h2>Analytics, crashes, and other network data</h2>
+    <ul>
+      <li><strong>Exchange rates.</strong> The app downloads public currency-rate snapshots from our servers. This is not your journal.</li>
+      <li><strong>Product analytics (PostHog).</strong> We record events such as which features you use, approximate usage counts (for example, number of transactions, not amounts), and app language. Events are associated with your user ID. We do not send transaction amounts, notes, photos, or audio to PostHog.</li>
+      <li><strong>Crash reports (Sentry).</strong> We send crash diagnostics to help fix bugs. We do not attach screenshots or extra personal information to those reports.</li>
+      <li><strong>Technical data.</strong> When the app talks to a server or SDK, that party typically receives technical information such as IP address, device type, and operating system version.</li>
+    </ul>
 
-      <h2>What we do not do</h2>
-      <ul>
-        <li>We do not sell your data.</li>
-        <li>We do not use your data for advertising networks or to track you across other companies’ apps and websites.</li>
-        <li>We do not collect precise GPS location. The app uses language and region settings from the device, not GPS.</li>
-      </ul>
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not sell your data.</li>
+      <li>We do not use your data for advertising networks or to track you across other companies’ apps and websites.</li>
+      <li>We do not collect precise GPS location. The app uses language and region settings from the device, not GPS.</li>
+    </ul>
 
-      <h2>Third-party processors</h2>
-      <p>These companies process data as described above. Each has its own privacy policy:</p>
-      <ul>
-        <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple</a> — Sign in with Apple, App Store, in-app purchases, optional iCloud backup</li>
-        <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase</a> — account, subscription/usage records, backend functions</li>
-        <li><a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI</a> — AI processing of content you submit (<a href="https://openai.com/enterprise-privacy/" target="_blank" rel="noopener noreferrer">API / enterprise privacy</a>)</li>
-        <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a> — subscription status</li>
-        <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog</a> — product analytics</li>
-        <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry</a> — crash reports</li>
-        <li><a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo</a> — app runtime</li>
-      </ul>
-      <p>We may also disclose information if required by law, or if we believe in good faith that disclosure is needed to protect rights, safety, or to investigate fraud.</p>
+    <h2>Third-party processors</h2>
+    <p>These companies process data as described above. Each has its own privacy policy:</p>
+    <ul>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple</a> — Sign in with Apple, App Store, in-app purchases, optional iCloud backup</li>
+      <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase</a> — account, subscription/usage records, backend functions</li>
+      <li><a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI</a> — AI processing of content you submit (<a href="https://openai.com/enterprise-privacy/" target="_blank" rel="noopener noreferrer">API / enterprise privacy</a>)</li>
+      <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a> — subscription status</li>
+      <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog</a> — product analytics</li>
+      <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry</a> — crash reports</li>
+      <li><a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo</a> — app runtime</li>
+    </ul>
+    <p>We may also disclose information if required by law, or if we believe in good faith that disclosure is needed to protect rights, safety, or to investigate fraud.</p>
 
-      <h2>Retention and deletion</h2>
-      <ul>
-        <li>Journal data remains on your device until you delete it or uninstall the app (unless you also keep an iCloud backup).</li>
-        <li>Account and usage records are kept while you have an account, then deleted when you delete the account, plus a short period needed to complete deletion.</li>
-        <li>AI request payloads are processed to fulfill the request. We do not store them as your journal. Processors may retain them according to their own policies.</li>
-        <li>Analytics and crash data are kept as needed to operate and improve the app.</li>
-      </ul>
-      <p>To delete account data, use Delete account in the app or email <a href="mailto:help.qalta.app@outlook.com">help.qalta.app@outlook.com</a>.</p>
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>Journal data remains on your device until you delete it or uninstall the app (unless you also keep an iCloud backup).</li>
+      <li>Account and usage records are kept while you have an account, then deleted when you delete the account, plus a short period needed to complete deletion.</li>
+      <li>AI request payloads are processed to fulfill the request. We do not store them as your journal. Processors may retain them according to their own policies.</li>
+      <li>Analytics and crash data are kept as needed to operate and improve the app.</li>
+    </ul>
+    <p>To delete account data, use Delete account in the app or email <a href="mailto:help.qalta.app@outlook.com">help.qalta.app@outlook.com</a>.</p>
 
-      <h2>Children</h2>
-      <p>The app is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, contact us and we will delete it.</p>
+    <h2>Children</h2>
+    <p>The app is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, contact us and we will delete it.</p>
 
-      <h2>Changes</h2>
-      <p>We may update this policy. The effective date above will change. Continued use after an update means you accept the revised policy.</p>
+    <h2>Changes</h2>
+    <p>We may update this policy. The effective date above will change. Continued use after an update means you accept the revised policy.</p>
 
-      <h2>Contact</h2>
-      <p>Daniel Tokkozhin<br /><a href="mailto:help.qalta.app@outlook.com">help.qalta.app@outlook.com</a></p>
-    </article>
-
-    <article id="ru" class="lang">
-      <h1>Политика конфиденциальности</h1>
-      <p class="updated">Дата вступления в силу: 6 сентября 2026</p>
-
-      <p>Эта политика относится к мобильному приложению Qalta («приложение»), которое предоставляет Даниэль Токкожин («мы»). Здесь описано, что остаётся на устройстве, что уходит с устройства и какие компании это обрабатывают.</p>
-
-      <h2>Журнал хранится на устройстве</h2>
-      <p>Счета, операции, категории, бюджеты, цели, повторяющиеся операции и похожие данные журнала хранятся локально на вашем устройстве (SQLite). Мы не загружаем ваш журнал на наши серверы как облачную копию приложения.</p>
-      <p>Если вы включаете резервное копирование, копии могут храниться в вашем аккаунте iCloud. Это хранилище Apple, на него распространяется политика конфиденциальности Apple.</p>
-
-      <h2>Аккаунт</h2>
-      <p>Вход выполняется через Sign in with Apple. Мы получаем токен Apple и создаём аккаунт у нашего бэкенд-провайдера Supabase. В аккаунте могут быть идентификатор пользователя, адрес электронной почты (в том числе скрытый адрес Apple Hide My Email) и имя, если Apple передаёт его при первом входе.</p>
-      <p>Аккаунт можно удалить в приложении. Тогда удаляются аккаунт и записи о подписке, которые мы храним. Данные журнала на устройстве — отдельно; локальные финансовые данные также можно очистить в Настройках.</p>
-
-      <h2>Подписки и покупки</h2>
-      <p>Покупки проходят через Apple. Статус подписки мы читаем через RevenueCat. В Supabase хранятся флаг премиума и счётчики AI-запросов (сколько раз использованы голос, фото и документы), привязанные к вашему идентификатору. Номера карт мы не получаем и не храним.</p>
-
-      <h2>Голос, сканирование, документы и другие AI-функции</h2>
-      <p>Если вы используете голосовой ввод, сканирование чека или документа либо другое AI-извлечение, приложение отправляет введённое вами содержимое на наш бэкенд (Supabase Edge Functions). Бэкенд передаёт его в OpenAI, чтобы приложение могло предложить операции.</p>
-      <p>В зависимости от функции это может быть:</p>
-      <ul>
-        <li>аудиозапись голоса;</li>
-        <li>фото чеков, счетов, выписок и похожих документов;</li>
-        <li>текст, извлечённый из документов;</li>
-        <li>текст, который вы ввели сами;</li>
-        <li>названия счетов и категорий на устройстве, а также связанные суммы и валюта, чтобы модель могла их сопоставить.</li>
-      </ul>
-      <p>Это отправляется только чтобы выполнить запрошенную функцию. Журнал в нашей базе мы не храним. Бэкенд использует запрос, чтобы вернуть структурированные записи и учесть лимит использования.</p>
-      <p>OpenAI обрабатывает запрос по своим условиям API. По умолчанию OpenAI указывает, что входы API не используются для обучения моделей. OpenAI может хранить данные ограниченное время для работы API и мониторинга злоупотреблений. См. политики OpenAI по ссылкам ниже.</p>
-      <p>AI-функции необязательны. Операции можно добавлять вручную, не отправляя это содержимое.</p>
-
-      <h2>Аналитика, сбои и другие сетевые данные</h2>
-      <ul>
-        <li><strong>Курсы валют.</strong> Приложение загружает публичные снимки курсов с наших серверов. Это не ваш журнал.</li>
-        <li><strong>Продуктовая аналитика (PostHog).</strong> Мы записываем события: какие функции вы используете, приблизительные счётчики (например, число операций, не суммы) и язык приложения. События связаны с идентификатором пользователя. Суммы, заметки, фото и аудио в PostHog мы не отправляем.</li>
-        <li><strong>Отчёты о сбоях (Sentry).</strong> Мы отправляем диагностику сбоев, чтобы чинить ошибки. Скриншоты и дополнительные персональные данные к этим отчётам не прикладываем.</li>
-        <li><strong>Технические данные.</strong> Когда приложение обращается к серверу или SDK, эта сторона обычно получает технические сведения: IP-адрес, тип устройства, версию ОС.</li>
-      </ul>
-
-      <h2>Чего мы не делаем</h2>
-      <ul>
-        <li>Мы не продаём ваши данные.</li>
-        <li>Мы не используем ваши данные для рекламных сетей и не отслеживаем вас в приложениях и на сайтах других компаний.</li>
-        <li>Мы не собираем точную GPS-геолокацию. Приложение использует язык и регион устройства, а не GPS.</li>
-      </ul>
-
-      <h2>Сторонние обработчики</h2>
-      <p>Эти компании обрабатывают данные, как описано выше. У каждой своя политика конфиденциальности:</p>
-      <ul>
-        <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple</a> — Sign in with Apple, App Store, покупки, необязательный бэкап в iCloud</li>
-        <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase</a> — аккаунт, записи о подписке и лимитах, бэкенд-функции</li>
-        <li><a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI</a> — AI-обработка содержимого, которое вы отправляете (<a href="https://openai.com/enterprise-privacy/" target="_blank" rel="noopener noreferrer">конфиденциальность API</a>)</li>
-        <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a> — статус подписки</li>
-        <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog</a> — продуктовая аналитика</li>
-        <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry</a> — отчёты о сбоях</li>
-        <li><a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo</a> — среда приложения</li>
-      </ul>
-      <p>Мы также можем раскрыть информацию, если этого требует закон, или если добросовестно считаем, что раскрытие нужно для защиты прав, безопасности или расследования мошенничества.</p>
-
-      <h2>Срок хранения и удаление</h2>
-      <ul>
-        <li>Данные журнала остаются на устройстве, пока вы их не удалите или не удалите приложение (если только у вас нет ещё и копии в iCloud).</li>
-        <li>Записи аккаунта и лимитов хранятся, пока есть аккаунт, и удаляются при удалении аккаунта, плюс короткое время на завершение удаления.</li>
-        <li>Содержимое AI-запросов обрабатывается, чтобы выполнить запрос. Как журнал мы его не храним. Обработчики могут хранить его по своим политикам.</li>
-        <li>Аналитика и отчёты о сбоях хранятся столько, сколько нужно, чтобы поддерживать и улучшать приложение.</li>
-      </ul>
-      <p>Чтобы удалить данные аккаунта, используйте «Удалить аккаунт» в приложении или напишите на <a href="mailto:help.qalta.app@outlook.com">help.qalta.app@outlook.com</a>.</p>
-
-      <h2>Дети</h2>
-      <p>Приложение не предназначено для детей младше 13 лет. Мы сознательно не собираем персональные данные детей младше 13 лет. Если вы считаете, что ребёнок передал такие данные, напишите нам — мы удалим их.</p>
-
-      <h2>Изменения</h2>
-      <p>Мы можем обновлять эту политику. Дата в начале страницы изменится. Продолжая пользоваться приложением после обновления, вы принимаете новую редакцию.</p>
-
-      <h2>Контакты</h2>
-      <p>Даниэль Токкожин<br /><a href="mailto:help.qalta.app@outlook.com">help.qalta.app@outlook.com</a></p>
-    </article>
+    <h2>Contact</h2>
+    <p>Daniel Tokkozhin<br /><a href="mailto:help.qalta.app@outlook.com">help.qalta.app@outlook.com</a></p>
 
     <footer>
       <p>© 2026 Qalta</p>
     </footer>
   </div>
-  <script>
-    (function () {
-      var langs = document.querySelectorAll(".lang");
-      var links = document.querySelectorAll(".langs a");
-      function show(id) {
-        langs.forEach(function (el) {
-          el.classList.toggle("default", el.id === id);
-        });
-        links.forEach(function (a) {
-          a.setAttribute("aria-current", a.getAttribute("href") === "#" + id ? "true" : "false");
-        });
-      }
-      function apply() {
-        var id = (location.hash || "#en").slice(1);
-        if (id !== "en" && id !== "ru") id = "en";
-        show(id);
-      }
-      window.addEventListener("hashchange", apply);
-      apply();
-    })();
-  </script>
 </body>
 </html>
