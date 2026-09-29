@@ -18,16 +18,38 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
+      gap: 24px;
+      text-align: left;
       margin-bottom: 32px;
     }
-    .home {
-      color: #000;
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: inherit;
       text-decoration: none;
-      font-weight: 600;
     }
-    h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; }
-    .meta { color: #555; margin-bottom: 16px; }
+    .logo img {
+      width: 52px;
+      height: auto;
+      display: block;
+    }
+    .title-block {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2rem;
+      margin: 0;
+    }
+    .subtitle {
+      color: #555;
+      font-size: 1rem;
+      margin: 0;
+    }
+    h1 { font-size: 2rem; font-weight: 600; margin: 28px 0 8px; }
     p { margin-bottom: 12px; }
     figure { margin: 28px 0 8px; }
     .player {
@@ -63,11 +85,18 @@
 <body>
   <div class="wrap">
     <header>
-      <a class="home" href="../index.html">Qalta</a>
+      <a class="header-left" href="../index.html">
+        <div class="logo">
+          <img src="../assets/vector_logo.svg" alt="Qalta App logo" />
+        </div>
+        <div class="title-block">
+          <p class="brand">Qalta App</p>
+          <p class="subtitle">AI Expense Tracker</p>
+        </div>
+      </a>
     </header>
 
     <h1>Apple Pay automation</h1>
-    <p class="meta">iOS 26 · English</p>
     <p>After an Apple Pay payment, Qalta can save the purchase as a Wallet expense.</p>
 
     <figure>

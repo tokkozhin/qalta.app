@@ -158,8 +158,11 @@
     </div>
 
     <footer>
-      <p>© 2025 Qalta App</p>
+      <p>© <span id="year">2026</span> Qalta App</p>
     </footer>
   </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
