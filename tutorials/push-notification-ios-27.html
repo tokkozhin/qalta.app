@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank notification automation · iOS 27 — Qalta</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff;
+      color: #000;
+      line-height: 1.55;
+      padding: 40px 20px 80px;
+    }
+    .wrap { max-width: 700px; margin: 0 auto; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .home {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; }
+    .meta { color: #555; margin-bottom: 16px; }
+    p { margin-bottom: 12px; }
+    h2 { font-size: 1.2rem; margin: 28px 0 10px; }
+    ol { padding-left: 1.2em; }
+    li { margin-bottom: 8px; }
+    figure { margin: 28px 0 8px; }
+    video {
+      width: min(100%, 360px);
+      display: block;
+      margin: 0 auto;
+      background: #000;
+      border: 1px solid #000;
+    }
+    figcaption {
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 10px;
+      text-align: center;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #000;
+      color: #333;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="home" href="../index.html">Qalta</a>
+    </header>
+
+    <h1>Bank notification automation</h1>
+    <p class="meta">iOS 27 · English</p>
+    <p>Qalta can save a purchase from a bank app notification. This requires iOS 27.</p>
+
+    <figure>
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        src="../assets/push_notification_ios_27_automation.mp4"
+        aria-label="Bank notification automation tutorial for iOS 27"
+      ></video>
+      <figcaption>How to set up a bank notification automation on iOS 27.</figcaption>
+    </figure>
+
+    <h2>Steps</h2>
+    <ol>
+      <li>Open the Shortcuts app.</li>
+      <li>Create a new automation and choose Notification.</li>
+      <li>Pick the bank app.</li>
+      <li>Add an action: Qalta → Log Bank Expense.</li>
+      <li>Pass the notification Body into Notification body.</li>
+      <li>Optionally set Note, Account, and Category, or leave them as Ask Each Time.</li>
+    </ol>
+
+    <footer>
+      <p>© 2026 Qalta</p>
+    </footer>
+  </div>
+</body>
+</html>
