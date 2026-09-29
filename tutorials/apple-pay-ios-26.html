@@ -29,16 +29,21 @@
     h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; }
     .meta { color: #555; margin-bottom: 16px; }
     p { margin-bottom: 12px; }
-    h2 { font-size: 1.2rem; margin: 28px 0 10px; }
-    ol { padding-left: 1.2em; }
-    li { margin-bottom: 8px; }
     figure { margin: 28px 0 8px; }
-    video {
+    .player {
       width: min(100%, 360px);
-      display: block;
       margin: 0 auto;
+      border-radius: 28px;
+      overflow: hidden;
       background: #000;
-      border: 1px solid #000;
+      line-height: 0;
+    }
+    video {
+      width: 100%;
+      display: block;
+      border: 0;
+      border-radius: 28px;
+      background: #000;
     }
     figcaption {
       color: #555;
@@ -66,23 +71,17 @@
     <p>After an Apple Pay payment, Qalta can save the purchase as a Wallet expense.</p>
 
     <figure>
-      <video
-        controls
-        playsinline
-        preload="metadata"
-        src="../assets/apple_pay_automation.mp4"
-        aria-label="Apple Pay automation tutorial for iOS 26 in English"
-      ></video>
+      <div class="player">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          src="../assets/apple_pay_automation.mp4"
+          aria-label="Apple Pay automation tutorial for iOS 26 in English"
+        ></video>
+      </div>
       <figcaption>How to set up an Apple Pay automation on iOS 26.</figcaption>
     </figure>
-
-    <h2>Steps</h2>
-    <ol>
-      <li>Open the Shortcuts app.</li>
-      <li>Go to Automation and create a new automation.</li>
-      <li>Choose Wallet, then After Payment.</li>
-      <li>Add an action: Qalta → Wallet Expense.</li>
-    </ol>
 
     <footer>
       <p>© 2026 Qalta</p>
