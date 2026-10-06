@@ -4,83 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bank notification automation · iOS 27 — Qalta</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #fff;
-      color: #000;
-      line-height: 1.55;
-      padding: 40px 20px 80px;
-    }
-    .wrap { max-width: 700px; margin: 0 auto; }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      text-align: left;
-      margin-bottom: 32px;
-    }
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      color: inherit;
-      text-decoration: none;
-    }
-    .logo img {
-      width: 52px;
-      height: auto;
-      display: block;
-    }
-    .title-block {
-      display: flex;
-      flex-direction: column;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2rem;
-      margin: 0;
-    }
-    .subtitle {
-      color: #555;
-      font-size: 1rem;
-      margin: 0;
-    }
-    h1 { font-size: 2rem; font-weight: 600; margin: 28px 0 8px; }
-    p { margin-bottom: 12px; }
-    figure { margin: 28px 0 8px; }
-    .player {
-      width: min(100%, 360px);
-      margin: 0 auto;
-      border-radius: 28px;
-      overflow: hidden;
-      background: #000;
-      line-height: 0;
-    }
-    video {
-      width: 100%;
-      display: block;
-      border: 0;
-      border-radius: 28px;
-      background: #000;
-    }
-    figcaption {
-      color: #555;
-      font-size: 0.95rem;
-      margin-top: 10px;
-      text-align: center;
-    }
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid #000;
-      color: #333;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="tutorial.css" />
 </head>
 <body>
   <div class="wrap">
@@ -97,20 +21,125 @@
     </header>
 
     <h1>Bank notification automation</h1>
-    <p>Qalta can save a purchase from a bank app notification. This requires iOS 27.</p>
+    <p class="lede">When your bank app sends a payment notification, Qalta can save it as an expense. The amount and merchant are parsed from the notification text.</p>
+    <p class="lede">You need iOS 27, <strong>Qalta</strong> and <strong>Shortcuts</strong>, and a bank app that posts lock-screen notifications. This trigger is not available on iOS 26.</p>
 
-    <figure>
-      <div class="player">
-        <video
-          controls
-          playsinline
-          preload="metadata"
-          src="../assets/push_notification_ios_27_automation.mp4"
-          aria-label="Bank notification automation tutorial for iOS 27"
-        ></video>
-      </div>
-      <figcaption>How to set up a bank notification automation on iOS 27.</figcaption>
-    </figure>
+    <ol class="steps">
+      <li>
+        <p>Open <strong>Shortcuts</strong> and tap the <strong>+</strong> button at the bottom to create a new shortcut.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/01-shortcuts.png" alt="All Shortcuts with the plus button" loading="lazy" />
+          <figcaption>New shortcut</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>An empty editor opens. In the action search, tap the <strong>Automation</strong> chip — or type “Automation”.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/02-new-shortcut.png" alt="Empty shortcut editor with the Automation chip" loading="lazy" />
+          <figcaption>Automation chip</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Under <strong>Apps</strong>, tap <strong>Notification</strong> — “When I receive a notification from …”.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/03-notification-trigger.png" alt="Notification trigger in the Automation list" loading="lazy" />
+          <figcaption>Notification trigger</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The first block says <strong>When I receive a notification from App</strong>. Tap the blue <strong>App</strong> chip to choose your bank.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/04-from-app.png" alt="When I receive a notification from App" loading="lazy" />
+          <figcaption>Choose the app</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Search for your bank and tap the app that sends payment alerts (for example <strong>Kaspi.kz</strong>, not a related Pay or QR app).</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/05-pick-bank.png" alt="App picker searching for the bank" loading="lazy" />
+          <figcaption>Bank app</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>You should now see <strong>When I receive a notification from [bank]</strong>. In the search field at the bottom, type <strong>Qalta</strong>.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/06-bank-selected.png" alt="Notification trigger for the selected bank app" loading="lazy" />
+          <figcaption>Bank trigger is set</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Tap <strong>Log Bank Expense</strong> (not “Create Wallet Expense” and not “Create Transaction”).</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/07-search-qalta.png" alt="Searching for Log Bank Expense" loading="lazy" />
+          <figcaption>Qalta action</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>You should see two blocks: the notification trigger and <strong>Log bank expense from Notification body</strong>. Tap the gray <strong>Notification body</strong> field.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/08-tap-body.png" alt="Log bank expense with Notification body field" loading="lazy" />
+          <figcaption>Tap Notification body</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>A keyboard appears. Above it, tap <strong>Select Variable</strong>, then tap the blue <strong>Notification</strong> chip under the trigger.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/09-select-variable.png" alt="Select Variable with the Notification chip" loading="lazy" />
+          <figcaption>Select Variable → Notification</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Tap the blue <strong>Notification</strong> chip that now sits inside the Qalta action. In the sheet, do not leave the checkmark on “Notification” — tap <strong>Body</strong>. Qalta reads the amount from the notification text, not from the whole notification object.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/10-pick-body.png" alt="Notification properties: tap Body" loading="lazy" />
+          <figcaption>Get → Body</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The Qalta action should now say <strong>Log bank expense from Body</strong>.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/11-body-mapped.png" alt="Body mapped into Log bank expense" loading="lazy" />
+          <figcaption>Body is mapped</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The remaining fields are optional. Tap the chevron to expand them. Options for <strong>Category</strong> and <strong>Account</strong>:</p>
+        <ul>
+          <li><strong>Choose</strong> — pick a specific category or account from Qalta. If you only have one account, do that: select it once. You do not need Ask Each Time.</li>
+          <li><strong>Ask Each Time</strong> — after each notification Qalta will ask where to save the expense. Useful if you have several categories or accounts.</li>
+          <li>You can leave <strong>Choose</strong> empty — Qalta will use defaults and try to detect the category.</li>
+        </ul>
+        <p><strong>Note</strong> and <strong>Date</strong> can stay empty. Turn on <strong>Show When Run</strong> so a confirmation appears. Tap the back arrow.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/12-category-account.png" alt="Category, Account, and Show When Run" loading="lazy" />
+          <figcaption>Category, account, and confirmation</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The shortcut appears under <strong>All Shortcuts</strong> as <strong>Log Bank Expense</strong>. After the next payment notification from that bank app, Qalta will offer to save the expense.</p>
+        <figure>
+          <img src="../assets/push-notification-ios-27/en/13-all-shortcuts.png" alt="Log Bank Expense in All Shortcuts" loading="lazy" />
+          <figcaption>All set</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">Full video</h2>
+      <p>Prefer to follow along on a screen recording?</p>
+      <figure>
+        <div class="player player-11">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="../assets/push_notification_ios_27_automation.mp4"
+            aria-label="Bank notification automation tutorial for iOS 27"
+          ></video>
+        </div>
+        <figcaption>Setup walkthrough on iOS 27.</figcaption>
+      </figure>
+    </section>
 
     <footer>
       <p>© 2026 Qalta</p>

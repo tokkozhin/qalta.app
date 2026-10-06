@@ -4,83 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Автоматизация Apple Pay · iOS 26 — Qalta</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #fff;
-      color: #000;
-      line-height: 1.55;
-      padding: 40px 20px 80px;
-    }
-    .wrap { max-width: 700px; margin: 0 auto; }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      text-align: left;
-      margin-bottom: 32px;
-    }
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      color: inherit;
-      text-decoration: none;
-    }
-    .logo img {
-      width: 52px;
-      height: auto;
-      display: block;
-    }
-    .title-block {
-      display: flex;
-      flex-direction: column;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2rem;
-      margin: 0;
-    }
-    .subtitle {
-      color: #555;
-      font-size: 1rem;
-      margin: 0;
-    }
-    h1 { font-size: 2rem; font-weight: 600; margin: 28px 0 8px; }
-    p { margin-bottom: 12px; }
-    figure { margin: 28px 0 8px; }
-    .player {
-      width: min(100%, 360px);
-      margin: 0 auto;
-      border-radius: 28px;
-      overflow: hidden;
-      background: #000;
-      line-height: 0;
-    }
-    video {
-      width: 100%;
-      display: block;
-      border: 0;
-      border-radius: 28px;
-      background: #000;
-    }
-    figcaption {
-      color: #555;
-      font-size: 0.95rem;
-      margin-top: 10px;
-      text-align: center;
-    }
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid #000;
-      color: #333;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="tutorial.css" />
 </head>
 <body>
   <div class="wrap">
@@ -97,20 +21,125 @@
     </header>
 
     <h1>Автоматизация Apple Pay</h1>
-    <p>После оплаты через Apple Pay Qalta может сохранить покупку.</p>
+    <p class="lede">После оплаты через Apple Pay Qalta может сохранить покупку как расход: сумму и магазин подставит автоматически, категорию и счёт можно выбрать при каждой оплате или заранее.</p>
+    <p class="lede">Нужны iOS 26, приложения <strong>Qalta</strong> и <strong>Команды</strong>, карты в Wallet.</p>
 
-    <figure>
-      <div class="player">
-        <video
-          controls
-          playsinline
-          preload="metadata"
-          src="../assets/apple_pay_automation_ru.mp4"
-          aria-label="Видео: автоматизация Apple Pay на iOS 26 на русском"
-        ></video>
-      </div>
-      <figcaption>Как настроить автоматизацию Apple Pay на iOS 26.</figcaption>
-    </figure>
+    <ol class="steps">
+      <li>
+        <p>Откройте <strong>Настройки → Wallet и Apple Pay</strong>. Включите <strong>Эфир активности</strong> и <strong>Сотовые данные</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/01-wallet-settings.png" alt="Wallet и Apple Pay: Live Activities и сотовые данные включены" loading="lazy" />
+          <figcaption>Разрешения для Wallet</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Откройте <strong>Команды</strong>, перейдите на вкладку <strong>Автоматизация</strong> и нажмите <strong>Новая автоматизация</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/02-automation-tab.png" alt="Вкладка Автоматизация в Командах" loading="lazy" />
+          <figcaption>Новая автоматизация</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Выберите триггер <strong>Wallet</strong> — «Когда я подношу карту Wallet или платежную карту к считывателю».</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/03-wallet-trigger.png" alt="Триггер Wallet в списке автоматизаций" loading="lazy" />
+          <figcaption>Триггер Wallet</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Отметьте карты, после оплаты которыми нужно записывать расход в Qalta. Нажмите <strong>Далее</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/04-select-cards.png" alt="Выбор карт для автоматизации" loading="lazy" />
+          <figcaption>Какие карты отслеживать</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Оставьте нужные категории Wallet (можно все). Выберите <strong>Немедленный запуск</strong> (не «Запуск после подтверждения»). Нажмите <strong>Далее</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/05-categories.png" alt="Категории Wallet" loading="lazy" />
+          <figcaption>Категории</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>На экране с плитками нажмите серую карточку <strong>Создать новую быструю команду</strong> вверху слева. Не выбирайте готовые команды из списка ниже.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/06-create-shortcut.png" alt="Плитка Создать новую быструю команду" loading="lazy" />
+          <figcaption>Новая быстрая команда</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Откроется пустой редактор. В поиске действий внизу введите <strong>Qalta</strong> и нажмите <strong>Создать расход из Wallet</strong> (не «Создать транзакцию»).</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/07-search-qalta.png" alt="Поиск действия Создать расход из Wallet" loading="lazy" />
+          <figcaption>Действие Qalta</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Появятся два блока: «Получать транзакцию…» и действие Qalta. Нажмите серое поле <strong>Сумма</strong> в действии Qalta — откроется клавиатура. Над ней нажмите <strong>Выбрать переменную</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/08-tap-amount.png" alt="Поле Сумма и кнопка Выбрать переменную" loading="lazy" />
+          <figcaption>Нажать Сумма, затем Выбрать переменную</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>На экране «Выбрать переменную» нажмите синюю метку <strong>Входные данные команды</strong> — она под блоком «Получать транзакцию…».</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/09-select-variable.png" alt="Выбор переменной Входные данные команды" loading="lazy" />
+          <figcaption>Входные данные команды</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Снова нажмите синюю метку <strong>Входные данные команды</strong>, которая появилась внутри действия Qalta. В нижней карточке тип должен быть <strong>Транзакция</strong>. Не оставляйте галочку на пункте «Транзакция» — пролистайте список и нажмите <strong>Сумма</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/10-pick-amount.png" alt="Список свойств транзакции: нужно выбрать Сумма" loading="lazy" />
+          <figcaption>Тип Транзакция → свойство Сумма</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>То же для магазина. Нажмите стрелку справа в действии Qalta, чтобы раскрыть поля. Нажмите <strong>Магазин</strong> → <strong>Выбрать переменную</strong> → <strong>Входные данные команды</strong>. Снова нажмите метку, тип <strong>Транзакция</strong>, в списке выберите <strong>Продавец</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/11-merchant.png" alt="Выбор свойства Продавец из транзакции" loading="lazy" />
+          <figcaption>Тип Транзакция → свойство Продавец</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Остальные поля необязательны. Варианты для <strong>Категории</strong> и <strong>Счёта</strong>:</p>
+        <ul>
+          <li><strong>Выбрать</strong> — сразу указать конкретную категорию или счёт из Qalta. Если счёт всего один, так и сделайте: выберите его один раз. Спрашивать каждый раз не нужно.</li>
+          <li><strong>Спрашивать каждый раз</strong> — после оплаты Qalta спросит, куда записать расход. Удобно, если категорий или счетов несколько.</li>
+          <li>Можно оставить <strong>Выбрать</strong> и ничего не указывать — Qalta подставит значения по умолчанию и попробует определить категорию сама.</li>
+        </ul>
+        <p><strong>Валюту</strong>, <strong>Заметку</strong> и <strong>Дату</strong> можно не заполнять. Включите <strong>Показать при запуске</strong>, чтобы после оплаты появилось подтверждение. Нажмите синюю галочку сверху.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/12-category-account.png" alt="Поля категории, счёта и Показать при запуске" loading="lazy" />
+          <figcaption>Категория, счёт и подтверждение</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Автоматизация появится во вкладке <strong>Автоматизация</strong>. После следующей оплаты Apple Pay выбранной картой Qalta предложит сохранить расход.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-26/ru/13-automation-list.png" alt="Готовая автоматизация в списке" loading="lazy" />
+          <figcaption>Готово</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">Видео целиком</h2>
+      <p>Если удобнее смотреть по шагам в записи экрана:</p>
+      <figure>
+        <div class="player player-45">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="../assets/apple_pay_automation_ru.mp4"
+            aria-label="Видео: автоматизация Apple Pay на iOS 26 на русском"
+          ></video>
+        </div>
+        <figcaption>Запись настройки на iOS 26.</figcaption>
+      </figure>
+    </section>
 
     <footer>
       <p>© 2026 Qalta</p>

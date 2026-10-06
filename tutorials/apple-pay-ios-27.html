@@ -4,83 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apple Pay automation · iOS 27 — Qalta</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #fff;
-      color: #000;
-      line-height: 1.55;
-      padding: 40px 20px 80px;
-    }
-    .wrap { max-width: 700px; margin: 0 auto; }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      text-align: left;
-      margin-bottom: 32px;
-    }
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      color: inherit;
-      text-decoration: none;
-    }
-    .logo img {
-      width: 52px;
-      height: auto;
-      display: block;
-    }
-    .title-block {
-      display: flex;
-      flex-direction: column;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2rem;
-      margin: 0;
-    }
-    .subtitle {
-      color: #555;
-      font-size: 1rem;
-      margin: 0;
-    }
-    h1 { font-size: 2rem; font-weight: 600; margin: 28px 0 8px; }
-    p { margin-bottom: 12px; }
-    figure { margin: 28px 0 8px; }
-    .player {
-      width: min(100%, 360px);
-      margin: 0 auto;
-      border-radius: 28px;
-      overflow: hidden;
-      background: #000;
-      line-height: 0;
-    }
-    video {
-      width: 100%;
-      display: block;
-      border: 0;
-      border-radius: 28px;
-      background: #000;
-    }
-    figcaption {
-      color: #555;
-      font-size: 0.95rem;
-      margin-top: 10px;
-      text-align: center;
-    }
-    footer {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid #000;
-      color: #333;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="tutorial.css" />
 </head>
 <body>
   <div class="wrap">
@@ -97,20 +21,125 @@
     </header>
 
     <h1>Apple Pay automation</h1>
-    <p>After an Apple Pay payment, Qalta can save the purchase as a Wallet expense.</p>
+    <p class="lede">After an Apple Pay payment, Qalta can save the purchase as an expense. Amount and merchant come from the Wallet transaction; you can pick category and account each time, or set them in advance.</p>
+    <p class="lede">You need iOS 27, <strong>Qalta</strong> and <strong>Shortcuts</strong>, and cards in Wallet. On iOS 27 the Wallet trigger lives inside a new shortcut — there is no separate Automation tab.</p>
 
-    <figure>
-      <div class="player">
-        <video
-          controls
-          playsinline
-          preload="metadata"
-          src="../assets/apple_pay_ios_27_automation.mp4"
-          aria-label="Apple Pay automation tutorial for iOS 27 in English"
-        ></video>
-      </div>
-      <figcaption>How to set up an Apple Pay automation on iOS 27.</figcaption>
-    </figure>
+    <ol class="steps">
+      <li>
+        <p>Open <strong>Shortcuts</strong> and tap the <strong>+</strong> button at the bottom to create a new shortcut.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/01-shortcuts.png" alt="All Shortcuts with the plus button" loading="lazy" />
+          <figcaption>New shortcut</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>An empty editor opens. In the action search, tap the <strong>Automation</strong> chip — or type “Automation”.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/02-new-shortcut.png" alt="Empty shortcut editor with the Automation chip" loading="lazy" />
+          <figcaption>Automation chip</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Under <strong>Apps</strong>, tap <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (payment at a terminal).</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/03-wallet-trigger.png" alt="Wallet trigger in the Automation list" loading="lazy" />
+          <figcaption>Wallet trigger</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The first block says <strong>When Any Card is tapped</strong>. If you only want Qalta to run for some cards, tap the blue <strong>Any Card</strong> chip.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/04-any-card.png" alt="When Any Card is tapped trigger" loading="lazy" />
+          <figcaption>Any Card</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Select the card you pay with (for example <strong>Kaspi Gold</strong>). Tap the checkmark.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/05-select-card.png" alt="Selecting a payment card" loading="lazy" />
+          <figcaption>Which card to track</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>You should now see one block: <strong>When [your card] is tapped</strong>. In the search field at the bottom, type <strong>Qalta</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/06-card-tapped.png" alt="Wallet trigger for the selected card" loading="lazy" />
+          <figcaption>Card trigger is set</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Tap <strong>Create Wallet Expense</strong> (not “Create Transaction”).</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/07-search-qalta.png" alt="Searching for Create Wallet Expense" loading="lazy" />
+          <figcaption>Qalta action</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>You should see two blocks: the Wallet trigger and the Qalta action. Tap the gray <strong>Amount</strong> field — a keypad appears. Above it, tap <strong>Select Variable</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/08-tap-amount.png" alt="Amount field and Select Variable" loading="lazy" />
+          <figcaption>Tap Amount, then Select Variable</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>On the Select Variable screen, tap the blue <strong>Transaction</strong> chip under the Wallet trigger. That is the Apple Pay payment, not Shortcut Input.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/09-select-transaction.png" alt="Selecting Transaction from the Wallet trigger" loading="lazy" />
+          <figcaption>Transaction</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Tap the blue <strong>Transaction</strong> chip that now sits inside the Qalta action. In the sheet, do not leave the checkmark on “Transaction” — tap <strong>Amount</strong>.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/10-pick-amount.png" alt="Transaction properties: tap Amount" loading="lazy" />
+          <figcaption>Get → Amount</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Repeat for the store name. Tap the chevron on the Qalta action to expand the fields. Tap <strong>Merchant</strong> → <strong>Select Variable</strong> → <strong>Transaction</strong>. Tap the chip again and pick <strong>Merchant</strong> from the list — not “Transaction”.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/11-merchant.png" alt="Picking Merchant from the transaction" loading="lazy" />
+          <figcaption>Get → Merchant</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The remaining fields are optional. Options for <strong>Category</strong> and <strong>Account</strong>:</p>
+        <ul>
+          <li><strong>Choose</strong> — pick a specific category or account from Qalta. If you only have one account, do that: select it once. You do not need Ask Each Time.</li>
+          <li><strong>Ask Each Time</strong> — after each payment Qalta will ask where to save the expense. Useful if you have several categories or accounts.</li>
+          <li>You can leave <strong>Choose</strong> empty — Qalta will use defaults and try to detect the category.</li>
+        </ul>
+        <p><strong>Currency</strong>, <strong>Note</strong>, and <strong>Date</strong> can stay empty. Turn on <strong>Show When Run</strong> so a confirmation appears after payment. Tap the back arrow.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/12-category-account.png" alt="Category, Account, and Show When Run" loading="lazy" />
+          <figcaption>Category, account, and confirmation</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>The shortcut appears under <strong>All Shortcuts</strong> as <strong>Create Wallet Expense</strong>. After your next Apple Pay purchase with the selected card, Qalta will offer to save the expense.</p>
+        <figure>
+          <img src="../assets/apple-pay-ios-27/en/13-all-shortcuts.png" alt="Create Wallet Expense in All Shortcuts" loading="lazy" />
+          <figcaption>All set</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">Full video</h2>
+      <p>Prefer to follow along on a screen recording?</p>
+      <figure>
+        <div class="player player-11">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="../assets/apple_pay_ios_27_automation.mp4"
+            aria-label="Apple Pay automation tutorial for iOS 27 in English"
+          ></video>
+        </div>
+        <figcaption>Setup walkthrough on iOS 27.</figcaption>
+      </figure>
+    </section>
 
     <footer>
       <p>© 2026 Qalta</p>
