@@ -1,63 +1,122 @@
 @import "../site.css";
 
-h1 { margin: 28px 0 8px; }
+.doc > h2:first-of-type { margin-top: 56px; }
+
+/* Index */
+
+.cards {
+  margin: 0 0 8px;
+  border-radius: 24px;
+  background: var(--card);
+  border: 1px solid var(--edge);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.card {
+  position: relative;
+  display: block;
+  padding: 20px 52px 20px 22px;
+  text-decoration: none !important;
+  color: var(--fg);
+  transition: background-color 200ms ease-out;
+}
+.card + .card { border-top: 1px solid var(--hairline); }
+.card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid var(--soft);
+  border-right: 2px solid var(--soft);
+  transform: translateY(-50%) rotate(45deg);
+}
+.card:hover { background: var(--edge); }
+.card h3 { margin: 0; font-size: 1.125rem; }
+.card p { margin: 4px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.45; }
+
+/* Steps */
+
 ol.steps {
   list-style: none;
   counter-reset: step;
+  margin: 40px 0 0;
   padding: 0;
 }
 ol.steps > li {
   counter-increment: step;
-  margin: 32px 0 0;
-  padding-top: 4px;
+  margin: 0;
+  padding: 36px 0 0;
 }
+ol.steps > li + li { border-top: 1px solid var(--hairline); margin-top: 36px; }
 ol.steps > li::before {
   content: counter(step);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 14px;
   border-radius: 999px;
-  background: var(--fg);
-  color: var(--bg);
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  background: var(--card);
+  border: 1px solid var(--edge);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
 }
 ol.steps > li p:last-child { margin-bottom: 0; }
-ol.steps ul {
-  margin: 4px 0 12px 1.2em;
-}
-ol.steps ul li {
-  margin: 6px 0;
-}
-figure { margin: 16px 0 0; }
+ol.steps ul { margin: 6px 0 14px 1.2em; padding: 0; }
+ol.steps ul li { margin: 8px 0; }
+
+figure { margin: 22px 0 0; }
 ol.steps figure img {
+  display: block;
   width: min(100%, 280px);
   height: auto;
-  display: block;
   margin: 0 auto;
-  background: transparent;
-  filter: drop-shadow(var(--shadow));
+  filter: drop-shadow(0 0 0.5px var(--shot-outline)) drop-shadow(0 0 0.5px var(--shot-outline));
 }
 figcaption {
+  margin-top: 12px;
   color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 10px;
+  font-size: 0.9375rem;
   text-align: center;
 }
-.video-section { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line-subtle); }
+
+/* Video */
+
+.video-section {
+  margin-top: 56px;
+  padding-top: 8px;
+  border-top: 1px solid var(--hairline);
+}
 .player {
   width: min(100%, 360px);
-  margin: 16px auto 0;
+  margin: 18px auto 0;
   line-height: 0;
-  background: transparent;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--edge);
+  background: var(--card);
 }
 .player video {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   border: 0;
-  background: var(--bg);
 }
+
+.doc a.home {
+  display: inline-flex;
+  margin-top: 48px;
+  padding: 9px 16px;
+  border: 1px solid var(--fg);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+.doc a.home::before { content: "←"; margin-right: 8px; }
+.doc a.home:hover { background: var(--fg); color: var(--bg); }

@@ -4,74 +4,348 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qalta: Budget, Expense Tracker</title>
-  <meta name="description" content="Money Manager &amp; Spending App" />
-  <meta property="og:title" content="Qalta: Budget, Expense Tracker" />
-  <meta property="og:description" content="Money Manager &amp; Spending App" />
+  <meta name="description" content="Track money at the speed of speech. Say what you spent or scan a receipt, and Qalta writes it down and sorts it. Expense tracker and budget app for iPhone." />
+  <link rel="canonical" href="https://tokkozhin.github.io/qalta.app/" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tokkozhin.github.io/qalta.app/" />
+  <meta property="og:title" content="Qalta: Budget, Expense Tracker" />
+  <meta property="og:description" content="Track money at the speed of speech. Say what you spent or scan a receipt, and Qalta writes it down and sorts it." />
+  <meta property="og:image" content="https://tokkozhin.github.io/qalta.app/assets/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qalta: money tracking without the boring part, next to the Home screen on an iPhone." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qalta: Budget, Expense Tracker" />
+  <meta name="twitter:description" content="Track money at the speed of speech. Say what you spent or scan a receipt, and Qalta writes it down and sorts it." />
+  <meta name="twitter:image" content="https://tokkozhin.github.io/qalta.app/assets/og/home.png" />
+  <meta name="twitter:image:alt" content="Qalta: money tracking without the boring part, next to the Home screen on an iPhone." />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
   <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="site.css" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preload" as="image" href="assets/home/hero-home.webp" type="image/webp" fetchpriority="high" />
+  <link rel="stylesheet" href="home.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="header-left">
-        <div class="logo">
-          <img src="assets/vector_logo.svg" alt="Qalta App logo" />
-        </div>
-        <div class="title-block">
-          <h1>Qalta App</h1>
-          <p class="subtitle">AI Expense Tracker</p>
-        </div>
-      </div>
-      <div class="header-right">
-        <a
-          href="https://apps.apple.com/app/id6756010294"
-          class="app-store-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Open in App Store</a>
-      </div>
-    </header>
+<body class="page-home">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></symbol>
+    <symbol id="i-wallet-cards" viewBox="0 0 24 24"><path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21"/><path d="M3 7h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+    <symbol id="i-pointer" viewBox="0 0 24 24"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1"/><path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-hand-coins" viewBox="0 0 24 24"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></symbol>
+    <symbol id="i-goal" viewBox="0 0 24 24"><path d="M12 13V2l8 4-8 4"/><path d="M20.561 10.222a9 9 0 1 1-12.55-5.29"/><path d="M8.002 9.997a5 5 0 1 0 8.9 2.02"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol>
+    <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  </svg>
 
-    <div class="hero">
-      <div class="hero-frame">
-        <img src="assets/hero.png" alt="Qalta App on iPhone" />
-      </div>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="./">
+        <img class="brand__mark" src="assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">Money manager</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/app/id6756010294" target="_blank" rel="noopener noreferrer"><span><span class="hide-sm">Open in </span>App Store</span></a>
     </div>
+  </header>
 
-    <div class="cards">
-      <a href="tutorials/" class="card">
-        <h2>Tutorials</h2>
-        <p>Install automations for Apple Pay and bank notifications.</p>
-      </a>
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="headline headline--hero">
+            Money tracking
+            <span class="headline__soft">without the boring part</span>
+          </h1>
+          <p class="lede">Say what you spent. Qalta writes it down and sorts it.</p>
+          <ul class="chips" aria-label="Highlights">
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>Voice</li>
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg>Scan</li>
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private</li>
+          </ul>
+          <div class="cta">
+            <a class="pill pill--solid" href="https://apps.apple.com/app/id6756010294" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          </div>
+        </div>
+        <div class="hero__phones">
+          <img class="hero__phone hero__phone--side" src="assets/home/hero-insights.webp" width="576" height="1024" decoding="async"
+            alt="Qalta Insights: 91% of income saved, a spending chart, spending trend, and daily average." />
+          <img class="hero__phone hero__phone--main" src="assets/home/hero-home.webp" width="576" height="1024" fetchpriority="high" decoding="async"
+            alt="The Qalta Home screen: a net of $13,154 for this month, $14,400 income in green, $1,246 spent in orange, and transactions grouped by day." />
+          <img class="hero__phone hero__phone--side" src="assets/home/hero-add.webp" width="576" height="1024" decoding="async"
+            alt="Adding an expense in Qalta: an empty amount, the Wallet account, today’s date, category icons, and a keypad." />
+        </div>
+      </div>
+    </section>
 
-       <a href="mailto:help.qalta.app@outlook.com" class="card">
-        <h2>Support</h2>
-        <p>Need help? Contact us at help.qalta.app@outlook.com</p>
-      </a>
+    <section class="section" aria-labelledby="voice-title">
+      <div class="container feature">
+        <div class="feature__copy" data-reveal>
+          <h2 class="headline" id="voice-title">
+            Just speak to log
+            <span class="headline__soft">Add expenses in seconds</span>
+          </h2>
+          <p class="lede">One sentence can become several rows, even a subscription and a transfer.</p>
+        </div>
+        <div class="feature__media" data-reveal>
+          <div class="shot shot--voice">
+            <img src="assets/home/voice.webp" width="1000" height="1464" loading="lazy" decoding="async"
+              alt="The voice sheet in Qalta. One spoken sentence became three rows: Food &amp; Dining −$12, a monthly OpenAI subscription −$19.90, and a $1,000 transfer from Wallet to Bank, with Cancel and Save buttons." />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <a href="privacy-policy.html" class="card">
-        <h2>Privacy Policy</h2>
-        <p>Details on data handling and user privacy.</p>
-      </a>
+    <section class="section" aria-labelledby="scan-title">
+      <div class="container feature feature--flip">
+        <div class="feature__copy" data-reveal>
+          <h2 class="headline" id="scan-title">
+            Scan documents
+            <span class="headline__soft">Amount and category, filled in</span>
+          </h2>
+          <p class="lede">Receipts, bills, PDFs, CSVs, and bank statements.</p>
+        </div>
+        <div class="feature__media" data-reveal>
+          <div class="shot shot--scan">
+            <img src="assets/home/scan.webp" width="1000" height="1464" loading="lazy" decoding="async"
+              alt="The Qalta scanner in the camera view, with an invoice, a bank statement, and a bill, and PDF, CSV, and Image options." />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <a href="terms-and-conditions.html" class="card">
-        <h2>Terms & Conditions</h2>
-        <p>Rules governing use of the application.</p>
-      </a>
+    <section class="section" aria-labelledby="ways-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="ways-title">
+            Log without
+            <span class="headline__soft">opening the app</span>
+          </h2>
+        </div>
+        <div class="ways" data-reveal>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-wallet-cards"/></svg></span>
+            <h3>Apple Pay</h3>
+            <p>Pay as usual. Qalta saves the amount and the place.</p>
+          </div>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-bell"/></svg></span>
+            <h3>Bank notifications</h3>
+            <p>A payment notification becomes an expense.</p>
+          </div>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-pointer"/></svg></span>
+            <h3>Shortcuts</h3>
+            <p>Siri, Back Tap, the Action Button, or a widget.</p>
+          </div>
+        </div>
+        <p class="ways__more" data-reveal>
+          <a class="pill pill--outline" href="tutorials/">See the setup guides<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="insights-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="insights-title">
+            Smart insights
+            <span class="headline__soft">Savings, trends, forecasts</span>
+          </h2>
+          <p class="lede">Trends, subscriptions, and the categories that are easy to miss.</p>
+        </div>
+        <div class="bento" data-reveal>
+          <div class="tile tile--insights">
+            <img src="assets/home/insights.webp" width="1000" height="1565" loading="lazy" decoding="async"
+              alt="The Insights screen in Qalta: $3,309 for this month, 82% of income saved, a spending chart, and tiles for spending trend and daily average." />
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Spending trend</h3>
+              <p class="tile__note">vs previous period</p>
+            </div>
+            <p class="tile__value is-income">−45%</p>
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Daily average</h3>
+            </div>
+            <p class="tile__value">$28</p>
+          </div>
+          <div class="tile tile--stat tile--wide">
+            <div>
+              <h3 class="tile__label">Saved this month</h3>
+              <p class="tile__note">of income</p>
+            </div>
+            <p class="tile__value is-income">82%</p>
+          </div>
+          <div class="tile tile--analytics">
+            <div class="tile__text">
+              <h3 class="tile__label">Visual analytics</h3>
+              <p class="tile__note">Pie, line, stacked bars, cashflow.</p>
+            </div>
+            <img src="assets/home/analytics.webp" width="900" height="1400" loading="lazy" decoding="async"
+              alt="Analytics in Qalta: a line chart of income and spending, and a donut chart of $716 in expenses split by category." />
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Largest expense</h3>
+              <p class="tile__note">Travel</p>
+            </div>
+            <p class="tile__value is-expense">$210</p>
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Largest income</h3>
+              <p class="tile__note">Salary</p>
+            </div>
+            <p class="tile__value is-income">$3,200</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="tools-title">
+            The everyday parts
+            <span class="headline__soft">Budgets, repeats, currencies</span>
+          </h2>
+        </div>
+        <div class="band" data-reveal>
+          <figure class="band__item">
+            <div class="stage stage--shot">
+              <img src="assets/home/budgets.webp" width="900" height="1183" loading="lazy" decoding="async"
+                alt="Budgets in Qalta: Coffee $15 for today, and This Month budgets of $7,000 for all spending and $300 for restaurants, each with a thin progress bar and the remaining amount in green." />
+            </div>
+            <figcaption>
+              <h3>Stay on budget</h3>
+              <p>Limits by category or account.</p>
+            </figcaption>
+          </figure>
+          <figure class="band__item">
+            <div class="stage stage--rows">
+              <img src="assets/home/subscriptions.webp" width="900" height="559" loading="lazy" decoding="async"
+                alt="Repeating payments in Qalta: Spotify −$12.99, OpenAI −$20, and Netflix −$19.99." />
+            </div>
+            <figcaption>
+              <h3>Track subscriptions</h3>
+              <p>See what repeats every month.</p>
+            </figcaption>
+          </figure>
+          <figure class="band__item">
+            <div class="stage stage--shot stage--wide-shot">
+              <img src="assets/home/currency.webp" width="900" height="1499" loading="lazy" decoding="async"
+                alt="Adding an expense in Qalta: $100, shown underneath as €87.8, with the Wallet account, today’s date, and a row of category icons." />
+            </div>
+            <figcaption>
+              <h3>Multi-currency</h3>
+              <p>Live rates for travel and remote work.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ul class="list" data-reveal>
+          <li class="list__row">
+            <span class="round round--sm is-debt" aria-hidden="true"><svg class="icon"><use href="#i-hand-coins"/></svg></span>
+            <div><h3>Debts</h3><p>Who owes whom.</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-goal"/></svg></span>
+            <div><h3>Goals</h3><p>Savings linked to an account.</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-users"/></svg></span>
+            <div><h3>Shared spaces</h3><p>Up to 6 people in one space.</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-import"/></svg></span>
+            <div><h3>Import and export</h3><p>CSV from CoinKeeper, YNAB, Monarch, and others.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--narrow" aria-labelledby="privacy-title">
+      <div class="container privacy" data-reveal>
+        <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-lock"/></svg></span>
+        <h2 class="headline" id="privacy-title">
+          Your journal
+          <span class="headline__soft">stays on your iPhone</span>
+        </h2>
+        <p class="lede">Optional backup goes to your own iCloud. No ads.</p>
+        <p class="lede">Voice and scans are sent to our server and OpenAI only to read them.</p>
+        <p class="privacy__link"><a class="text-link" href="privacy-policy.html">Privacy policy</a></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="themes-title">
+      <div class="container">
+        <div class="themes" data-reveal>
+          <div class="themes__copy">
+            <h2 class="headline" id="themes-title">
+              <span class="headline__soft">Clean</span>
+              Light &amp; Dark
+            </h2>
+            <p class="lede">The same screen, either way.</p>
+          </div>
+          <img class="themes__img" src="assets/home/themes.webp" width="1100" height="1952" loading="lazy" decoding="async"
+            alt="The Qalta Home screen twice: in the light theme with a white background in front, and in the dark theme behind it." />
+        </div>
+      </div>
+    </section>
+
+    <section class="section close" aria-labelledby="close-title">
+      <div class="container close__inner" data-reveal>
+        <img class="close__icon" src="assets/home/icon.webp" width="256" height="256" loading="lazy" decoding="async" alt="Qalta app icon" />
+        <h2 class="headline" id="close-title">Track money at the speed of&nbsp;speech.</h2>
+        <a class="pill pill--solid" href="https://apps.apple.com/app/id6756010294" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="Site">
+        <a href="tutorials/">Tutorials</a>
+        <a href="mailto:help.qalta.app@outlook.com">Support</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms</a>
+      </nav>
+      <p>© <span id="year">2026</span> Daniel Tokkozhin</p>
     </div>
+  </footer>
 
-    <footer class="index-footer">
-      <p>© <span id="year">2026</span> Qalta App</p>
-    </footer>
-  </div>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    (function () {
+      var items = document.querySelectorAll("[data-reveal]");
+      if (!("IntersectionObserver" in window)) {
+        items.forEach(function (el) { el.classList.add("is-in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      items.forEach(function (el) { io.observe(el); });
+    })();
   </script>
 </body>
 </html>
