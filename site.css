@@ -92,6 +92,7 @@ footer {
 
 .app-store-link {
   display: inline-block;
+  flex-shrink: 0;
   margin-top: 0;
   padding: 10px 18px;
   border-radius: 999px;
@@ -100,7 +101,23 @@ footer {
   color: var(--fg);
   font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
   transition: background 0.2s, color 0.2s;
+}
+
+@media (max-width: 520px) {
+  header { gap: 12px; }
+  .logo img { width: 44px; }
+  .brand,
+  header h1 {
+    font-size: 1.35rem;
+    line-height: 1.15;
+  }
+  .subtitle { font-size: 0.85rem; }
+  .app-store-link {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
 }
 .app-store-link:hover {
   background: var(--fg);
