@@ -1,0 +1,16 @@
+{
+  "brandTag": "가계부 앱",
+  "openInAppStore": "App Store에서 열기",
+  "appStoreShort": "App Store",
+  "download": "App Store에서 다운로드",
+  "footerNavLabel": "사이트",
+  "nav": {
+    "home": "홈",
+    "tutorials": "가이드",
+    "support": "지원",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관"
+  },
+  "languageLabel": "언어",
+  "legalNotice": "이 번역본은 편의를 위해 제공됩니다. <a href=\"{englishUrl}\">영어 원문</a>과 내용이 다를 경우 영어 원문이 우선합니다."
+}

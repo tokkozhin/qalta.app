@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Poradniki automatyzacji",
+    "description": "Poradniki krok po kroku: jak automatycznie zapisywać w Qalta zakupy Apple Pay i powiadomienia z banku, w iOS 26 i iOS 27.",
+    "ogTitle": "Poradniki automatyzacji Qalta",
+    "ogImageAlt": "Poradniki automatyzacji Qalta dla iOS 26 i iOS 27, obok ekranu Wszystkie skróty.",
+    "h1": "Poradniki",
+    "lede": "Jak skonfigurować automatyzacje, które zapisują zakupy w Qalta. Wybierz poradnik dla swojej wersji iOS.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Po płatności Apple Pay Qalta zapisuje zakup. Kwota i sprzedawca pochodzą z Portfela." },
+      "push-notification-ios-27": { "title": "Powiadomienia z banku", "text": "Gdy aplikacja banku wyśle powiadomienie o płatności, Qalta zapisze je jako wydatek." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Ta sama konfiguracja Apple Pay, przez kartę Automatyzacja w Skrótach." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Pełne wideo",
+    "videoLede": "Wolisz śledzić nagranie ekranu?",
+    "allTutorials": "Wszystkie poradniki"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Automatyzacja Apple Pay w iOS 27",
+      "description": "Skonfiguruj skrót, aby każdy zakup Apple Pay zapisywał się w Qalta jako wydatek, z kwotą i sprzedawcą z Portfela. Dla iOS 27.",
+      "ogTitle": "Automatyzacja Apple Pay w iOS 27",
+      "ogImageAlt": "Automatyzacja Apple Pay w iOS 27, obok skrótu Create Wallet Expense.",
+      "h1": "Automatyzacja Apple Pay w iOS 27",
+      "intro": [
+        "Po płatności Apple Pay Qalta może zapisać zakup jako wydatek. Kwota i sprzedawca pochodzą z transakcji w Portfelu; kategorię i konto możesz wybierać za każdym razem albo ustawić z góry.",
+        "Potrzebujesz iOS 27, aplikacji <strong>Qalta</strong> i <strong>Skróty</strong> oraz kart w Portfelu. W iOS 27 wyzwalacz Portfela znajduje się wewnątrz nowego skrótu — nie ma osobnej karty Automatyzacja."
+      ],
+      "steps": [
+        {
+          "html": "<p>Otwórz <strong>Skróty</strong> i stuknij przycisk <strong>+</strong> na dole, aby utworzyć nowy skrót.</p>",
+          "caption": "Nowy skrót",
+          "alt": "Wszystkie skróty z przyciskiem plus"
+        },
+        {
+          "html": "<p>Otworzy się pusty edytor. W wyszukiwarce czynności stuknij etykietę <strong>Automatyzacja</strong> — albo wpisz „Automatyzacja”.</p>",
+          "caption": "Etykieta Automatyzacja",
+          "alt": "Pusty edytor skrótu z etykietą Automatyzacja"
+        },
+        {
+          "html": "<p>W sekcji <strong>Aplikacje</strong> stuknij <strong>Portfel</strong> — „When I tap a Wallet Card or Pass” (płatność w terminalu).</p>",
+          "caption": "Wyzwalacz Portfela",
+          "alt": "Wyzwalacz Portfela na liście automatyzacji"
+        },
+        {
+          "html": "<p>Pierwszy blok brzmi <strong>When Any Card is tapped</strong>. Jeśli Qalta ma działać tylko dla niektórych kart, stuknij niebieską etykietę <strong>Any Card</strong>.</p>",
+          "caption": "Any Card",
+          "alt": "Wyzwalacz When Any Card is tapped"
+        },
+        {
+          "html": "<p>Wybierz kartę, którą płacisz (na przykład <strong>Kaspi Gold</strong>). Stuknij znacznik wyboru.</p>",
+          "caption": "Którą kartę śledzić",
+          "alt": "Wybór karty płatniczej"
+        },
+        {
+          "html": "<p>Powinien być teraz widoczny jeden blok: <strong>When [Twoja karta] is tapped</strong>. W polu wyszukiwania na dole wpisz <strong>Qalta</strong>.</p>",
+          "caption": "Wyzwalacz karty ustawiony",
+          "alt": "Wyzwalacz Portfela dla wybranej karty"
+        },
+        {
+          "html": "<p>Stuknij <strong>Create Wallet Expense</strong> (nie „Create Transaction”).</p>",
+          "caption": "Czynność Qalta",
+          "alt": "Wyszukiwanie Create Wallet Expense"
+        },
+        {
+          "html": "<p>Powinny być widoczne dwa bloki: wyzwalacz Portfela i czynność Qalta. Stuknij szare pole <strong>Amount</strong> (kwota) — pojawi się klawiatura numeryczna. Nad nią stuknij <strong>Wybierz zmienną</strong>.</p>",
+          "caption": "Stuknij Amount, potem Wybierz zmienną",
+          "alt": "Pole Amount i Wybierz zmienną"
+        },
+        {
+          "html": "<p>Na ekranie Wybierz zmienną stuknij niebieską etykietę <strong>Transaction</strong> pod wyzwalaczem Portfela. To płatność Apple Pay, a nie Dane wejściowe skrótu.</p>",
+          "caption": "Transaction",
+          "alt": "Wybór Transaction z wyzwalacza Portfela"
+        },
+        {
+          "html": "<p>Stuknij niebieską etykietę <strong>Transaction</strong>, która jest teraz wewnątrz czynności Qalta. W arkuszu nie zostawiaj znacznika na „Transaction” — stuknij <strong>Amount</strong>.</p>",
+          "caption": "Pobierz → Amount",
+          "alt": "Właściwości transakcji: stuknij Amount"
+        },
+        {
+          "html": "<p>Powtórz to dla nazwy sklepu. Stuknij strzałkę przy czynności Qalta, aby rozwinąć pola. Stuknij <strong>Merchant</strong> (sprzedawca) → <strong>Wybierz zmienną</strong> → <strong>Transaction</strong>. Stuknij etykietę ponownie i wybierz z listy <strong>Merchant</strong> — nie „Transaction”.</p>",
+          "caption": "Pobierz → Merchant",
+          "alt": "Wybór Merchant z transakcji"
+        },
+        {
+          "html": "<p>Pozostałe pola są opcjonalne. Opcje dla <strong>Category</strong> (kategoria) i <strong>Account</strong> (konto):</p><ul><li><strong>Wybierz</strong> — wskaż konkretną kategorię lub konto z Qalta. Jeśli masz tylko jedno konto, zrób właśnie tak: wybierz je raz. Opcja Pytaj za każdym razem nie jest potrzebna.</li><li><strong>Pytaj za każdym razem</strong> — po każdej płatności Qalta zapyta, gdzie zapisać wydatek. Przydatne, jeśli masz kilka kategorii lub kont.</li><li>Pole <strong>Wybierz</strong> możesz zostawić puste — Qalta użyje ustawień domyślnych i spróbuje rozpoznać kategorię.</li></ul><p>Pola <strong>Currency</strong>, <strong>Note</strong> i <strong>Date</strong> (waluta, notatka, data) mogą zostać puste. Włącz <strong>Show When Run</strong>, aby po płatności pojawiało się potwierdzenie. Stuknij strzałkę wstecz.</p>",
+          "caption": "Kategoria, konto i potwierdzenie",
+          "alt": "Category, Account i Show When Run"
+        },
+        {
+          "html": "<p>Skrót pojawi się w sekcji <strong>Wszystkie skróty</strong> jako <strong>Create Wallet Expense</strong>. Po następnym zakupie Apple Pay wybraną kartą Qalta zaproponuje zapisanie wydatku.</p>",
+          "caption": "Gotowe",
+          "alt": "Create Wallet Expense we Wszystkich skrótach"
+        }
+      ],
+      "videoLabel": "Poradnik wideo po angielsku: automatyzacja Apple Pay w iOS 27",
+      "videoCaption": "Konfiguracja krok po kroku w iOS 27."
+    },
+    "push-notification-ios-27": {
+      "title": "Automatyzacja powiadomień z banku w iOS 27",
+      "description": "Skonfiguruj skrót, aby powiadomienie o płatności z aplikacji banku zapisywało się w Qalta jako wydatek, z kwotą odczytaną z treści. Dla iOS 27.",
+      "ogTitle": "Automatyzacja powiadomień z banku w iOS 27",
+      "ogImageAlt": "Automatyzacja powiadomień z banku w iOS 27, obok skrótu Log Bank Expense.",
+      "h1": "Automatyzacja powiadomień z banku w iOS 27",
+      "intro": [
+        "Gdy aplikacja banku wyśle powiadomienie o płatności, Qalta może zapisać je jako wydatek. Kwota i sprzedawca są odczytywane z treści powiadomienia.",
+        "Potrzebujesz iOS 27, aplikacji <strong>Qalta</strong> i <strong>Skróty</strong> oraz aplikacji banku, która wyświetla powiadomienia na ekranie blokady. Ten wyzwalacz nie jest dostępny w iOS 26."
+      ],
+      "steps": [
+        {
+          "html": "<p>Otwórz <strong>Skróty</strong> i stuknij przycisk <strong>+</strong> na dole, aby utworzyć nowy skrót.</p>",
+          "caption": "Nowy skrót",
+          "alt": "Wszystkie skróty z przyciskiem plus"
+        },
+        {
+          "html": "<p>Otworzy się pusty edytor. W wyszukiwarce czynności stuknij etykietę <strong>Automatyzacja</strong> — albo wpisz „Automatyzacja”.</p>",
+          "caption": "Etykieta Automatyzacja",
+          "alt": "Pusty edytor skrótu z etykietą Automatyzacja"
+        },
+        {
+          "html": "<p>W sekcji <strong>Aplikacje</strong> stuknij <strong>Notification</strong> — „When I receive a notification from …”.</p>",
+          "caption": "Wyzwalacz powiadomienia",
+          "alt": "Wyzwalacz powiadomienia na liście automatyzacji"
+        },
+        {
+          "html": "<p>Pierwszy blok brzmi <strong>When I receive a notification from App</strong>. Stuknij niebieską etykietę <strong>App</strong>, aby wybrać swój bank.</p>",
+          "caption": "Wybierz aplikację",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Wyszukaj swój bank i stuknij aplikację, która wysyła powiadomienia o płatnościach (na przykład <strong>Kaspi.kz</strong>, a nie powiązaną aplikację do płatności czy kodów QR).</p>",
+          "caption": "Aplikacja banku",
+          "alt": "Wybór aplikacji z wyszukiwaniem banku"
+        },
+        {
+          "html": "<p>Powinien być teraz widoczny blok <strong>When I receive a notification from [bank]</strong>. W polu wyszukiwania na dole wpisz <strong>Qalta</strong>.</p>",
+          "caption": "Wyzwalacz banku ustawiony",
+          "alt": "Wyzwalacz powiadomienia dla wybranej aplikacji banku"
+        },
+        {
+          "html": "<p>Stuknij <strong>Log Bank Expense</strong> (nie „Create Wallet Expense” i nie „Create Transaction”).</p>",
+          "caption": "Czynność Qalta",
+          "alt": "Wyszukiwanie Log Bank Expense"
+        },
+        {
+          "html": "<p>Powinny być widoczne dwa bloki: wyzwalacz powiadomienia i <strong>Log bank expense from Notification body</strong>. Stuknij szare pole <strong>Notification body</strong> (treść powiadomienia).</p>",
+          "caption": "Stuknij Notification body",
+          "alt": "Log bank expense z polem Notification body"
+        },
+        {
+          "html": "<p>Pojawi się klawiatura. Nad nią stuknij <strong>Wybierz zmienną</strong>, a następnie niebieską etykietę <strong>Notification</strong> pod wyzwalaczem.</p>",
+          "caption": "Wybierz zmienną → Notification",
+          "alt": "Wybierz zmienną z etykietą Notification"
+        },
+        {
+          "html": "<p>Stuknij niebieską etykietę <strong>Notification</strong>, która jest teraz wewnątrz czynności Qalta. W arkuszu nie zostawiaj znacznika na „Notification” — stuknij <strong>Body</strong>. Qalta odczytuje kwotę z treści powiadomienia, a nie z całego obiektu powiadomienia.</p>",
+          "caption": "Pobierz → Body",
+          "alt": "Właściwości powiadomienia: stuknij Body"
+        },
+        {
+          "html": "<p>Czynność Qalta powinna teraz brzmieć <strong>Log bank expense from Body</strong>.</p>",
+          "caption": "Body przypisane",
+          "alt": "Body przypisane do Log bank expense"
+        },
+        {
+          "html": "<p>Pozostałe pola są opcjonalne. Stuknij strzałkę, aby je rozwinąć. Opcje dla <strong>Category</strong> (kategoria) i <strong>Account</strong> (konto):</p><ul><li><strong>Wybierz</strong> — wskaż konkretną kategorię lub konto z Qalta. Jeśli masz tylko jedno konto, zrób właśnie tak: wybierz je raz. Opcja Pytaj za każdym razem nie jest potrzebna.</li><li><strong>Pytaj za każdym razem</strong> — po każdym powiadomieniu Qalta zapyta, gdzie zapisać wydatek. Przydatne, jeśli masz kilka kategorii lub kont.</li><li>Pole <strong>Wybierz</strong> możesz zostawić puste — Qalta użyje ustawień domyślnych i spróbuje rozpoznać kategorię.</li></ul><p>Pola <strong>Note</strong> i <strong>Date</strong> (notatka, data) mogą zostać puste. Włącz <strong>Show When Run</strong>, aby pojawiało się potwierdzenie. Stuknij strzałkę wstecz.</p>",
+          "caption": "Kategoria, konto i potwierdzenie",
+          "alt": "Category, Account i Show When Run"
+        },
+        {
+          "html": "<p>Skrót pojawi się w sekcji <strong>Wszystkie skróty</strong> jako <strong>Log Bank Expense</strong>. Po następnym powiadomieniu o płatności z tej aplikacji banku Qalta zaproponuje zapisanie wydatku.</p>",
+          "caption": "Gotowe",
+          "alt": "Log Bank Expense we Wszystkich skrótach"
+        }
+      ],
+      "videoLabel": "Poradnik wideo: automatyzacja powiadomień z banku w iOS 27",
+      "videoCaption": "Konfiguracja krok po kroku w iOS 27."
+    },
+    "apple-pay-ios-26": {
+      "title": "Automatyzacja Apple Pay w iOS 26",
+      "description": "Skonfiguruj automatyzację w Skrótach, aby każdy zakup Apple Pay zapisywał się w Qalta jako wydatek, z uzupełnioną kwotą i sprzedawcą. Dla iOS 26.",
+      "ogTitle": "Automatyzacja Apple Pay w iOS 26",
+      "ogImageAlt": "Automatyzacja Apple Pay w iOS 26, obok czynności Create Wallet Expense w Skrótach.",
+      "h1": "Automatyzacja Apple Pay w iOS 26",
+      "intro": [
+        "Po płatności Apple Pay Qalta może zapisać zakup jako wydatek. Kwota i sprzedawca pochodzą z transakcji; kategorię i konto możesz wybierać za każdym razem albo ustawić z góry.",
+        "Potrzebujesz iOS 26, aplikacji <strong>Qalta</strong> i <strong>Skróty</strong> oraz kart w Portfelu."
+      ],
+      "steps": [
+        {
+          "html": "<p>Otwórz <strong>Ustawienia → Portfel i Apple Pay</strong>. Włącz <strong>Aktywności na żywo</strong> i <strong>Dane sieci komórkowej</strong>.</p>",
+          "caption": "Uprawnienia Portfela",
+          "alt": "Uprawnienia Portfela i Apple Pay"
+        },
+        {
+          "html": "<p>Otwórz <strong>Skróty</strong>, przejdź do karty <strong>Automatyzacja</strong> i stuknij <strong>Nowa automatyzacja</strong>.</p>",
+          "caption": "Nowa automatyzacja",
+          "alt": "Karta Automatyzacja w Skrótach"
+        },
+        {
+          "html": "<p>Wybierz <strong>Portfel</strong> — „When I tap a Wallet Card or Pass” (płatność w terminalu).</p>",
+          "caption": "Wyzwalacz Portfela",
+          "alt": "Wyzwalacz Portfela na liście automatyzacji"
+        },
+        {
+          "html": "<p>Zaznacz karty, które Qalta ma śledzić. Stuknij <strong>Dalej</strong>.</p>",
+          "caption": "Które karty śledzić",
+          "alt": "Wybór kart płatniczych"
+        },
+        {
+          "html": "<p>Zostaw kategorie Portfela, które Cię interesują (mogą być wszystkie). Wybierz <strong>Uruchom natychmiast</strong> (nie Uruchom po potwierdzeniu). Stuknij <strong>Dalej</strong>.</p>",
+          "caption": "Kategorie",
+          "alt": "Kategorie Portfela"
+        },
+        {
+          "html": "<p>Na ekranie z kafelkami stuknij szarą kartę <strong>Utwórz nowy skrót</strong> w lewym górnym rogu. Nie wybieraj istniejącego skrótu z listy poniżej.</p>",
+          "caption": "Nowy skrót",
+          "alt": "Kafelek Utwórz nowy skrót"
+        },
+        {
+          "html": "<p>Otworzy się pusty edytor. W wyszukiwarce czynności na dole wpisz <strong>Qalta</strong> i stuknij <strong>Create Wallet Expense</strong> (nie „Create Transaction”).</p>",
+          "caption": "Czynność Qalta",
+          "alt": "Wyszukiwanie Create Wallet Expense"
+        },
+        {
+          "html": "<p>Powinny być widoczne dwa bloki: „Receive transaction as input” i czynność Qalta. Stuknij szare pole <strong>Amount</strong> (kwota) w czynności Qalta — pojawi się klawiatura numeryczna. Nad nią stuknij <strong>Wybierz zmienną</strong>.</p>",
+          "caption": "Stuknij Amount, potem Wybierz zmienną",
+          "alt": "Pole Amount i Wybierz zmienną"
+        },
+        {
+          "html": "<p>Na ekranie Wybierz zmienną stuknij niebieską etykietę <strong>Dane wejściowe skrótu</strong> pod „Receive transaction as input”.</p>",
+          "caption": "Dane wejściowe skrótu",
+          "alt": "Wybór Danych wejściowych skrótu jako zmiennej"
+        },
+        {
+          "html": "<p>Stuknij niebieską etykietę <strong>Dane wejściowe skrótu</strong>, która jest teraz wewnątrz czynności Qalta. W arkuszu pole Type powinno mieć wartość <strong>Transaction</strong>. Nie zostawiaj znacznika na „Transaction” — przewiń listę i stuknij <strong>Amount</strong>.</p>",
+          "caption": "Type Transaction → Amount",
+          "alt": "Właściwości transakcji: stuknij Amount"
+        },
+        {
+          "html": "<p>Powtórz to dla nazwy sklepu. Stuknij strzałkę przy czynności Qalta, aby rozwinąć pola. Stuknij <strong>Merchant</strong> (sprzedawca) → <strong>Wybierz zmienną</strong> → <strong>Dane wejściowe skrótu</strong>. Stuknij etykietę ponownie, ustaw Type na <strong>Transaction</strong>, a potem wybierz z listy <strong>Merchant</strong>.</p>",
+          "caption": "Type Transaction → Merchant",
+          "alt": "Wybór Merchant z transakcji"
+        },
+        {
+          "html": "<p>Pozostałe pola są opcjonalne. Opcje dla <strong>Category</strong> (kategoria) i <strong>Account</strong> (konto):</p><ul><li><strong>Wybierz</strong> — wskaż konkretną kategorię lub konto z Qalta. Jeśli masz tylko jedno konto, zrób właśnie tak: wybierz je raz. Opcja Pytaj za każdym razem nie jest potrzebna.</li><li><strong>Pytaj za każdym razem</strong> — po każdej płatności Qalta zapyta, gdzie zapisać wydatek. Przydatne, jeśli masz kilka kategorii lub kont.</li><li>Pole <strong>Wybierz</strong> możesz zostawić puste — Qalta użyje ustawień domyślnych i spróbuje rozpoznać kategorię.</li></ul><p>Pola <strong>Currency</strong>, <strong>Note</strong> i <strong>Date</strong> (waluta, notatka, data) mogą zostać puste. Włącz <strong>Show When Run</strong>, aby po płatności pojawiało się potwierdzenie. Stuknij niebieski znacznik wyboru u góry.</p>",
+          "caption": "Kategoria, konto i potwierdzenie",
+          "alt": "Category, Account i Show When Run"
+        },
+        {
+          "html": "<p>Automatyzacja pojawi się na karcie <strong>Automatyzacja</strong>. Po następnym zakupie Apple Pay wybraną kartą Qalta zaproponuje zapisanie wydatku.</p>",
+          "caption": "Gotowe",
+          "alt": "Gotowa automatyzacja na liście"
+        }
+      ],
+      "videoLabel": "Poradnik wideo po angielsku: automatyzacja Apple Pay w iOS 26",
+      "videoCaption": "Konfiguracja krok po kroku w iOS 26."
+    }
+  }
+}

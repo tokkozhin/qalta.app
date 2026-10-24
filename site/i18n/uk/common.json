@@ -1,0 +1,16 @@
+{
+  "brandTag": "Облік грошей",
+  "openInAppStore": "Відкрити в App Store",
+  "appStoreShort": "App Store",
+  "download": "Завантажити в App Store",
+  "footerNavLabel": "Сайт",
+  "nav": {
+    "home": "Головна",
+    "tutorials": "Інструкції",
+    "support": "Підтримка",
+    "privacy": "Політика конфіденційності",
+    "terms": "Умови"
+  },
+  "languageLabel": "Мова",
+  "legalNotice": "Цей переклад надано для зручності. Якщо він відрізняється від <a href=\"{englishUrl}\">англійської версії</a>, чинною є англійська версія."
+}

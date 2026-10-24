@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Otomasyon rehberleri",
+    "description": "iOS 26 ve iOS 27 için Apple Pay alışverişlerini ve banka bildirimlerini Qalta’ya otomatik kaydetmeye yönelik adım adım rehberler.",
+    "ogTitle": "Qalta otomasyon rehberleri",
+    "ogImageAlt": "iOS 26 ve iOS 27 için Qalta otomasyon rehberleri, yanında Tüm Kestirmeler ekranı.",
+    "h1": "Rehberler",
+    "lede": "Bir alışverişi Qalta’ya kaydeden otomasyonlar nasıl kurulur? iOS sürümünüze uygun rehberi seçin.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Apple Pay ile ödeme yaptıktan sonra Qalta alışverişi kaydeder. Tutar ve işyeri Cüzdan’dan gelir." },
+      "push-notification-ios-27": { "title": "Banka bildirimleri", "text": "Banka uygulaması bir ödeme bildirimi gönderdiğinde Qalta bunu gider olarak kaydeder." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Aynı Apple Pay kurulumu, Kestirmeler’deki Otomasyon sekmesiyle." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Videonun tamamı",
+    "videoLede": "Ekran kaydını izleyerek ilerlemeyi mi tercih edersiniz?",
+    "allTutorials": "Tüm rehberler"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "iOS 27’de Apple Pay otomasyonu",
+      "description": "Her Apple Pay alışverişi, tutarı ve işyeri Cüzdan’dan alınarak Qalta’ya gider olarak kaydedilsin diye bir kestirme kurun. iOS 27 için.",
+      "ogTitle": "iOS 27’de Apple Pay otomasyonu",
+      "ogImageAlt": "iOS 27’de Apple Pay otomasyonu, yanında Create Wallet Expense kestirmesi.",
+      "h1": "iOS 27’de Apple Pay otomasyonu",
+      "intro": [
+        "Apple Pay ile ödeme yaptıktan sonra Qalta alışverişi gider olarak kaydedebilir. Tutar ve işyeri Cüzdan işleminden gelir; kategoriyi ve hesabı her seferinde seçebilir ya da önceden belirleyebilirsiniz.",
+        "Gerekenler: iOS 27, <strong>Qalta</strong> ve <strong>Kestirmeler</strong> uygulamaları ve Cüzdan’da kartlar. iOS 27’de Cüzdan tetikleyicisi yeni bir kestirmenin içinde yer alır — ayrı bir Otomasyon sekmesi yoktur."
+      ],
+      "steps": [
+        {
+          "html": "<p><strong>Kestirmeler</strong>’i açın ve yeni bir kestirme oluşturmak için alttaki <strong>+</strong> düğmesine dokunun.</p>",
+          "caption": "Yeni kestirme",
+          "alt": "Artı düğmesiyle Tüm Kestirmeler"
+        },
+        {
+          "html": "<p>Boş bir düzenleyici açılır. Eylem aramasında <strong>Otomasyon</strong> etiketine dokunun — ya da “Otomasyon” yazın.</p>",
+          "caption": "Otomasyon etiketi",
+          "alt": "Otomasyon etiketiyle boş kestirme düzenleyicisi"
+        },
+        {
+          "html": "<p><strong>Uygulamalar</strong> altında <strong>Cüzdan</strong>’a dokunun — “When I tap a Wallet Card or Pass” (terminalde ödeme).</p>",
+          "caption": "Cüzdan tetikleyicisi",
+          "alt": "Otomasyon listesinde Cüzdan tetikleyicisi"
+        },
+        {
+          "html": "<p>İlk blokta <strong>When Any Card is tapped</strong> yazar. Qalta’nın yalnızca bazı kartlarda çalışmasını istiyorsanız mavi <strong>Any Card</strong> etiketine dokunun.</p>",
+          "caption": "Any Card",
+          "alt": "When Any Card is tapped tetikleyicisi"
+        },
+        {
+          "html": "<p>Ödeme yaptığınız kartı seçin (örneğin <strong>Kaspi Gold</strong>). Onay işaretine dokunun.</p>",
+          "caption": "Hangi kart takip edilsin",
+          "alt": "Ödeme kartı seçimi"
+        },
+        {
+          "html": "<p>Artık tek bir blok görmelisiniz: <strong>When [kartınız] is tapped</strong>. Alttaki arama alanına <strong>Qalta</strong> yazın.</p>",
+          "caption": "Kart tetikleyicisi hazır",
+          "alt": "Seçilen kart için Cüzdan tetikleyicisi"
+        },
+        {
+          "html": "<p><strong>Create Wallet Expense</strong>’e dokunun (“Create Transaction”a değil).</p>",
+          "caption": "Qalta eylemi",
+          "alt": "Create Wallet Expense araması"
+        },
+        {
+          "html": "<p>İki blok görmelisiniz: Cüzdan tetikleyicisi ve Qalta eylemi. Gri <strong>Amount</strong> (tutar) alanına dokunun — tuş takımı açılır. Hemen üstünde <strong>Değişken Seç</strong>’e dokunun.</p>",
+          "caption": "Amount’a, sonra Değişken Seç’e dokunun",
+          "alt": "Amount alanı ve Değişken Seç"
+        },
+        {
+          "html": "<p>Değişken Seç ekranında, Cüzdan tetikleyicisinin altındaki mavi <strong>Transaction</strong> etiketine dokunun. Bu, Apple Pay ödemesidir; Kestirme Girdisi değil.</p>",
+          "caption": "Transaction",
+          "alt": "Cüzdan tetikleyicisinden Transaction seçimi"
+        },
+        {
+          "html": "<p>Artık Qalta eyleminin içinde duran mavi <strong>Transaction</strong> etiketine dokunun. Açılan pencerede onay işaretini “Transaction” üzerinde bırakmayın — <strong>Amount</strong>’a dokunun.</p>",
+          "caption": "Al → Amount",
+          "alt": "Transaction özellikleri: Amount’a dokunun"
+        },
+        {
+          "html": "<p>Mağaza adı için de aynısını yapın. Alanları genişletmek için Qalta eylemindeki oka dokunun. <strong>Merchant</strong> (işyeri) → <strong>Değişken Seç</strong> → <strong>Transaction</strong>’a dokunun. Etikete tekrar dokunun ve listeden <strong>Merchant</strong>’ı seçin — “Transaction”ı değil.</p>",
+          "caption": "Al → Merchant",
+          "alt": "Transaction’dan Merchant seçimi"
+        },
+        {
+          "html": "<p>Kalan alanlar isteğe bağlıdır. <strong>Category</strong> (kategori) ve <strong>Account</strong> (hesap) için seçenekler:</p><ul><li><strong>Seç</strong> — Qalta’dan belirli bir kategori veya hesap seçin. Tek hesabınız varsa bunu yapın: bir kez seçin. Her Seferinde Sor’a gerek yok.</li><li><strong>Her Seferinde Sor</strong> — her ödemeden sonra Qalta gideri nereye kaydedeceğini sorar. Birden fazla kategori veya hesabınız varsa kullanışlıdır.</li><li><strong>Seç</strong>’i boş bırakabilirsiniz — Qalta varsayılanları kullanır ve kategoriyi algılamaya çalışır.</li></ul><p><strong>Currency</strong>, <strong>Note</strong> ve <strong>Date</strong> boş kalabilir. Ödemeden sonra onay görünsün diye <strong>Çalıştırıldığında Göster</strong>’i açın. Geri okuna dokunun.</p>",
+          "caption": "Kategori, hesap ve onay",
+          "alt": "Category, Account ve Çalıştırıldığında Göster"
+        },
+        {
+          "html": "<p>Kestirme <strong>Tüm Kestirmeler</strong> altında <strong>Create Wallet Expense</strong> adıyla görünür. Seçilen kartla bir sonraki Apple Pay alışverişinizden sonra Qalta gideri kaydetmeyi önerecek.</p>",
+          "caption": "Hazır",
+          "alt": "Tüm Kestirmeler’de Create Wallet Expense"
+        }
+      ],
+      "videoLabel": "iOS 27 için İngilizce Apple Pay otomasyonu rehberi",
+      "videoCaption": "iOS 27’de kurulumun adım adım gösterimi."
+    },
+    "push-notification-ios-27": {
+      "title": "iOS 27’de banka bildirimi otomasyonu",
+      "description": "Banka uygulamanızdan gelen ödeme bildirimi, tutarı metinden okunarak Qalta’ya gider olarak kaydedilsin diye bir kestirme kurun. iOS 27 için.",
+      "ogTitle": "iOS 27’de banka bildirimi otomasyonu",
+      "ogImageAlt": "iOS 27’de banka bildirimi otomasyonu, yanında Log Bank Expense kestirmesi.",
+      "h1": "iOS 27’de banka bildirimi otomasyonu",
+      "intro": [
+        "Banka uygulamanız bir ödeme bildirimi gönderdiğinde Qalta bunu gider olarak kaydedebilir. Tutar ve işyeri bildirim metninden okunur.",
+        "Gerekenler: iOS 27, <strong>Qalta</strong> ve <strong>Kestirmeler</strong> uygulamaları ve kilit ekranına bildirim gönderen bir banka uygulaması. Bu tetikleyici iOS 26’da yoktur."
+      ],
+      "steps": [
+        {
+          "html": "<p><strong>Kestirmeler</strong>’i açın ve yeni bir kestirme oluşturmak için alttaki <strong>+</strong> düğmesine dokunun.</p>",
+          "caption": "Yeni kestirme",
+          "alt": "Artı düğmesiyle Tüm Kestirmeler"
+        },
+        {
+          "html": "<p>Boş bir düzenleyici açılır. Eylem aramasında <strong>Otomasyon</strong> etiketine dokunun — ya da “Otomasyon” yazın.</p>",
+          "caption": "Otomasyon etiketi",
+          "alt": "Otomasyon etiketiyle boş kestirme düzenleyicisi"
+        },
+        {
+          "html": "<p><strong>Uygulamalar</strong> altında <strong>Bildirim</strong>’e dokunun — “When I receive a notification from …”.</p>",
+          "caption": "Bildirim tetikleyicisi",
+          "alt": "Otomasyon listesinde Bildirim tetikleyicisi"
+        },
+        {
+          "html": "<p>İlk blokta <strong>When I receive a notification from App</strong> yazar. Bankanızı seçmek için mavi <strong>App</strong> etiketine dokunun.</p>",
+          "caption": "Uygulamayı seçin",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Bankanızı arayın ve ödeme uyarılarını gönderen uygulamaya dokunun (örneğin <strong>Kaspi.kz</strong>; ilgili Pay veya QR uygulamasına değil).</p>",
+          "caption": "Banka uygulaması",
+          "alt": "Banka aranan uygulama seçici"
+        },
+        {
+          "html": "<p>Artık <strong>When I receive a notification from [banka]</strong> görmelisiniz. Alttaki arama alanına <strong>Qalta</strong> yazın.</p>",
+          "caption": "Banka tetikleyicisi hazır",
+          "alt": "Seçilen banka uygulaması için Bildirim tetikleyicisi"
+        },
+        {
+          "html": "<p><strong>Log Bank Expense</strong>’e dokunun (“Create Wallet Expense”e veya “Create Transaction”a değil).</p>",
+          "caption": "Qalta eylemi",
+          "alt": "Log Bank Expense araması"
+        },
+        {
+          "html": "<p>İki blok görmelisiniz: bildirim tetikleyicisi ve <strong>Log bank expense from Notification body</strong>. Gri <strong>Notification body</strong> (bildirim metni) alanına dokunun.</p>",
+          "caption": "Notification body’ye dokunun",
+          "alt": "Notification body alanıyla Log bank expense"
+        },
+        {
+          "html": "<p>Klavye açılır. Hemen üstünde <strong>Değişken Seç</strong>’e, ardından tetikleyicinin altındaki mavi <strong>Notification</strong> etiketine dokunun.</p>",
+          "caption": "Değişken Seç → Notification",
+          "alt": "Notification etiketiyle Değişken Seç"
+        },
+        {
+          "html": "<p>Artık Qalta eyleminin içinde duran mavi <strong>Notification</strong> etiketine dokunun. Açılan pencerede onay işaretini “Notification” üzerinde bırakmayın — <strong>Body</strong>’ye dokunun. Qalta tutarı bildirim nesnesinin tamamından değil, bildirim metninden okur.</p>",
+          "caption": "Al → Body",
+          "alt": "Notification özellikleri: Body’ye dokunun"
+        },
+        {
+          "html": "<p>Qalta eyleminde artık <strong>Log bank expense from Body</strong> yazmalı.</p>",
+          "caption": "Body eşlendi",
+          "alt": "Log bank expense’e eşlenen Body"
+        },
+        {
+          "html": "<p>Kalan alanlar isteğe bağlıdır. Genişletmek için oka dokunun. <strong>Category</strong> (kategori) ve <strong>Account</strong> (hesap) için seçenekler:</p><ul><li><strong>Seç</strong> — Qalta’dan belirli bir kategori veya hesap seçin. Tek hesabınız varsa bunu yapın: bir kez seçin. Her Seferinde Sor’a gerek yok.</li><li><strong>Her Seferinde Sor</strong> — her bildirimden sonra Qalta gideri nereye kaydedeceğini sorar. Birden fazla kategori veya hesabınız varsa kullanışlıdır.</li><li><strong>Seç</strong>’i boş bırakabilirsiniz — Qalta varsayılanları kullanır ve kategoriyi algılamaya çalışır.</li></ul><p><strong>Note</strong> ve <strong>Date</strong> boş kalabilir. Onay görünsün diye <strong>Çalıştırıldığında Göster</strong>’i açın. Geri okuna dokunun.</p>",
+          "caption": "Kategori, hesap ve onay",
+          "alt": "Category, Account ve Çalıştırıldığında Göster"
+        },
+        {
+          "html": "<p>Kestirme <strong>Tüm Kestirmeler</strong> altında <strong>Log Bank Expense</strong> adıyla görünür. O banka uygulamasından gelecek bir sonraki ödeme bildiriminden sonra Qalta gideri kaydetmeyi önerecek.</p>",
+          "caption": "Hazır",
+          "alt": "Tüm Kestirmeler’de Log Bank Expense"
+        }
+      ],
+      "videoLabel": "iOS 27 için banka bildirimi otomasyonu rehberi",
+      "videoCaption": "iOS 27’de kurulumun adım adım gösterimi."
+    },
+    "apple-pay-ios-26": {
+      "title": "iOS 26’da Apple Pay otomasyonu",
+      "description": "Her Apple Pay alışverişi, tutarı ve işyeri doldurularak Qalta’ya gider olarak kaydedilsin diye bir Kestirmeler otomasyonu kurun. iOS 26 için.",
+      "ogTitle": "iOS 26’da Apple Pay otomasyonu",
+      "ogImageAlt": "iOS 26’da Apple Pay otomasyonu, yanında Kestirmeler’deki Create Wallet Expense eylemi.",
+      "h1": "iOS 26’da Apple Pay otomasyonu",
+      "intro": [
+        "Apple Pay ile ödeme yaptıktan sonra Qalta alışverişi gider olarak kaydedebilir. Tutar ve işyeri işlemden gelir; kategoriyi ve hesabı her seferinde seçebilir ya da önceden belirleyebilirsiniz.",
+        "Gerekenler: iOS 26, <strong>Qalta</strong> ve <strong>Kestirmeler</strong> uygulamaları ve Cüzdan’da kartlar."
+      ],
+      "steps": [
+        {
+          "html": "<p><strong>Ayarlar → Cüzdan ve Apple Pay</strong>’i açın. <strong>Canlı Etkinlikler</strong>’i ve <strong>Hücresel Veri</strong>’yi açın.</p>",
+          "caption": "Cüzdan izinleri",
+          "alt": "Cüzdan ve Apple Pay izinleri"
+        },
+        {
+          "html": "<p><strong>Kestirmeler</strong>’i açın, <strong>Otomasyon</strong> sekmesine gidin ve <strong>Yeni Otomasyon</strong>’a dokunun.</p>",
+          "caption": "Yeni otomasyon",
+          "alt": "Kestirmeler’de Otomasyon sekmesi"
+        },
+        {
+          "html": "<p><strong>Cüzdan</strong>’ı seçin — “When I tap a Wallet Card or Pass” (terminalde ödeme).</p>",
+          "caption": "Cüzdan tetikleyicisi",
+          "alt": "Otomasyon listesinde Cüzdan tetikleyicisi"
+        },
+        {
+          "html": "<p>Qalta’nın takip etmesini istediğiniz kartları seçin. <strong>Sonraki</strong>’ye dokunun.</p>",
+          "caption": "Hangi kartlar takip edilsin",
+          "alt": "Ödeme kartlarının seçimi"
+        },
+        {
+          "html": "<p>İlgilendiğiniz Cüzdan kategorilerini bırakın (hepsi olabilir). <strong>Hemen Çalıştır</strong>’ı seçin (Run After Confirmation’ı değil). <strong>Sonraki</strong>’ye dokunun.</p>",
+          "caption": "Kategoriler",
+          "alt": "Cüzdan kategorileri"
+        },
+        {
+          "html": "<p>Kutucuk ekranında, sol üstteki gri <strong>Yeni Kestirme Oluştur</strong> kartına dokunun. Aşağıdaki listeden mevcut bir kestirme seçmeyin.</p>",
+          "caption": "Yeni kestirme",
+          "alt": "Yeni Kestirme Oluştur kutucuğu"
+        },
+        {
+          "html": "<p>Boş bir düzenleyici açılır. Alttaki eylem aramasına <strong>Qalta</strong> yazın ve <strong>Create Wallet Expense</strong>’e dokunun (“Create Transaction”a değil).</p>",
+          "caption": "Qalta eylemi",
+          "alt": "Create Wallet Expense araması"
+        },
+        {
+          "html": "<p>İki blok görmelisiniz: “Receive transaction as input” ve Qalta eylemi. Qalta eylemindeki gri <strong>Amount</strong> (tutar) alanına dokunun — tuş takımı açılır. Hemen üstünde <strong>Değişken Seç</strong>’e dokunun.</p>",
+          "caption": "Amount’a, sonra Değişken Seç’e dokunun",
+          "alt": "Amount alanı ve Değişken Seç"
+        },
+        {
+          "html": "<p>Değişken Seç ekranında, “Receive transaction as input” altındaki mavi <strong>Kestirme Girdisi</strong> etiketine dokunun.</p>",
+          "caption": "Kestirme Girdisi",
+          "alt": "Değişken olarak Kestirme Girdisi seçimi"
+        },
+        {
+          "html": "<p>Artık Qalta eyleminin içinde duran mavi <strong>Kestirme Girdisi</strong> etiketine dokunun. Açılan pencerede tür <strong>Transaction</strong> olmalı. Onay işaretini “Transaction” üzerinde bırakmayın — listeyi kaydırın ve <strong>Amount</strong>’a dokunun.</p>",
+          "caption": "Tür Transaction → Amount",
+          "alt": "Transaction özellikleri: Amount’a dokunun"
+        },
+        {
+          "html": "<p>Mağaza adı için de aynısını yapın. Alanları genişletmek için Qalta eylemindeki oka dokunun. <strong>Merchant</strong> (işyeri) → <strong>Değişken Seç</strong> → <strong>Kestirme Girdisi</strong>’ne dokunun. Etikete tekrar dokunun, türü <strong>Transaction</strong> yapın, ardından listeden <strong>Merchant</strong>’ı seçin.</p>",
+          "caption": "Tür Transaction → Merchant",
+          "alt": "Transaction’dan Merchant seçimi"
+        },
+        {
+          "html": "<p>Kalan alanlar isteğe bağlıdır. <strong>Category</strong> (kategori) ve <strong>Account</strong> (hesap) için seçenekler:</p><ul><li><strong>Seç</strong> — Qalta’dan belirli bir kategori veya hesap seçin. Tek hesabınız varsa bunu yapın: bir kez seçin. Her Seferinde Sor’a gerek yok.</li><li><strong>Her Seferinde Sor</strong> — her ödemeden sonra Qalta gideri nereye kaydedeceğini sorar. Birden fazla kategori veya hesabınız varsa kullanışlıdır.</li><li><strong>Seç</strong>’i boş bırakabilirsiniz — Qalta varsayılanları kullanır ve kategoriyi algılamaya çalışır.</li></ul><p><strong>Currency</strong>, <strong>Note</strong> ve <strong>Date</strong> boş kalabilir. Ödemeden sonra onay görünsün diye <strong>Çalıştırıldığında Göster</strong>’i açın. Üstteki mavi onay işaretine dokunun.</p>",
+          "caption": "Kategori, hesap ve onay",
+          "alt": "Category, Account ve Çalıştırıldığında Göster"
+        },
+        {
+          "html": "<p>Otomasyon <strong>Otomasyon</strong> altında görünür. Seçilen kartla bir sonraki Apple Pay alışverişinizden sonra Qalta gideri kaydetmeyi önerecek.</p>",
+          "caption": "Hazır",
+          "alt": "Listede tamamlanmış otomasyon"
+        }
+      ],
+      "videoLabel": "iOS 26 için İngilizce Apple Pay otomasyonu rehberi",
+      "videoCaption": "iOS 26’da kurulumun adım adım gösterimi."
+    }
+  }
+}

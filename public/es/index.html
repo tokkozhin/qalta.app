@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qalta: control de gastos con IA y presupuesto compartido para iPhone</title>
+  <meta name="description" content="Qalta es una app de control de gastos y presupuestos para iPhone. Di lo que gastaste o escanea un recibo, registra las compras con Apple Pay automáticamente y comparte un presupuesto con tu pareja o tu familia." />
+  <link rel="canonical" href="https://qalta.app/es/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="apple-itunes-app" content="app-id=6756010294" />
+  <link rel="alternate" hreflang="en" href="https://qalta.app/" />
+  <link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
+  <link rel="alternate" hreflang="es" href="https://qalta.app/es/" />
+  <link rel="alternate" hreflang="fr" href="https://qalta.app/fr/" />
+  <link rel="alternate" hreflang="it" href="https://qalta.app/it/" />
+  <link rel="alternate" hreflang="ja" href="https://qalta.app/ja/" />
+  <link rel="alternate" hreflang="kk" href="https://qalta.app/kk/" />
+  <link rel="alternate" hreflang="ko" href="https://qalta.app/ko/" />
+  <link rel="alternate" hreflang="pl" href="https://qalta.app/pl/" />
+  <link rel="alternate" hreflang="pt" href="https://qalta.app/pt/" />
+  <link rel="alternate" hreflang="ru" href="https://qalta.app/ru/" />
+  <link rel="alternate" hreflang="th" href="https://qalta.app/th/" />
+  <link rel="alternate" hreflang="tr" href="https://qalta.app/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://qalta.app/uk/" />
+  <link rel="alternate" hreflang="x-default" href="https://qalta.app/" />
+  <meta name="author" content="Daniel Tokkozhin" />
+  <meta name="application-name" content="Qalta" />
+  <link rel="alternate" type="text/markdown" title="Qalta for AI assistants" href="https://qalta.app/llms.txt" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="pl_PL" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="th_TH" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qalta.app/es/" />
+  <meta property="og:title" content="Qalta: presupuesto y control de gastos" />
+  <meta property="og:description" content="Lleva tus cuentas a la velocidad de la voz. Di lo que gastaste o escanea un recibo, y comparte un presupuesto con las personas con las que vives." />
+  <meta property="og:image" content="https://qalta.app/assets/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qalta: controla tu dinero sin la parte aburrida, junto a la pantalla de Inicio en un iPhone." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qalta: presupuesto y control de gastos" />
+  <meta name="twitter:description" content="Lleva tus cuentas a la velocidad de la voz. Di lo que gastaste o escanea un recibo, y comparte un presupuesto con las personas con las que vives." />
+  <meta name="twitter:image" content="https://qalta.app/assets/og/home.png" />
+  <meta name="twitter:image:alt" content="Qalta: controla tu dinero sin la parte aburrida, junto a la pantalla de Inicio en un iPhone." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="/assets/home/hero-home.webp" type="image/webp" fetchpriority="high" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://qalta.app/#website",
+        "url": "https://qalta.app/",
+        "name": "Qalta",
+        "description": "Qalta es una app de control de gastos con IA y presupuesto compartido para iPhone.",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "kk",
+          "ko",
+          "pl",
+          "pt",
+          "ru",
+          "th",
+          "tr",
+          "uk"
+        ],
+        "publisher": {
+          "@id": "https://qalta.app/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://qalta.app/es/#webpage",
+        "url": "https://qalta.app/es/",
+        "name": "Qalta: control de gastos con IA y presupuesto compartido para iPhone",
+        "description": "Qalta es una app de control de gastos y presupuestos para iPhone. Di lo que gastaste o escanea un recibo, registra las compras con Apple Pay automáticamente y comparte un presupuesto con tu pareja o tu familia.",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://qalta.app/#website"
+        },
+        "about": {
+          "@id": "https://qalta.app/#app"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://qalta.app/#organization",
+        "name": "Qalta",
+        "url": "https://qalta.app/",
+        "logo": "https://qalta.app/assets/home/icon.webp",
+        "email": "help.qalta.app@outlook.com",
+        "founder": {
+          "@id": "https://qalta.app/#founder"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/id6756010294"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://qalta.app/#founder",
+        "name": "Daniel Tokkozhin"
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://qalta.app/#app",
+        "name": "Qalta: Budget, Expense Tracker",
+        "alternateName": [
+          "Qalta",
+          "Qalta Money Manager"
+        ],
+        "url": "https://qalta.app/es/",
+        "description": "Una app para controlar tu dinero en el iPhone. Registra gastos por voz, escanea recibos y extractos bancarios, guarda automáticamente las compras con Apple Pay y las notificaciones del banco, y lleva un presupuesto compartido con tu pareja o tu familia que se sincroniza entre dispositivos.",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Presupuestos, control de gastos",
+        "operatingSystem": "iOS 16.4 or later",
+        "downloadUrl": "https://apps.apple.com/es/app/id6756010294",
+        "installUrl": "https://apps.apple.com/es/app/id6756010294",
+        "image": "https://qalta.app/assets/home/icon.webp",
+        "screenshot": [
+          "https://qalta.app/assets/home/hero-home.webp",
+          "https://qalta.app/assets/home/voice.webp",
+          "https://qalta.app/assets/home/scan.webp",
+          "https://qalta.app/assets/home/insights.webp"
+        ],
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "kk",
+          "ko",
+          "pl",
+          "pt",
+          "ru",
+          "th",
+          "tr",
+          "uk"
+        ],
+        "author": {
+          "@id": "https://qalta.app/#founder"
+        },
+        "publisher": {
+          "@id": "https://qalta.app/#organization"
+        },
+        "featureList": [
+          "Registro de gastos por voz: una frase puede convertirse en varias operaciones",
+          "Escaneo de recibos, facturas, PDF, CSV y extractos bancarios",
+          "Registro automático de compras con Apple Pay mediante Atajos",
+          "Gastos a partir de notificaciones push del banco (iOS 27)",
+          "Espacios compartidos: un presupuesto común para hasta 6 personas que se sincroniza entre dispositivos",
+          "Presupuestos por categoría o por cuenta",
+          "Operaciones recurrentes y control de suscripciones",
+          "Metas de ahorro y deudas",
+          "Análisis y estadísticas: tendencias, flujo de caja, desglose por categorías",
+          "Cuentas en varias divisas con tipos de cambio al día",
+          "Importación de CSV desde YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper",
+          "Widgets en la pantalla de inicio, Atajos de Siri, Toque posterior y botón de acción",
+          "Privada por defecto: sin anuncios, copia de seguridad opcional en iCloud"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Plan gratuito",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro, mensual",
+            "price": "3.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro, anual",
+            "price": "29.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro Familiar, mensual",
+            "price": "5.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro Familiar, anual",
+            "price": "49.99",
+            "priceCurrency": "USD"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "ratingCount": "15",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://qalta.app/es/#faq",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es Qalta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Qalta es una app de control de gastos y presupuestos para iPhone. Dices lo que gastaste o escaneas un recibo, y Qalta registra la operación y la asigna a una categoría. También gestiona presupuestos, suscripciones, metas, deudas, varias divisas y presupuestos compartidos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo compartir un presupuesto con mi pareja o mi familia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Crea un espacio compartido e invita a otras personas con un enlace. Un espacio admite hasta 6 personas. Todos ven y editan las mismas cuentas, operaciones y presupuestos, los cambios se sincronizan automáticamente y cada operación muestra quién la creó o la editó por última vez. Los espacios compartidos forman parte de Qalta Pro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo funciona el registro de gastos por voz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Toca el micrófono y di algo como «Café $5 y Netflix $10 al mes». Qalta rellena el importe, la categoría, la cuenta y la periodicidad. Una sola frase puede incluir varias operaciones, también transferencias y suscripciones."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qalta puede registrar automáticamente las compras con Apple Pay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Una automatización de Atajos guarda cada pago con Apple Pay con su importe y su comercio. En iOS 27, la notificación de pago de la app de tu banco también puede crear un gasto. Sigue las guías paso a paso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo traer mi historial desde otra app de presupuestos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Qalta importa archivos CSV de YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper y otras apps, y exporta tus datos a CSV cuando quieras."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Mis datos financieros son privados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un espacio privado se queda en tu iPhone, con copia de seguridad opcional en tu propio iCloud. Un espacio compartido solo se sube cuando decides compartirlo, y solo pueden verlo las personas a las que invitas. Las grabaciones de voz y los escaneos se envían al servidor de Qalta y a OpenAI solo para leerlos. No hay anuncios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta Qalta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Qalta se descarga gratis e incluye un plan gratuito. Qalta Pro añade operaciones, voz y escaneos ilimitados, además de espacios compartidos, por $3.99 al mes o $29.99 al año. El plan Familiar comparte Pro con hasta 6 personas por $5.99 al mes o $49.99 al año. Los precios están en dólares estadounidenses y varían según la región."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué dispositivos e idiomas está disponible Qalta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Qalta funciona en iPhone con iOS 16.4 o posterior, y también en Mac con chip de Apple y en Apple Vision Pro. Está disponible en alemán, coreano, español, francés, inglés, italiano, japonés, kazajo, polaco, portugués, ruso, tailandés, turco y ucraniano."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/home.css" />
+</head>
+<body class="page-home">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></symbol>
+    <symbol id="i-wallet-cards" viewBox="0 0 24 24"><path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21"/><path d="M3 7h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+    <symbol id="i-pointer" viewBox="0 0 24 24"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1"/><path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-hand-coins" viewBox="0 0 24 24"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></symbol>
+    <symbol id="i-goal" viewBox="0 0 24 24"><path d="M12 13V2l8 4-8 4"/><path d="M20.561 10.222a9 9 0 1 1-12.55-5.29"/><path d="M8.002 9.997a5 5 0 1 0 8.9 2.02"/></symbol>
+    <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+  </svg>
+
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="/es/">
+        <img class="brand__mark" src="/assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">Gestor de gastos</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/es/app/id6756010294" target="_blank" rel="noopener noreferrer"><span class="top-cta__full">Abrir en el App Store</span><span class="top-cta__short">App Store</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="headline headline--hero">
+            Controla tu dinero
+            <span class="headline__soft">sin la parte aburrida</span>
+          </h1>
+          <p class="lede">Di lo que gastaste. Qalta lo apunta y lo clasifica.</p>
+          <ul class="chips" aria-label="Lo más destacado">
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>Voz</li>
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg>Escaneo</li>
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Privado</li>
+          </ul>
+          <div class="cta">
+            <a class="pill pill--solid" href="https://apps.apple.com/es/app/id6756010294" target="_blank" rel="noopener noreferrer">Descargar en el App Store</a>
+          </div>
+        </div>
+        <div class="hero__phones">
+          <img class="hero__phone hero__phone--side" src="/assets/home/hero-insights.webp" width="576" height="1024" decoding="async"
+            alt="Análisis de Qalta: 91 % de los ingresos ahorrado, un gráfico de gastos, la tendencia de gastos y el promedio diario." />
+          <img class="hero__phone hero__phone--main" src="/assets/home/hero-home.webp" width="576" height="1024" fetchpriority="high" decoding="async"
+            alt="La pantalla de Inicio de Qalta: un saldo neto de $13,154 este mes, $14,400 de ingresos en verde, $1,246 de gastos en naranja y las operaciones agrupadas por día." />
+          <img class="hero__phone hero__phone--side" src="/assets/home/hero-add.webp" width="576" height="1024" decoding="async"
+            alt="Añadiendo un gasto en Qalta: el importe vacío, la cuenta Wallet, la fecha de hoy, iconos de categorías y un teclado numérico." />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="voice-title">
+      <div class="container feature">
+        <div class="feature__copy" data-reveal>
+          <h2 class="headline" id="voice-title">
+            Habla y listo
+            <span class="headline__soft">Añade gastos en segundos</span>
+          </h2>
+          <p class="lede">Una sola frase puede convertirse en varias filas, incluso una suscripción y una transferencia.</p>
+        </div>
+        <div class="feature__media" data-reveal>
+          <div class="shot shot--voice">
+            <img src="/assets/home/voice.webp" width="1000" height="1464" loading="lazy" decoding="async"
+              alt="La ventana de voz de Qalta. Una frase hablada se convirtió en tres filas: Comida y restaurantes −$12, una suscripción mensual a OpenAI −$19.90 y una transferencia de $1,000 de Wallet a Banco, con los botones Cancelar y Guardar." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scan-title">
+      <div class="container feature feature--flip">
+        <div class="feature__copy" data-reveal>
+          <h2 class="headline" id="scan-title">
+            Escanea documentos
+            <span class="headline__soft">Importe y categoría, ya rellenados</span>
+          </h2>
+          <p class="lede">Recibos, facturas, PDF, CSV y extractos bancarios.</p>
+        </div>
+        <div class="feature__media" data-reveal>
+          <div class="shot shot--scan">
+            <img src="/assets/home/scan.webp" width="1000" height="1464" loading="lazy" decoding="async"
+              alt="El escáner de Qalta en la vista de la cámara, con una factura, un extracto bancario y un recibo, y las opciones PDF, CSV e Imagen." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shared" aria-labelledby="shared-title">
+      <div class="container">
+        <div class="section__head shared__head" data-reveal>
+          <h2 class="headline" id="shared-title">
+            Lleva las cuentas juntos
+            <span class="headline__soft">Un presupuesto para dos o para la familia</span>
+          </h2>
+          <p class="lede">Comparte un espacio con tu pareja, tu familia o tus compañeros de piso. Todos añaden gastos y los totales coinciden en cada teléfono.</p>
+        </div>
+        <div class="shared" data-reveal>
+          <div class="shared__media">
+            <img src="/assets/home/shared.webp" width="1600" height="900" loading="lazy" decoding="async"
+              alt="Tres avatares de moneda de Qalta, de plata, oro y bronce, flotando sobre las nubes." />
+          </div>
+          <ul class="shared__points">
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-link"/></svg></span>
+              <div><h3>Invita con un enlace</h3><p>Hasta 6 personas por espacio. Envía un enlace y listo.</p></div>
+            </li>
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-sync"/></svg></span>
+              <div><h3>Siempre sincronizado</h3><p>Las cuentas, los presupuestos y las operaciones se actualizan en cada teléfono y en tus otros dispositivos.</p></div>
+            </li>
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-history"/></svg></span>
+              <div><h3>Mira quién añadió qué</h3><p>Cada operación muestra quién la creó y quién la editó por última vez.</p></div>
+            </li>
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-lock"/></svg></span>
+              <div><h3>Lo privado sigue siendo privado</h3><p>Guarda tus espacios personales en tu iPhone. Solo se sube el espacio que compartes.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ways-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="ways-title">
+            Registra gastos
+            <span class="headline__soft">sin abrir la app</span>
+          </h2>
+        </div>
+        <div class="ways" data-reveal>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-wallet-cards"/></svg></span>
+            <h3>Apple Pay</h3>
+            <p>Paga como siempre. Qalta guarda el importe y el lugar.</p>
+          </div>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-bell"/></svg></span>
+            <h3>Notificaciones del banco</h3>
+            <p>Una notificación de pago se convierte en un gasto.</p>
+          </div>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-pointer"/></svg></span>
+            <h3>Atajos</h3>
+            <p>Siri, Toque posterior, el botón de acción o un widget.</p>
+          </div>
+        </div>
+        <p class="ways__more" data-reveal>
+          <a class="pill pill--outline" href="/es/tutorials/">Ver las guías de configuración<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="insights-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="insights-title">
+            Análisis inteligentes
+            <span class="headline__soft">Ahorro, tendencias, previsiones</span>
+          </h2>
+          <p class="lede">Tendencias, suscripciones y las categorías que se te escapan con facilidad.</p>
+        </div>
+        <div class="bento" data-reveal>
+          <div class="tile tile--insights">
+            <img src="/assets/home/insights.webp" width="1000" height="1565" loading="lazy" decoding="async"
+              alt="La pantalla de Análisis de Qalta: $3,309 este mes, 82 % de los ingresos ahorrado, un gráfico de gastos y tarjetas de tendencia de gastos y promedio diario." />
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Tendencia de gastos</h3>
+              <p class="tile__note">frente al periodo anterior</p>
+            </div>
+            <p class="tile__value is-income">−45%</p>
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Promedio diario</h3>
+            </div>
+            <p class="tile__value">$28</p>
+          </div>
+          <div class="tile tile--stat tile--wide">
+            <div>
+              <h3 class="tile__label">Ahorrado este mes</h3>
+              <p class="tile__note">de los ingresos</p>
+            </div>
+            <p class="tile__value is-income">82%</p>
+          </div>
+          <div class="tile tile--analytics">
+            <div class="tile__text">
+              <h3 class="tile__label">Análisis visual</h3>
+              <p class="tile__note">Sectores, líneas, barras apiladas, flujo de caja.</p>
+            </div>
+            <img src="/assets/home/analytics.webp" width="900" height="1400" loading="lazy" decoding="async"
+              alt="Análisis en Qalta: un gráfico de líneas de ingresos y gastos, y un gráfico de anillo con $716 de gastos repartidos por categoría." />
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Mayor gasto</h3>
+              <p class="tile__note">Viajes</p>
+            </div>
+            <p class="tile__value is-expense">$210</p>
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">Mayor ingreso</h3>
+              <p class="tile__note">Sueldo</p>
+            </div>
+            <p class="tile__value is-income">$3,200</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="tools-title">
+            Lo de cada día
+            <span class="headline__soft">Presupuestos, repeticiones, divisas</span>
+          </h2>
+        </div>
+        <div class="band" data-reveal>
+          <figure class="band__item">
+            <div class="stage stage--shot">
+              <img src="/assets/home/budgets.webp" width="900" height="1183" loading="lazy" decoding="async"
+                alt="Presupuestos en Qalta: Café $15 para hoy y, en Este mes, presupuestos de $7,000 para todos los gastos y de $300 para restaurantes, cada uno con una fina barra de progreso y el importe restante en verde." />
+            </div>
+            <figcaption>
+              <h3>Cíñete al presupuesto</h3>
+              <p>Límites por categoría o por cuenta.</p>
+            </figcaption>
+          </figure>
+          <figure class="band__item">
+            <div class="stage stage--rows">
+              <img src="/assets/home/subscriptions.webp" width="900" height="559" loading="lazy" decoding="async"
+                alt="Pagos recurrentes en Qalta: Spotify −$12.99, OpenAI −$20 y Netflix −$19.99." />
+            </div>
+            <figcaption>
+              <h3>Controla tus suscripciones</h3>
+              <p>Mira lo que se repite cada mes.</p>
+            </figcaption>
+          </figure>
+          <figure class="band__item">
+            <div class="stage stage--shot stage--wide-shot">
+              <img src="/assets/home/currency.webp" width="900" height="1499" loading="lazy" decoding="async"
+                alt="Añadiendo un gasto en Qalta: $100, con €87.8 debajo, la cuenta Wallet, la fecha de hoy y una fila de iconos de categorías." />
+            </div>
+            <figcaption>
+              <h3>Multidivisa</h3>
+              <p>Tipos de cambio al día para viajar y trabajar en remoto.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ul class="list" data-reveal>
+          <li class="list__row">
+            <span class="round round--sm is-debt" aria-hidden="true"><svg class="icon"><use href="#i-hand-coins"/></svg></span>
+            <div><h3>Deudas</h3><p>Quién debe a quién.</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-goal"/></svg></span>
+            <div><h3>Metas</h3><p>Ahorros vinculados a una cuenta.</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <div><h3>Espacios separados</h3><p>Unas cuentas para casa y otras para el trabajo o un viaje.</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-import"/></svg></span>
+            <div><h3>Importar y exportar</h3><p>CSV de CoinKeeper, YNAB, Monarch y otras apps.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--narrow" aria-labelledby="privacy-title">
+      <div class="container privacy" data-reveal>
+        <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-lock"/></svg></span>
+        <h2 class="headline" id="privacy-title">
+            Tus cuentas
+            <span class="headline__soft">se quedan en tu iPhone</span>
+          </h2>
+        <p class="lede">Copia de seguridad opcional en tu propio iCloud. Sin anuncios.</p>
+        <p class="lede">Un espacio compartido solo se sube cuando decides compartirlo.</p>
+        <p class="lede">La voz y los escaneos se envían a nuestro servidor y a OpenAI solo para leerlos.</p>
+        <p class="privacy__link"><a class="text-link" href="/es/privacy-policy">Política de privacidad</a></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="themes-title">
+      <div class="container">
+        <div class="themes" data-reveal>
+          <div class="themes__copy">
+            <h2 class="headline" id="themes-title">
+              <span class="headline__soft">Limpio</span>
+              Claro y oscuro
+            </h2>
+            <p class="lede">La misma pantalla, como prefieras.</p>
+          </div>
+          <img class="themes__img" src="/assets/home/themes.webp" width="1100" height="1952" loading="lazy" decoding="async"
+            alt="La pantalla de Inicio de Qalta dos veces: con el tema claro y fondo blanco delante, y con el tema oscuro detrás." />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="faq-title">
+            Preguntas
+            <span class="headline__soft">y respuestas breves</span>
+          </h2>
+        </div>
+        <div class="faq" data-reveal>
+          <details>
+            <summary>¿Qué es Qalta?</summary>
+            <p>Qalta es una app de control de gastos y presupuestos para iPhone. Dices lo que gastaste o escaneas un recibo, y Qalta registra la operación y la asigna a una categoría. También gestiona presupuestos, suscripciones, metas, deudas, varias divisas y presupuestos compartidos.</p>
+          </details>
+          <details>
+            <summary>¿Puedo compartir un presupuesto con mi pareja o mi familia?</summary>
+            <p>Sí. Crea un espacio compartido e invita a otras personas con un enlace. Un espacio admite hasta 6 personas. Todos ven y editan las mismas cuentas, operaciones y presupuestos, los cambios se sincronizan automáticamente y cada operación muestra quién la creó o la editó por última vez. Los espacios compartidos forman parte de Qalta Pro.</p>
+          </details>
+          <details>
+            <summary>¿Cómo funciona el registro de gastos por voz?</summary>
+            <p>Toca el micrófono y di algo como «Café $5 y Netflix $10 al mes». Qalta rellena el importe, la categoría, la cuenta y la periodicidad. Una sola frase puede incluir varias operaciones, también transferencias y suscripciones.</p>
+          </details>
+          <details>
+            <summary>¿Qalta puede registrar automáticamente las compras con Apple Pay?</summary>
+            <p>Sí. Una automatización de Atajos guarda cada pago con Apple Pay con su importe y su comercio. En iOS 27, la notificación de pago de la app de tu banco también puede crear un gasto. Sigue las <a class="text-link" href="/es/tutorials/">guías paso a paso</a>.</p>
+          </details>
+          <details>
+            <summary>¿Puedo traer mi historial desde otra app de presupuestos?</summary>
+            <p>Sí. Qalta importa archivos CSV de YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper y otras apps, y exporta tus datos a CSV cuando quieras.</p>
+          </details>
+          <details>
+            <summary>¿Mis datos financieros son privados?</summary>
+            <p>Un espacio privado se queda en tu iPhone, con copia de seguridad opcional en tu propio iCloud. Un espacio compartido solo se sube cuando decides compartirlo, y solo pueden verlo las personas a las que invitas. Las grabaciones de voz y los escaneos se envían al servidor de Qalta y a OpenAI solo para leerlos. No hay anuncios.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto cuesta Qalta?</summary>
+            <p>Qalta se descarga gratis e incluye un plan gratuito. Qalta Pro añade operaciones, voz y escaneos ilimitados, además de espacios compartidos, por $3.99 al mes o $29.99 al año. El plan Familiar comparte Pro con hasta 6 personas por $5.99 al mes o $49.99 al año. Los precios están en dólares estadounidenses y varían según la región.</p>
+          </details>
+          <details>
+            <summary>¿En qué dispositivos e idiomas está disponible Qalta?</summary>
+            <p>Qalta funciona en iPhone con iOS 16.4 o posterior, y también en Mac con chip de Apple y en Apple Vision Pro. Está disponible en alemán, coreano, español, francés, inglés, italiano, japonés, kazajo, polaco, portugués, ruso, tailandés, turco y ucraniano.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section close" aria-labelledby="close-title">
+      <div class="container close__inner" data-reveal>
+        <img class="close__icon" src="/assets/home/icon.webp" width="256" height="256" loading="lazy" decoding="async" alt="Icono de la app Qalta" />
+        <h2 class="headline" id="close-title">Lleva tus cuentas a la velocidad de la&nbsp;voz.</h2>
+        <a class="pill pill--solid" href="https://apps.apple.com/es/app/id6756010294" target="_blank" rel="noopener noreferrer">Descargar en el App Store</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="Sitio">
+        <a href="/es/tutorials/">Tutoriales</a>
+        <a href="mailto:help.qalta.app@outlook.com">Soporte</a>
+        <a href="/es/privacy-policy">Política de privacidad</a>
+        <a href="/es/terms-and-conditions">Términos</a>
+      </nav>
+      <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
+    </div>
+    <div class="container">
+      <nav class="langs" aria-label="Idioma">
+        <svg class="langs__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <a href="/" hreflang="en" lang="en" data-set-lang="en">English</a>
+        <a href="/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a>
+        <a href="/es/" hreflang="es" lang="es" data-set-lang="es" aria-current="true">Español</a>
+        <a href="/fr/" hreflang="fr" lang="fr" data-set-lang="fr">Français</a>
+        <a href="/it/" hreflang="it" lang="it" data-set-lang="it">Italiano</a>
+        <a href="/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a>
+        <a href="/kk/" hreflang="kk" lang="kk" data-set-lang="kk">Қазақша</a>
+        <a href="/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a>
+        <a href="/pl/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a>
+        <a href="/pt/" hreflang="pt" lang="pt" data-set-lang="pt">Português</a>
+        <a href="/ru/" hreflang="ru" lang="ru" data-set-lang="ru">Русский</a>
+        <a href="/th/" hreflang="th" lang="th" data-set-lang="th">ไทย</a>
+        <a href="/tr/" hreflang="tr" lang="tr" data-set-lang="tr">Türkçe</a>
+        <a href="/uk/" hreflang="uk" lang="uk" data-set-lang="uk">Українська</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) document.cookie = "lang=" + link.getAttribute("data-set-lang") + "; path=/; max-age=31536000; samesite=lax";
+    });
+  </script>
+  <script>
+    (function () {
+      var items = document.querySelectorAll("[data-reveal]");
+      if (!("IntersectionObserver" in window)) {
+        items.forEach(function (el) { el.classList.add("is-in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

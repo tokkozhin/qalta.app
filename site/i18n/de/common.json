@@ -1,0 +1,16 @@
+{
+  "brandTag": "Finanzmanager",
+  "openInAppStore": "Im App Store öffnen",
+  "appStoreShort": "App Store",
+  "download": "Laden im App Store",
+  "footerNavLabel": "Website",
+  "nav": {
+    "home": "Start",
+    "tutorials": "Anleitungen",
+    "support": "Support",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen"
+  },
+  "languageLabel": "Sprache",
+  "legalNotice": "Diese Übersetzung dient nur der Orientierung. Weicht sie von der <a href=\"{englishUrl}\">englischen Fassung</a> ab, gilt die englische Fassung."
+}

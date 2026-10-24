@@ -1,0 +1,38 @@
+# Qalta — https://qalta.app
+# Search engines and AI assistants are welcome to crawl, index, and cite this site.
+# A plain-text summary for language models: https://qalta.app/llms.txt
+
+User-agent: *
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# Google, Apple, Microsoft, Meta, others
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: meta-externalagent
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://qalta.app/sitemap.xml

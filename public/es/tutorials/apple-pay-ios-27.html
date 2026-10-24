@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatización de Apple Pay en iOS 27 — Qalta</title>
+  <meta name="description" content="Configura un atajo para que cada compra con Apple Pay se guarde en Qalta como gasto, con el importe y el comercio de Wallet. Para iOS 27." />
+  <link rel="canonical" href="https://qalta.app/es/tutorials/apple-pay-ios-27" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="apple-itunes-app" content="app-id=6756010294" />
+  <link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="es" href="https://qalta.app/es/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="fr" href="https://qalta.app/fr/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="it" href="https://qalta.app/it/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="ja" href="https://qalta.app/ja/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="kk" href="https://qalta.app/kk/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="ko" href="https://qalta.app/ko/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="pl" href="https://qalta.app/pl/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="pt" href="https://qalta.app/pt/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="ru" href="https://qalta.app/ru/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="th" href="https://qalta.app/th/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="tr" href="https://qalta.app/tr/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="uk" href="https://qalta.app/uk/tutorials/apple-pay-ios-27" />
+  <link rel="alternate" hreflang="x-default" href="https://qalta.app/tutorials/apple-pay-ios-27" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="pl_PL" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="th_TH" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://qalta.app/es/tutorials/apple-pay-ios-27" />
+  <meta property="og:title" content="Automatización de Apple Pay en iOS 27" />
+  <meta property="og:description" content="Configura un atajo para que cada compra con Apple Pay se guarde en Qalta como gasto, con el importe y el comercio de Wallet. Para iOS 27." />
+  <meta property="og:image" content="https://qalta.app/assets/og/apple-pay-ios-27.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Automatización de Apple Pay en iOS 27, junto al atajo Crear gasto desde Wallet." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Automatización de Apple Pay en iOS 27" />
+  <meta name="twitter:description" content="Configura un atajo para que cada compra con Apple Pay se guarde en Qalta como gasto, con el importe y el comercio de Wallet. Para iOS 27." />
+  <meta name="twitter:image" content="https://qalta.app/assets/og/apple-pay-ios-27.png" />
+  <meta name="twitter:image:alt" content="Automatización de Apple Pay en iOS 27, junto al atajo Crear gasto desde Wallet." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://qalta.app/es/tutorials/apple-pay-ios-27#howto",
+        "name": "Automatización de Apple Pay en iOS 27",
+        "description": "Configura un atajo para que cada compra con Apple Pay se guarde en Qalta como gasto, con el importe y el comercio de Wallet. Para iOS 27.",
+        "image": "https://qalta.app/assets/og/apple-pay-ios-27.png",
+        "inLanguage": "es",
+        "url": "https://qalta.app/es/tutorials/apple-pay-ios-27",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Qalta"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Apple Shortcuts"
+          }
+        ],
+        "about": {
+          "@type": "MobileApplication",
+          "@id": "https://qalta.app/#app",
+          "name": "Qalta",
+          "operatingSystem": "iOS"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://qalta.app/#organization",
+          "name": "Qalta",
+          "url": "https://qalta.app/"
+        },
+        "video": {
+          "@type": "VideoObject",
+          "name": "Automatización de Apple Pay en iOS 27",
+          "description": "Tutorial de automatización de Apple Pay para iOS 27, en inglés",
+          "contentUrl": "https://qalta.app/assets/apple_pay_ios_27_automation.mp4",
+          "thumbnailUrl": "https://qalta.app/assets/og/apple-pay-ios-27.png",
+          "uploadDate": "2026-09-29"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Atajo nuevo",
+            "text": "Abre Atajos y toca el botón + de la parte inferior para crear un atajo nuevo.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/01-shortcuts.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Etiqueta Automatización",
+            "text": "Se abre un editor vacío. En la búsqueda de acciones, toca la etiqueta Automatización o escribe «Automatización».",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/02-new-shortcut.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Activador de Wallet",
+            "text": "En Apps, toca Wallet: “When I tap a Wallet Card or Pass” (pago en un terminal).",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/03-wallet-trigger.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-3"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Cualquier tarjeta",
+            "text": "El primer bloque dice When Any Card is tapped. Si solo quieres que Qalta se ejecute con algunas tarjetas, toca la etiqueta azul Cualquier tarjeta.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/04-any-card.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-4"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Qué tarjeta seguir",
+            "text": "Selecciona la tarjeta con la que pagas (por ejemplo, Kaspi Gold). Toca la marca de verificación.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/05-select-card.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-5"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Activador de tarjeta listo",
+            "text": "Ahora deberías ver un solo bloque: When [tu tarjeta] is tapped. En el campo de búsqueda de abajo, escribe Qalta.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/06-card-tapped.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-6"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Acción de Qalta",
+            "text": "Toca Crear gasto desde Wallet (no «Crear transacción»).",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/07-search-qalta.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-7"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "Toca Importe y luego Seleccionar variable",
+            "text": "Deberías ver dos bloques: el activador de Wallet y la acción de Qalta. Toca el campo gris Importe y aparecerá un teclado numérico. Encima, toca Seleccionar variable.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/08-tap-amount.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-8"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 9,
+            "name": "Transacción",
+            "text": "En la pantalla Seleccionar variable, toca la etiqueta azul Transacción bajo el activador de Wallet. Es el pago con Apple Pay, no Entrada del atajo.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/09-select-transaction.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-9"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 10,
+            "name": "Obtener → Importe",
+            "text": "Toca la etiqueta azul Transacción que ahora está dentro de la acción de Qalta. En la hoja, no dejes la marca en «Transacción»: toca Importe.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/10-pick-amount.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-10"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 11,
+            "name": "Obtener → Comercio",
+            "text": "Repite lo mismo con el nombre de la tienda. Toca la flecha de la acción de Qalta para desplegar los campos. Toca Comercio → Seleccionar variable → Transacción. Vuelve a tocar la etiqueta y elige Comercio en la lista, no «Transacción».",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/11-merchant.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-11"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 12,
+            "name": "Categoría, cuenta y confirmación",
+            "text": "El resto de los campos son opcionales. Opciones para Categoría y Cuenta: Elegir: selecciona una categoría o cuenta concreta de Qalta. Si solo tienes una cuenta, haz esto: selecciónala una vez. No necesitas Preguntar cada vez. Preguntar cada vez: tras cada pago, Qalta te preguntará dónde guardar el gasto. Útil si tienes varias categorías o cuentas. Puedes dejar Elegir vacío: Qalta usará los valores predeterminados e intentará detectar la categoría. Divisa, Nota y Fecha pueden quedarse vacíos. Activa Mostrar al ejecutar para que aparezca una confirmación después del pago. Toca la flecha para volver.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/12-category-account.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-12"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 13,
+            "name": "Todo listo",
+            "text": "El atajo aparece en Todos los atajos como Crear gasto desde Wallet. Tras tu próxima compra con Apple Pay con la tarjeta seleccionada, Qalta te ofrecerá guardar el gasto.",
+            "image": "https://qalta.app/assets/apple-pay-ios-27/en/13-all-shortcuts.png",
+            "url": "https://qalta.app/es/tutorials/apple-pay-ios-27#step-13"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Qalta",
+            "item": "https://qalta.app/es/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tutoriales",
+            "item": "https://qalta.app/es/tutorials/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Automatización de Apple Pay en iOS 27",
+            "item": "https://qalta.app/es/tutorials/apple-pay-ios-27"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/tutorials/tutorial.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="/es/">
+        <img class="brand__mark" src="/assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">Gestor de gastos</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/es/app/id6756010294" target="_blank" rel="noopener noreferrer"><span class="top-cta__full">Abrir en el App Store</span><span class="top-cta__short">App Store</span></a>
+    </div>
+  </header>
+
+  <main class="doc container">
+
+    <h1>Automatización de Apple Pay en iOS 27</h1>
+    <p class="lede">Tras un pago con Apple Pay, Qalta puede guardar la compra como gasto. El importe y el comercio vienen de la transacción de Wallet; puedes elegir la categoría y la cuenta cada vez o fijarlas de antemano.</p>
+    <p class="lede">Necesitas iOS 27, <strong>Qalta</strong> y <strong>Atajos</strong>, y tarjetas en Wallet. En iOS 27 el activador de Wallet está dentro de un atajo nuevo: ya no hay una pestaña Automatización aparte.</p>
+
+    <ol class="steps">
+      <li id="step-1">
+        <p>Abre <strong>Atajos</strong> y toca el botón <strong>+</strong> de la parte inferior para crear un atajo nuevo.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/01-shortcuts.png" alt="Todos los atajos con el botón más" loading="lazy" />
+          <figcaption>Atajo nuevo</figcaption>
+        </figure>
+      </li>
+      <li id="step-2">
+        <p>Se abre un editor vacío. En la búsqueda de acciones, toca la etiqueta <strong>Automatización</strong> o escribe «Automatización».</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/02-new-shortcut.png" alt="Editor de atajos vacío con la etiqueta Automatización" loading="lazy" />
+          <figcaption>Etiqueta Automatización</figcaption>
+        </figure>
+      </li>
+      <li id="step-3">
+        <p>En <strong>Apps</strong>, toca <strong>Wallet</strong>: “When I tap a Wallet Card or Pass” (pago en un terminal).</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/03-wallet-trigger.png" alt="Activador de Wallet en la lista de Automatización" loading="lazy" />
+          <figcaption>Activador de Wallet</figcaption>
+        </figure>
+      </li>
+      <li id="step-4">
+        <p>El primer bloque dice <strong>When Any Card is tapped</strong>. Si solo quieres que Qalta se ejecute con algunas tarjetas, toca la etiqueta azul <strong>Cualquier tarjeta</strong>.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/04-any-card.png" alt="Activador When Any Card is tapped" loading="lazy" />
+          <figcaption>Cualquier tarjeta</figcaption>
+        </figure>
+      </li>
+      <li id="step-5">
+        <p>Selecciona la tarjeta con la que pagas (por ejemplo, <strong>Kaspi Gold</strong>). Toca la marca de verificación.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/05-select-card.png" alt="Selección de una tarjeta de pago" loading="lazy" />
+          <figcaption>Qué tarjeta seguir</figcaption>
+        </figure>
+      </li>
+      <li id="step-6">
+        <p>Ahora deberías ver un solo bloque: <strong>When [tu tarjeta] is tapped</strong>. En el campo de búsqueda de abajo, escribe <strong>Qalta</strong>.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/06-card-tapped.png" alt="Activador de Wallet para la tarjeta seleccionada" loading="lazy" />
+          <figcaption>Activador de tarjeta listo</figcaption>
+        </figure>
+      </li>
+      <li id="step-7">
+        <p>Toca <strong>Crear gasto desde Wallet</strong> (no «Crear transacción»).</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/07-search-qalta.png" alt="Búsqueda de Crear gasto desde Wallet" loading="lazy" />
+          <figcaption>Acción de Qalta</figcaption>
+        </figure>
+      </li>
+      <li id="step-8">
+        <p>Deberías ver dos bloques: el activador de Wallet y la acción de Qalta. Toca el campo gris <strong>Importe</strong> y aparecerá un teclado numérico. Encima, toca <strong>Seleccionar variable</strong>.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/08-tap-amount.png" alt="Campo Importe y Seleccionar variable" loading="lazy" />
+          <figcaption>Toca Importe y luego Seleccionar variable</figcaption>
+        </figure>
+      </li>
+      <li id="step-9">
+        <p>En la pantalla Seleccionar variable, toca la etiqueta azul <strong>Transacción</strong> bajo el activador de Wallet. Es el pago con Apple Pay, no Entrada del atajo.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/09-select-transaction.png" alt="Selección de Transacción desde el activador de Wallet" loading="lazy" />
+          <figcaption>Transacción</figcaption>
+        </figure>
+      </li>
+      <li id="step-10">
+        <p>Toca la etiqueta azul <strong>Transacción</strong> que ahora está dentro de la acción de Qalta. En la hoja, no dejes la marca en «Transacción»: toca <strong>Importe</strong>.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/10-pick-amount.png" alt="Propiedades de la transacción: toca Importe" loading="lazy" />
+          <figcaption>Obtener → Importe</figcaption>
+        </figure>
+      </li>
+      <li id="step-11">
+        <p>Repite lo mismo con el nombre de la tienda. Toca la flecha de la acción de Qalta para desplegar los campos. Toca <strong>Comercio</strong> → <strong>Seleccionar variable</strong> → <strong>Transacción</strong>. Vuelve a tocar la etiqueta y elige <strong>Comercio</strong> en la lista, no «Transacción».</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/11-merchant.png" alt="Elección de Comercio desde la transacción" loading="lazy" />
+          <figcaption>Obtener → Comercio</figcaption>
+        </figure>
+      </li>
+      <li id="step-12">
+        <p>El resto de los campos son opcionales. Opciones para <strong>Categoría</strong> y <strong>Cuenta</strong>:</p><ul><li><strong>Elegir</strong>: selecciona una categoría o cuenta concreta de Qalta. Si solo tienes una cuenta, haz esto: selecciónala una vez. No necesitas Preguntar cada vez.</li><li><strong>Preguntar cada vez</strong>: tras cada pago, Qalta te preguntará dónde guardar el gasto. Útil si tienes varias categorías o cuentas.</li><li>Puedes dejar <strong>Elegir</strong> vacío: Qalta usará los valores predeterminados e intentará detectar la categoría.</li></ul><p><strong>Divisa</strong>, <strong>Nota</strong> y <strong>Fecha</strong> pueden quedarse vacíos. Activa <strong>Mostrar al ejecutar</strong> para que aparezca una confirmación después del pago. Toca la flecha para volver.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/12-category-account.png" alt="Categoría, Cuenta y Mostrar al ejecutar" loading="lazy" />
+          <figcaption>Categoría, cuenta y confirmación</figcaption>
+        </figure>
+      </li>
+      <li id="step-13">
+        <p>El atajo aparece en <strong>Todos los atajos</strong> como <strong>Crear gasto desde Wallet</strong>. Tras tu próxima compra con Apple Pay con la tarjeta seleccionada, Qalta te ofrecerá guardar el gasto.</p>
+        <figure>
+          <img src="/assets/apple-pay-ios-27/en/13-all-shortcuts.png" alt="Crear gasto desde Wallet en Todos los atajos" loading="lazy" />
+          <figcaption>Todo listo</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">Vídeo completo</h2>
+      <p>¿Prefieres seguir los pasos con una grabación de pantalla?</p>
+      <figure>
+        <div class="player player-11">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="/assets/apple_pay_ios_27_automation.mp4"
+            aria-label="Tutorial de automatización de Apple Pay para iOS 27, en inglés"
+          ></video>
+        </div>
+        <figcaption>Configuración paso a paso en iOS 27.</figcaption>
+      </figure>
+    </section>
+
+    <p><a class="home" href="/es/tutorials/">Todos los tutoriales</a></p>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="Sitio">
+        <a href="/es/tutorials/">Tutoriales</a>
+        <a href="mailto:help.qalta.app@outlook.com">Soporte</a>
+        <a href="/es/privacy-policy">Política de privacidad</a>
+        <a href="/es/terms-and-conditions">Términos</a>
+      </nav>
+      <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
+    </div>
+    <div class="container">
+      <nav class="langs" aria-label="Idioma">
+        <svg class="langs__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <a href="/tutorials/apple-pay-ios-27" hreflang="en" lang="en" data-set-lang="en">English</a>
+        <a href="/de/tutorials/apple-pay-ios-27" hreflang="de" lang="de" data-set-lang="de">Deutsch</a>
+        <a href="/es/tutorials/apple-pay-ios-27" hreflang="es" lang="es" data-set-lang="es" aria-current="true">Español</a>
+        <a href="/fr/tutorials/apple-pay-ios-27" hreflang="fr" lang="fr" data-set-lang="fr">Français</a>
+        <a href="/it/tutorials/apple-pay-ios-27" hreflang="it" lang="it" data-set-lang="it">Italiano</a>
+        <a href="/ja/tutorials/apple-pay-ios-27" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a>
+        <a href="/kk/tutorials/apple-pay-ios-27" hreflang="kk" lang="kk" data-set-lang="kk">Қазақша</a>
+        <a href="/ko/tutorials/apple-pay-ios-27" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a>
+        <a href="/pl/tutorials/apple-pay-ios-27" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a>
+        <a href="/pt/tutorials/apple-pay-ios-27" hreflang="pt" lang="pt" data-set-lang="pt">Português</a>
+        <a href="/ru/tutorials/apple-pay-ios-27" hreflang="ru" lang="ru" data-set-lang="ru">Русский</a>
+        <a href="/th/tutorials/apple-pay-ios-27" hreflang="th" lang="th" data-set-lang="th">ไทย</a>
+        <a href="/tr/tutorials/apple-pay-ios-27" hreflang="tr" lang="tr" data-set-lang="tr">Türkçe</a>
+        <a href="/uk/tutorials/apple-pay-ios-27" hreflang="uk" lang="uk" data-set-lang="uk">Українська</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) document.cookie = "lang=" + link.getAttribute("data-set-lang") + "; path=/; max-age=31536000; samesite=lax";
+    });
+  </script>
+</body>
+</html>

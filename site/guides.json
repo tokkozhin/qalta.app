@@ -1,0 +1,74 @@
+{
+  "apple-pay-ios-27": {
+    "dir": "apple-pay-ios-27",
+    "images": [
+      "01-shortcuts.png",
+      "02-new-shortcut.png",
+      "03-wallet-trigger.png",
+      "04-any-card.png",
+      "05-select-card.png",
+      "06-card-tapped.png",
+      "07-search-qalta.png",
+      "08-tap-amount.png",
+      "09-select-transaction.png",
+      "10-pick-amount.png",
+      "11-merchant.png",
+      "12-category-account.png",
+      "13-all-shortcuts.png"
+    ],
+    "video": "apple_pay_ios_27_automation.mp4",
+    "player": "player-11",
+    "ogImage": "apple-pay-ios-27.png",
+    "localized": {}
+  },
+  "push-notification-ios-27": {
+    "dir": "push-notification-ios-27",
+    "images": [
+      "01-shortcuts.png",
+      "02-new-shortcut.png",
+      "03-notification-trigger.png",
+      "04-from-app.png",
+      "05-pick-bank.png",
+      "06-bank-selected.png",
+      "07-search-qalta.png",
+      "08-tap-body.png",
+      "09-select-variable.png",
+      "10-pick-body.png",
+      "11-body-mapped.png",
+      "12-category-account.png",
+      "13-all-shortcuts.png"
+    ],
+    "video": "push_notification_ios_27_automation.mp4",
+    "player": "player-11",
+    "ogImage": "push-notification-ios-27.png",
+    "localized": {}
+  },
+  "apple-pay-ios-26": {
+    "dir": "apple-pay-ios-26",
+    "images": [
+      "01-wallet-settings.png",
+      "02-automation-tab.png",
+      "03-wallet-trigger.png",
+      "04-select-cards.png",
+      "05-categories.png",
+      "06-create-shortcut.png",
+      "07-search-qalta.png",
+      "08-tap-amount.png",
+      "09-select-variable.png",
+      "10-pick-amount.png",
+      "11-merchant.png",
+      "12-category-account.png",
+      "13-automation-list.png"
+    ],
+    "video": "apple_pay_automation.mp4",
+    "player": "player-45",
+    "ogImage": "apple-pay-ios-26.png",
+    "localized": {
+      "ru": {
+        "imageDir": "ru",
+        "video": "apple_pay_automation_ru.mp4",
+        "ogImage": "apple-pay-ios-26-ru.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Tutoriels d’automatisation",
+    "description": "Des guides pas à pas pour enregistrer automatiquement dans Qalta vos achats Apple Pay et vos notifications bancaires, sur iOS 26 et iOS 27.",
+    "ogTitle": "Tutoriels d’automatisation Qalta",
+    "ogImageAlt": "Tutoriels d’automatisation Qalta pour iOS 26 et iOS 27, à côté de l’écran Tous les raccourcis.",
+    "h1": "Tutoriels",
+    "lede": "Comment installer des automatisations qui enregistrent un achat dans Qalta. Choisissez le guide correspondant à votre version d’iOS.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Après un paiement Apple Pay, Qalta enregistre l’achat. Le montant et le commerçant viennent de Wallet." },
+      "push-notification-ios-27": { "title": "Notifications bancaires", "text": "Quand une app bancaire affiche une notification de paiement, Qalta l’enregistre comme dépense." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "La même configuration Apple Pay, via l’onglet Automatisation de Raccourcis." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Vidéo complète",
+    "videoLede": "Vous préférez suivre sur un enregistrement d’écran ?",
+    "allTutorials": "Tous les tutoriels"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Automatisation Apple Pay sur iOS 27",
+      "description": "Configurez un raccourci pour que chaque achat Apple Pay soit enregistré dans Qalta comme dépense, avec le montant et le commerçant issus de Wallet. Pour iOS 27.",
+      "ogTitle": "Automatisation Apple Pay sur iOS 27",
+      "ogImageAlt": "Automatisation Apple Pay sur iOS 27, à côté du raccourci Créer une dépense Wallet.",
+      "h1": "Automatisation Apple Pay sur iOS 27",
+      "intro": [
+        "Après un paiement Apple Pay, Qalta peut enregistrer l’achat comme dépense. Le montant et le commerçant proviennent de la transaction Wallet ; vous pouvez choisir la catégorie et le compte à chaque fois, ou les définir à l’avance.",
+        "Il vous faut iOS 27, <strong>Qalta</strong> et <strong>Raccourcis</strong>, ainsi que des cartes dans Wallet. Sur iOS 27, le déclencheur Wallet se trouve dans un nouveau raccourci — il n’y a plus d’onglet Automatisation séparé."
+      ],
+      "steps": [
+        {
+          "html": "<p>Ouvrez <strong>Raccourcis</strong> et touchez le bouton <strong>+</strong> en bas pour créer un raccourci.</p>",
+          "caption": "Nouveau raccourci",
+          "alt": "Tous les raccourcis avec le bouton plus"
+        },
+        {
+          "html": "<p>Un éditeur vide s’ouvre. Dans la recherche d’actions, touchez la puce <strong>Automatisation</strong> — ou tapez « Automatisation ».</p>",
+          "caption": "Puce Automatisation",
+          "alt": "Éditeur de raccourci vide avec la puce Automatisation"
+        },
+        {
+          "html": "<p>Sous <strong>Apps</strong>, touchez <strong>Wallet</strong> — « When I tap a Wallet Card or Pass » (paiement sur un terminal).</p>",
+          "caption": "Déclencheur Wallet",
+          "alt": "Déclencheur Wallet dans la liste Automatisation"
+        },
+        {
+          "html": "<p>Le premier bloc indique <strong>When Any Card is tapped</strong>. Si vous voulez que Qalta ne se lance que pour certaines cartes, touchez la puce bleue <strong>Any Card</strong>.</p>",
+          "caption": "Any Card",
+          "alt": "Déclencheur When Any Card is tapped"
+        },
+        {
+          "html": "<p>Sélectionnez la carte avec laquelle vous payez (par exemple <strong>Kaspi Gold</strong>). Touchez la coche.</p>",
+          "caption": "Carte à suivre",
+          "alt": "Sélection d’une carte de paiement"
+        },
+        {
+          "html": "<p>Vous devriez maintenant voir un seul bloc : <strong>When [votre carte] is tapped</strong>. Dans le champ de recherche en bas, tapez <strong>Qalta</strong>.</p>",
+          "caption": "Le déclencheur de carte est prêt",
+          "alt": "Déclencheur Wallet pour la carte sélectionnée"
+        },
+        {
+          "html": "<p>Touchez <strong>Créer une dépense Wallet</strong> (et non « Créer une transaction »).</p>",
+          "caption": "Action Qalta",
+          "alt": "Recherche de Créer une dépense Wallet"
+        },
+        {
+          "html": "<p>Vous devriez voir deux blocs : le déclencheur Wallet et l’action Qalta. Touchez le champ gris <strong>Montant</strong> — un pavé numérique apparaît. Au-dessus, touchez <strong>Sélectionner une variable</strong>.</p>",
+          "caption": "Montant, puis Sélectionner une variable",
+          "alt": "Champ Montant et Sélectionner une variable"
+        },
+        {
+          "html": "<p>Sur l’écran Sélectionner une variable, touchez la puce bleue <strong>Transaction</strong> sous le déclencheur Wallet. C’est le paiement Apple Pay, et non l’Entrée du raccourci.</p>",
+          "caption": "Transaction",
+          "alt": "Sélection de Transaction depuis le déclencheur Wallet"
+        },
+        {
+          "html": "<p>Touchez la puce bleue <strong>Transaction</strong> qui se trouve maintenant dans l’action Qalta. Dans la fenêtre, ne laissez pas la coche sur « Transaction » — touchez <strong>Montant</strong>.</p>",
+          "caption": "Obtenir → Montant",
+          "alt": "Propriétés de la transaction : touchez Montant"
+        },
+        {
+          "html": "<p>Faites de même pour le nom du magasin. Touchez le chevron de l’action Qalta pour afficher les champs. Touchez <strong>Commerçant</strong> → <strong>Sélectionner une variable</strong> → <strong>Transaction</strong>. Touchez de nouveau la puce et choisissez <strong>Commerçant</strong> dans la liste — et non « Transaction ».</p>",
+          "caption": "Obtenir → Commerçant",
+          "alt": "Choix de Commerçant dans la transaction"
+        },
+        {
+          "html": "<p>Les autres champs sont facultatifs. Options pour <strong>Catégorie</strong> et <strong>Compte</strong> :</p><ul><li><strong>Choisir</strong> — sélectionnez une catégorie ou un compte précis de Qalta. Si vous n’avez qu’un compte, faites-le : sélectionnez-le une fois. Inutile d’utiliser « Demander à chaque fois ».</li><li><strong>Demander à chaque fois</strong> — après chaque paiement, Qalta vous demandera où enregistrer la dépense. Pratique si vous avez plusieurs catégories ou comptes.</li><li>Vous pouvez laisser <strong>Choisir</strong> vide — Qalta utilisera les valeurs par défaut et tentera de détecter la catégorie.</li></ul><p><strong>Devise</strong>, <strong>Note</strong> et <strong>Date</strong> peuvent rester vides. Activez <strong>Afficher lors de l’exécution</strong> pour qu’une confirmation apparaisse après le paiement. Touchez la flèche de retour.</p>",
+          "caption": "Catégorie, compte et confirmation",
+          "alt": "Catégorie, Compte et Afficher lors de l’exécution"
+        },
+        {
+          "html": "<p>Le raccourci apparaît dans <strong>Tous les raccourcis</strong> sous le nom <strong>Créer une dépense Wallet</strong>. Après votre prochain achat Apple Pay avec la carte sélectionnée, Qalta vous proposera d’enregistrer la dépense.</p>",
+          "caption": "C’est prêt",
+          "alt": "Créer une dépense Wallet dans Tous les raccourcis"
+        }
+      ],
+      "videoLabel": "Tutoriel d’automatisation Apple Pay pour iOS 27, en anglais",
+      "videoCaption": "Configuration pas à pas sur iOS 27."
+    },
+    "push-notification-ios-27": {
+      "title": "Automatisation des notifications bancaires sur iOS 27",
+      "description": "Configurez un raccourci pour qu’une notification de paiement de votre app bancaire soit enregistrée dans Qalta comme dépense, avec le montant lu dans le texte. Pour iOS 27.",
+      "ogTitle": "Automatisation des notifications bancaires sur iOS 27",
+      "ogImageAlt": "Automatisation des notifications bancaires sur iOS 27, à côté du raccourci Enregistrer une dépense bancaire.",
+      "h1": "Automatisation des notifications bancaires sur iOS 27",
+      "intro": [
+        "Quand votre app bancaire envoie une notification de paiement, Qalta peut l’enregistrer comme dépense. Le montant et le commerçant sont extraits du texte de la notification.",
+        "Il vous faut iOS 27, <strong>Qalta</strong> et <strong>Raccourcis</strong>, ainsi qu’une app bancaire qui affiche des notifications sur l’écran verrouillé. Ce déclencheur n’est pas disponible sur iOS 26."
+      ],
+      "steps": [
+        {
+          "html": "<p>Ouvrez <strong>Raccourcis</strong> et touchez le bouton <strong>+</strong> en bas pour créer un raccourci.</p>",
+          "caption": "Nouveau raccourci",
+          "alt": "Tous les raccourcis avec le bouton plus"
+        },
+        {
+          "html": "<p>Un éditeur vide s’ouvre. Dans la recherche d’actions, touchez la puce <strong>Automatisation</strong> — ou tapez « Automatisation ».</p>",
+          "caption": "Puce Automatisation",
+          "alt": "Éditeur de raccourci vide avec la puce Automatisation"
+        },
+        {
+          "html": "<p>Sous <strong>Apps</strong>, touchez <strong>Notification</strong> — « When I receive a notification from … ».</p>",
+          "caption": "Déclencheur Notification",
+          "alt": "Déclencheur Notification dans la liste Automatisation"
+        },
+        {
+          "html": "<p>Le premier bloc indique <strong>When I receive a notification from App</strong>. Touchez la puce bleue <strong>App</strong> pour choisir votre banque.</p>",
+          "caption": "Choisir l’app",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Recherchez votre banque et touchez l’app qui envoie les alertes de paiement (par exemple <strong>Kaspi.kz</strong>, et non une app Pay ou QR associée).</p>",
+          "caption": "App bancaire",
+          "alt": "Sélecteur d’app avec la recherche de la banque"
+        },
+        {
+          "html": "<p>Vous devriez maintenant voir <strong>When I receive a notification from [banque]</strong>. Dans le champ de recherche en bas, tapez <strong>Qalta</strong>.</p>",
+          "caption": "Le déclencheur bancaire est prêt",
+          "alt": "Déclencheur Notification pour l’app bancaire sélectionnée"
+        },
+        {
+          "html": "<p>Touchez <strong>Enregistrer une dépense bancaire</strong> (et non « Créer une dépense Wallet » ni « Créer une transaction »).</p>",
+          "caption": "Action Qalta",
+          "alt": "Recherche de Enregistrer une dépense bancaire"
+        },
+        {
+          "html": "<p>Vous devriez voir deux blocs : le déclencheur de notification et <strong>Enregistrer une dépense bancaire depuis Corps de la notification</strong>. Touchez le champ gris <strong>Corps de la notification</strong>.</p>",
+          "caption": "Corps de la notification",
+          "alt": "Enregistrer une dépense bancaire avec le champ Corps de la notification"
+        },
+        {
+          "html": "<p>Un clavier apparaît. Au-dessus, touchez <strong>Sélectionner une variable</strong>, puis la puce bleue <strong>Notification</strong> sous le déclencheur.</p>",
+          "caption": "Sélectionner une variable → Notification",
+          "alt": "Sélectionner une variable avec la puce Notification"
+        },
+        {
+          "html": "<p>Touchez la puce bleue <strong>Notification</strong> qui se trouve maintenant dans l’action Qalta. Dans la fenêtre, ne laissez pas la coche sur « Notification » — touchez <strong>Body</strong>. Qalta lit le montant dans le texte de la notification, et non dans l’objet notification entier.</p>",
+          "caption": "Obtenir → Body",
+          "alt": "Propriétés de la notification : touchez Body"
+        },
+        {
+          "html": "<p>L’action Qalta devrait maintenant indiquer <strong>Enregistrer une dépense bancaire depuis Body</strong>.</p>",
+          "caption": "Body est associé",
+          "alt": "Body associé dans Enregistrer une dépense bancaire"
+        },
+        {
+          "html": "<p>Les autres champs sont facultatifs. Touchez le chevron pour les afficher. Options pour <strong>Catégorie</strong> et <strong>Compte</strong> :</p><ul><li><strong>Choisir</strong> — sélectionnez une catégorie ou un compte précis de Qalta. Si vous n’avez qu’un compte, faites-le : sélectionnez-le une fois. Inutile d’utiliser « Demander à chaque fois ».</li><li><strong>Demander à chaque fois</strong> — après chaque notification, Qalta vous demandera où enregistrer la dépense. Pratique si vous avez plusieurs catégories ou comptes.</li><li>Vous pouvez laisser <strong>Choisir</strong> vide — Qalta utilisera les valeurs par défaut et tentera de détecter la catégorie.</li></ul><p><strong>Note</strong> et <strong>Date</strong> peuvent rester vides. Activez <strong>Afficher lors de l’exécution</strong> pour qu’une confirmation apparaisse. Touchez la flèche de retour.</p>",
+          "caption": "Catégorie, compte et confirmation",
+          "alt": "Catégorie, Compte et Afficher lors de l’exécution"
+        },
+        {
+          "html": "<p>Le raccourci apparaît dans <strong>Tous les raccourcis</strong> sous le nom <strong>Enregistrer une dépense bancaire</strong>. Après la prochaine notification de paiement de cette app bancaire, Qalta vous proposera d’enregistrer la dépense.</p>",
+          "caption": "C’est prêt",
+          "alt": "Enregistrer une dépense bancaire dans Tous les raccourcis"
+        }
+      ],
+      "videoLabel": "Tutoriel d’automatisation des notifications bancaires pour iOS 27",
+      "videoCaption": "Configuration pas à pas sur iOS 27."
+    },
+    "apple-pay-ios-26": {
+      "title": "Automatisation Apple Pay sur iOS 26",
+      "description": "Configurez une automatisation Raccourcis pour que chaque achat Apple Pay soit enregistré dans Qalta comme dépense, avec le montant et le commerçant remplis. Pour iOS 26.",
+      "ogTitle": "Automatisation Apple Pay sur iOS 26",
+      "ogImageAlt": "Automatisation Apple Pay sur iOS 26, à côté de l’action Créer une dépense Wallet dans Raccourcis.",
+      "h1": "Automatisation Apple Pay sur iOS 26",
+      "intro": [
+        "Après un paiement Apple Pay, Qalta peut enregistrer l’achat comme dépense. Le montant et le commerçant proviennent de la transaction ; vous pouvez choisir la catégorie et le compte à chaque fois, ou les définir à l’avance.",
+        "Il vous faut iOS 26, <strong>Qalta</strong> et <strong>Raccourcis</strong>, ainsi que des cartes dans Wallet."
+      ],
+      "steps": [
+        {
+          "html": "<p>Ouvrez <strong>Réglages → Wallet &amp; Apple Pay</strong>. Activez <strong>Activités en direct</strong> et <strong>Données cellulaires</strong>.</p>",
+          "caption": "Autorisations Wallet",
+          "alt": "Autorisations Wallet et Apple Pay"
+        },
+        {
+          "html": "<p>Ouvrez <strong>Raccourcis</strong>, allez dans l’onglet <strong>Automatisation</strong> et touchez <strong>Nouvelle automatisation</strong>.</p>",
+          "caption": "Nouvelle automatisation",
+          "alt": "Onglet Automatisation de Raccourcis"
+        },
+        {
+          "html": "<p>Choisissez <strong>Wallet</strong> — « When I tap a Wallet Card or Pass » (paiement sur un terminal).</p>",
+          "caption": "Déclencheur Wallet",
+          "alt": "Déclencheur Wallet dans la liste des automatisations"
+        },
+        {
+          "html": "<p>Sélectionnez les cartes que Qalta doit suivre. Touchez <strong>Suivant</strong>.</p>",
+          "caption": "Cartes à suivre",
+          "alt": "Sélection des cartes de paiement"
+        },
+        {
+          "html": "<p>Gardez les catégories Wallet qui vous intéressent (toutes, c’est très bien). Sélectionnez <strong>Exécuter immédiatement</strong> (et non Exécuter après confirmation). Touchez <strong>Suivant</strong>.</p>",
+          "caption": "Catégories",
+          "alt": "Catégories Wallet"
+        },
+        {
+          "html": "<p>Sur l’écran des tuiles, touchez la carte grise <strong>Create New Shortcut</strong> en haut à gauche. Ne choisissez pas un raccourci existant dans la liste en dessous.</p>",
+          "caption": "Nouveau raccourci",
+          "alt": "Tuile Create New Shortcut"
+        },
+        {
+          "html": "<p>Un éditeur vide s’ouvre. Dans la recherche d’actions en bas, tapez <strong>Qalta</strong> et touchez <strong>Créer une dépense Wallet</strong> (et non « Créer une transaction »).</p>",
+          "caption": "Action Qalta",
+          "alt": "Recherche de Créer une dépense Wallet"
+        },
+        {
+          "html": "<p>Vous devriez voir deux blocs : « Receive transaction as input » et l’action Qalta. Touchez le champ gris <strong>Montant</strong> de l’action Qalta — un pavé numérique apparaît. Au-dessus, touchez <strong>Sélectionner une variable</strong>.</p>",
+          "caption": "Montant, puis Sélectionner une variable",
+          "alt": "Champ Montant et Sélectionner une variable"
+        },
+        {
+          "html": "<p>Sur l’écran Sélectionner une variable, touchez la puce bleue <strong>Entrée du raccourci</strong> sous « Receive transaction as input ».</p>",
+          "caption": "Entrée du raccourci",
+          "alt": "Sélection de Entrée du raccourci comme variable"
+        },
+        {
+          "html": "<p>Touchez la puce bleue <strong>Entrée du raccourci</strong> qui se trouve maintenant dans l’action Qalta. Dans la fenêtre, Type doit être <strong>Transaction</strong>. Ne laissez pas la coche sur « Transaction » — faites défiler la liste et touchez <strong>Montant</strong>.</p>",
+          "caption": "Type Transaction → Montant",
+          "alt": "Propriétés de la transaction : touchez Montant"
+        },
+        {
+          "html": "<p>Faites de même pour le nom du magasin. Touchez le chevron de l’action Qalta pour afficher les champs. Touchez <strong>Commerçant</strong> → <strong>Sélectionner une variable</strong> → <strong>Entrée du raccourci</strong>. Touchez de nouveau la puce, Type <strong>Transaction</strong>, puis choisissez <strong>Commerçant</strong> dans la liste.</p>",
+          "caption": "Type Transaction → Commerçant",
+          "alt": "Choix de Commerçant dans la transaction"
+        },
+        {
+          "html": "<p>Les autres champs sont facultatifs. Options pour <strong>Catégorie</strong> et <strong>Compte</strong> :</p><ul><li><strong>Choisir</strong> — sélectionnez une catégorie ou un compte précis de Qalta. Si vous n’avez qu’un compte, faites-le : sélectionnez-le une fois. Inutile d’utiliser « Demander à chaque fois ».</li><li><strong>Demander à chaque fois</strong> — après chaque paiement, Qalta vous demandera où enregistrer la dépense. Pratique si vous avez plusieurs catégories ou comptes.</li><li>Vous pouvez laisser <strong>Choisir</strong> vide — Qalta utilisera les valeurs par défaut et tentera de détecter la catégorie.</li></ul><p><strong>Devise</strong>, <strong>Note</strong> et <strong>Date</strong> peuvent rester vides. Activez <strong>Afficher lors de l’exécution</strong> pour qu’une confirmation apparaisse après le paiement. Touchez la coche bleue en haut.</p>",
+          "caption": "Catégorie, compte et confirmation",
+          "alt": "Catégorie, Compte et Afficher lors de l’exécution"
+        },
+        {
+          "html": "<p>L’automatisation apparaît dans <strong>Automatisation</strong>. Après votre prochain achat Apple Pay avec la carte sélectionnée, Qalta vous proposera d’enregistrer la dépense.</p>",
+          "caption": "C’est prêt",
+          "alt": "Automatisation terminée dans la liste"
+        }
+      ],
+      "videoLabel": "Tutoriel d’automatisation Apple Pay pour iOS 26, en anglais",
+      "videoCaption": "Configuration pas à pas sur iOS 26."
+    }
+  }
+}

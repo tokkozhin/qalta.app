@@ -1,0 +1,16 @@
+{
+  "brandTag": "Gestion d’argent",
+  "openInAppStore": "Ouvrir dans l’App Store",
+  "appStoreShort": "App Store",
+  "download": "Télécharger dans l’App Store",
+  "footerNavLabel": "Site",
+  "nav": {
+    "home": "Accueil",
+    "tutorials": "Tutoriels",
+    "support": "Assistance",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions"
+  },
+  "languageLabel": "Langue",
+  "legalNotice": "Cette traduction est fournie pour plus de commodité. En cas de divergence avec la <a href=\"{englishUrl}\">version anglaise</a>, c’est la version anglaise qui prévaut."
+}

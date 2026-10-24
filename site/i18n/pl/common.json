@@ -1,0 +1,16 @@
+{
+  "brandTag": "Menedżer finansów",
+  "openInAppStore": "Otwórz w App Store",
+  "appStoreShort": "App Store",
+  "download": "Pobierz z App Store",
+  "footerNavLabel": "Strona",
+  "nav": {
+    "home": "Strona główna",
+    "tutorials": "Poradniki",
+    "support": "Pomoc",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin"
+  },
+  "languageLabel": "Język",
+  "legalNotice": "To tłumaczenie udostępniamy dla wygody. Jeśli różni się od <a href=\"{englishUrl}\">wersji angielskiej</a>, obowiązuje wersja angielska."
+}

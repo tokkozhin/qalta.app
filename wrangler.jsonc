@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "qalta-app",
+  "account_id": "fc99b7ac0ef3a611439d01398adfbf81",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-06",
+  "observability": {
+    "enabled": true
+  },
+  "routes": [
+    {
+      "pattern": "qalta.app",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": [
+      "/*",
+      "!/assets/*",
+      "!/*.css",
+      "!/tutorials/*.css",
+      "!/*.png",
+      "!/*.svg",
+      "!/*.txt",
+      "!/*.xml"
+    ]
+  }
+}

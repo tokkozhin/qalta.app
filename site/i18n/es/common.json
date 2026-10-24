@@ -1,0 +1,16 @@
+{
+  "brandTag": "Gestor de gastos",
+  "openInAppStore": "Abrir en el App Store",
+  "appStoreShort": "App Store",
+  "download": "Descargar en el App Store",
+  "footerNavLabel": "Sitio",
+  "nav": {
+    "home": "Inicio",
+    "tutorials": "Tutoriales",
+    "support": "Soporte",
+    "privacy": "Política de privacidad",
+    "terms": "Términos"
+  },
+  "languageLabel": "Idioma",
+  "legalNotice": "Esta traducción se ofrece por comodidad. Si difiere de la <a href=\"{englishUrl}\">versión en inglés</a>, prevalece la versión en inglés."
+}

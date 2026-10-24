@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iOS 27で銀行の通知をオートメーション — Qalta</title>
+  <meta name="description" content="銀行アプリからの支払い通知が、本文から読み取った金額付きでQaltaに支出として保存されるショートカットを設定します。iOS 27向け。" />
+  <link rel="canonical" href="https://qalta.app/ja/tutorials/push-notification-ios-27" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="apple-itunes-app" content="app-id=6756010294" />
+  <link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="es" href="https://qalta.app/es/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="fr" href="https://qalta.app/fr/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="it" href="https://qalta.app/it/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ja" href="https://qalta.app/ja/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="kk" href="https://qalta.app/kk/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ko" href="https://qalta.app/ko/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="pl" href="https://qalta.app/pl/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="pt" href="https://qalta.app/pt/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ru" href="https://qalta.app/ru/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="th" href="https://qalta.app/th/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="tr" href="https://qalta.app/tr/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="uk" href="https://qalta.app/uk/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="x-default" href="https://qalta.app/tutorials/push-notification-ios-27" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="pl_PL" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="th_TH" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://qalta.app/ja/tutorials/push-notification-ios-27" />
+  <meta property="og:title" content="iOS 27で銀行の通知をオートメーション" />
+  <meta property="og:description" content="銀行アプリからの支払い通知が、本文から読み取った金額付きでQaltaに支出として保存されるショートカットを設定します。iOS 27向け。" />
+  <meta property="og:image" content="https://qalta.app/assets/og/push-notification-ios-27.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="iOS 27での銀行の通知オートメーションと「銀行の支出を記録」ショートカット。" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="iOS 27で銀行の通知をオートメーション" />
+  <meta name="twitter:description" content="銀行アプリからの支払い通知が、本文から読み取った金額付きでQaltaに支出として保存されるショートカットを設定します。iOS 27向け。" />
+  <meta name="twitter:image" content="https://qalta.app/assets/og/push-notification-ios-27.png" />
+  <meta name="twitter:image:alt" content="iOS 27での銀行の通知オートメーションと「銀行の支出を記録」ショートカット。" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://qalta.app/ja/tutorials/push-notification-ios-27#howto",
+        "name": "iOS 27で銀行の通知をオートメーション",
+        "description": "銀行アプリからの支払い通知が、本文から読み取った金額付きでQaltaに支出として保存されるショートカットを設定します。iOS 27向け。",
+        "image": "https://qalta.app/assets/og/push-notification-ios-27.png",
+        "inLanguage": "ja",
+        "url": "https://qalta.app/ja/tutorials/push-notification-ios-27",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Qalta"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Apple Shortcuts"
+          }
+        ],
+        "about": {
+          "@type": "MobileApplication",
+          "@id": "https://qalta.app/#app",
+          "name": "Qalta",
+          "operatingSystem": "iOS"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://qalta.app/#organization",
+          "name": "Qalta",
+          "url": "https://qalta.app/"
+        },
+        "video": {
+          "@type": "VideoObject",
+          "name": "iOS 27で銀行の通知をオートメーション",
+          "description": "iOS 27向け銀行の通知オートメーションの使い方動画",
+          "contentUrl": "https://qalta.app/assets/push_notification_ios_27_automation.mp4",
+          "thumbnailUrl": "https://qalta.app/assets/og/push-notification-ios-27.png",
+          "uploadDate": "2026-09-29"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "新しいショートカット",
+            "text": "ショートカット を開き、下部の + ボタンをタップして新しいショートカットを作成します。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/01-shortcuts.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "オートメーションのチップ",
+            "text": "空のエディタが開きます。アクション検索で オートメーション のチップをタップするか、「オートメーション」と入力します。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/02-new-shortcut.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "通知のトリガー",
+            "text": "App の下にある 通知 をタップします。「When I receive a notification from …」です。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/03-notification-trigger.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-3"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "アプリを選ぶ",
+            "text": "最初のブロックに When I receive a notification from App と表示されます。青い App のチップをタップして銀行を選びます。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/04-from-app.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-4"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "銀行アプリ",
+            "text": "銀行を検索し、支払いの通知を送るアプリ（例： Kaspi.kz 。関連するPayやQRのアプリではありません）をタップします。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/05-pick-bank.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-5"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "銀行のトリガーを設定済み",
+            "text": "When I receive a notification from [銀行] と表示されます。下部の検索フィールドに Qalta と入力します。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/06-bank-selected.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-6"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Qaltaのアクション",
+            "text": "銀行の支出を記録 をタップします（「ウォレット支出を作成」でも「取引を作成」でもありません）。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/07-search-qalta.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-7"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "通知の本文をタップ",
+            "text": "通知のトリガーと Qalta で 通知の本文 から銀行の支出を記録 の2つのブロックが表示されます。灰色の 通知の本文 フィールドをタップします。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/08-tap-body.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-8"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 9,
+            "name": "変数を選択 → Notification",
+            "text": "キーボードが表示されます。その上の 変数を選択 をタップし、トリガーの下にある青い Notification のチップをタップします。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/09-select-variable.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-9"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 10,
+            "name": "取得 → Body",
+            "text": "Qaltaのアクション内に入った青い Notification のチップをタップします。表示されたシートで「Notification」にチェックを残さず、 Body をタップします。Qaltaは通知オブジェクト全体ではなく、通知のテキストから金額を読み取ります。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/10-pick-body.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-10"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 11,
+            "name": "Bodyを設定済み",
+            "text": "Qaltaのアクションが Qalta で Body から銀行の支出を記録 になっていれば完了です。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/11-body-mapped.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-11"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 12,
+            "name": "カテゴリ、口座、確認",
+            "text": "残りのフィールドは任意です。山形マークをタップして展開します。 カテゴリ と 口座 の設定方法： 選択 — Qaltaの特定のカテゴリや口座を選びます。口座が1つだけなら、一度選んでおけば十分です。「毎回確認」は必要ありません。 毎回確認 — 通知のたびに、Qaltaが支出の保存先を尋ねます。カテゴリや口座が複数ある場合に便利です。 選択 を空欄のままにすることもできます。その場合、Qaltaは既定の設定を使い、カテゴリの自動検出を試みます。 メモ と 日付 は空欄のままでかまいません。確認が表示されるよう、 実行時に表示 をオンにします。戻る矢印をタップします。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/12-category-account.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-12"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 13,
+            "name": "設定完了",
+            "text": "ショートカットが すべてのショートカット に 銀行の支出を記録 として表示されます。次にその銀行アプリから支払いの通知が届くと、Qaltaが支出の保存を提案します。",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/13-all-shortcuts.png",
+            "url": "https://qalta.app/ja/tutorials/push-notification-ios-27#step-13"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Qalta",
+            "item": "https://qalta.app/ja/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "使い方ガイド",
+            "item": "https://qalta.app/ja/tutorials/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "iOS 27で銀行の通知をオートメーション",
+            "item": "https://qalta.app/ja/tutorials/push-notification-ios-27"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/tutorials/tutorial.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="/ja/">
+        <img class="brand__mark" src="/assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">家計簿アプリ</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/jp/app/id6756010294" target="_blank" rel="noopener noreferrer"><span class="top-cta__full">App Storeで開く</span><span class="top-cta__short">App Store</span></a>
+    </div>
+  </header>
+
+  <main class="doc container">
+
+    <h1>iOS 27で銀行の通知をオートメーション</h1>
+    <p class="lede">銀行アプリから支払いの通知が届くと、Qaltaがそれを支出として保存できます。金額と店舗は通知のテキストから読み取ります。</p>
+    <p class="lede">必要なのは、iOS 27、<strong>Qalta</strong>と<strong>ショートカット</strong>、ロック画面に通知を送る銀行アプリです。このトリガーはiOS 26では使えません。</p>
+
+    <ol class="steps">
+      <li id="step-1">
+        <p><strong>ショートカット</strong>を開き、下部の<strong>+</strong>ボタンをタップして新しいショートカットを作成します。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/01-shortcuts.png" alt="プラスボタンのある「すべてのショートカット」" loading="lazy" />
+          <figcaption>新しいショートカット</figcaption>
+        </figure>
+      </li>
+      <li id="step-2">
+        <p>空のエディタが開きます。アクション検索で<strong>オートメーション</strong>のチップをタップするか、「オートメーション」と入力します。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/02-new-shortcut.png" alt="オートメーションのチップがある空のショートカットエディタ" loading="lazy" />
+          <figcaption>オートメーションのチップ</figcaption>
+        </figure>
+      </li>
+      <li id="step-3">
+        <p><strong>App</strong>の下にある<strong>通知</strong>をタップします。「When I receive a notification from …」です。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/03-notification-trigger.png" alt="オートメーション一覧の通知のトリガー" loading="lazy" />
+          <figcaption>通知のトリガー</figcaption>
+        </figure>
+      </li>
+      <li id="step-4">
+        <p>最初のブロックに<strong>When I receive a notification from App</strong>と表示されます。青い<strong>App</strong>のチップをタップして銀行を選びます。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/04-from-app.png" alt="When I receive a notification from App" loading="lazy" />
+          <figcaption>アプリを選ぶ</figcaption>
+        </figure>
+      </li>
+      <li id="step-5">
+        <p>銀行を検索し、支払いの通知を送るアプリ（例：<strong>Kaspi.kz</strong>。関連するPayやQRのアプリではありません）をタップします。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/05-pick-bank.png" alt="銀行を検索しているアプリ選択画面" loading="lazy" />
+          <figcaption>銀行アプリ</figcaption>
+        </figure>
+      </li>
+      <li id="step-6">
+        <p><strong>When I receive a notification from [銀行]</strong>と表示されます。下部の検索フィールドに<strong>Qalta</strong>と入力します。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/06-bank-selected.png" alt="選択した銀行アプリの通知のトリガー" loading="lazy" />
+          <figcaption>銀行のトリガーを設定済み</figcaption>
+        </figure>
+      </li>
+      <li id="step-7">
+        <p><strong>銀行の支出を記録</strong>をタップします（「ウォレット支出を作成」でも「取引を作成」でもありません）。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/07-search-qalta.png" alt="「銀行の支出を記録」を検索" loading="lazy" />
+          <figcaption>Qaltaのアクション</figcaption>
+        </figure>
+      </li>
+      <li id="step-8">
+        <p>通知のトリガーと<strong>Qalta で 通知の本文 から銀行の支出を記録</strong>の2つのブロックが表示されます。灰色の<strong>通知の本文</strong>フィールドをタップします。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/08-tap-body.png" alt="通知の本文フィールドのある「銀行の支出を記録」" loading="lazy" />
+          <figcaption>通知の本文をタップ</figcaption>
+        </figure>
+      </li>
+      <li id="step-9">
+        <p>キーボードが表示されます。その上の<strong>変数を選択</strong>をタップし、トリガーの下にある青い<strong>Notification</strong>のチップをタップします。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/09-select-variable.png" alt="Notificationのチップがある「変数を選択」" loading="lazy" />
+          <figcaption>変数を選択 → Notification</figcaption>
+        </figure>
+      </li>
+      <li id="step-10">
+        <p>Qaltaのアクション内に入った青い<strong>Notification</strong>のチップをタップします。表示されたシートで「Notification」にチェックを残さず、<strong>Body</strong>をタップします。Qaltaは通知オブジェクト全体ではなく、通知のテキストから金額を読み取ります。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/10-pick-body.png" alt="Notificationのプロパティ：Bodyをタップ" loading="lazy" />
+          <figcaption>取得 → Body</figcaption>
+        </figure>
+      </li>
+      <li id="step-11">
+        <p>Qaltaのアクションが<strong>Qalta で Body から銀行の支出を記録</strong>になっていれば完了です。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/11-body-mapped.png" alt="「銀行の支出を記録」に設定されたBody" loading="lazy" />
+          <figcaption>Bodyを設定済み</figcaption>
+        </figure>
+      </li>
+      <li id="step-12">
+        <p>残りのフィールドは任意です。山形マークをタップして展開します。<strong>カテゴリ</strong>と<strong>口座</strong>の設定方法：</p><ul><li><strong>選択</strong> — Qaltaの特定のカテゴリや口座を選びます。口座が1つだけなら、一度選んでおけば十分です。「毎回確認」は必要ありません。</li><li><strong>毎回確認</strong> — 通知のたびに、Qaltaが支出の保存先を尋ねます。カテゴリや口座が複数ある場合に便利です。</li><li><strong>選択</strong>を空欄のままにすることもできます。その場合、Qaltaは既定の設定を使い、カテゴリの自動検出を試みます。</li></ul><p><strong>メモ</strong>と<strong>日付</strong>は空欄のままでかまいません。確認が表示されるよう、<strong>実行時に表示</strong>をオンにします。戻る矢印をタップします。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/12-category-account.png" alt="カテゴリ、口座、実行時に表示" loading="lazy" />
+          <figcaption>カテゴリ、口座、確認</figcaption>
+        </figure>
+      </li>
+      <li id="step-13">
+        <p>ショートカットが<strong>すべてのショートカット</strong>に<strong>銀行の支出を記録</strong>として表示されます。次にその銀行アプリから支払いの通知が届くと、Qaltaが支出の保存を提案します。</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/13-all-shortcuts.png" alt="「すべてのショートカット」内の「銀行の支出を記録」" loading="lazy" />
+          <figcaption>設定完了</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">動画で見る</h2>
+      <p>画面収録を見ながら進めたい方はこちら。</p>
+      <figure>
+        <div class="player player-11">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="/assets/push_notification_ios_27_automation.mp4"
+            aria-label="iOS 27向け銀行の通知オートメーションの使い方動画"
+          ></video>
+        </div>
+        <figcaption>iOS 27での設定手順。</figcaption>
+      </figure>
+    </section>
+
+    <p><a class="home" href="/ja/tutorials/">すべてのガイド</a></p>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="サイト">
+        <a href="/ja/tutorials/">使い方ガイド</a>
+        <a href="mailto:help.qalta.app@outlook.com">サポート</a>
+        <a href="/ja/privacy-policy">プライバシーポリシー</a>
+        <a href="/ja/terms-and-conditions">利用規約</a>
+      </nav>
+      <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
+    </div>
+    <div class="container">
+      <nav class="langs" aria-label="言語">
+        <svg class="langs__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <a href="/tutorials/push-notification-ios-27" hreflang="en" lang="en" data-set-lang="en">English</a>
+        <a href="/de/tutorials/push-notification-ios-27" hreflang="de" lang="de" data-set-lang="de">Deutsch</a>
+        <a href="/es/tutorials/push-notification-ios-27" hreflang="es" lang="es" data-set-lang="es">Español</a>
+        <a href="/fr/tutorials/push-notification-ios-27" hreflang="fr" lang="fr" data-set-lang="fr">Français</a>
+        <a href="/it/tutorials/push-notification-ios-27" hreflang="it" lang="it" data-set-lang="it">Italiano</a>
+        <a href="/ja/tutorials/push-notification-ios-27" hreflang="ja" lang="ja" data-set-lang="ja" aria-current="true">日本語</a>
+        <a href="/kk/tutorials/push-notification-ios-27" hreflang="kk" lang="kk" data-set-lang="kk">Қазақша</a>
+        <a href="/ko/tutorials/push-notification-ios-27" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a>
+        <a href="/pl/tutorials/push-notification-ios-27" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a>
+        <a href="/pt/tutorials/push-notification-ios-27" hreflang="pt" lang="pt" data-set-lang="pt">Português</a>
+        <a href="/ru/tutorials/push-notification-ios-27" hreflang="ru" lang="ru" data-set-lang="ru">Русский</a>
+        <a href="/th/tutorials/push-notification-ios-27" hreflang="th" lang="th" data-set-lang="th">ไทย</a>
+        <a href="/tr/tutorials/push-notification-ios-27" hreflang="tr" lang="tr" data-set-lang="tr">Türkçe</a>
+        <a href="/uk/tutorials/push-notification-ios-27" hreflang="uk" lang="uk" data-set-lang="uk">Українська</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) document.cookie = "lang=" + link.getAttribute("data-set-lang") + "; path=/; max-age=31536000; samesite=lax";
+    });
+  </script>
+</body>
+</html>

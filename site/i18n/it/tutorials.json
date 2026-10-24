@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Guide alle automazioni",
+    "description": "Guide passo passo per registrare in automatico in Qalta gli acquisti con Apple Pay e le notifiche bancarie, per iOS 26 e iOS 27.",
+    "ogTitle": "Guide alle automazioni di Qalta",
+    "ogImageAlt": "Guide alle automazioni di Qalta per iOS 26 e iOS 27, accanto alla schermata Tutti i comandi rapidi.",
+    "h1": "Guide",
+    "lede": "Come configurare le automazioni che salvano un acquisto in Qalta. Scegli la guida per la tua versione di iOS.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Dopo un pagamento con Apple Pay, Qalta salva l’acquisto. Importo ed esercente arrivano da Wallet." },
+      "push-notification-ios-27": { "title": "Notifiche bancarie", "text": "Quando l’app della banca invia una notifica di pagamento, Qalta la salva come spesa." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "La stessa configurazione di Apple Pay, tramite il pannello Automazione di Comandi Rapidi." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Video completo",
+    "videoLede": "Preferisci seguire una registrazione dello schermo?",
+    "allTutorials": "Tutte le guide"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Automazione Apple Pay su iOS 27",
+      "description": "Configura un comando rapido per salvare in Qalta ogni acquisto con Apple Pay come spesa, con importo ed esercente presi da Wallet. Per iOS 27.",
+      "ogTitle": "Automazione Apple Pay su iOS 27",
+      "ogImageAlt": "Automazione Apple Pay su iOS 27, accanto al comando rapido Crea spesa Wallet.",
+      "h1": "Automazione Apple Pay su iOS 27",
+      "intro": [
+        "Dopo un pagamento con Apple Pay, Qalta può salvare l’acquisto come spesa. Importo ed esercente arrivano dalla transazione di Wallet; puoi scegliere categoria e conto ogni volta o impostarli in anticipo.",
+        "Ti servono iOS 27, <strong>Qalta</strong> e <strong>Comandi Rapidi</strong>, e delle carte in Wallet. Su iOS 27 l’attivatore di Wallet si trova all’interno di un nuovo comando rapido: non c’è un pannello Automazione separato."
+      ],
+      "steps": [
+        {
+          "html": "<p>Apri <strong>Comandi Rapidi</strong> e tocca il pulsante <strong>+</strong> in basso per creare un nuovo comando rapido.</p>",
+          "caption": "Nuovo comando rapido",
+          "alt": "Tutti i comandi rapidi con il pulsante più"
+        },
+        {
+          "html": "<p>Si apre un editor vuoto. Nella ricerca delle azioni, tocca il chip <strong>Automazione</strong>, oppure digita «Automazione».</p>",
+          "caption": "Chip Automazione",
+          "alt": "Editor del comando rapido vuoto con il chip Automazione"
+        },
+        {
+          "html": "<p>In <strong>App</strong>, tocca <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (pagamento al terminale).</p>",
+          "caption": "Attivatore Wallet",
+          "alt": "Attivatore Wallet nell’elenco Automazione"
+        },
+        {
+          "html": "<p>Il primo blocco dice <strong>When Any Card is tapped</strong>. Se vuoi che Qalta si attivi solo per alcune carte, tocca il chip blu <strong>Any Card</strong>.</p>",
+          "caption": "Any Card",
+          "alt": "Attivatore When Any Card is tapped"
+        },
+        {
+          "html": "<p>Seleziona la carta con cui paghi (ad esempio <strong>Kaspi Gold</strong>). Tocca il segno di spunta.</p>",
+          "caption": "Quale carta monitorare",
+          "alt": "Selezione di una carta di pagamento"
+        },
+        {
+          "html": "<p>Ora dovresti vedere un solo blocco: <strong>When [la tua carta] is tapped</strong>. Nel campo di ricerca in basso, digita <strong>Qalta</strong>.</p>",
+          "caption": "Attivatore della carta impostato",
+          "alt": "Attivatore Wallet per la carta selezionata"
+        },
+        {
+          "html": "<p>Tocca <strong>Crea spesa Wallet</strong> (non «Crea transazione»).</p>",
+          "caption": "Azione di Qalta",
+          "alt": "Ricerca di Crea spesa Wallet"
+        },
+        {
+          "html": "<p>Dovresti vedere due blocchi: l’attivatore Wallet e l’azione di Qalta. Tocca il campo grigio <strong>Importo</strong>: compare un tastierino. Sopra, tocca <strong>Seleziona variabile</strong>.</p>",
+          "caption": "Tocca Importo, poi Seleziona variabile",
+          "alt": "Campo Importo e Seleziona variabile"
+        },
+        {
+          "html": "<p>Nella schermata Seleziona variabile, tocca il chip blu <strong>Transazione</strong> sotto l’attivatore Wallet. È il pagamento Apple Pay, non Input comando rapido.</p>",
+          "caption": "Transazione",
+          "alt": "Selezione di Transazione dall’attivatore Wallet"
+        },
+        {
+          "html": "<p>Tocca il chip blu <strong>Transazione</strong> che ora si trova dentro l’azione di Qalta. Nel pannello, non lasciare la spunta su «Transazione»: tocca <strong>Importo</strong>.</p>",
+          "caption": "Ottieni → Importo",
+          "alt": "Proprietà della transazione: tocca Importo"
+        },
+        {
+          "html": "<p>Ripeti per il nome del negozio. Tocca la freccia sull’azione di Qalta per espandere i campi. Tocca <strong>Esercente</strong> → <strong>Seleziona variabile</strong> → <strong>Transazione</strong>. Tocca di nuovo il chip e scegli <strong>Esercente</strong> dall’elenco, non «Transazione».</p>",
+          "caption": "Ottieni → Esercente",
+          "alt": "Scelta di Esercente dalla transazione"
+        },
+        {
+          "html": "<p>Gli altri campi sono facoltativi. Opzioni per <strong>Categoria</strong> e <strong>Conto</strong>:</p><ul><li><strong>Scegli</strong>: seleziona una categoria o un conto specifico di Qalta. Se hai un solo conto, fai così: selezionalo una volta. Non ti serve Chiedi ogni volta.</li><li><strong>Chiedi ogni volta</strong>: dopo ogni pagamento Qalta ti chiederà dove salvare la spesa. Utile se hai più categorie o conti.</li><li>Puoi lasciare vuoto <strong>Scegli</strong>: Qalta userà i valori predefiniti e cercherà di rilevare la categoria.</li></ul><p><strong>Valuta</strong>, <strong>Nota</strong> e <strong>Data</strong> possono restare vuoti. Attiva <strong>Mostra durante l’esecuzione</strong> per vedere una conferma dopo il pagamento. Tocca la freccia indietro.</p>",
+          "caption": "Categoria, conto e conferma",
+          "alt": "Categoria, Conto e Mostra durante l’esecuzione"
+        },
+        {
+          "html": "<p>Il comando rapido compare in <strong>Tutti i comandi rapidi</strong> come <strong>Crea spesa Wallet</strong>. Dopo il prossimo acquisto con Apple Pay con la carta selezionata, Qalta ti proporrà di salvare la spesa.</p>",
+          "caption": "Tutto pronto",
+          "alt": "Crea spesa Wallet in Tutti i comandi rapidi"
+        }
+      ],
+      "videoLabel": "Guida in inglese all’automazione Apple Pay per iOS 27",
+      "videoCaption": "Configurazione passo passo su iOS 27."
+    },
+    "push-notification-ios-27": {
+      "title": "Automazione delle notifiche bancarie su iOS 27",
+      "description": "Configura un comando rapido per salvare in Qalta come spesa una notifica di pagamento dell’app della banca, con l’importo letto dal testo. Per iOS 27.",
+      "ogTitle": "Automazione delle notifiche bancarie su iOS 27",
+      "ogImageAlt": "Automazione delle notifiche bancarie su iOS 27, accanto al comando rapido Registra spesa bancaria.",
+      "h1": "Automazione delle notifiche bancarie su iOS 27",
+      "intro": [
+        "Quando l’app della banca invia una notifica di pagamento, Qalta può salvarla come spesa. Importo ed esercente vengono estratti dal testo della notifica.",
+        "Ti servono iOS 27, <strong>Qalta</strong> e <strong>Comandi Rapidi</strong>, e un’app bancaria che mostri notifiche sulla schermata di blocco. Questo attivatore non è disponibile su iOS 26."
+      ],
+      "steps": [
+        {
+          "html": "<p>Apri <strong>Comandi Rapidi</strong> e tocca il pulsante <strong>+</strong> in basso per creare un nuovo comando rapido.</p>",
+          "caption": "Nuovo comando rapido",
+          "alt": "Tutti i comandi rapidi con il pulsante più"
+        },
+        {
+          "html": "<p>Si apre un editor vuoto. Nella ricerca delle azioni, tocca il chip <strong>Automazione</strong>, oppure digita «Automazione».</p>",
+          "caption": "Chip Automazione",
+          "alt": "Editor del comando rapido vuoto con il chip Automazione"
+        },
+        {
+          "html": "<p>In <strong>App</strong>, tocca <strong>Notifica</strong> — “When I receive a notification from …”.</p>",
+          "caption": "Attivatore Notifica",
+          "alt": "Attivatore Notifica nell’elenco Automazione"
+        },
+        {
+          "html": "<p>Il primo blocco dice <strong>When I receive a notification from App</strong>. Tocca il chip blu <strong>App</strong> per scegliere la tua banca.</p>",
+          "caption": "Scegli l’app",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Cerca la tua banca e tocca l’app che invia gli avvisi di pagamento (ad esempio <strong>Kaspi.kz</strong>, non un’app collegata per Pay o QR).</p>",
+          "caption": "App della banca",
+          "alt": "Selettore app con la ricerca della banca"
+        },
+        {
+          "html": "<p>Ora dovresti vedere <strong>When I receive a notification from [banca]</strong>. Nel campo di ricerca in basso, digita <strong>Qalta</strong>.</p>",
+          "caption": "Attivatore della banca impostato",
+          "alt": "Attivatore Notifica per l’app della banca selezionata"
+        },
+        {
+          "html": "<p>Tocca <strong>Registra spesa bancaria</strong> (non «Crea spesa Wallet» e non «Crea transazione»).</p>",
+          "caption": "Azione di Qalta",
+          "alt": "Ricerca di Registra spesa bancaria"
+        },
+        {
+          "html": "<p>Dovresti vedere due blocchi: l’attivatore della notifica e <strong>Registra spesa bancaria da Corpo della notifica</strong>. Tocca il campo grigio <strong>Corpo della notifica</strong>.</p>",
+          "caption": "Tocca Corpo della notifica",
+          "alt": "Registra spesa bancaria con il campo Corpo della notifica"
+        },
+        {
+          "html": "<p>Compare una tastiera. Sopra, tocca <strong>Seleziona variabile</strong>, poi tocca il chip blu <strong>Notifica</strong> sotto l’attivatore.</p>",
+          "caption": "Seleziona variabile → Notifica",
+          "alt": "Seleziona variabile con il chip Notifica"
+        },
+        {
+          "html": "<p>Tocca il chip blu <strong>Notifica</strong> che ora si trova dentro l’azione di Qalta. Nel pannello, non lasciare la spunta su «Notifica»: tocca <strong>Body</strong>. Qalta legge l’importo dal testo della notifica, non dall’intero oggetto notifica.</p>",
+          "caption": "Ottieni → Body",
+          "alt": "Proprietà della notifica: tocca Body"
+        },
+        {
+          "html": "<p>Ora l’azione di Qalta dovrebbe dire <strong>Registra spesa bancaria da Body</strong>.</p>",
+          "caption": "Body collegato",
+          "alt": "Body collegato in Registra spesa bancaria"
+        },
+        {
+          "html": "<p>Gli altri campi sono facoltativi. Tocca la freccia per espanderli. Opzioni per <strong>Categoria</strong> e <strong>Conto</strong>:</p><ul><li><strong>Scegli</strong>: seleziona una categoria o un conto specifico di Qalta. Se hai un solo conto, fai così: selezionalo una volta. Non ti serve Chiedi ogni volta.</li><li><strong>Chiedi ogni volta</strong>: dopo ogni notifica Qalta ti chiederà dove salvare la spesa. Utile se hai più categorie o conti.</li><li>Puoi lasciare vuoto <strong>Scegli</strong>: Qalta userà i valori predefiniti e cercherà di rilevare la categoria.</li></ul><p><strong>Nota</strong> e <strong>Data</strong> possono restare vuoti. Attiva <strong>Mostra durante l’esecuzione</strong> per vedere una conferma. Tocca la freccia indietro.</p>",
+          "caption": "Categoria, conto e conferma",
+          "alt": "Categoria, Conto e Mostra durante l’esecuzione"
+        },
+        {
+          "html": "<p>Il comando rapido compare in <strong>Tutti i comandi rapidi</strong> come <strong>Registra spesa bancaria</strong>. Dopo la prossima notifica di pagamento di quell’app bancaria, Qalta ti proporrà di salvare la spesa.</p>",
+          "caption": "Tutto pronto",
+          "alt": "Registra spesa bancaria in Tutti i comandi rapidi"
+        }
+      ],
+      "videoLabel": "Guida all’automazione delle notifiche bancarie per iOS 27",
+      "videoCaption": "Configurazione passo passo su iOS 27."
+    },
+    "apple-pay-ios-26": {
+      "title": "Automazione Apple Pay su iOS 26",
+      "description": "Configura un’automazione di Comandi Rapidi per salvare in Qalta ogni acquisto con Apple Pay come spesa, con importo ed esercente già compilati. Per iOS 26.",
+      "ogTitle": "Automazione Apple Pay su iOS 26",
+      "ogImageAlt": "Automazione Apple Pay su iOS 26, accanto all’azione Crea spesa Wallet in Comandi Rapidi.",
+      "h1": "Automazione Apple Pay su iOS 26",
+      "intro": [
+        "Dopo un pagamento con Apple Pay, Qalta può salvare l’acquisto come spesa. Importo ed esercente arrivano dalla transazione; puoi scegliere categoria e conto ogni volta o impostarli in anticipo.",
+        "Ti servono iOS 26, <strong>Qalta</strong> e <strong>Comandi Rapidi</strong>, e delle carte in Wallet."
+      ],
+      "steps": [
+        {
+          "html": "<p>Apri <strong>Impostazioni → Wallet e Apple Pay</strong>. Attiva <strong>Attività in tempo reale</strong> e <strong>Dati cellulare</strong>.</p>",
+          "caption": "Permessi di Wallet",
+          "alt": "Permessi di Wallet e Apple Pay"
+        },
+        {
+          "html": "<p>Apri <strong>Comandi Rapidi</strong>, vai al pannello <strong>Automazione</strong> e tocca <strong>Nuova automazione</strong>.</p>",
+          "caption": "Nuova automazione",
+          "alt": "Pannello Automazione di Comandi Rapidi"
+        },
+        {
+          "html": "<p>Scegli <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (pagamento al terminale).</p>",
+          "caption": "Attivatore Wallet",
+          "alt": "Attivatore Wallet nell’elenco delle automazioni"
+        },
+        {
+          "html": "<p>Seleziona le carte che vuoi far monitorare a Qalta. Tocca <strong>Avanti</strong>.</p>",
+          "caption": "Quali carte monitorare",
+          "alt": "Selezione delle carte di pagamento"
+        },
+        {
+          "html": "<p>Mantieni le categorie di Wallet che ti interessano (vanno bene tutte). Seleziona <strong>Esegui immediatamente</strong> (non Esegui dopo la conferma). Tocca <strong>Avanti</strong>.</p>",
+          "caption": "Categorie",
+          "alt": "Categorie di Wallet"
+        },
+        {
+          "html": "<p>Nella schermata con i riquadri, tocca la scheda grigia <strong>Create New Shortcut</strong> in alto a sinistra. Non scegliere un comando rapido esistente dall’elenco sotto.</p>",
+          "caption": "Nuovo comando rapido",
+          "alt": "Riquadro Create New Shortcut"
+        },
+        {
+          "html": "<p>Si apre un editor vuoto. Nella ricerca delle azioni in basso, digita <strong>Qalta</strong> e tocca <strong>Crea spesa Wallet</strong> (non «Crea transazione»).</p>",
+          "caption": "Azione di Qalta",
+          "alt": "Ricerca di Crea spesa Wallet"
+        },
+        {
+          "html": "<p>Dovresti vedere due blocchi: “Receive transaction as input” e l’azione di Qalta. Tocca il campo grigio <strong>Importo</strong> nell’azione di Qalta: compare un tastierino. Sopra, tocca <strong>Seleziona variabile</strong>.</p>",
+          "caption": "Tocca Importo, poi Seleziona variabile",
+          "alt": "Campo Importo e Seleziona variabile"
+        },
+        {
+          "html": "<p>Nella schermata Seleziona variabile, tocca il chip blu <strong>Input comando rapido</strong> sotto “Receive transaction as input”.</p>",
+          "caption": "Input comando rapido",
+          "alt": "Selezione di Input comando rapido come variabile"
+        },
+        {
+          "html": "<p>Tocca il chip blu <strong>Input comando rapido</strong> che ora si trova dentro l’azione di Qalta. Nel pannello, Tipo deve essere <strong>Transazione</strong>. Non lasciare la spunta su «Transazione»: scorri l’elenco e tocca <strong>Importo</strong>.</p>",
+          "caption": "Tipo Transazione → Importo",
+          "alt": "Proprietà della transazione: tocca Importo"
+        },
+        {
+          "html": "<p>Ripeti per il nome del negozio. Tocca la freccia sull’azione di Qalta per espandere i campi. Tocca <strong>Esercente</strong> → <strong>Seleziona variabile</strong> → <strong>Input comando rapido</strong>. Tocca di nuovo il chip, Tipo <strong>Transazione</strong>, poi scegli <strong>Esercente</strong> dall’elenco.</p>",
+          "caption": "Tipo Transazione → Esercente",
+          "alt": "Scelta di Esercente dalla transazione"
+        },
+        {
+          "html": "<p>Gli altri campi sono facoltativi. Opzioni per <strong>Categoria</strong> e <strong>Conto</strong>:</p><ul><li><strong>Scegli</strong>: seleziona una categoria o un conto specifico di Qalta. Se hai un solo conto, fai così: selezionalo una volta. Non ti serve Chiedi ogni volta.</li><li><strong>Chiedi ogni volta</strong>: dopo ogni pagamento Qalta ti chiederà dove salvare la spesa. Utile se hai più categorie o conti.</li><li>Puoi lasciare vuoto <strong>Scegli</strong>: Qalta userà i valori predefiniti e cercherà di rilevare la categoria.</li></ul><p><strong>Valuta</strong>, <strong>Nota</strong> e <strong>Data</strong> possono restare vuoti. Attiva <strong>Mostra durante l’esecuzione</strong> per vedere una conferma dopo il pagamento. Tocca la spunta blu in alto.</p>",
+          "caption": "Categoria, conto e conferma",
+          "alt": "Categoria, Conto e Mostra durante l’esecuzione"
+        },
+        {
+          "html": "<p>L’automazione compare in <strong>Automazione</strong>. Dopo il prossimo acquisto con Apple Pay con la carta selezionata, Qalta ti proporrà di salvare la spesa.</p>",
+          "caption": "Tutto pronto",
+          "alt": "Automazione completata nell’elenco"
+        }
+      ],
+      "videoLabel": "Guida in inglese all’automazione Apple Pay per iOS 26",
+      "videoCaption": "Configurazione passo passo su iOS 26."
+    }
+  }
+}

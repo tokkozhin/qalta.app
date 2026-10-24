@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Qalta: AI Expense Tracker & Shared Budget App for iPhone",
+    "description": "Qalta is an iPhone expense tracker and budget app. Say what you spent or scan a receipt, log Apple Pay purchases automatically, and share a budget with your partner or family.",
+    "ogTitle": "Qalta: Budget, Expense Tracker",
+    "ogDescription": "Track money at the speed of speech. Say what you spent or scan a receipt, and share a budget with the people you live with.",
+    "ogImageAlt": "Qalta: money tracking without the boring part, next to the Home screen on an iPhone."
+  },
+  "hero": {
+    "title": "Money tracking",
+    "titleSoft": "without the boring part",
+    "lede": "Say what you spent. Qalta writes it down and sorts it.",
+    "chipsLabel": "Highlights",
+    "chipVoice": "Voice",
+    "chipScan": "Scan",
+    "chipPrivate": "Private",
+    "altInsights": "Qalta Insights: 91% of income saved, a spending chart, spending trend, and daily average.",
+    "altHome": "The Qalta Home screen: a net of $13,154 for this month, $14,400 income in green, $1,246 spent in orange, and transactions grouped by day.",
+    "altAdd": "Adding an expense in Qalta: an empty amount, the Wallet account, today’s date, category icons, and a keypad."
+  },
+  "voice": {
+    "title": "Just speak to log",
+    "titleSoft": "Add expenses in seconds",
+    "lede": "One sentence can become several rows, even a subscription and a transfer.",
+    "alt": "The voice sheet in Qalta. One spoken sentence became three rows: Food & Dining −$12, a monthly OpenAI subscription −$19.90, and a $1,000 transfer from Wallet to Bank, with Cancel and Save buttons."
+  },
+  "scan": {
+    "title": "Scan documents",
+    "titleSoft": "Amount and category, filled in",
+    "lede": "Receipts, bills, PDFs, CSVs, and bank statements.",
+    "alt": "The Qalta scanner in the camera view, with an invoice, a bank statement, and a bill, and PDF, CSV, and Image options."
+  },
+  "shared": {
+    "title": "Track money together",
+    "titleSoft": "One budget for two or a family",
+    "lede": "Share a space with a partner, family, or roommates. Everyone adds expenses, and the totals stay the same on every phone.",
+    "alt": "Three Qalta coin avatars, silver, gold, and bronze, floating above the clouds.",
+    "points": [
+      {
+        "title": "Invite with a link",
+        "text": "Up to 6 people in one space. Send a link, and they’re in."
+      },
+      {
+        "title": "Always in sync",
+        "text": "Accounts, budgets, and transactions update on every phone and on your other devices."
+      },
+      {
+        "title": "See who added what",
+        "text": "Each transaction shows who created it and who edited it last."
+      },
+      {
+        "title": "Private stays private",
+        "text": "Keep personal spaces on your iPhone. Only the space you share is uploaded."
+      }
+    ]
+  },
+  "ways": {
+    "title": "Log without",
+    "titleSoft": "opening the app",
+    "applePayTitle": "Apple Pay",
+    "applePayText": "Pay as usual. Qalta saves the amount and the place.",
+    "bankTitle": "Bank notifications",
+    "bankText": "A payment notification becomes an expense.",
+    "shortcutsTitle": "Shortcuts",
+    "shortcutsText": "Siri, Back Tap, the Action Button, or a widget.",
+    "guides": "See the setup guides"
+  },
+  "insights": {
+    "title": "Smart insights",
+    "titleSoft": "Savings, trends, forecasts",
+    "lede": "Trends, subscriptions, and the categories that are easy to miss.",
+    "altInsights": "The Insights screen in Qalta: $3,309 for this month, 82% of income saved, a spending chart, and tiles for spending trend and daily average.",
+    "trend": "Spending trend",
+    "trendNote": "vs previous period",
+    "dailyAverage": "Daily average",
+    "saved": "Saved this month",
+    "savedNote": "of income",
+    "analytics": "Visual analytics",
+    "analyticsNote": "Pie, line, stacked bars, cashflow.",
+    "altAnalytics": "Analytics in Qalta: a line chart of income and spending, and a donut chart of $716 in expenses split by category.",
+    "largestExpense": "Largest expense",
+    "largestExpenseNote": "Travel",
+    "largestIncome": "Largest income",
+    "largestIncomeNote": "Salary"
+  },
+  "tools": {
+    "title": "The everyday parts",
+    "titleSoft": "Budgets, repeats, currencies",
+    "budgetsTitle": "Stay on budget",
+    "budgetsText": "Limits by category or account.",
+    "budgetsAlt": "Budgets in Qalta: Coffee $15 for today, and This Month budgets of $7,000 for all spending and $300 for restaurants, each with a thin progress bar and the remaining amount in green.",
+    "subscriptionsTitle": "Track subscriptions",
+    "subscriptionsText": "See what repeats every month.",
+    "subscriptionsAlt": "Repeating payments in Qalta: Spotify −$12.99, OpenAI −$20, and Netflix −$19.99.",
+    "currencyTitle": "Multi-currency",
+    "currencyText": "Live rates for travel and remote work.",
+    "currencyAlt": "Adding an expense in Qalta: $100, shown underneath as €87.8, with the Wallet account, today’s date, and a row of category icons.",
+    "debtsTitle": "Debts",
+    "debtsText": "Who owes whom.",
+    "goalsTitle": "Goals",
+    "goalsText": "Savings linked to an account.",
+    "spacesTitle": "Separate spaces",
+    "spacesText": "One ledger for home, another for work or a trip.",
+    "importTitle": "Import and export",
+    "importText": "CSV from CoinKeeper, YNAB, Monarch, and others."
+  },
+  "privacy": {
+    "title": "Your journal",
+    "titleSoft": "stays on your iPhone",
+    "lines": [
+      "Optional backup goes to your own iCloud. No ads.",
+      "A shared space is uploaded only when you choose to share it.",
+      "Voice and scans are sent to our server and OpenAI only to read them."
+    ],
+    "link": "Privacy policy"
+  },
+  "themes": {
+    "titleSoft": "Clean",
+    "title": "Light & Dark",
+    "lede": "The same screen, either way.",
+    "alt": "The Qalta Home screen twice: in the light theme with a white background in front, and in the dark theme behind it."
+  },
+  "faq": {
+    "title": "Questions",
+    "titleSoft": "and short answers",
+    "items": [
+      {
+        "q": "What is Qalta?",
+        "a": "Qalta is an expense tracker and budget app for iPhone. You say what you spent or scan a receipt, and Qalta writes the transaction down and sorts it into a category. It also handles budgets, subscriptions, goals, debts, multiple currencies, and shared budgets."
+      },
+      {
+        "q": "Can I share a budget with my partner or family?",
+        "a": "Yes. Create a shared space and invite people with a link. Up to 6 people can be in one space. Everyone sees and edits the same accounts, transactions, and budgets, changes sync automatically, and each transaction shows who created or last edited it. Shared spaces are part of Qalta Pro."
+      },
+      {
+        "q": "How does voice expense tracking work?",
+        "a": "Tap the microphone and say something like “Coffee $5 and Netflix $10 every month”. Qalta fills in the amount, category, account, and repeat schedule. One sentence can hold several transactions, including transfers and subscriptions."
+      },
+      {
+        "q": "Can Qalta log Apple Pay purchases automatically?",
+        "a": "Yes. A Shortcuts automation saves every Apple Pay payment with its amount and merchant. On iOS 27 a bank app’s payment notification can create an expense too. Follow the <a class=\"text-link\" href=\"{tutorialsUrl}\">step-by-step guides</a>."
+      },
+      {
+        "q": "Can I move my history from another budgeting app?",
+        "a": "Yes. Qalta imports CSV files from YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper, and other apps, and exports your data to CSV at any time."
+      },
+      {
+        "q": "Is my financial data private?",
+        "a": "A private space stays on your iPhone, with optional backup to your own iCloud. A shared space is uploaded only when you choose to share it, and only the people you invite can see it. Voice recordings and scans are sent to Qalta’s server and OpenAI only to read them. There are no ads."
+      },
+      {
+        "q": "How much does Qalta cost?",
+        "a": "Qalta is free to download with a free plan. Qalta Pro adds unlimited transactions, voice, and scans, plus shared spaces, for $3.99 a month or $29.99 a year. The Family plan shares Pro with up to 6 people for $5.99 a month or $49.99 a year. Prices are in US dollars and vary by region."
+      },
+      {
+        "q": "Which devices and languages does Qalta support?",
+        "a": "Qalta runs on iPhone with iOS 16.4 or later, and also on Macs with Apple silicon and Apple Vision Pro. It is available in English, French, German, Italian, Japanese, Kazakh, Korean, Polish, Portuguese, Russian, Spanish, Thai, Turkish, and Ukrainian."
+      }
+    ]
+  },
+  "close": {
+    "title": "Track money at the speed of&nbsp;speech.",
+    "iconAlt": "Qalta app icon"
+  },
+  "ld": {
+    "websiteDescription": "Qalta is an AI expense tracker and shared budget app for iPhone.",
+    "appDescription": "A money tracker for iPhone. Log expenses by voice, scan receipts and bank statements, record Apple Pay purchases and bank notifications automatically, and keep a shared budget with a partner or family that syncs across devices.",
+    "subCategory": "Budgeting, expense tracking",
+    "featureList": [
+      "Voice expense logging: one sentence can become several transactions",
+      "Receipt, bill, PDF, CSV, and bank statement scanning",
+      "Automatic logging of Apple Pay purchases via Shortcuts",
+      "Expenses from bank push notifications (iOS 27)",
+      "Shared spaces: a joint budget for up to 6 people that syncs across devices",
+      "Budgets by category or account",
+      "Recurring transactions and subscription tracking",
+      "Savings goals and debts",
+      "Insights and analytics: trends, cash flow, category breakdowns",
+      "Multi-currency accounts with live exchange rates",
+      "CSV import from YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper",
+      "Home Screen widgets, Siri Shortcuts, Back Tap, and Action Button",
+      "Private by default: no ads, optional iCloud backup"
+    ],
+    "offerFree": "Free plan",
+    "offerProMonthly": "Qalta Pro, monthly",
+    "offerProAnnual": "Qalta Pro, annual",
+    "offerFamilyMonthly": "Qalta Pro Family, monthly",
+    "offerFamilyAnnual": "Qalta Pro Family, annual"
+  }
+}

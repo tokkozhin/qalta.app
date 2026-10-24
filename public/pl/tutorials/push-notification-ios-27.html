@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatyzacja powiadomień z banku w iOS 27 — Qalta</title>
+  <meta name="description" content="Skonfiguruj skrót, aby powiadomienie o płatności z aplikacji banku zapisywało się w Qalta jako wydatek, z kwotą odczytaną z treści. Dla iOS 27." />
+  <link rel="canonical" href="https://qalta.app/pl/tutorials/push-notification-ios-27" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="apple-itunes-app" content="app-id=6756010294" />
+  <link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="es" href="https://qalta.app/es/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="fr" href="https://qalta.app/fr/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="it" href="https://qalta.app/it/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ja" href="https://qalta.app/ja/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="kk" href="https://qalta.app/kk/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ko" href="https://qalta.app/ko/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="pl" href="https://qalta.app/pl/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="pt" href="https://qalta.app/pt/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ru" href="https://qalta.app/ru/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="th" href="https://qalta.app/th/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="tr" href="https://qalta.app/tr/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="uk" href="https://qalta.app/uk/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="x-default" href="https://qalta.app/tutorials/push-notification-ios-27" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="th_TH" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://qalta.app/pl/tutorials/push-notification-ios-27" />
+  <meta property="og:title" content="Automatyzacja powiadomień z banku w iOS 27" />
+  <meta property="og:description" content="Skonfiguruj skrót, aby powiadomienie o płatności z aplikacji banku zapisywało się w Qalta jako wydatek, z kwotą odczytaną z treści. Dla iOS 27." />
+  <meta property="og:image" content="https://qalta.app/assets/og/push-notification-ios-27.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Automatyzacja powiadomień z banku w iOS 27, obok skrótu Log Bank Expense." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Automatyzacja powiadomień z banku w iOS 27" />
+  <meta name="twitter:description" content="Skonfiguruj skrót, aby powiadomienie o płatności z aplikacji banku zapisywało się w Qalta jako wydatek, z kwotą odczytaną z treści. Dla iOS 27." />
+  <meta name="twitter:image" content="https://qalta.app/assets/og/push-notification-ios-27.png" />
+  <meta name="twitter:image:alt" content="Automatyzacja powiadomień z banku w iOS 27, obok skrótu Log Bank Expense." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://qalta.app/pl/tutorials/push-notification-ios-27#howto",
+        "name": "Automatyzacja powiadomień z banku w iOS 27",
+        "description": "Skonfiguruj skrót, aby powiadomienie o płatności z aplikacji banku zapisywało się w Qalta jako wydatek, z kwotą odczytaną z treści. Dla iOS 27.",
+        "image": "https://qalta.app/assets/og/push-notification-ios-27.png",
+        "inLanguage": "pl",
+        "url": "https://qalta.app/pl/tutorials/push-notification-ios-27",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Qalta"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Apple Shortcuts"
+          }
+        ],
+        "about": {
+          "@type": "MobileApplication",
+          "@id": "https://qalta.app/#app",
+          "name": "Qalta",
+          "operatingSystem": "iOS"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://qalta.app/#organization",
+          "name": "Qalta",
+          "url": "https://qalta.app/"
+        },
+        "video": {
+          "@type": "VideoObject",
+          "name": "Automatyzacja powiadomień z banku w iOS 27",
+          "description": "Poradnik wideo: automatyzacja powiadomień z banku w iOS 27",
+          "contentUrl": "https://qalta.app/assets/push_notification_ios_27_automation.mp4",
+          "thumbnailUrl": "https://qalta.app/assets/og/push-notification-ios-27.png",
+          "uploadDate": "2026-09-29"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Nowy skrót",
+            "text": "Otwórz Skróty i stuknij przycisk + na dole, aby utworzyć nowy skrót.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/01-shortcuts.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Etykieta Automatyzacja",
+            "text": "Otworzy się pusty edytor. W wyszukiwarce czynności stuknij etykietę Automatyzacja — albo wpisz „Automatyzacja”.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/02-new-shortcut.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Wyzwalacz powiadomienia",
+            "text": "W sekcji Aplikacje stuknij Notification — „When I receive a notification from …”.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/03-notification-trigger.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-3"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Wybierz aplikację",
+            "text": "Pierwszy blok brzmi When I receive a notification from App. Stuknij niebieską etykietę App, aby wybrać swój bank.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/04-from-app.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-4"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Aplikacja banku",
+            "text": "Wyszukaj swój bank i stuknij aplikację, która wysyła powiadomienia o płatnościach (na przykład Kaspi.kz, a nie powiązaną aplikację do płatności czy kodów QR).",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/05-pick-bank.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-5"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Wyzwalacz banku ustawiony",
+            "text": "Powinien być teraz widoczny blok When I receive a notification from [bank]. W polu wyszukiwania na dole wpisz Qalta.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/06-bank-selected.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-6"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Czynność Qalta",
+            "text": "Stuknij Log Bank Expense (nie „Create Wallet Expense” i nie „Create Transaction”).",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/07-search-qalta.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-7"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "Stuknij Notification body",
+            "text": "Powinny być widoczne dwa bloki: wyzwalacz powiadomienia i Log bank expense from Notification body. Stuknij szare pole Notification body (treść powiadomienia).",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/08-tap-body.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-8"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 9,
+            "name": "Wybierz zmienną → Notification",
+            "text": "Pojawi się klawiatura. Nad nią stuknij Wybierz zmienną, a następnie niebieską etykietę Notification pod wyzwalaczem.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/09-select-variable.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-9"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 10,
+            "name": "Pobierz → Body",
+            "text": "Stuknij niebieską etykietę Notification, która jest teraz wewnątrz czynności Qalta. W arkuszu nie zostawiaj znacznika na „Notification” — stuknij Body. Qalta odczytuje kwotę z treści powiadomienia, a nie z całego obiektu powiadomienia.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/10-pick-body.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-10"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 11,
+            "name": "Body przypisane",
+            "text": "Czynność Qalta powinna teraz brzmieć Log bank expense from Body.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/11-body-mapped.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-11"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 12,
+            "name": "Kategoria, konto i potwierdzenie",
+            "text": "Pozostałe pola są opcjonalne. Stuknij strzałkę, aby je rozwinąć. Opcje dla Category (kategoria) i Account (konto): Wybierz — wskaż konkretną kategorię lub konto z Qalta. Jeśli masz tylko jedno konto, zrób właśnie tak: wybierz je raz. Opcja Pytaj za każdym razem nie jest potrzebna. Pytaj za każdym razem — po każdym powiadomieniu Qalta zapyta, gdzie zapisać wydatek. Przydatne, jeśli masz kilka kategorii lub kont. Pole Wybierz możesz zostawić puste — Qalta użyje ustawień domyślnych i spróbuje rozpoznać kategorię. Pola Note i Date (notatka, data) mogą zostać puste. Włącz Show When Run, aby pojawiało się potwierdzenie. Stuknij strzałkę wstecz.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/12-category-account.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-12"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 13,
+            "name": "Gotowe",
+            "text": "Skrót pojawi się w sekcji Wszystkie skróty jako Log Bank Expense. Po następnym powiadomieniu o płatności z tej aplikacji banku Qalta zaproponuje zapisanie wydatku.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/13-all-shortcuts.png",
+            "url": "https://qalta.app/pl/tutorials/push-notification-ios-27#step-13"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Qalta",
+            "item": "https://qalta.app/pl/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Poradniki",
+            "item": "https://qalta.app/pl/tutorials/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Automatyzacja powiadomień z banku w iOS 27",
+            "item": "https://qalta.app/pl/tutorials/push-notification-ios-27"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/tutorials/tutorial.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="/pl/">
+        <img class="brand__mark" src="/assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">Menedżer finansów</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/pl/app/id6756010294" target="_blank" rel="noopener noreferrer"><span class="top-cta__full">Otwórz w App Store</span><span class="top-cta__short">App Store</span></a>
+    </div>
+  </header>
+
+  <main class="doc container">
+
+    <h1>Automatyzacja powiadomień z banku w iOS 27</h1>
+    <p class="lede">Gdy aplikacja banku wyśle powiadomienie o płatności, Qalta może zapisać je jako wydatek. Kwota i sprzedawca są odczytywane z treści powiadomienia.</p>
+    <p class="lede">Potrzebujesz iOS 27, aplikacji <strong>Qalta</strong> i <strong>Skróty</strong> oraz aplikacji banku, która wyświetla powiadomienia na ekranie blokady. Ten wyzwalacz nie jest dostępny w iOS 26.</p>
+
+    <ol class="steps">
+      <li id="step-1">
+        <p>Otwórz <strong>Skróty</strong> i stuknij przycisk <strong>+</strong> na dole, aby utworzyć nowy skrót.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/01-shortcuts.png" alt="Wszystkie skróty z przyciskiem plus" loading="lazy" />
+          <figcaption>Nowy skrót</figcaption>
+        </figure>
+      </li>
+      <li id="step-2">
+        <p>Otworzy się pusty edytor. W wyszukiwarce czynności stuknij etykietę <strong>Automatyzacja</strong> — albo wpisz „Automatyzacja”.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/02-new-shortcut.png" alt="Pusty edytor skrótu z etykietą Automatyzacja" loading="lazy" />
+          <figcaption>Etykieta Automatyzacja</figcaption>
+        </figure>
+      </li>
+      <li id="step-3">
+        <p>W sekcji <strong>Aplikacje</strong> stuknij <strong>Notification</strong> — „When I receive a notification from …”.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/03-notification-trigger.png" alt="Wyzwalacz powiadomienia na liście automatyzacji" loading="lazy" />
+          <figcaption>Wyzwalacz powiadomienia</figcaption>
+        </figure>
+      </li>
+      <li id="step-4">
+        <p>Pierwszy blok brzmi <strong>When I receive a notification from App</strong>. Stuknij niebieską etykietę <strong>App</strong>, aby wybrać swój bank.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/04-from-app.png" alt="When I receive a notification from App" loading="lazy" />
+          <figcaption>Wybierz aplikację</figcaption>
+        </figure>
+      </li>
+      <li id="step-5">
+        <p>Wyszukaj swój bank i stuknij aplikację, która wysyła powiadomienia o płatnościach (na przykład <strong>Kaspi.kz</strong>, a nie powiązaną aplikację do płatności czy kodów QR).</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/05-pick-bank.png" alt="Wybór aplikacji z wyszukiwaniem banku" loading="lazy" />
+          <figcaption>Aplikacja banku</figcaption>
+        </figure>
+      </li>
+      <li id="step-6">
+        <p>Powinien być teraz widoczny blok <strong>When I receive a notification from [bank]</strong>. W polu wyszukiwania na dole wpisz <strong>Qalta</strong>.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/06-bank-selected.png" alt="Wyzwalacz powiadomienia dla wybranej aplikacji banku" loading="lazy" />
+          <figcaption>Wyzwalacz banku ustawiony</figcaption>
+        </figure>
+      </li>
+      <li id="step-7">
+        <p>Stuknij <strong>Log Bank Expense</strong> (nie „Create Wallet Expense” i nie „Create Transaction”).</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/07-search-qalta.png" alt="Wyszukiwanie Log Bank Expense" loading="lazy" />
+          <figcaption>Czynność Qalta</figcaption>
+        </figure>
+      </li>
+      <li id="step-8">
+        <p>Powinny być widoczne dwa bloki: wyzwalacz powiadomienia i <strong>Log bank expense from Notification body</strong>. Stuknij szare pole <strong>Notification body</strong> (treść powiadomienia).</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/08-tap-body.png" alt="Log bank expense z polem Notification body" loading="lazy" />
+          <figcaption>Stuknij Notification body</figcaption>
+        </figure>
+      </li>
+      <li id="step-9">
+        <p>Pojawi się klawiatura. Nad nią stuknij <strong>Wybierz zmienną</strong>, a następnie niebieską etykietę <strong>Notification</strong> pod wyzwalaczem.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/09-select-variable.png" alt="Wybierz zmienną z etykietą Notification" loading="lazy" />
+          <figcaption>Wybierz zmienną → Notification</figcaption>
+        </figure>
+      </li>
+      <li id="step-10">
+        <p>Stuknij niebieską etykietę <strong>Notification</strong>, która jest teraz wewnątrz czynności Qalta. W arkuszu nie zostawiaj znacznika na „Notification” — stuknij <strong>Body</strong>. Qalta odczytuje kwotę z treści powiadomienia, a nie z całego obiektu powiadomienia.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/10-pick-body.png" alt="Właściwości powiadomienia: stuknij Body" loading="lazy" />
+          <figcaption>Pobierz → Body</figcaption>
+        </figure>
+      </li>
+      <li id="step-11">
+        <p>Czynność Qalta powinna teraz brzmieć <strong>Log bank expense from Body</strong>.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/11-body-mapped.png" alt="Body przypisane do Log bank expense" loading="lazy" />
+          <figcaption>Body przypisane</figcaption>
+        </figure>
+      </li>
+      <li id="step-12">
+        <p>Pozostałe pola są opcjonalne. Stuknij strzałkę, aby je rozwinąć. Opcje dla <strong>Category</strong> (kategoria) i <strong>Account</strong> (konto):</p><ul><li><strong>Wybierz</strong> — wskaż konkretną kategorię lub konto z Qalta. Jeśli masz tylko jedno konto, zrób właśnie tak: wybierz je raz. Opcja Pytaj za każdym razem nie jest potrzebna.</li><li><strong>Pytaj za każdym razem</strong> — po każdym powiadomieniu Qalta zapyta, gdzie zapisać wydatek. Przydatne, jeśli masz kilka kategorii lub kont.</li><li>Pole <strong>Wybierz</strong> możesz zostawić puste — Qalta użyje ustawień domyślnych i spróbuje rozpoznać kategorię.</li></ul><p>Pola <strong>Note</strong> i <strong>Date</strong> (notatka, data) mogą zostać puste. Włącz <strong>Show When Run</strong>, aby pojawiało się potwierdzenie. Stuknij strzałkę wstecz.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/12-category-account.png" alt="Category, Account i Show When Run" loading="lazy" />
+          <figcaption>Kategoria, konto i potwierdzenie</figcaption>
+        </figure>
+      </li>
+      <li id="step-13">
+        <p>Skrót pojawi się w sekcji <strong>Wszystkie skróty</strong> jako <strong>Log Bank Expense</strong>. Po następnym powiadomieniu o płatności z tej aplikacji banku Qalta zaproponuje zapisanie wydatku.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/13-all-shortcuts.png" alt="Log Bank Expense we Wszystkich skrótach" loading="lazy" />
+          <figcaption>Gotowe</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">Pełne wideo</h2>
+      <p>Wolisz śledzić nagranie ekranu?</p>
+      <figure>
+        <div class="player player-11">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="/assets/push_notification_ios_27_automation.mp4"
+            aria-label="Poradnik wideo: automatyzacja powiadomień z banku w iOS 27"
+          ></video>
+        </div>
+        <figcaption>Konfiguracja krok po kroku w iOS 27.</figcaption>
+      </figure>
+    </section>
+
+    <p><a class="home" href="/pl/tutorials/">Wszystkie poradniki</a></p>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="Strona">
+        <a href="/pl/tutorials/">Poradniki</a>
+        <a href="mailto:help.qalta.app@outlook.com">Pomoc</a>
+        <a href="/pl/privacy-policy">Polityka prywatności</a>
+        <a href="/pl/terms-and-conditions">Regulamin</a>
+      </nav>
+      <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
+    </div>
+    <div class="container">
+      <nav class="langs" aria-label="Język">
+        <svg class="langs__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <a href="/tutorials/push-notification-ios-27" hreflang="en" lang="en" data-set-lang="en">English</a>
+        <a href="/de/tutorials/push-notification-ios-27" hreflang="de" lang="de" data-set-lang="de">Deutsch</a>
+        <a href="/es/tutorials/push-notification-ios-27" hreflang="es" lang="es" data-set-lang="es">Español</a>
+        <a href="/fr/tutorials/push-notification-ios-27" hreflang="fr" lang="fr" data-set-lang="fr">Français</a>
+        <a href="/it/tutorials/push-notification-ios-27" hreflang="it" lang="it" data-set-lang="it">Italiano</a>
+        <a href="/ja/tutorials/push-notification-ios-27" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a>
+        <a href="/kk/tutorials/push-notification-ios-27" hreflang="kk" lang="kk" data-set-lang="kk">Қазақша</a>
+        <a href="/ko/tutorials/push-notification-ios-27" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a>
+        <a href="/pl/tutorials/push-notification-ios-27" hreflang="pl" lang="pl" data-set-lang="pl" aria-current="true">Polski</a>
+        <a href="/pt/tutorials/push-notification-ios-27" hreflang="pt" lang="pt" data-set-lang="pt">Português</a>
+        <a href="/ru/tutorials/push-notification-ios-27" hreflang="ru" lang="ru" data-set-lang="ru">Русский</a>
+        <a href="/th/tutorials/push-notification-ios-27" hreflang="th" lang="th" data-set-lang="th">ไทย</a>
+        <a href="/tr/tutorials/push-notification-ios-27" hreflang="tr" lang="tr" data-set-lang="tr">Türkçe</a>
+        <a href="/uk/tutorials/push-notification-ios-27" hreflang="uk" lang="uk" data-set-lang="uk">Українська</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) document.cookie = "lang=" + link.getAttribute("data-set-lang") + "; path=/; max-age=31536000; samesite=lax";
+    });
+  </script>
+</body>
+</html>

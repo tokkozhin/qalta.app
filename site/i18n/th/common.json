@@ -1,0 +1,16 @@
+{
+  "brandTag": "แอปจัดการเงิน",
+  "openInAppStore": "เปิดใน App Store",
+  "appStoreShort": "App Store",
+  "download": "ดาวน์โหลดบน App Store",
+  "footerNavLabel": "เว็บไซต์",
+  "nav": {
+    "home": "หน้าแรก",
+    "tutorials": "คู่มือ",
+    "support": "ความช่วยเหลือ",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "terms": "ข้อกำหนด"
+  },
+  "languageLabel": "ภาษา",
+  "legalNotice": "คำแปลนี้จัดทำขึ้นเพื่อความสะดวก หากมีข้อความแตกต่างจาก<a href=\"{englishUrl}\">ฉบับภาษาอังกฤษ</a> ให้ถือตามฉบับภาษาอังกฤษ"
+}

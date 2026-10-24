@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Automation tutorials",
+    "description": "Step-by-step guides to log Apple Pay purchases and bank notifications in Qalta automatically, for iOS 26 and iOS 27.",
+    "ogTitle": "Qalta automation tutorials",
+    "ogImageAlt": "Qalta automation tutorials for iOS 26 and iOS 27, next to the All Shortcuts screen.",
+    "h1": "Tutorials",
+    "lede": "How to install automations that save a purchase in Qalta. Pick the guide for your iOS version.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "After an Apple Pay payment, Qalta saves the purchase. Amount and merchant come from Wallet." },
+      "push-notification-ios-27": { "title": "Bank notifications", "text": "When a bank app posts a payment notification, Qalta saves it as an expense." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Same Apple Pay setup, using the Automation tab in Shortcuts." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Full video",
+    "videoLede": "Prefer to follow along on a screen recording?",
+    "allTutorials": "All tutorials"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Apple Pay automation on iOS 27",
+      "description": "Set up a shortcut so every Apple Pay purchase is saved in Qalta as an expense, with the amount and merchant from Wallet. For iOS 27.",
+      "ogTitle": "Apple Pay automation on iOS 27",
+      "ogImageAlt": "Apple Pay automation on iOS 27, next to the Create Wallet Expense shortcut.",
+      "h1": "Apple Pay automation on iOS 27",
+      "intro": [
+        "After an Apple Pay payment, Qalta can save the purchase as an expense. Amount and merchant come from the Wallet transaction; you can pick category and account each time, or set them in advance.",
+        "You need iOS 27, <strong>Qalta</strong> and <strong>Shortcuts</strong>, and cards in Wallet. On iOS 27 the Wallet trigger lives inside a new shortcut — there is no separate Automation tab."
+      ],
+      "steps": [
+        {
+          "html": "<p>Open <strong>Shortcuts</strong> and tap the <strong>+</strong> button at the bottom to create a new shortcut.</p>",
+          "caption": "New shortcut",
+          "alt": "All Shortcuts with the plus button"
+        },
+        {
+          "html": "<p>An empty editor opens. In the action search, tap the <strong>Automation</strong> chip — or type “Automation”.</p>",
+          "caption": "Automation chip",
+          "alt": "Empty shortcut editor with the Automation chip"
+        },
+        {
+          "html": "<p>Under <strong>Apps</strong>, tap <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (payment at a terminal).</p>",
+          "caption": "Wallet trigger",
+          "alt": "Wallet trigger in the Automation list"
+        },
+        {
+          "html": "<p>The first block says <strong>When Any Card is tapped</strong>. If you only want Qalta to run for some cards, tap the blue <strong>Any Card</strong> chip.</p>",
+          "caption": "Any Card",
+          "alt": "When Any Card is tapped trigger"
+        },
+        {
+          "html": "<p>Select the card you pay with (for example <strong>Kaspi Gold</strong>). Tap the checkmark.</p>",
+          "caption": "Which card to track",
+          "alt": "Selecting a payment card"
+        },
+        {
+          "html": "<p>You should now see one block: <strong>When [your card] is tapped</strong>. In the search field at the bottom, type <strong>Qalta</strong>.</p>",
+          "caption": "Card trigger is set",
+          "alt": "Wallet trigger for the selected card"
+        },
+        {
+          "html": "<p>Tap <strong>Create Wallet Expense</strong> (not “Create Transaction”).</p>",
+          "caption": "Qalta action",
+          "alt": "Searching for Create Wallet Expense"
+        },
+        {
+          "html": "<p>You should see two blocks: the Wallet trigger and the Qalta action. Tap the gray <strong>Amount</strong> field — a keypad appears. Above it, tap <strong>Select Variable</strong>.</p>",
+          "caption": "Tap Amount, then Select Variable",
+          "alt": "Amount field and Select Variable"
+        },
+        {
+          "html": "<p>On the Select Variable screen, tap the blue <strong>Transaction</strong> chip under the Wallet trigger. That is the Apple Pay payment, not Shortcut Input.</p>",
+          "caption": "Transaction",
+          "alt": "Selecting Transaction from the Wallet trigger"
+        },
+        {
+          "html": "<p>Tap the blue <strong>Transaction</strong> chip that now sits inside the Qalta action. In the sheet, do not leave the checkmark on “Transaction” — tap <strong>Amount</strong>.</p>",
+          "caption": "Get → Amount",
+          "alt": "Transaction properties: tap Amount"
+        },
+        {
+          "html": "<p>Repeat for the store name. Tap the chevron on the Qalta action to expand the fields. Tap <strong>Merchant</strong> → <strong>Select Variable</strong> → <strong>Transaction</strong>. Tap the chip again and pick <strong>Merchant</strong> from the list — not “Transaction”.</p>",
+          "caption": "Get → Merchant",
+          "alt": "Picking Merchant from the transaction"
+        },
+        {
+          "html": "<p>The remaining fields are optional. Options for <strong>Category</strong> and <strong>Account</strong>:</p><ul><li><strong>Choose</strong> — pick a specific category or account from Qalta. If you only have one account, do that: select it once. You do not need Ask Each Time.</li><li><strong>Ask Each Time</strong> — after each payment Qalta will ask where to save the expense. Useful if you have several categories or accounts.</li><li>You can leave <strong>Choose</strong> empty — Qalta will use defaults and try to detect the category.</li></ul><p><strong>Currency</strong>, <strong>Note</strong>, and <strong>Date</strong> can stay empty. Turn on <strong>Show When Run</strong> so a confirmation appears after payment. Tap the back arrow.</p>",
+          "caption": "Category, account, and confirmation",
+          "alt": "Category, Account, and Show When Run"
+        },
+        {
+          "html": "<p>The shortcut appears under <strong>All Shortcuts</strong> as <strong>Create Wallet Expense</strong>. After your next Apple Pay purchase with the selected card, Qalta will offer to save the expense.</p>",
+          "caption": "All set",
+          "alt": "Create Wallet Expense in All Shortcuts"
+        }
+      ],
+      "videoLabel": "Apple Pay automation tutorial for iOS 27 in English",
+      "videoCaption": "Setup walkthrough on iOS 27."
+    },
+    "push-notification-ios-27": {
+      "title": "Bank notification automation on iOS 27",
+      "description": "Set up a shortcut so a payment notification from your bank app is saved in Qalta as an expense, with the amount read from the text. For iOS 27.",
+      "ogTitle": "Bank notification automation on iOS 27",
+      "ogImageAlt": "Bank notification automation on iOS 27, next to the Log Bank Expense shortcut.",
+      "h1": "Bank notification automation on iOS 27",
+      "intro": [
+        "When your bank app sends a payment notification, Qalta can save it as an expense. The amount and merchant are parsed from the notification text.",
+        "You need iOS 27, <strong>Qalta</strong> and <strong>Shortcuts</strong>, and a bank app that posts lock-screen notifications. This trigger is not available on iOS 26."
+      ],
+      "steps": [
+        {
+          "html": "<p>Open <strong>Shortcuts</strong> and tap the <strong>+</strong> button at the bottom to create a new shortcut.</p>",
+          "caption": "New shortcut",
+          "alt": "All Shortcuts with the plus button"
+        },
+        {
+          "html": "<p>An empty editor opens. In the action search, tap the <strong>Automation</strong> chip — or type “Automation”.</p>",
+          "caption": "Automation chip",
+          "alt": "Empty shortcut editor with the Automation chip"
+        },
+        {
+          "html": "<p>Under <strong>Apps</strong>, tap <strong>Notification</strong> — “When I receive a notification from …”.</p>",
+          "caption": "Notification trigger",
+          "alt": "Notification trigger in the Automation list"
+        },
+        {
+          "html": "<p>The first block says <strong>When I receive a notification from App</strong>. Tap the blue <strong>App</strong> chip to choose your bank.</p>",
+          "caption": "Choose the app",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Search for your bank and tap the app that sends payment alerts (for example <strong>Kaspi.kz</strong>, not a related Pay or QR app).</p>",
+          "caption": "Bank app",
+          "alt": "App picker searching for the bank"
+        },
+        {
+          "html": "<p>You should now see <strong>When I receive a notification from [bank]</strong>. In the search field at the bottom, type <strong>Qalta</strong>.</p>",
+          "caption": "Bank trigger is set",
+          "alt": "Notification trigger for the selected bank app"
+        },
+        {
+          "html": "<p>Tap <strong>Log Bank Expense</strong> (not “Create Wallet Expense” and not “Create Transaction”).</p>",
+          "caption": "Qalta action",
+          "alt": "Searching for Log Bank Expense"
+        },
+        {
+          "html": "<p>You should see two blocks: the notification trigger and <strong>Log bank expense from Notification body</strong>. Tap the gray <strong>Notification body</strong> field.</p>",
+          "caption": "Tap Notification body",
+          "alt": "Log bank expense with Notification body field"
+        },
+        {
+          "html": "<p>A keyboard appears. Above it, tap <strong>Select Variable</strong>, then tap the blue <strong>Notification</strong> chip under the trigger.</p>",
+          "caption": "Select Variable → Notification",
+          "alt": "Select Variable with the Notification chip"
+        },
+        {
+          "html": "<p>Tap the blue <strong>Notification</strong> chip that now sits inside the Qalta action. In the sheet, do not leave the checkmark on “Notification” — tap <strong>Body</strong>. Qalta reads the amount from the notification text, not from the whole notification object.</p>",
+          "caption": "Get → Body",
+          "alt": "Notification properties: tap Body"
+        },
+        {
+          "html": "<p>The Qalta action should now say <strong>Log bank expense from Body</strong>.</p>",
+          "caption": "Body is mapped",
+          "alt": "Body mapped into Log bank expense"
+        },
+        {
+          "html": "<p>The remaining fields are optional. Tap the chevron to expand them. Options for <strong>Category</strong> and <strong>Account</strong>:</p><ul><li><strong>Choose</strong> — pick a specific category or account from Qalta. If you only have one account, do that: select it once. You do not need Ask Each Time.</li><li><strong>Ask Each Time</strong> — after each notification Qalta will ask where to save the expense. Useful if you have several categories or accounts.</li><li>You can leave <strong>Choose</strong> empty — Qalta will use defaults and try to detect the category.</li></ul><p><strong>Note</strong> and <strong>Date</strong> can stay empty. Turn on <strong>Show When Run</strong> so a confirmation appears. Tap the back arrow.</p>",
+          "caption": "Category, account, and confirmation",
+          "alt": "Category, Account, and Show When Run"
+        },
+        {
+          "html": "<p>The shortcut appears under <strong>All Shortcuts</strong> as <strong>Log Bank Expense</strong>. After the next payment notification from that bank app, Qalta will offer to save the expense.</p>",
+          "caption": "All set",
+          "alt": "Log Bank Expense in All Shortcuts"
+        }
+      ],
+      "videoLabel": "Bank notification automation tutorial for iOS 27",
+      "videoCaption": "Setup walkthrough on iOS 27."
+    },
+    "apple-pay-ios-26": {
+      "title": "Apple Pay automation on iOS 26",
+      "description": "Set up a Shortcuts automation so every Apple Pay purchase is saved in Qalta as an expense, with the amount and merchant filled in. For iOS 26.",
+      "ogTitle": "Apple Pay automation on iOS 26",
+      "ogImageAlt": "Apple Pay automation on iOS 26, next to the Create Wallet Expense action in Shortcuts.",
+      "h1": "Apple Pay automation on iOS 26",
+      "intro": [
+        "After an Apple Pay payment, Qalta can save the purchase as an expense. Amount and merchant come from the transaction; you can pick category and account each time, or set them in advance.",
+        "You need iOS 26, <strong>Qalta</strong> and <strong>Shortcuts</strong>, and cards in Wallet."
+      ],
+      "steps": [
+        {
+          "html": "<p>Open <strong>Settings → Wallet &amp; Apple Pay</strong>. Turn on <strong>Live Activities</strong> and <strong>Cellular Data</strong>.</p>",
+          "caption": "Wallet permissions",
+          "alt": "Wallet and Apple Pay permissions"
+        },
+        {
+          "html": "<p>Open <strong>Shortcuts</strong>, go to the <strong>Automation</strong> tab, and tap <strong>New Automation</strong>.</p>",
+          "caption": "New automation",
+          "alt": "Shortcuts Automation tab"
+        },
+        {
+          "html": "<p>Choose <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (payment at a terminal).</p>",
+          "caption": "Wallet trigger",
+          "alt": "Wallet trigger in the automation list"
+        },
+        {
+          "html": "<p>Select the cards you want Qalta to track. Tap <strong>Next</strong>.</p>",
+          "caption": "Which cards to track",
+          "alt": "Selecting payment cards"
+        },
+        {
+          "html": "<p>Keep the Wallet categories you care about (all is fine). Select <strong>Run Immediately</strong> (not Run After Confirmation). Tap <strong>Next</strong>.</p>",
+          "caption": "Categories",
+          "alt": "Wallet categories"
+        },
+        {
+          "html": "<p>On the tile screen, tap the gray <strong>Create New Shortcut</strong> card at the top left. Do not pick an existing shortcut from the list below.</p>",
+          "caption": "New shortcut",
+          "alt": "Create New Shortcut tile"
+        },
+        {
+          "html": "<p>An empty editor opens. In the action search at the bottom, type <strong>Qalta</strong> and tap <strong>Create Wallet Expense</strong> (not “Create Transaction”).</p>",
+          "caption": "Qalta action",
+          "alt": "Searching for Create Wallet Expense"
+        },
+        {
+          "html": "<p>You should see two blocks: “Receive transaction as input” and the Qalta action. Tap the gray <strong>Amount</strong> field in the Qalta action — a keypad appears. Above it, tap <strong>Select Variable</strong>.</p>",
+          "caption": "Tap Amount, then Select Variable",
+          "alt": "Amount field and Select Variable"
+        },
+        {
+          "html": "<p>On the Select Variable screen, tap the blue <strong>Shortcut Input</strong> chip under “Receive transaction as input”.</p>",
+          "caption": "Shortcut Input",
+          "alt": "Selecting Shortcut Input as the variable"
+        },
+        {
+          "html": "<p>Tap the blue <strong>Shortcut Input</strong> chip that now sits inside the Qalta action. In the sheet, Type should be <strong>Transaction</strong>. Do not leave the checkmark on “Transaction” — scroll the list and tap <strong>Amount</strong>.</p>",
+          "caption": "Type Transaction → Amount",
+          "alt": "Transaction properties: tap Amount"
+        },
+        {
+          "html": "<p>Repeat for the store name. Tap the chevron on the Qalta action to expand the fields. Tap <strong>Merchant</strong> → <strong>Select Variable</strong> → <strong>Shortcut Input</strong>. Tap the chip again, Type <strong>Transaction</strong>, then pick <strong>Merchant</strong> from the list.</p>",
+          "caption": "Type Transaction → Merchant",
+          "alt": "Picking Merchant from the transaction"
+        },
+        {
+          "html": "<p>The remaining fields are optional. Options for <strong>Category</strong> and <strong>Account</strong>:</p><ul><li><strong>Choose</strong> — pick a specific category or account from Qalta. If you only have one account, do that: select it once. You do not need Ask Each Time.</li><li><strong>Ask Each Time</strong> — after each payment Qalta will ask where to save the expense. Useful if you have several categories or accounts.</li><li>You can leave <strong>Choose</strong> empty — Qalta will use defaults and try to detect the category.</li></ul><p><strong>Currency</strong>, <strong>Note</strong>, and <strong>Date</strong> can stay empty. Turn on <strong>Show When Run</strong> so a confirmation appears after payment. Tap the blue checkmark at the top.</p>",
+          "caption": "Category, account, and confirmation",
+          "alt": "Category, Account, and Show When Run"
+        },
+        {
+          "html": "<p>The automation appears under <strong>Automation</strong>. After your next Apple Pay purchase with the selected card, Qalta will offer to save the expense.</p>",
+          "caption": "All set",
+          "alt": "Finished automation in the list"
+        }
+      ],
+      "videoLabel": "Apple Pay automation tutorial for iOS 26 in English",
+      "videoCaption": "Setup walkthrough on iOS 26."
+    }
+  }
+}

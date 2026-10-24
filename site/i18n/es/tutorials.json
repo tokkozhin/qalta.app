@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Tutoriales de automatización",
+    "description": "Guías paso a paso para registrar automáticamente en Qalta las compras con Apple Pay y las notificaciones del banco, para iOS 26 e iOS 27.",
+    "ogTitle": "Tutoriales de automatización de Qalta",
+    "ogImageAlt": "Tutoriales de automatización de Qalta para iOS 26 e iOS 27, junto a la pantalla Todos los atajos.",
+    "h1": "Tutoriales",
+    "lede": "Cómo instalar automatizaciones que guardan una compra en Qalta. Elige la guía para tu versión de iOS.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Tras un pago con Apple Pay, Qalta guarda la compra. El importe y el comercio vienen de Wallet." },
+      "push-notification-ios-27": { "title": "Notificaciones del banco", "text": "Cuando la app de tu banco envía una notificación de pago, Qalta la guarda como gasto." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "La misma configuración de Apple Pay, desde la pestaña Automatización de Atajos." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Vídeo completo",
+    "videoLede": "¿Prefieres seguir los pasos con una grabación de pantalla?",
+    "allTutorials": "Todos los tutoriales"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Automatización de Apple Pay en iOS 27",
+      "description": "Configura un atajo para que cada compra con Apple Pay se guarde en Qalta como gasto, con el importe y el comercio de Wallet. Para iOS 27.",
+      "ogTitle": "Automatización de Apple Pay en iOS 27",
+      "ogImageAlt": "Automatización de Apple Pay en iOS 27, junto al atajo Crear gasto desde Wallet.",
+      "h1": "Automatización de Apple Pay en iOS 27",
+      "intro": [
+        "Tras un pago con Apple Pay, Qalta puede guardar la compra como gasto. El importe y el comercio vienen de la transacción de Wallet; puedes elegir la categoría y la cuenta cada vez o fijarlas de antemano.",
+        "Necesitas iOS 27, <strong>Qalta</strong> y <strong>Atajos</strong>, y tarjetas en Wallet. En iOS 27 el activador de Wallet está dentro de un atajo nuevo: ya no hay una pestaña Automatización aparte."
+      ],
+      "steps": [
+        {
+          "html": "<p>Abre <strong>Atajos</strong> y toca el botón <strong>+</strong> de la parte inferior para crear un atajo nuevo.</p>",
+          "caption": "Atajo nuevo",
+          "alt": "Todos los atajos con el botón más"
+        },
+        {
+          "html": "<p>Se abre un editor vacío. En la búsqueda de acciones, toca la etiqueta <strong>Automatización</strong> o escribe «Automatización».</p>",
+          "caption": "Etiqueta Automatización",
+          "alt": "Editor de atajos vacío con la etiqueta Automatización"
+        },
+        {
+          "html": "<p>En <strong>Apps</strong>, toca <strong>Wallet</strong>: “When I tap a Wallet Card or Pass” (pago en un terminal).</p>",
+          "caption": "Activador de Wallet",
+          "alt": "Activador de Wallet en la lista de Automatización"
+        },
+        {
+          "html": "<p>El primer bloque dice <strong>When Any Card is tapped</strong>. Si solo quieres que Qalta se ejecute con algunas tarjetas, toca la etiqueta azul <strong>Cualquier tarjeta</strong>.</p>",
+          "caption": "Cualquier tarjeta",
+          "alt": "Activador When Any Card is tapped"
+        },
+        {
+          "html": "<p>Selecciona la tarjeta con la que pagas (por ejemplo, <strong>Kaspi Gold</strong>). Toca la marca de verificación.</p>",
+          "caption": "Qué tarjeta seguir",
+          "alt": "Selección de una tarjeta de pago"
+        },
+        {
+          "html": "<p>Ahora deberías ver un solo bloque: <strong>When [tu tarjeta] is tapped</strong>. En el campo de búsqueda de abajo, escribe <strong>Qalta</strong>.</p>",
+          "caption": "Activador de tarjeta listo",
+          "alt": "Activador de Wallet para la tarjeta seleccionada"
+        },
+        {
+          "html": "<p>Toca <strong>Crear gasto desde Wallet</strong> (no «Crear transacción»).</p>",
+          "caption": "Acción de Qalta",
+          "alt": "Búsqueda de Crear gasto desde Wallet"
+        },
+        {
+          "html": "<p>Deberías ver dos bloques: el activador de Wallet y la acción de Qalta. Toca el campo gris <strong>Importe</strong> y aparecerá un teclado numérico. Encima, toca <strong>Seleccionar variable</strong>.</p>",
+          "caption": "Toca Importe y luego Seleccionar variable",
+          "alt": "Campo Importe y Seleccionar variable"
+        },
+        {
+          "html": "<p>En la pantalla Seleccionar variable, toca la etiqueta azul <strong>Transacción</strong> bajo el activador de Wallet. Es el pago con Apple Pay, no Entrada del atajo.</p>",
+          "caption": "Transacción",
+          "alt": "Selección de Transacción desde el activador de Wallet"
+        },
+        {
+          "html": "<p>Toca la etiqueta azul <strong>Transacción</strong> que ahora está dentro de la acción de Qalta. En la hoja, no dejes la marca en «Transacción»: toca <strong>Importe</strong>.</p>",
+          "caption": "Obtener → Importe",
+          "alt": "Propiedades de la transacción: toca Importe"
+        },
+        {
+          "html": "<p>Repite lo mismo con el nombre de la tienda. Toca la flecha de la acción de Qalta para desplegar los campos. Toca <strong>Comercio</strong> → <strong>Seleccionar variable</strong> → <strong>Transacción</strong>. Vuelve a tocar la etiqueta y elige <strong>Comercio</strong> en la lista, no «Transacción».</p>",
+          "caption": "Obtener → Comercio",
+          "alt": "Elección de Comercio desde la transacción"
+        },
+        {
+          "html": "<p>El resto de los campos son opcionales. Opciones para <strong>Categoría</strong> y <strong>Cuenta</strong>:</p><ul><li><strong>Elegir</strong>: selecciona una categoría o cuenta concreta de Qalta. Si solo tienes una cuenta, haz esto: selecciónala una vez. No necesitas Preguntar cada vez.</li><li><strong>Preguntar cada vez</strong>: tras cada pago, Qalta te preguntará dónde guardar el gasto. Útil si tienes varias categorías o cuentas.</li><li>Puedes dejar <strong>Elegir</strong> vacío: Qalta usará los valores predeterminados e intentará detectar la categoría.</li></ul><p><strong>Divisa</strong>, <strong>Nota</strong> y <strong>Fecha</strong> pueden quedarse vacíos. Activa <strong>Mostrar al ejecutar</strong> para que aparezca una confirmación después del pago. Toca la flecha para volver.</p>",
+          "caption": "Categoría, cuenta y confirmación",
+          "alt": "Categoría, Cuenta y Mostrar al ejecutar"
+        },
+        {
+          "html": "<p>El atajo aparece en <strong>Todos los atajos</strong> como <strong>Crear gasto desde Wallet</strong>. Tras tu próxima compra con Apple Pay con la tarjeta seleccionada, Qalta te ofrecerá guardar el gasto.</p>",
+          "caption": "Todo listo",
+          "alt": "Crear gasto desde Wallet en Todos los atajos"
+        }
+      ],
+      "videoLabel": "Tutorial de automatización de Apple Pay para iOS 27, en inglés",
+      "videoCaption": "Configuración paso a paso en iOS 27."
+    },
+    "push-notification-ios-27": {
+      "title": "Automatización de notificaciones del banco en iOS 27",
+      "description": "Configura un atajo para que la notificación de pago de la app de tu banco se guarde en Qalta como gasto, con el importe leído del texto. Para iOS 27.",
+      "ogTitle": "Automatización de notificaciones del banco en iOS 27",
+      "ogImageAlt": "Automatización de notificaciones del banco en iOS 27, junto al atajo Registrar gasto bancario.",
+      "h1": "Automatización de notificaciones del banco en iOS 27",
+      "intro": [
+        "Cuando la app de tu banco envía una notificación de pago, Qalta puede guardarla como gasto. El importe y el comercio se extraen del texto de la notificación.",
+        "Necesitas iOS 27, <strong>Qalta</strong> y <strong>Atajos</strong>, y una app bancaria que muestre notificaciones en la pantalla de bloqueo. Este activador no está disponible en iOS 26."
+      ],
+      "steps": [
+        {
+          "html": "<p>Abre <strong>Atajos</strong> y toca el botón <strong>+</strong> de la parte inferior para crear un atajo nuevo.</p>",
+          "caption": "Atajo nuevo",
+          "alt": "Todos los atajos con el botón más"
+        },
+        {
+          "html": "<p>Se abre un editor vacío. En la búsqueda de acciones, toca la etiqueta <strong>Automatización</strong> o escribe «Automatización».</p>",
+          "caption": "Etiqueta Automatización",
+          "alt": "Editor de atajos vacío con la etiqueta Automatización"
+        },
+        {
+          "html": "<p>En <strong>Apps</strong>, toca <strong>Notificación</strong>: “When I receive a notification from …”.</p>",
+          "caption": "Activador de notificación",
+          "alt": "Activador de notificación en la lista de Automatización"
+        },
+        {
+          "html": "<p>El primer bloque dice <strong>When I receive a notification from App</strong>. Toca la etiqueta azul <strong>App</strong> para elegir tu banco.</p>",
+          "caption": "Elige la app",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Busca tu banco y toca la app que envía los avisos de pago (por ejemplo, <strong>Kaspi.kz</strong>, no una app relacionada de pagos o QR).</p>",
+          "caption": "App del banco",
+          "alt": "Selector de apps buscando el banco"
+        },
+        {
+          "html": "<p>Ahora deberías ver <strong>When I receive a notification from [banco]</strong>. En el campo de búsqueda de abajo, escribe <strong>Qalta</strong>.</p>",
+          "caption": "Activador del banco listo",
+          "alt": "Activador de notificación para la app bancaria seleccionada"
+        },
+        {
+          "html": "<p>Toca <strong>Registrar gasto bancario</strong> (no «Crear gasto desde Wallet» ni «Crear transacción»).</p>",
+          "caption": "Acción de Qalta",
+          "alt": "Búsqueda de Registrar gasto bancario"
+        },
+        {
+          "html": "<p>Deberías ver dos bloques: el activador de notificación y <strong>Registrar gasto de Cuerpo de la notificación en Qalta</strong>. Toca el campo gris <strong>Cuerpo de la notificación</strong>.</p>",
+          "caption": "Toca Cuerpo de la notificación",
+          "alt": "Registrar gasto bancario con el campo Cuerpo de la notificación"
+        },
+        {
+          "html": "<p>Aparece un teclado. Encima, toca <strong>Seleccionar variable</strong> y luego la etiqueta azul <strong>Notificación</strong> bajo el activador.</p>",
+          "caption": "Seleccionar variable → Notificación",
+          "alt": "Seleccionar variable con la etiqueta Notificación"
+        },
+        {
+          "html": "<p>Toca la etiqueta azul <strong>Notificación</strong> que ahora está dentro de la acción de Qalta. En la hoja, no dejes la marca en «Notificación»: toca <strong>Body</strong>. Qalta lee el importe del texto de la notificación, no de la notificación completa.</p>",
+          "caption": "Obtener → Body",
+          "alt": "Propiedades de la notificación: toca Body"
+        },
+        {
+          "html": "<p>La acción de Qalta debería decir ahora <strong>Registrar gasto de Body en Qalta</strong>.</p>",
+          "caption": "Body asignado",
+          "alt": "Body asignado en Registrar gasto bancario"
+        },
+        {
+          "html": "<p>El resto de los campos son opcionales. Toca la flecha para desplegarlos. Opciones para <strong>Categoría</strong> y <strong>Cuenta</strong>:</p><ul><li><strong>Elegir</strong>: selecciona una categoría o cuenta concreta de Qalta. Si solo tienes una cuenta, haz esto: selecciónala una vez. No necesitas Preguntar cada vez.</li><li><strong>Preguntar cada vez</strong>: tras cada notificación, Qalta te preguntará dónde guardar el gasto. Útil si tienes varias categorías o cuentas.</li><li>Puedes dejar <strong>Elegir</strong> vacío: Qalta usará los valores predeterminados e intentará detectar la categoría.</li></ul><p><strong>Nota</strong> y <strong>Fecha</strong> pueden quedarse vacíos. Activa <strong>Mostrar al ejecutar</strong> para que aparezca una confirmación. Toca la flecha para volver.</p>",
+          "caption": "Categoría, cuenta y confirmación",
+          "alt": "Categoría, Cuenta y Mostrar al ejecutar"
+        },
+        {
+          "html": "<p>El atajo aparece en <strong>Todos los atajos</strong> como <strong>Registrar gasto bancario</strong>. Tras la próxima notificación de pago de esa app bancaria, Qalta te ofrecerá guardar el gasto.</p>",
+          "caption": "Todo listo",
+          "alt": "Registrar gasto bancario en Todos los atajos"
+        }
+      ],
+      "videoLabel": "Tutorial de automatización de notificaciones del banco para iOS 27",
+      "videoCaption": "Configuración paso a paso en iOS 27."
+    },
+    "apple-pay-ios-26": {
+      "title": "Automatización de Apple Pay en iOS 26",
+      "description": "Configura una automatización de Atajos para que cada compra con Apple Pay se guarde en Qalta como gasto, con el importe y el comercio ya rellenados. Para iOS 26.",
+      "ogTitle": "Automatización de Apple Pay en iOS 26",
+      "ogImageAlt": "Automatización de Apple Pay en iOS 26, junto a la acción Crear gasto desde Wallet en Atajos.",
+      "h1": "Automatización de Apple Pay en iOS 26",
+      "intro": [
+        "Tras un pago con Apple Pay, Qalta puede guardar la compra como gasto. El importe y el comercio vienen de la transacción; puedes elegir la categoría y la cuenta cada vez o fijarlas de antemano.",
+        "Necesitas iOS 26, <strong>Qalta</strong> y <strong>Atajos</strong>, y tarjetas en Wallet."
+      ],
+      "steps": [
+        {
+          "html": "<p>Abre <strong>Ajustes → Wallet y Apple Pay</strong>. Activa <strong>Actividades en vivo</strong> y <strong>Datos móviles</strong>.</p>",
+          "caption": "Permisos de Wallet",
+          "alt": "Permisos de Wallet y Apple Pay"
+        },
+        {
+          "html": "<p>Abre <strong>Atajos</strong>, ve a la pestaña <strong>Automatización</strong> y toca <strong>Nueva automatización</strong>.</p>",
+          "caption": "Nueva automatización",
+          "alt": "Pestaña Automatización de Atajos"
+        },
+        {
+          "html": "<p>Elige <strong>Wallet</strong>: “When I tap a Wallet Card or Pass” (pago en un terminal).</p>",
+          "caption": "Activador de Wallet",
+          "alt": "Activador de Wallet en la lista de automatizaciones"
+        },
+        {
+          "html": "<p>Selecciona las tarjetas que quieres que Qalta siga. Toca <strong>Siguiente</strong>.</p>",
+          "caption": "Qué tarjetas seguir",
+          "alt": "Selección de tarjetas de pago"
+        },
+        {
+          "html": "<p>Deja las categorías de Wallet que te interesen (todas está bien). Selecciona <strong>Ejecutar inmediatamente</strong> (no Run After Confirmation). Toca <strong>Siguiente</strong>.</p>",
+          "caption": "Categorías",
+          "alt": "Categorías de Wallet"
+        },
+        {
+          "html": "<p>En la pantalla de mosaicos, toca la tarjeta gris <strong>Create New Shortcut</strong> arriba a la izquierda. No elijas un atajo existente de la lista de abajo.</p>",
+          "caption": "Atajo nuevo",
+          "alt": "Mosaico Create New Shortcut"
+        },
+        {
+          "html": "<p>Se abre un editor vacío. En la búsqueda de acciones de abajo, escribe <strong>Qalta</strong> y toca <strong>Crear gasto desde Wallet</strong> (no «Crear transacción»).</p>",
+          "caption": "Acción de Qalta",
+          "alt": "Búsqueda de Crear gasto desde Wallet"
+        },
+        {
+          "html": "<p>Deberías ver dos bloques: “Receive transaction as input” y la acción de Qalta. Toca el campo gris <strong>Importe</strong> de la acción de Qalta y aparecerá un teclado numérico. Encima, toca <strong>Seleccionar variable</strong>.</p>",
+          "caption": "Toca Importe y luego Seleccionar variable",
+          "alt": "Campo Importe y Seleccionar variable"
+        },
+        {
+          "html": "<p>En la pantalla Seleccionar variable, toca la etiqueta azul <strong>Entrada del atajo</strong> bajo “Receive transaction as input”.</p>",
+          "caption": "Entrada del atajo",
+          "alt": "Selección de Entrada del atajo como variable"
+        },
+        {
+          "html": "<p>Toca la etiqueta azul <strong>Entrada del atajo</strong> que ahora está dentro de la acción de Qalta. En la hoja, Tipo debe ser <strong>Transacción</strong>. No dejes la marca en «Transacción»: desplázate por la lista y toca <strong>Importe</strong>.</p>",
+          "caption": "Tipo Transacción → Importe",
+          "alt": "Propiedades de la transacción: toca Importe"
+        },
+        {
+          "html": "<p>Repite lo mismo con el nombre de la tienda. Toca la flecha de la acción de Qalta para desplegar los campos. Toca <strong>Comercio</strong> → <strong>Seleccionar variable</strong> → <strong>Entrada del atajo</strong>. Vuelve a tocar la etiqueta, Tipo <strong>Transacción</strong>, y elige <strong>Comercio</strong> en la lista.</p>",
+          "caption": "Tipo Transacción → Comercio",
+          "alt": "Elección de Comercio desde la transacción"
+        },
+        {
+          "html": "<p>El resto de los campos son opcionales. Opciones para <strong>Categoría</strong> y <strong>Cuenta</strong>:</p><ul><li><strong>Elegir</strong>: selecciona una categoría o cuenta concreta de Qalta. Si solo tienes una cuenta, haz esto: selecciónala una vez. No necesitas Preguntar cada vez.</li><li><strong>Preguntar cada vez</strong>: tras cada pago, Qalta te preguntará dónde guardar el gasto. Útil si tienes varias categorías o cuentas.</li><li>Puedes dejar <strong>Elegir</strong> vacío: Qalta usará los valores predeterminados e intentará detectar la categoría.</li></ul><p><strong>Divisa</strong>, <strong>Nota</strong> y <strong>Fecha</strong> pueden quedarse vacíos. Activa <strong>Mostrar al ejecutar</strong> para que aparezca una confirmación después del pago. Toca la marca de verificación azul de arriba.</p>",
+          "caption": "Categoría, cuenta y confirmación",
+          "alt": "Categoría, Cuenta y Mostrar al ejecutar"
+        },
+        {
+          "html": "<p>La automatización aparece en <strong>Automatización</strong>. Tras tu próxima compra con Apple Pay con la tarjeta seleccionada, Qalta te ofrecerá guardar el gasto.</p>",
+          "caption": "Todo listo",
+          "alt": "Automatización terminada en la lista"
+        }
+      ],
+      "videoLabel": "Tutorial de automatización de Apple Pay para iOS 26, en inglés",
+      "videoCaption": "Configuración paso a paso en iOS 26."
+    }
+  }
+}

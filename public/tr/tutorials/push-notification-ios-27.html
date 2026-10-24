@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iOS 27’de banka bildirimi otomasyonu — Qalta</title>
+  <meta name="description" content="Banka uygulamanızdan gelen ödeme bildirimi, tutarı metinden okunarak Qalta’ya gider olarak kaydedilsin diye bir kestirme kurun. iOS 27 için." />
+  <link rel="canonical" href="https://qalta.app/tr/tutorials/push-notification-ios-27" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="apple-itunes-app" content="app-id=6756010294" />
+  <link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="es" href="https://qalta.app/es/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="fr" href="https://qalta.app/fr/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="it" href="https://qalta.app/it/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ja" href="https://qalta.app/ja/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="kk" href="https://qalta.app/kk/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ko" href="https://qalta.app/ko/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="pl" href="https://qalta.app/pl/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="pt" href="https://qalta.app/pt/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="ru" href="https://qalta.app/ru/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="th" href="https://qalta.app/th/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="tr" href="https://qalta.app/tr/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="uk" href="https://qalta.app/uk/tutorials/push-notification-ios-27" />
+  <link rel="alternate" hreflang="x-default" href="https://qalta.app/tutorials/push-notification-ios-27" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="pl_PL" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="th_TH" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://qalta.app/tr/tutorials/push-notification-ios-27" />
+  <meta property="og:title" content="iOS 27’de banka bildirimi otomasyonu" />
+  <meta property="og:description" content="Banka uygulamanızdan gelen ödeme bildirimi, tutarı metinden okunarak Qalta’ya gider olarak kaydedilsin diye bir kestirme kurun. iOS 27 için." />
+  <meta property="og:image" content="https://qalta.app/assets/og/push-notification-ios-27.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="iOS 27’de banka bildirimi otomasyonu, yanında Log Bank Expense kestirmesi." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="iOS 27’de banka bildirimi otomasyonu" />
+  <meta name="twitter:description" content="Banka uygulamanızdan gelen ödeme bildirimi, tutarı metinden okunarak Qalta’ya gider olarak kaydedilsin diye bir kestirme kurun. iOS 27 için." />
+  <meta name="twitter:image" content="https://qalta.app/assets/og/push-notification-ios-27.png" />
+  <meta name="twitter:image:alt" content="iOS 27’de banka bildirimi otomasyonu, yanında Log Bank Expense kestirmesi." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://qalta.app/tr/tutorials/push-notification-ios-27#howto",
+        "name": "iOS 27’de banka bildirimi otomasyonu",
+        "description": "Banka uygulamanızdan gelen ödeme bildirimi, tutarı metinden okunarak Qalta’ya gider olarak kaydedilsin diye bir kestirme kurun. iOS 27 için.",
+        "image": "https://qalta.app/assets/og/push-notification-ios-27.png",
+        "inLanguage": "tr",
+        "url": "https://qalta.app/tr/tutorials/push-notification-ios-27",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Qalta"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Apple Shortcuts"
+          }
+        ],
+        "about": {
+          "@type": "MobileApplication",
+          "@id": "https://qalta.app/#app",
+          "name": "Qalta",
+          "operatingSystem": "iOS"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://qalta.app/#organization",
+          "name": "Qalta",
+          "url": "https://qalta.app/"
+        },
+        "video": {
+          "@type": "VideoObject",
+          "name": "iOS 27’de banka bildirimi otomasyonu",
+          "description": "iOS 27 için banka bildirimi otomasyonu rehberi",
+          "contentUrl": "https://qalta.app/assets/push_notification_ios_27_automation.mp4",
+          "thumbnailUrl": "https://qalta.app/assets/og/push-notification-ios-27.png",
+          "uploadDate": "2026-09-29"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Yeni kestirme",
+            "text": "Kestirmeler ’i açın ve yeni bir kestirme oluşturmak için alttaki + düğmesine dokunun.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/01-shortcuts.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Otomasyon etiketi",
+            "text": "Boş bir düzenleyici açılır. Eylem aramasında Otomasyon etiketine dokunun — ya da “Otomasyon” yazın.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/02-new-shortcut.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Bildirim tetikleyicisi",
+            "text": "Uygulamalar altında Bildirim ’e dokunun — “When I receive a notification from …”.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/03-notification-trigger.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-3"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Uygulamayı seçin",
+            "text": "İlk blokta When I receive a notification from App yazar. Bankanızı seçmek için mavi App etiketine dokunun.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/04-from-app.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-4"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Banka uygulaması",
+            "text": "Bankanızı arayın ve ödeme uyarılarını gönderen uygulamaya dokunun (örneğin Kaspi.kz; ilgili Pay veya QR uygulamasına değil).",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/05-pick-bank.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-5"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Banka tetikleyicisi hazır",
+            "text": "Artık When I receive a notification from [banka] görmelisiniz. Alttaki arama alanına Qalta yazın.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/06-bank-selected.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-6"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Qalta eylemi",
+            "text": "Log Bank Expense ’e dokunun (“Create Wallet Expense”e veya “Create Transaction”a değil).",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/07-search-qalta.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-7"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "Notification body’ye dokunun",
+            "text": "İki blok görmelisiniz: bildirim tetikleyicisi ve Log bank expense from Notification body. Gri Notification body (bildirim metni) alanına dokunun.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/08-tap-body.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-8"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 9,
+            "name": "Değişken Seç → Notification",
+            "text": "Klavye açılır. Hemen üstünde Değişken Seç ’e, ardından tetikleyicinin altındaki mavi Notification etiketine dokunun.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/09-select-variable.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-9"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 10,
+            "name": "Al → Body",
+            "text": "Artık Qalta eyleminin içinde duran mavi Notification etiketine dokunun. Açılan pencerede onay işaretini “Notification” üzerinde bırakmayın — Body ’ye dokunun. Qalta tutarı bildirim nesnesinin tamamından değil, bildirim metninden okur.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/10-pick-body.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-10"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 11,
+            "name": "Body eşlendi",
+            "text": "Qalta eyleminde artık Log bank expense from Body yazmalı.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/11-body-mapped.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-11"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 12,
+            "name": "Kategori, hesap ve onay",
+            "text": "Kalan alanlar isteğe bağlıdır. Genişletmek için oka dokunun. Category (kategori) ve Account (hesap) için seçenekler: Seç — Qalta’dan belirli bir kategori veya hesap seçin. Tek hesabınız varsa bunu yapın: bir kez seçin. Her Seferinde Sor’a gerek yok. Her Seferinde Sor — her bildirimden sonra Qalta gideri nereye kaydedeceğini sorar. Birden fazla kategori veya hesabınız varsa kullanışlıdır. Seç ’i boş bırakabilirsiniz — Qalta varsayılanları kullanır ve kategoriyi algılamaya çalışır. Note ve Date boş kalabilir. Onay görünsün diye Çalıştırıldığında Göster ’i açın. Geri okuna dokunun.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/12-category-account.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-12"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 13,
+            "name": "Hazır",
+            "text": "Kestirme Tüm Kestirmeler altında Log Bank Expense adıyla görünür. O banka uygulamasından gelecek bir sonraki ödeme bildiriminden sonra Qalta gideri kaydetmeyi önerecek.",
+            "image": "https://qalta.app/assets/push-notification-ios-27/en/13-all-shortcuts.png",
+            "url": "https://qalta.app/tr/tutorials/push-notification-ios-27#step-13"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Qalta",
+            "item": "https://qalta.app/tr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rehberler",
+            "item": "https://qalta.app/tr/tutorials/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "iOS 27’de banka bildirimi otomasyonu",
+            "item": "https://qalta.app/tr/tutorials/push-notification-ios-27"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/tutorials/tutorial.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="/tr/">
+        <img class="brand__mark" src="/assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">Para yöneticisi</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/tr/app/id6756010294" target="_blank" rel="noopener noreferrer"><span class="top-cta__full">App Store’da aç</span><span class="top-cta__short">App Store</span></a>
+    </div>
+  </header>
+
+  <main class="doc container">
+
+    <h1>iOS 27’de banka bildirimi otomasyonu</h1>
+    <p class="lede">Banka uygulamanız bir ödeme bildirimi gönderdiğinde Qalta bunu gider olarak kaydedebilir. Tutar ve işyeri bildirim metninden okunur.</p>
+    <p class="lede">Gerekenler: iOS 27, <strong>Qalta</strong> ve <strong>Kestirmeler</strong> uygulamaları ve kilit ekranına bildirim gönderen bir banka uygulaması. Bu tetikleyici iOS 26’da yoktur.</p>
+
+    <ol class="steps">
+      <li id="step-1">
+        <p><strong>Kestirmeler</strong>’i açın ve yeni bir kestirme oluşturmak için alttaki <strong>+</strong> düğmesine dokunun.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/01-shortcuts.png" alt="Artı düğmesiyle Tüm Kestirmeler" loading="lazy" />
+          <figcaption>Yeni kestirme</figcaption>
+        </figure>
+      </li>
+      <li id="step-2">
+        <p>Boş bir düzenleyici açılır. Eylem aramasında <strong>Otomasyon</strong> etiketine dokunun — ya da “Otomasyon” yazın.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/02-new-shortcut.png" alt="Otomasyon etiketiyle boş kestirme düzenleyicisi" loading="lazy" />
+          <figcaption>Otomasyon etiketi</figcaption>
+        </figure>
+      </li>
+      <li id="step-3">
+        <p><strong>Uygulamalar</strong> altında <strong>Bildirim</strong>’e dokunun — “When I receive a notification from …”.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/03-notification-trigger.png" alt="Otomasyon listesinde Bildirim tetikleyicisi" loading="lazy" />
+          <figcaption>Bildirim tetikleyicisi</figcaption>
+        </figure>
+      </li>
+      <li id="step-4">
+        <p>İlk blokta <strong>When I receive a notification from App</strong> yazar. Bankanızı seçmek için mavi <strong>App</strong> etiketine dokunun.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/04-from-app.png" alt="When I receive a notification from App" loading="lazy" />
+          <figcaption>Uygulamayı seçin</figcaption>
+        </figure>
+      </li>
+      <li id="step-5">
+        <p>Bankanızı arayın ve ödeme uyarılarını gönderen uygulamaya dokunun (örneğin <strong>Kaspi.kz</strong>; ilgili Pay veya QR uygulamasına değil).</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/05-pick-bank.png" alt="Banka aranan uygulama seçici" loading="lazy" />
+          <figcaption>Banka uygulaması</figcaption>
+        </figure>
+      </li>
+      <li id="step-6">
+        <p>Artık <strong>When I receive a notification from [banka]</strong> görmelisiniz. Alttaki arama alanına <strong>Qalta</strong> yazın.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/06-bank-selected.png" alt="Seçilen banka uygulaması için Bildirim tetikleyicisi" loading="lazy" />
+          <figcaption>Banka tetikleyicisi hazır</figcaption>
+        </figure>
+      </li>
+      <li id="step-7">
+        <p><strong>Log Bank Expense</strong>’e dokunun (“Create Wallet Expense”e veya “Create Transaction”a değil).</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/07-search-qalta.png" alt="Log Bank Expense araması" loading="lazy" />
+          <figcaption>Qalta eylemi</figcaption>
+        </figure>
+      </li>
+      <li id="step-8">
+        <p>İki blok görmelisiniz: bildirim tetikleyicisi ve <strong>Log bank expense from Notification body</strong>. Gri <strong>Notification body</strong> (bildirim metni) alanına dokunun.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/08-tap-body.png" alt="Notification body alanıyla Log bank expense" loading="lazy" />
+          <figcaption>Notification body’ye dokunun</figcaption>
+        </figure>
+      </li>
+      <li id="step-9">
+        <p>Klavye açılır. Hemen üstünde <strong>Değişken Seç</strong>’e, ardından tetikleyicinin altındaki mavi <strong>Notification</strong> etiketine dokunun.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/09-select-variable.png" alt="Notification etiketiyle Değişken Seç" loading="lazy" />
+          <figcaption>Değişken Seç → Notification</figcaption>
+        </figure>
+      </li>
+      <li id="step-10">
+        <p>Artık Qalta eyleminin içinde duran mavi <strong>Notification</strong> etiketine dokunun. Açılan pencerede onay işaretini “Notification” üzerinde bırakmayın — <strong>Body</strong>’ye dokunun. Qalta tutarı bildirim nesnesinin tamamından değil, bildirim metninden okur.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/10-pick-body.png" alt="Notification özellikleri: Body’ye dokunun" loading="lazy" />
+          <figcaption>Al → Body</figcaption>
+        </figure>
+      </li>
+      <li id="step-11">
+        <p>Qalta eyleminde artık <strong>Log bank expense from Body</strong> yazmalı.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/11-body-mapped.png" alt="Log bank expense’e eşlenen Body" loading="lazy" />
+          <figcaption>Body eşlendi</figcaption>
+        </figure>
+      </li>
+      <li id="step-12">
+        <p>Kalan alanlar isteğe bağlıdır. Genişletmek için oka dokunun. <strong>Category</strong> (kategori) ve <strong>Account</strong> (hesap) için seçenekler:</p><ul><li><strong>Seç</strong> — Qalta’dan belirli bir kategori veya hesap seçin. Tek hesabınız varsa bunu yapın: bir kez seçin. Her Seferinde Sor’a gerek yok.</li><li><strong>Her Seferinde Sor</strong> — her bildirimden sonra Qalta gideri nereye kaydedeceğini sorar. Birden fazla kategori veya hesabınız varsa kullanışlıdır.</li><li><strong>Seç</strong>’i boş bırakabilirsiniz — Qalta varsayılanları kullanır ve kategoriyi algılamaya çalışır.</li></ul><p><strong>Note</strong> ve <strong>Date</strong> boş kalabilir. Onay görünsün diye <strong>Çalıştırıldığında Göster</strong>’i açın. Geri okuna dokunun.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/12-category-account.png" alt="Category, Account ve Çalıştırıldığında Göster" loading="lazy" />
+          <figcaption>Kategori, hesap ve onay</figcaption>
+        </figure>
+      </li>
+      <li id="step-13">
+        <p>Kestirme <strong>Tüm Kestirmeler</strong> altında <strong>Log Bank Expense</strong> adıyla görünür. O banka uygulamasından gelecek bir sonraki ödeme bildiriminden sonra Qalta gideri kaydetmeyi önerecek.</p>
+        <figure>
+          <img src="/assets/push-notification-ios-27/en/13-all-shortcuts.png" alt="Tüm Kestirmeler’de Log Bank Expense" loading="lazy" />
+          <figcaption>Hazır</figcaption>
+        </figure>
+      </li>
+    </ol>
+
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading">Videonun tamamı</h2>
+      <p>Ekran kaydını izleyerek ilerlemeyi mi tercih edersiniz?</p>
+      <figure>
+        <div class="player player-11">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            src="/assets/push_notification_ios_27_automation.mp4"
+            aria-label="iOS 27 için banka bildirimi otomasyonu rehberi"
+          ></video>
+        </div>
+        <figcaption>iOS 27’de kurulumun adım adım gösterimi.</figcaption>
+      </figure>
+    </section>
+
+    <p><a class="home" href="/tr/tutorials/">Tüm rehberler</a></p>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="Site">
+        <a href="/tr/tutorials/">Rehberler</a>
+        <a href="mailto:help.qalta.app@outlook.com">Destek</a>
+        <a href="/tr/privacy-policy">Gizlilik Politikası</a>
+        <a href="/tr/terms-and-conditions">Koşullar</a>
+      </nav>
+      <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
+    </div>
+    <div class="container">
+      <nav class="langs" aria-label="Dil">
+        <svg class="langs__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <a href="/tutorials/push-notification-ios-27" hreflang="en" lang="en" data-set-lang="en">English</a>
+        <a href="/de/tutorials/push-notification-ios-27" hreflang="de" lang="de" data-set-lang="de">Deutsch</a>
+        <a href="/es/tutorials/push-notification-ios-27" hreflang="es" lang="es" data-set-lang="es">Español</a>
+        <a href="/fr/tutorials/push-notification-ios-27" hreflang="fr" lang="fr" data-set-lang="fr">Français</a>
+        <a href="/it/tutorials/push-notification-ios-27" hreflang="it" lang="it" data-set-lang="it">Italiano</a>
+        <a href="/ja/tutorials/push-notification-ios-27" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a>
+        <a href="/kk/tutorials/push-notification-ios-27" hreflang="kk" lang="kk" data-set-lang="kk">Қазақша</a>
+        <a href="/ko/tutorials/push-notification-ios-27" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a>
+        <a href="/pl/tutorials/push-notification-ios-27" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a>
+        <a href="/pt/tutorials/push-notification-ios-27" hreflang="pt" lang="pt" data-set-lang="pt">Português</a>
+        <a href="/ru/tutorials/push-notification-ios-27" hreflang="ru" lang="ru" data-set-lang="ru">Русский</a>
+        <a href="/th/tutorials/push-notification-ios-27" hreflang="th" lang="th" data-set-lang="th">ไทย</a>
+        <a href="/tr/tutorials/push-notification-ios-27" hreflang="tr" lang="tr" data-set-lang="tr" aria-current="true">Türkçe</a>
+        <a href="/uk/tutorials/push-notification-ios-27" hreflang="uk" lang="uk" data-set-lang="uk">Українська</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) document.cookie = "lang=" + link.getAttribute("data-set-lang") + "; path=/; max-age=31536000; samesite=lax";
+    });
+  </script>
+</body>
+</html>

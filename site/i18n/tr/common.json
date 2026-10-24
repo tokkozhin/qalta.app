@@ -1,0 +1,16 @@
+{
+  "brandTag": "Para yöneticisi",
+  "openInAppStore": "App Store’da aç",
+  "appStoreShort": "App Store",
+  "download": "App Store’dan indirin",
+  "footerNavLabel": "Site",
+  "nav": {
+    "home": "Ana sayfa",
+    "tutorials": "Rehberler",
+    "support": "Destek",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Koşullar"
+  },
+  "languageLabel": "Dil",
+  "legalNotice": "Bu çeviri kolaylık sağlamak amacıyla sunulmuştur. <a href=\"{englishUrl}\">İngilizce sürümden</a> farklı olması durumunda İngilizce sürüm geçerlidir."
+}

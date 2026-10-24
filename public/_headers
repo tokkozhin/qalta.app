@@ -1,0 +1,16 @@
+/llms.txt
+  Content-Type: text/markdown; charset=utf-8
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/oauth/consent/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/oauth/consent/config.js
+  Cache-Control: no-store

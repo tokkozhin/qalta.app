@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Tutoriais de automação",
+    "description": "Guias passo a passo para registrar automaticamente no Qalta compras com Apple Pay e notificações do banco, no iOS 26 e no iOS 27.",
+    "ogTitle": "Tutoriais de automação do Qalta",
+    "ogImageAlt": "Tutoriais de automação do Qalta para iOS 26 e iOS 27, ao lado da tela Todos os Atalhos.",
+    "h1": "Tutoriais",
+    "lede": "Como configurar automações que salvam uma compra no Qalta. Escolha o guia da sua versão do iOS.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Depois de um pagamento com Apple Pay, o Qalta salva a compra. Valor e estabelecimento vêm do Wallet." },
+      "push-notification-ios-27": { "title": "Notificações do banco", "text": "Quando o app do banco envia uma notificação de pagamento, o Qalta a salva como despesa." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "A mesma configuração do Apple Pay, pela aba Automação do app Atalhos." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Vídeo completo",
+    "videoLede": "Prefere acompanhar por uma gravação de tela?",
+    "allTutorials": "Todos os tutoriais"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Automação do Apple Pay no iOS 27",
+      "description": "Configure um atalho para que cada compra com Apple Pay seja salva no Qalta como despesa, com o valor e o estabelecimento vindos do Wallet. Para iOS 27.",
+      "ogTitle": "Automação do Apple Pay no iOS 27",
+      "ogImageAlt": "Automação do Apple Pay no iOS 27, ao lado do atalho Criar despesa do Wallet.",
+      "h1": "Automação do Apple Pay no iOS 27",
+      "intro": [
+        "Depois de um pagamento com Apple Pay, o Qalta pode salvar a compra como despesa. O valor e o estabelecimento vêm da transação do Wallet; você pode escolher a categoria e a conta a cada vez ou defini-las com antecedência.",
+        "Você precisa do iOS 27, dos apps <strong>Qalta</strong> e <strong>Atalhos</strong> e de cartões no Wallet. No iOS 27, o gatilho do Wallet fica dentro de um novo atalho — não existe uma aba Automação separada."
+      ],
+      "steps": [
+        {
+          "html": "<p>Abra o app <strong>Atalhos</strong> e toque no botão <strong>+</strong> na parte de baixo para criar um novo atalho.</p>",
+          "caption": "Novo atalho",
+          "alt": "Todos os Atalhos com o botão de mais"
+        },
+        {
+          "html": "<p>Um editor vazio se abre. Na busca de ações, toque no chip <strong>Automação</strong> — ou digite “Automação”.</p>",
+          "caption": "Chip Automação",
+          "alt": "Editor de atalho vazio com o chip Automação"
+        },
+        {
+          "html": "<p>Em <strong>Apps</strong>, toque em <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (pagamento na maquininha).</p>",
+          "caption": "Gatilho do Wallet",
+          "alt": "Gatilho do Wallet na lista de Automação"
+        },
+        {
+          "html": "<p>O primeiro bloco diz <strong>When Any Card is tapped</strong>. Se você quiser que o Qalta rode só para alguns cartões, toque no chip azul <strong>Any Card</strong>.</p>",
+          "caption": "Any Card",
+          "alt": "Gatilho When Any Card is tapped"
+        },
+        {
+          "html": "<p>Selecione o cartão com que você paga (por exemplo, <strong>Kaspi Gold</strong>). Toque na marca de seleção.</p>",
+          "caption": "Qual cartão acompanhar",
+          "alt": "Selecionando um cartão de pagamento"
+        },
+        {
+          "html": "<p>Agora você deve ver um bloco: <strong>When [seu cartão] is tapped</strong>. No campo de busca na parte de baixo, digite <strong>Qalta</strong>.</p>",
+          "caption": "Gatilho do cartão definido",
+          "alt": "Gatilho do Wallet para o cartão selecionado"
+        },
+        {
+          "html": "<p>Toque em <strong>Criar despesa do Wallet</strong> (não em “Criar transação”).</p>",
+          "caption": "Ação do Qalta",
+          "alt": "Buscando Criar despesa do Wallet"
+        },
+        {
+          "html": "<p>Você deve ver dois blocos: o gatilho do Wallet e a ação do Qalta. Toque no campo cinza <strong>Valor</strong> — aparece um teclado numérico. Acima dele, toque em <strong>Selecionar Variável</strong>.</p>",
+          "caption": "Toque em Valor e depois em Selecionar Variável",
+          "alt": "Campo Valor e Selecionar Variável"
+        },
+        {
+          "html": "<p>Na tela Selecionar Variável, toque no chip azul <strong>Transação</strong> abaixo do gatilho do Wallet. Esse é o pagamento com Apple Pay, não a Entrada do Atalho.</p>",
+          "caption": "Transação",
+          "alt": "Selecionando Transação do gatilho do Wallet"
+        },
+        {
+          "html": "<p>Toque no chip azul <strong>Transação</strong> que agora está dentro da ação do Qalta. Na folha que se abre, não deixe a marca em “Transação” — toque em <strong>Valor</strong>.</p>",
+          "caption": "Obter → Valor",
+          "alt": "Propriedades da transação: toque em Valor"
+        },
+        {
+          "html": "<p>Repita para o nome da loja. Toque na seta da ação do Qalta para expandir os campos. Toque em <strong>Estabelecimento</strong> → <strong>Selecionar Variável</strong> → <strong>Transação</strong>. Toque no chip de novo e escolha <strong>Merchant</strong> na lista — não “Transação”.</p>",
+          "caption": "Obter → Merchant",
+          "alt": "Escolhendo Merchant na transação"
+        },
+        {
+          "html": "<p>Os demais campos são opcionais. Opções para <strong>Categoria</strong> e <strong>Conta</strong>:</p><ul><li><strong>Escolher</strong> — escolha uma categoria ou conta específica do Qalta. Se você tem só uma conta, faça isso: selecione-a uma vez. Não é preciso usar Perguntar Sempre.</li><li><strong>Perguntar Sempre</strong> — depois de cada pagamento, o Qalta pergunta onde salvar a despesa. Útil se você tem várias categorias ou contas.</li><li>Você pode deixar <strong>Escolher</strong> vazio — o Qalta usa os padrões e tenta detectar a categoria.</li></ul><p><strong>Moeda</strong>, <strong>Nota</strong> e <strong>Data</strong> podem ficar vazios. Ative <strong>Mostrar ao Executar</strong> para que uma confirmação apareça após o pagamento. Toque na seta de voltar.</p>",
+          "caption": "Categoria, conta e confirmação",
+          "alt": "Categoria, Conta e Mostrar ao Executar"
+        },
+        {
+          "html": "<p>O atalho aparece em <strong>Todos os Atalhos</strong> como <strong>Criar despesa do Wallet</strong>. Depois da sua próxima compra com Apple Pay usando o cartão selecionado, o Qalta vai oferecer salvar a despesa.</p>",
+          "caption": "Tudo pronto",
+          "alt": "Criar despesa do Wallet em Todos os Atalhos"
+        }
+      ],
+      "videoLabel": "Tutorial de automação do Apple Pay no iOS 27, em inglês",
+      "videoCaption": "Passo a passo da configuração no iOS 27."
+    },
+    "push-notification-ios-27": {
+      "title": "Automação de notificações do banco no iOS 27",
+      "description": "Configure um atalho para que a notificação de pagamento do app do seu banco seja salva no Qalta como despesa, com o valor lido do texto. Para iOS 27.",
+      "ogTitle": "Automação de notificações do banco no iOS 27",
+      "ogImageAlt": "Automação de notificações do banco no iOS 27, ao lado do atalho Registrar despesa bancária.",
+      "h1": "Automação de notificações do banco no iOS 27",
+      "intro": [
+        "Quando o app do seu banco envia uma notificação de pagamento, o Qalta pode salvá-la como despesa. O valor e o estabelecimento são extraídos do texto da notificação.",
+        "Você precisa do iOS 27, dos apps <strong>Qalta</strong> e <strong>Atalhos</strong> e de um app de banco que mostre notificações na tela bloqueada. Este gatilho não está disponível no iOS 26."
+      ],
+      "steps": [
+        {
+          "html": "<p>Abra o app <strong>Atalhos</strong> e toque no botão <strong>+</strong> na parte de baixo para criar um novo atalho.</p>",
+          "caption": "Novo atalho",
+          "alt": "Todos os Atalhos com o botão de mais"
+        },
+        {
+          "html": "<p>Um editor vazio se abre. Na busca de ações, toque no chip <strong>Automação</strong> — ou digite “Automação”.</p>",
+          "caption": "Chip Automação",
+          "alt": "Editor de atalho vazio com o chip Automação"
+        },
+        {
+          "html": "<p>Em <strong>Apps</strong>, toque em <strong>Notification</strong> — “When I receive a notification from …”.</p>",
+          "caption": "Gatilho de notificação",
+          "alt": "Gatilho de notificação na lista de Automação"
+        },
+        {
+          "html": "<p>O primeiro bloco diz <strong>When I receive a notification from App</strong>. Toque no chip azul <strong>App</strong> para escolher seu banco.</p>",
+          "caption": "Escolha o app",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Busque seu banco e toque no app que envia os alertas de pagamento (por exemplo, <strong>Kaspi.kz</strong>, e não um app relacionado de Pay ou QR).</p>",
+          "caption": "App do banco",
+          "alt": "Seletor de apps buscando o banco"
+        },
+        {
+          "html": "<p>Agora você deve ver <strong>When I receive a notification from [banco]</strong>. No campo de busca na parte de baixo, digite <strong>Qalta</strong>.</p>",
+          "caption": "Gatilho do banco definido",
+          "alt": "Gatilho de notificação para o app do banco selecionado"
+        },
+        {
+          "html": "<p>Toque em <strong>Registrar despesa bancária</strong> (não em “Criar despesa do Wallet” nem em “Criar transação”).</p>",
+          "caption": "Ação do Qalta",
+          "alt": "Buscando Registrar despesa bancária"
+        },
+        {
+          "html": "<p>Você deve ver dois blocos: o gatilho de notificação e <strong>Registrar despesa bancária de Corpo da notificação</strong>. Toque no campo cinza <strong>Corpo da notificação</strong>.</p>",
+          "caption": "Toque em Corpo da notificação",
+          "alt": "Registrar despesa bancária com o campo Corpo da notificação"
+        },
+        {
+          "html": "<p>Aparece um teclado. Acima dele, toque em <strong>Selecionar Variável</strong> e depois no chip azul <strong>Notification</strong> abaixo do gatilho.</p>",
+          "caption": "Selecionar Variável → Notification",
+          "alt": "Selecionar Variável com o chip Notification"
+        },
+        {
+          "html": "<p>Toque no chip azul <strong>Notification</strong> que agora está dentro da ação do Qalta. Na folha que se abre, não deixe a marca em “Notification” — toque em <strong>Body</strong>. O Qalta lê o valor do texto da notificação, não do objeto de notificação inteiro.</p>",
+          "caption": "Obter → Body",
+          "alt": "Propriedades da notificação: toque em Body"
+        },
+        {
+          "html": "<p>A ação do Qalta agora deve dizer <strong>Registrar despesa bancária de Body</strong>.</p>",
+          "caption": "Body vinculado",
+          "alt": "Body vinculado em Registrar despesa bancária"
+        },
+        {
+          "html": "<p>Os demais campos são opcionais. Toque na seta para expandi-los. Opções para <strong>Categoria</strong> e <strong>Conta</strong>:</p><ul><li><strong>Escolher</strong> — escolha uma categoria ou conta específica do Qalta. Se você tem só uma conta, faça isso: selecione-a uma vez. Não é preciso usar Perguntar Sempre.</li><li><strong>Perguntar Sempre</strong> — depois de cada notificação, o Qalta pergunta onde salvar a despesa. Útil se você tem várias categorias ou contas.</li><li>Você pode deixar <strong>Escolher</strong> vazio — o Qalta usa os padrões e tenta detectar a categoria.</li></ul><p><strong>Nota</strong> e <strong>Data</strong> podem ficar vazios. Ative <strong>Mostrar ao Executar</strong> para que uma confirmação apareça. Toque na seta de voltar.</p>",
+          "caption": "Categoria, conta e confirmação",
+          "alt": "Categoria, Conta e Mostrar ao Executar"
+        },
+        {
+          "html": "<p>O atalho aparece em <strong>Todos os Atalhos</strong> como <strong>Registrar despesa bancária</strong>. Depois da próxima notificação de pagamento desse app do banco, o Qalta vai oferecer salvar a despesa.</p>",
+          "caption": "Tudo pronto",
+          "alt": "Registrar despesa bancária em Todos os Atalhos"
+        }
+      ],
+      "videoLabel": "Tutorial de automação de notificações do banco no iOS 27",
+      "videoCaption": "Passo a passo da configuração no iOS 27."
+    },
+    "apple-pay-ios-26": {
+      "title": "Automação do Apple Pay no iOS 26",
+      "description": "Configure uma automação no app Atalhos para que cada compra com Apple Pay seja salva no Qalta como despesa, com o valor e o estabelecimento preenchidos. Para iOS 26.",
+      "ogTitle": "Automação do Apple Pay no iOS 26",
+      "ogImageAlt": "Automação do Apple Pay no iOS 26, ao lado da ação Criar despesa do Wallet no app Atalhos.",
+      "h1": "Automação do Apple Pay no iOS 26",
+      "intro": [
+        "Depois de um pagamento com Apple Pay, o Qalta pode salvar a compra como despesa. O valor e o estabelecimento vêm da transação; você pode escolher a categoria e a conta a cada vez ou defini-las com antecedência.",
+        "Você precisa do iOS 26, dos apps <strong>Qalta</strong> e <strong>Atalhos</strong> e de cartões no Wallet."
+      ],
+      "steps": [
+        {
+          "html": "<p>Abra <strong>Ajustes → Wallet e Apple Pay</strong>. Ative <strong>Atividades ao Vivo</strong> e <strong>Dados Celulares</strong>.</p>",
+          "caption": "Permissões do Wallet",
+          "alt": "Permissões de Wallet e Apple Pay"
+        },
+        {
+          "html": "<p>Abra o app <strong>Atalhos</strong>, vá até a aba <strong>Automação</strong> e toque em <strong>Nova Automação</strong>.</p>",
+          "caption": "Nova automação",
+          "alt": "Aba Automação do app Atalhos"
+        },
+        {
+          "html": "<p>Escolha <strong>Wallet</strong> — “When I tap a Wallet Card or Pass” (pagamento na maquininha).</p>",
+          "caption": "Gatilho do Wallet",
+          "alt": "Gatilho do Wallet na lista de automações"
+        },
+        {
+          "html": "<p>Selecione os cartões que o Qalta deve acompanhar. Toque em <strong>Seguinte</strong>.</p>",
+          "caption": "Quais cartões acompanhar",
+          "alt": "Selecionando cartões de pagamento"
+        },
+        {
+          "html": "<p>Mantenha as categorias do Wallet que interessam a você (pode deixar todas). Selecione <strong>Executar Imediatamente</strong> (não Executar Após Confirmação). Toque em <strong>Seguinte</strong>.</p>",
+          "caption": "Categorias",
+          "alt": "Categorias do Wallet"
+        },
+        {
+          "html": "<p>Na tela de blocos, toque no cartão cinza <strong>Criar Novo Atalho</strong> no canto superior esquerdo. Não escolha um atalho existente da lista abaixo.</p>",
+          "caption": "Novo atalho",
+          "alt": "Bloco Criar Novo Atalho"
+        },
+        {
+          "html": "<p>Um editor vazio se abre. Na busca de ações na parte de baixo, digite <strong>Qalta</strong> e toque em <strong>Criar despesa do Wallet</strong> (não em “Criar transação”).</p>",
+          "caption": "Ação do Qalta",
+          "alt": "Buscando Criar despesa do Wallet"
+        },
+        {
+          "html": "<p>Você deve ver dois blocos: “Receive transaction as input” e a ação do Qalta. Toque no campo cinza <strong>Valor</strong> na ação do Qalta — aparece um teclado numérico. Acima dele, toque em <strong>Selecionar Variável</strong>.</p>",
+          "caption": "Toque em Valor e depois em Selecionar Variável",
+          "alt": "Campo Valor e Selecionar Variável"
+        },
+        {
+          "html": "<p>Na tela Selecionar Variável, toque no chip azul <strong>Entrada do Atalho</strong> abaixo de “Receive transaction as input”.</p>",
+          "caption": "Entrada do Atalho",
+          "alt": "Selecionando Entrada do Atalho como variável"
+        },
+        {
+          "html": "<p>Toque no chip azul <strong>Entrada do Atalho</strong> que agora está dentro da ação do Qalta. Na folha que se abre, Tipo deve ser <strong>Transação</strong>. Não deixe a marca em “Transação” — role a lista e toque em <strong>Valor</strong>.</p>",
+          "caption": "Tipo Transação → Valor",
+          "alt": "Propriedades da transação: toque em Valor"
+        },
+        {
+          "html": "<p>Repita para o nome da loja. Toque na seta da ação do Qalta para expandir os campos. Toque em <strong>Estabelecimento</strong> → <strong>Selecionar Variável</strong> → <strong>Entrada do Atalho</strong>. Toque no chip de novo, Tipo <strong>Transação</strong>, e escolha <strong>Merchant</strong> na lista.</p>",
+          "caption": "Tipo Transação → Merchant",
+          "alt": "Escolhendo Merchant na transação"
+        },
+        {
+          "html": "<p>Os demais campos são opcionais. Opções para <strong>Categoria</strong> e <strong>Conta</strong>:</p><ul><li><strong>Escolher</strong> — escolha uma categoria ou conta específica do Qalta. Se você tem só uma conta, faça isso: selecione-a uma vez. Não é preciso usar Perguntar Sempre.</li><li><strong>Perguntar Sempre</strong> — depois de cada pagamento, o Qalta pergunta onde salvar a despesa. Útil se você tem várias categorias ou contas.</li><li>Você pode deixar <strong>Escolher</strong> vazio — o Qalta usa os padrões e tenta detectar a categoria.</li></ul><p><strong>Moeda</strong>, <strong>Nota</strong> e <strong>Data</strong> podem ficar vazios. Ative <strong>Mostrar ao Executar</strong> para que uma confirmação apareça após o pagamento. Toque na marca de seleção azul no topo.</p>",
+          "caption": "Categoria, conta e confirmação",
+          "alt": "Categoria, Conta e Mostrar ao Executar"
+        },
+        {
+          "html": "<p>A automação aparece em <strong>Automação</strong>. Depois da sua próxima compra com Apple Pay usando o cartão selecionado, o Qalta vai oferecer salvar a despesa.</p>",
+          "caption": "Tudo pronto",
+          "alt": "Automação concluída na lista"
+        }
+      ],
+      "videoLabel": "Tutorial de automação do Apple Pay no iOS 26, em inglês",
+      "videoCaption": "Passo a passo da configuração no iOS 26."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "node site/build.mjs",
+    "check:i18n": "node site/check-i18n.mjs",
+    "consent:config": "node site/build-consent.mjs",
+    "dev": "node site/build.mjs && wrangler dev",
+    "deploy": "node site/build.mjs && wrangler deploy",
+    "deploy:check": "node site/build.mjs && wrangler deploy --dry-run",
+    "test:consent": "node --experimental-strip-types --test site/consent.test.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  },
+  "overrides": {
+    "undici": "7.30.1"
+  }
+}

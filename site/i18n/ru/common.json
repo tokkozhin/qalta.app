@@ -1,0 +1,16 @@
+{
+  "brandTag": "Учёт финансов",
+  "openInAppStore": "Открыть в App Store",
+  "appStoreShort": "App Store",
+  "download": "Загрузите в App Store",
+  "footerNavLabel": "Сайт",
+  "nav": {
+    "home": "Главная",
+    "tutorials": "Инструкции",
+    "support": "Поддержка",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия"
+  },
+  "languageLabel": "Язык",
+  "legalNotice": "Перевод приведён для удобства. Если он расходится с <a href=\"{englishUrl}\">версией на английском</a>, действует английская версия."
+}

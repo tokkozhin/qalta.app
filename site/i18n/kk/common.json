@@ -1,0 +1,16 @@
+{
+  "brandTag": "Қаржы есебі",
+  "openInAppStore": "App Store-да ашу",
+  "appStoreShort": "App Store",
+  "download": "App Store-дан жүктеу",
+  "footerNavLabel": "Сайт",
+  "nav": {
+    "home": "Басты бет",
+    "tutorials": "Нұсқаулықтар",
+    "support": "Қолдау",
+    "privacy": "Құпиялық саясаты",
+    "terms": "Пайдалану шарттары"
+  },
+  "languageLabel": "Тіл",
+  "legalNotice": "Бұл аударма ыңғайлылық үшін берілген. Ол <a href=\"{englishUrl}\">ағылшын тіліндегі нұсқадан</a> өзгеше болса, ағылшын нұсқасы қолданылады."
+}

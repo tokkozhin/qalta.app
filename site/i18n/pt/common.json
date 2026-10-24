@@ -1,0 +1,16 @@
+{
+  "brandTag": "Controle financeiro",
+  "openInAppStore": "Abrir na App Store",
+  "appStoreShort": "App Store",
+  "download": "Baixar na App Store",
+  "footerNavLabel": "Site",
+  "nav": {
+    "home": "Início",
+    "tutorials": "Tutoriais",
+    "support": "Suporte",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos"
+  },
+  "languageLabel": "Idioma",
+  "legalNotice": "Esta tradução é fornecida apenas por conveniência. Se houver divergência em relação à <a href=\"{englishUrl}\">versão em inglês</a>, prevalece a versão em inglês."
+}

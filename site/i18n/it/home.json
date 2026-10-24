@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Qalta: app con IA per spese e budget condiviso su iPhone",
+    "description": "Qalta è un’app per iPhone per tracciare le spese e gestire il budget. Di’ quanto hai speso o scansiona uno scontrino, registra in automatico gli acquisti con Apple Pay e condividi un budget con il partner o la famiglia.",
+    "ogTitle": "Qalta: budget e spese",
+    "ogDescription": "Registra le spese alla velocità della voce. Di’ quanto hai speso o scansiona uno scontrino, e condividi un budget con chi vive con te.",
+    "ogImageAlt": "Qalta: le spese sotto controllo, senza la parte noiosa, accanto alla schermata Home su un iPhone."
+  },
+  "hero": {
+    "title": "Le tue spese",
+    "titleSoft": "senza la parte noiosa",
+    "lede": "Di’ quanto hai speso. Qalta lo annota e lo classifica.",
+    "chipsLabel": "In evidenza",
+    "chipVoice": "Voce",
+    "chipScan": "Scansione",
+    "chipPrivate": "Privato",
+    "altInsights": "Insight di Qalta: 91% delle entrate risparmiato, un grafico delle spese, l’andamento delle spese e la media giornaliera.",
+    "altHome": "La schermata Home di Qalta: un saldo netto di $13,154 per questo mese, $14,400 di entrate in verde, $1,246 di spese in arancione e le operazioni raggruppate per giorno.",
+    "altAdd": "Aggiunta di una spesa in Qalta: importo vuoto, il conto Wallet, la data di oggi, le icone delle categorie e un tastierino."
+  },
+  "voice": {
+    "title": "Parla e registra",
+    "titleSoft": "Spese aggiunte in pochi secondi",
+    "lede": "Una sola frase può diventare più righe, anche un abbonamento e un trasferimento.",
+    "alt": "Il pannello vocale di Qalta. Una frase pronunciata è diventata tre righe: Cibo e ristoranti −$12, un abbonamento mensile OpenAI −$19.90 e un trasferimento di $1,000 da Wallet a Banca, con i pulsanti Annulla e Salva."
+  },
+  "scan": {
+    "title": "Scansiona documenti",
+    "titleSoft": "Importo e categoria, già compilati",
+    "lede": "Scontrini, bollette, PDF, CSV ed estratti conto.",
+    "alt": "Lo scanner di Qalta nella vista fotocamera, con una fattura, un estratto conto e una bolletta, e le opzioni PDF, CSV e Immagine."
+  },
+  "shared": {
+    "title": "Gestite le spese insieme",
+    "titleSoft": "Un budget per la coppia o la famiglia",
+    "lede": "Condividi uno spazio con il partner, la famiglia o i coinquilini. Tutti aggiungono spese e i totali restano uguali su ogni telefono.",
+    "alt": "Tre avatar-moneta di Qalta, d’argento, d’oro e di bronzo, sospesi sopra le nuvole.",
+    "points": [
+      {
+        "title": "Invita con un link",
+        "text": "Fino a 6 persone in uno spazio. Basta inviare un link."
+      },
+      {
+        "title": "Sempre sincronizzato",
+        "text": "Conti, budget e operazioni si aggiornano su ogni telefono e sugli altri tuoi dispositivi."
+      },
+      {
+        "title": "Chi ha aggiunto cosa",
+        "text": "Ogni operazione mostra chi l’ha creata e chi l’ha modificata per ultimo."
+      },
+      {
+        "title": "Il privato resta privato",
+        "text": "Tieni gli spazi personali sul tuo iPhone. Viene caricato solo lo spazio che condividi."
+      }
+    ]
+  },
+  "ways": {
+    "title": "Registra senza",
+    "titleSoft": "aprire l’app",
+    "applePayTitle": "Apple Pay",
+    "applePayText": "Paga come sempre. Qalta salva l’importo e il luogo.",
+    "bankTitle": "Notifiche bancarie",
+    "bankText": "Una notifica di pagamento diventa una spesa.",
+    "shortcutsTitle": "Comandi Rapidi",
+    "shortcutsText": "Siri, Tocco posteriore, il tasto Azione o un widget.",
+    "guides": "Vedi le guide di configurazione"
+  },
+  "insights": {
+    "title": "Insight intelligenti",
+    "titleSoft": "Risparmi, andamenti, previsioni",
+    "lede": "Andamenti, abbonamenti e le categorie che sfuggono facilmente.",
+    "altInsights": "La schermata Insight di Qalta: $3,309 per questo mese, 82% delle entrate risparmiato, un grafico delle spese e i riquadri per l’andamento delle spese e la media giornaliera.",
+    "trend": "Andamento spese",
+    "trendNote": "rispetto al periodo precedente",
+    "dailyAverage": "Media giornaliera",
+    "saved": "Risparmiato questo mese",
+    "savedNote": "delle entrate",
+    "analytics": "Analisi visive",
+    "analyticsNote": "Torta, linee, barre impilate, flussi di cassa.",
+    "altAnalytics": "Analisi in Qalta: un grafico a linee di entrate e spese e un grafico ad anello con $716 di spese divise per categoria.",
+    "largestExpense": "Spesa maggiore",
+    "largestExpenseNote": "Viaggi",
+    "largestIncome": "Entrata maggiore",
+    "largestIncomeNote": "Stipendio"
+  },
+  "tools": {
+    "title": "Tutto il resto",
+    "titleSoft": "Budget, ricorrenze, valute",
+    "budgetsTitle": "Resta nel budget",
+    "budgetsText": "Limiti per categoria o per conto.",
+    "budgetsAlt": "Budget in Qalta: Caffè $15 per oggi e i budget di Questo mese da $7,000 per tutte le spese e da $300 per i ristoranti, ciascuno con una sottile barra di avanzamento e l’importo rimanente in verde.",
+    "subscriptionsTitle": "Abbonamenti sotto controllo",
+    "subscriptionsText": "Vedi cosa si ripete ogni mese.",
+    "subscriptionsAlt": "Pagamenti ricorrenti in Qalta: Spotify −$12.99, OpenAI −$20 e Netflix −$19.99.",
+    "currencyTitle": "Multivaluta",
+    "currencyText": "Tassi in tempo reale per viaggi e lavoro da remoto.",
+    "currencyAlt": "Aggiunta di una spesa in Qalta: $100, con €87.8 indicato sotto, il conto Wallet, la data di oggi e una fila di icone delle categorie.",
+    "debtsTitle": "Debiti",
+    "debtsText": "Chi deve a chi.",
+    "goalsTitle": "Obiettivi",
+    "goalsText": "Risparmi collegati a un conto.",
+    "spacesTitle": "Spazi separati",
+    "spacesText": "Un registro per casa, un altro per il lavoro o un viaggio.",
+    "importTitle": "Importa ed esporta",
+    "importText": "CSV da CoinKeeper, YNAB, Monarch e altre app."
+  },
+  "privacy": {
+    "title": "Il tuo registro",
+    "titleSoft": "resta sul tuo iPhone",
+    "lines": [
+      "Il backup facoltativo va sul tuo iCloud. Niente pubblicità.",
+      "Uno spazio condiviso viene caricato solo quando scegli di condividerlo.",
+      "Voce e scansioni vengono inviate al nostro server e a OpenAI solo per leggerle."
+    ],
+    "link": "Informativa sulla privacy"
+  },
+  "themes": {
+    "titleSoft": "Pulito",
+    "title": "Chiaro e scuro",
+    "lede": "La stessa schermata, in entrambi i modi.",
+    "alt": "La schermata Home di Qalta due volte: con il tema chiaro e lo sfondo bianco davanti, e con il tema scuro dietro."
+  },
+  "faq": {
+    "title": "Domande",
+    "titleSoft": "e risposte brevi",
+    "items": [
+      {
+        "q": "Che cos’è Qalta?",
+        "a": "Qalta è un’app per iPhone per tracciare le spese e gestire il budget. Di’ quanto hai speso o scansiona uno scontrino: Qalta registra l’operazione e la assegna a una categoria. Gestisce anche budget, abbonamenti, obiettivi, debiti, più valute e budget condivisi."
+      },
+      {
+        "q": "Posso condividere un budget con il partner o la famiglia?",
+        "a": "Sì. Crea uno spazio condiviso e invita le persone con un link. In uno spazio possono esserci fino a 6 persone. Tutti vedono e modificano gli stessi conti, operazioni e budget, le modifiche si sincronizzano in automatico e ogni operazione mostra chi l’ha creata o modificata per ultimo. Gli spazi condivisi fanno parte di Qalta Pro."
+      },
+      {
+        "q": "Come funziona la registrazione delle spese con la voce?",
+        "a": "Tocca il microfono e di’ qualcosa come «Caffè $5 e Netflix $10 ogni mese». Qalta compila importo, categoria, conto e ricorrenza. Una sola frase può contenere più operazioni, compresi trasferimenti e abbonamenti."
+      },
+      {
+        "q": "Qalta può registrare in automatico gli acquisti con Apple Pay?",
+        "a": "Sì. Un’automazione di Comandi Rapidi salva ogni pagamento Apple Pay con importo ed esercente. Su iOS 27 anche la notifica di pagamento dell’app della banca può creare una spesa. Segui le <a class=\"text-link\" href=\"{tutorialsUrl}\">guide passo passo</a>."
+      },
+      {
+        "q": "Posso trasferire la cronologia da un’altra app di budget?",
+        "a": "Sì. Qalta importa file CSV da YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper e altre app, ed esporta i tuoi dati in CSV in qualsiasi momento."
+      },
+      {
+        "q": "I miei dati finanziari sono privati?",
+        "a": "Uno spazio privato resta sul tuo iPhone, con backup facoltativo sul tuo iCloud. Uno spazio condiviso viene caricato solo quando scegli di condividerlo, e possono vederlo solo le persone che inviti. Le registrazioni vocali e le scansioni vengono inviate al server di Qalta e a OpenAI solo per leggerle. Non c’è pubblicità."
+      },
+      {
+        "q": "Quanto costa Qalta?",
+        "a": "Qalta si scarica gratis e ha un piano gratuito. Qalta Pro aggiunge operazioni, voce e scansioni illimitate, oltre agli spazi condivisi, a $3.99 al mese o $29.99 all’anno. Il piano Famiglia condivide Pro con un massimo di 6 persone a $5.99 al mese o $49.99 all’anno. I prezzi sono in dollari USA e variano in base al paese."
+      },
+      {
+        "q": "Su quali dispositivi e in quali lingue è disponibile Qalta?",
+        "a": "Qalta funziona su iPhone con iOS 16.4 o versioni successive, e anche sui Mac con chip Apple e su Apple Vision Pro. È disponibile in inglese, francese, tedesco, italiano, giapponese, kazako, coreano, polacco, portoghese, russo, spagnolo, thailandese, turco e ucraino."
+      }
+    ]
+  },
+  "close": {
+    "title": "Registra le spese alla velocità della&nbsp;voce.",
+    "iconAlt": "Icona dell’app Qalta"
+  },
+  "ld": {
+    "websiteDescription": "Qalta è un’app con IA per iPhone per tracciare le spese e condividere un budget.",
+    "appDescription": "Un’app per iPhone per gestire i soldi. Registra le spese con la voce, scansiona scontrini ed estratti conto, salva in automatico gli acquisti con Apple Pay e le notifiche bancarie, e tieni un budget condiviso con il partner o la famiglia, sincronizzato su tutti i dispositivi.",
+    "subCategory": "Budget, monitoraggio delle spese",
+    "featureList": [
+      "Registrazione delle spese con la voce: una frase può diventare più operazioni",
+      "Scansione di scontrini, bollette, PDF, CSV ed estratti conto",
+      "Registrazione automatica degli acquisti Apple Pay tramite Comandi Rapidi",
+      "Spese dalle notifiche push della banca (iOS 27)",
+      "Spazi condivisi: un budget comune per un massimo di 6 persone, sincronizzato tra i dispositivi",
+      "Budget per categoria o per conto",
+      "Operazioni ricorrenti e monitoraggio degli abbonamenti",
+      "Obiettivi di risparmio e debiti",
+      "Insight e analisi: andamenti, flussi di cassa, ripartizione per categoria",
+      "Conti multivaluta con tassi di cambio in tempo reale",
+      "Importazione CSV da YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper",
+      "Widget nella schermata Home, comandi rapidi di Siri, Tocco posteriore e tasto Azione",
+      "Privato per impostazione predefinita: niente pubblicità, backup iCloud facoltativo"
+    ],
+    "offerFree": "Piano gratuito",
+    "offerProMonthly": "Qalta Pro, mensile",
+    "offerProAnnual": "Qalta Pro, annuale",
+    "offerFamilyMonthly": "Qalta Pro Famiglia, mensile",
+    "offerFamilyAnnual": "Qalta Pro Famiglia, annuale"
+  }
+}

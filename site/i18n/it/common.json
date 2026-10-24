@@ -1,0 +1,16 @@
+{
+  "brandTag": "Gestione spese",
+  "openInAppStore": "Apri nell’App Store",
+  "appStoreShort": "App Store",
+  "download": "Scarica dall’App Store",
+  "footerNavLabel": "Sito",
+  "nav": {
+    "home": "Home",
+    "tutorials": "Guide",
+    "support": "Supporto",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini"
+  },
+  "languageLabel": "Lingua",
+  "legalNotice": "Questa traduzione è fornita per comodità. In caso di differenze rispetto alla <a href=\"{englishUrl}\">versione inglese</a>, prevale la versione inglese."
+}

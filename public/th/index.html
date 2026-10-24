@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qalta: แอปบันทึกรายจ่ายด้วย AI และงบประมาณร่วมกันสำหรับ iPhone</title>
+  <meta name="description" content="Qalta คือแอปบันทึกรายจ่ายและจัดงบประมาณบน iPhone แค่พูดว่าใช้อะไรไปหรือสแกนใบเสร็จ บันทึกการซื้อด้วย Apple Pay อัตโนมัติ และใช้งบประมาณร่วมกับคู่ของคุณหรือครอบครัว" />
+  <link rel="canonical" href="https://qalta.app/th/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="apple-itunes-app" content="app-id=6756010294" />
+  <link rel="alternate" hreflang="en" href="https://qalta.app/" />
+  <link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
+  <link rel="alternate" hreflang="es" href="https://qalta.app/es/" />
+  <link rel="alternate" hreflang="fr" href="https://qalta.app/fr/" />
+  <link rel="alternate" hreflang="it" href="https://qalta.app/it/" />
+  <link rel="alternate" hreflang="ja" href="https://qalta.app/ja/" />
+  <link rel="alternate" hreflang="kk" href="https://qalta.app/kk/" />
+  <link rel="alternate" hreflang="ko" href="https://qalta.app/ko/" />
+  <link rel="alternate" hreflang="pl" href="https://qalta.app/pl/" />
+  <link rel="alternate" hreflang="pt" href="https://qalta.app/pt/" />
+  <link rel="alternate" hreflang="ru" href="https://qalta.app/ru/" />
+  <link rel="alternate" hreflang="th" href="https://qalta.app/th/" />
+  <link rel="alternate" hreflang="tr" href="https://qalta.app/tr/" />
+  <link rel="alternate" hreflang="uk" href="https://qalta.app/uk/" />
+  <link rel="alternate" hreflang="x-default" href="https://qalta.app/" />
+  <meta name="author" content="Daniel Tokkozhin" />
+  <meta name="application-name" content="Qalta" />
+  <link rel="alternate" type="text/markdown" title="Qalta for AI assistants" href="https://qalta.app/llms.txt" />
+  <meta property="og:site_name" content="Qalta" />
+  <meta property="og:locale" content="th_TH" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="pl_PL" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qalta.app/th/" />
+  <meta property="og:title" content="Qalta: งบประมาณ บันทึกรายจ่าย" />
+  <meta property="og:description" content="จดเงินได้เร็วเท่าที่พูด แค่บอกว่าใช้อะไรไปหรือสแกนใบเสร็จ แล้วใช้งบประมาณร่วมกับคนที่อยู่ด้วยกัน" />
+  <meta property="og:image" content="https://qalta.app/assets/og/home.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qalta: จดเงินโดยไม่ต้องน่าเบื่อ ข้างหน้าจอหลักบน iPhone" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qalta: งบประมาณ บันทึกรายจ่าย" />
+  <meta name="twitter:description" content="จดเงินได้เร็วเท่าที่พูด แค่บอกว่าใช้อะไรไปหรือสแกนใบเสร็จ แล้วใช้งบประมาณร่วมกับคนที่อยู่ด้วยกัน" />
+  <meta name="twitter:image" content="https://qalta.app/assets/og/home.png" />
+  <meta name="twitter:image:alt" content="Qalta: จดเงินโดยไม่ต้องน่าเบื่อ ข้างหน้าจอหลักบน iPhone" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="/assets/home/hero-home.webp" type="image/webp" fetchpriority="high" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://qalta.app/#website",
+        "url": "https://qalta.app/",
+        "name": "Qalta",
+        "description": "Qalta คือแอปบันทึกรายจ่ายด้วย AI และงบประมาณร่วมกันสำหรับ iPhone",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "kk",
+          "ko",
+          "pl",
+          "pt",
+          "ru",
+          "th",
+          "tr",
+          "uk"
+        ],
+        "publisher": {
+          "@id": "https://qalta.app/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://qalta.app/th/#webpage",
+        "url": "https://qalta.app/th/",
+        "name": "Qalta: แอปบันทึกรายจ่ายด้วย AI และงบประมาณร่วมกันสำหรับ iPhone",
+        "description": "Qalta คือแอปบันทึกรายจ่ายและจัดงบประมาณบน iPhone แค่พูดว่าใช้อะไรไปหรือสแกนใบเสร็จ บันทึกการซื้อด้วย Apple Pay อัตโนมัติ และใช้งบประมาณร่วมกับคู่ของคุณหรือครอบครัว",
+        "inLanguage": "th",
+        "isPartOf": {
+          "@id": "https://qalta.app/#website"
+        },
+        "about": {
+          "@id": "https://qalta.app/#app"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://qalta.app/#organization",
+        "name": "Qalta",
+        "url": "https://qalta.app/",
+        "logo": "https://qalta.app/assets/home/icon.webp",
+        "email": "help.qalta.app@outlook.com",
+        "founder": {
+          "@id": "https://qalta.app/#founder"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/id6756010294"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://qalta.app/#founder",
+        "name": "Daniel Tokkozhin"
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://qalta.app/#app",
+        "name": "Qalta: Budget, Expense Tracker",
+        "alternateName": [
+          "Qalta",
+          "Qalta Money Manager"
+        ],
+        "url": "https://qalta.app/th/",
+        "description": "แอปจดเงินสำหรับ iPhone บันทึกรายจ่ายด้วยเสียง สแกนใบเสร็จและรายการเดินบัญชี บันทึกการซื้อด้วย Apple Pay และการแจ้งเตือนจากธนาคารอัตโนมัติ และใช้งบประมาณร่วมกับคู่หรือครอบครัวที่ซิงค์ข้ามอุปกรณ์",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "จัดงบประมาณ บันทึกรายจ่าย",
+        "operatingSystem": "iOS 16.4 or later",
+        "downloadUrl": "https://apps.apple.com/th/app/id6756010294",
+        "installUrl": "https://apps.apple.com/th/app/id6756010294",
+        "image": "https://qalta.app/assets/home/icon.webp",
+        "screenshot": [
+          "https://qalta.app/assets/home/hero-home.webp",
+          "https://qalta.app/assets/home/voice.webp",
+          "https://qalta.app/assets/home/scan.webp",
+          "https://qalta.app/assets/home/insights.webp"
+        ],
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "kk",
+          "ko",
+          "pl",
+          "pt",
+          "ru",
+          "th",
+          "tr",
+          "uk"
+        ],
+        "author": {
+          "@id": "https://qalta.app/#founder"
+        },
+        "publisher": {
+          "@id": "https://qalta.app/#organization"
+        },
+        "featureList": [
+          "บันทึกรายจ่ายด้วยเสียง: ประโยคเดียวกลายเป็นหลายรายการได้",
+          "สแกนใบเสร็จ บิล PDF CSV และรายการเดินบัญชี",
+          "บันทึกการซื้อด้วย Apple Pay อัตโนมัติผ่านคำสั่งลัด",
+          "สร้างรายจ่ายจากการแจ้งเตือนของธนาคาร (iOS 27)",
+          "พื้นที่แชร์: งบประมาณร่วมกันได้สูงสุด 6 คน ซิงค์ข้ามอุปกรณ์",
+          "งบประมาณตามหมวดหมู่หรือบัญชี",
+          "รายการซ้ำและการติดตามค่าสมาชิก",
+          "เป้าหมายการออมและหนี้",
+          "ข้อมูลเชิงลึกและการวิเคราะห์: แนวโน้ม กระแสเงินสด สัดส่วนตามหมวดหมู่",
+          "บัญชีหลายสกุลเงินพร้อมอัตราแลกเปลี่ยนล่าสุด",
+          "นำเข้า CSV จาก YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper",
+          "วิดเจ็ตหน้าจอโฮม คำสั่งลัด Siri แตะด้านหลัง และปุ่มแอ็กชัน",
+          "เป็นส่วนตัวโดยค่าเริ่มต้น: ไม่มีโฆษณา สำรองข้อมูลไปยัง iCloud ได้ตามต้องการ"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "แพ็กเกจฟรี",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro รายเดือน",
+            "price": "3.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro รายปี",
+            "price": "29.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro ครอบครัว รายเดือน",
+            "price": "5.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Qalta Pro ครอบครัว รายปี",
+            "price": "49.99",
+            "priceCurrency": "USD"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "ratingCount": "15",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://qalta.app/th/#faq",
+        "inLanguage": "th",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qalta คืออะไร",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Qalta คือแอปบันทึกรายจ่ายและจัดงบประมาณสำหรับ iPhone คุณแค่พูดว่าใช้อะไรไปหรือสแกนใบเสร็จ แล้ว Qalta จะจดรายการและจัดเข้าหมวดหมู่ให้ นอกจากนี้ยังรองรับงบประมาณ ค่าสมาชิก เป้าหมาย หนี้ หลายสกุลเงิน และงบประมาณร่วมกัน"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ใช้งบประมาณร่วมกับคู่หรือครอบครัวได้ไหม",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ได้ สร้างพื้นที่แชร์แล้วเชิญคนอื่นด้วยลิงก์ พื้นที่หนึ่งมีได้สูงสุด 6 คน ทุกคนเห็นและแก้ไขบัญชี รายการ และงบประมาณชุดเดียวกัน การเปลี่ยนแปลงซิงค์อัตโนมัติ และแต่ละรายการแสดงว่าใครสร้างหรือแก้ไขล่าสุด พื้นที่แชร์เป็นส่วนหนึ่งของ Qalta Pro"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "การบันทึกรายจ่ายด้วยเสียงทำงานอย่างไร",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "แตะไมโครโฟนแล้วพูดประมาณว่า “กาแฟ $5 และ Netflix $10 ทุกเดือน” Qalta จะกรอกจำนวนเงิน หมวดหมู่ บัญชี และรอบการทำซ้ำให้ ประโยคเดียวมีได้หลายรายการ รวมถึงการโอนและค่าสมาชิก"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qalta บันทึกการซื้อด้วย Apple Pay อัตโนมัติได้ไหม",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ได้ ระบบอัตโนมัติในคำสั่งลัดจะบันทึกทุกการชำระเงินด้วย Apple Pay พร้อมจำนวนเงินและร้านค้า บน iOS 27 การแจ้งเตือนการชำระเงินจากแอปธนาคารก็สร้างรายจ่ายได้เช่นกัน ทำตาม คู่มือทีละขั้นตอน"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ย้ายประวัติจากแอปงบประมาณอื่นมาได้ไหม",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ได้ Qalta นำเข้าไฟล์ CSV จาก YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper และแอปอื่น ๆ และส่งออกข้อมูลของคุณเป็น CSV ได้ทุกเมื่อ"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ข้อมูลการเงินของฉันเป็นส่วนตัวไหม",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "พื้นที่ส่วนตัวอยู่บน iPhone ของคุณ และสำรองไปยัง iCloud ของคุณเองได้ตามต้องการ พื้นที่แชร์จะถูกอัปโหลดก็ต่อเมื่อคุณเลือกแชร์ และมีเพียงคนที่คุณเชิญเท่านั้นที่เห็น เสียงบันทึกและภาพสแกนถูกส่งไปยังเซิร์ฟเวอร์ของ Qalta และ OpenAI เพื่ออ่านข้อมูลเท่านั้น ไม่มีโฆษณา"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qalta ราคาเท่าไร",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ดาวน์โหลด Qalta ได้ฟรีพร้อมแพ็กเกจฟรี Qalta Pro เพิ่มรายการ เสียง และการสแกนได้ไม่จำกัด รวมถึงพื้นที่แชร์ ในราคา $3.99 ต่อเดือน หรือ $29.99 ต่อปี แพ็กเกจครอบครัวแชร์ Pro ได้สูงสุด 6 คน ในราคา $5.99 ต่อเดือน หรือ $49.99 ต่อปี ราคาเป็นดอลลาร์สหรัฐและแตกต่างกันไปตามภูมิภาค"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qalta รองรับอุปกรณ์และภาษาอะไรบ้าง",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Qalta ใช้งานได้บน iPhone ที่มี iOS 16.4 ขึ้นไป รวมถึง Mac ที่ใช้ชิป Apple silicon และ Apple Vision Pro มีให้ใช้ในภาษาอังกฤษ ฝรั่งเศส เยอรมัน อิตาลี ญี่ปุ่น คาซัค เกาหลี โปแลนด์ โปรตุเกส รัสเซีย สเปน ไทย ตุรกี และยูเครน"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/home.css" />
+</head>
+<body class="page-home">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></symbol>
+    <symbol id="i-wallet-cards" viewBox="0 0 24 24"><path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21"/><path d="M3 7h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+    <symbol id="i-pointer" viewBox="0 0 24 24"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1"/><path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-hand-coins" viewBox="0 0 24 24"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></symbol>
+    <symbol id="i-goal" viewBox="0 0 24 24"><path d="M12 13V2l8 4-8 4"/><path d="M20.561 10.222a9 9 0 1 1-12.55-5.29"/><path d="M8.002 9.997a5 5 0 1 0 8.9 2.02"/></symbol>
+    <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+  </svg>
+
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="/th/">
+        <img class="brand__mark" src="/assets/vector_logo.svg" width="38" height="35" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Qalta</span>
+          <span class="brand__tag">แอปจัดการเงิน</span>
+        </span>
+      </a>
+      <a class="pill pill--outline" href="https://apps.apple.com/th/app/id6756010294" target="_blank" rel="noopener noreferrer"><span class="top-cta__full">เปิดใน App Store</span><span class="top-cta__short">App Store</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="headline headline--hero">
+            จดรายรับรายจ่าย
+            <span class="headline__soft">โดยไม่ต้องน่าเบื่อ</span>
+          </h1>
+          <p class="lede">แค่บอกว่าใช้อะไรไป Qalta จะจดและจัดหมวดหมู่ให้</p>
+          <ul class="chips" aria-label="จุดเด่น">
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>เสียง</li>
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg>สแกน</li>
+            <li class="chip"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>เป็นส่วนตัว</li>
+          </ul>
+          <div class="cta">
+            <a class="pill pill--solid" href="https://apps.apple.com/th/app/id6756010294" target="_blank" rel="noopener noreferrer">ดาวน์โหลดบน App Store</a>
+          </div>
+        </div>
+        <div class="hero__phones">
+          <img class="hero__phone hero__phone--side" src="/assets/home/hero-insights.webp" width="576" height="1024" decoding="async"
+            alt="ข้อมูลเชิงลึกใน Qalta: ออมได้ 91% ของรายรับ กราฟรายจ่าย แนวโน้มรายจ่าย และค่าเฉลี่ยต่อวัน" />
+          <img class="hero__phone hero__phone--main" src="/assets/home/hero-home.webp" width="576" height="1024" fetchpriority="high" decoding="async"
+            alt="หน้าหลักของ Qalta: ยอดสุทธิเดือนนี้ $13,154 รายรับ $14,400 สีเขียว รายจ่าย $1,246 สีส้ม และรายการที่จัดกลุ่มตามวัน" />
+          <img class="hero__phone hero__phone--side" src="/assets/home/hero-add.webp" width="576" height="1024" decoding="async"
+            alt="การเพิ่มรายจ่ายใน Qalta: ช่องจำนวนเงินว่าง บัญชีกระเป๋าเงิน วันที่วันนี้ ไอคอนหมวดหมู่ และแป้นตัวเลข" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="voice-title">
+      <div class="container feature">
+        <div class="feature__copy" data-reveal>
+          <h2 class="headline" id="voice-title">
+            แค่พูดก็จดได้
+            <span class="headline__soft">เพิ่มรายจ่ายในไม่กี่วินาที</span>
+          </h2>
+          <p class="lede">ประโยคเดียวกลายเป็นหลายรายการได้ รวมถึงค่าสมาชิกและการโอน</p>
+        </div>
+        <div class="feature__media" data-reveal>
+          <div class="shot shot--voice">
+            <img src="/assets/home/voice.webp" width="1000" height="1464" loading="lazy" decoding="async"
+              alt="หน้าต่างเสียงใน Qalta ประโยคที่พูดเพียงประโยคเดียวกลายเป็นสามรายการ: อาหารและร้านอาหาร −$12 ค่าสมาชิก OpenAI รายเดือน −$19.90 และการโอน $1,000 จากกระเป๋าเงินไปธนาคาร พร้อมปุ่มยกเลิกและบันทึก" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scan-title">
+      <div class="container feature feature--flip">
+        <div class="feature__copy" data-reveal>
+          <h2 class="headline" id="scan-title">
+            สแกนเอกสาร
+            <span class="headline__soft">กรอกจำนวนเงินและหมวดหมู่ให้เอง</span>
+          </h2>
+          <p class="lede">ใบเสร็จ บิล PDF CSV และรายการเดินบัญชี</p>
+        </div>
+        <div class="feature__media" data-reveal>
+          <div class="shot shot--scan">
+            <img src="/assets/home/scan.webp" width="1000" height="1464" loading="lazy" decoding="async"
+              alt="สแกนเนอร์ของ Qalta ในมุมมองกล้อง พร้อมใบแจ้งหนี้ รายการเดินบัญชี และบิล และตัวเลือก PDF, CSV และรูปภาพ" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shared" aria-labelledby="shared-title">
+      <div class="container">
+        <div class="section__head shared__head" data-reveal>
+          <h2 class="headline" id="shared-title">
+            จดเงินด้วยกัน
+            <span class="headline__soft">งบเดียวสำหรับสองคนหรือทั้งครอบครัว</span>
+          </h2>
+          <p class="lede">แชร์พื้นที่กับคู่ ครอบครัว หรือเพื่อนร่วมห้อง ทุกคนเพิ่มรายจ่ายได้ และยอดรวมตรงกันในทุกเครื่อง</p>
+        </div>
+        <div class="shared" data-reveal>
+          <div class="shared__media">
+            <img src="/assets/home/shared.webp" width="1600" height="900" loading="lazy" decoding="async"
+              alt="อวาตาร์เหรียญ Qalta สามเหรียญ สีเงิน สีทอง และสีทองแดง ลอยอยู่เหนือก้อนเมฆ" />
+          </div>
+          <ul class="shared__points">
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-link"/></svg></span>
+              <div><h3>เชิญด้วยลิงก์</h3><p>พื้นที่หนึ่งมีได้สูงสุด 6 คน แค่ส่งลิงก์ก็เข้าร่วมได้</p></div>
+            </li>
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-sync"/></svg></span>
+              <div><h3>ซิงค์ตลอดเวลา</h3><p>บัญชี งบประมาณ และรายการอัปเดตในทุกโทรศัพท์และอุปกรณ์อื่นของคุณ</p></div>
+            </li>
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-history"/></svg></span>
+              <div><h3>เห็นว่าใครเพิ่มอะไร</h3><p>แต่ละรายการแสดงว่าใครสร้างและใครแก้ไขล่าสุด</p></div>
+            </li>
+            <li>
+              <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-lock"/></svg></span>
+              <div><h3>ของส่วนตัวก็ยังเป็นส่วนตัว</h3><p>เก็บพื้นที่ส่วนตัวไว้บน iPhone มีเพียงพื้นที่ที่คุณแชร์เท่านั้นที่ถูกอัปโหลด</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ways-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="ways-title">
+            จดได้โดย
+            <span class="headline__soft">ไม่ต้องเปิดแอป</span>
+          </h2>
+        </div>
+        <div class="ways" data-reveal>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-wallet-cards"/></svg></span>
+            <h3>Apple Pay</h3>
+            <p>จ่ายตามปกติ Qalta บันทึกจำนวนเงินและสถานที่ให้</p>
+          </div>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-bell"/></svg></span>
+            <h3>การแจ้งเตือนจากธนาคาร</h3>
+            <p>การแจ้งเตือนการชำระเงินกลายเป็นรายจ่าย</p>
+          </div>
+          <div class="ways__item">
+            <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-pointer"/></svg></span>
+            <h3>คำสั่งลัด</h3>
+            <p>Siri แตะด้านหลัง ปุ่มแอ็กชัน หรือวิดเจ็ต</p>
+          </div>
+        </div>
+        <p class="ways__more" data-reveal>
+          <a class="pill pill--outline" href="/th/tutorials/">ดูคู่มือการตั้งค่า<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="insights-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="insights-title">
+            ข้อมูลเชิงลึกอัจฉริยะ
+            <span class="headline__soft">การออม แนวโน้ม การคาดการณ์</span>
+          </h2>
+          <p class="lede">แนวโน้ม ค่าสมาชิก และหมวดหมู่ที่มักมองข้าม</p>
+        </div>
+        <div class="bento" data-reveal>
+          <div class="tile tile--insights">
+            <img src="/assets/home/insights.webp" width="1000" height="1565" loading="lazy" decoding="async"
+              alt="หน้าข้อมูลเชิงลึกใน Qalta: เดือนนี้ $3,309 ออมได้ 82% ของรายรับ กราฟรายจ่าย และการ์ดแนวโน้มรายจ่ายกับค่าเฉลี่ยต่อวัน" />
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">แนวโน้มรายจ่าย</h3>
+              <p class="tile__note">เทียบกับช่วงก่อน</p>
+            </div>
+            <p class="tile__value is-income">−45%</p>
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">ค่าเฉลี่ยต่อวัน</h3>
+            </div>
+            <p class="tile__value">$28</p>
+          </div>
+          <div class="tile tile--stat tile--wide">
+            <div>
+              <h3 class="tile__label">ออมได้เดือนนี้</h3>
+              <p class="tile__note">ของรายรับ</p>
+            </div>
+            <p class="tile__value is-income">82%</p>
+          </div>
+          <div class="tile tile--analytics">
+            <div class="tile__text">
+              <h3 class="tile__label">การวิเคราะห์แบบภาพ</h3>
+              <p class="tile__note">กราฟวงกลม เส้น แท่งซ้อน กระแสเงินสด</p>
+            </div>
+            <img src="/assets/home/analytics.webp" width="900" height="1400" loading="lazy" decoding="async"
+              alt="การวิเคราะห์ใน Qalta: กราฟเส้นของรายรับและรายจ่าย และกราฟโดนัทของรายจ่าย $716 แยกตามหมวดหมู่" />
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">รายจ่ายสูงสุด</h3>
+              <p class="tile__note">การเดินทาง</p>
+            </div>
+            <p class="tile__value is-expense">$210</p>
+          </div>
+          <div class="tile tile--stat">
+            <div>
+              <h3 class="tile__label">รายรับสูงสุด</h3>
+              <p class="tile__note">เงินเดือน</p>
+            </div>
+            <p class="tile__value is-income">$3,200</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="tools-title">
+            เรื่องเงินในทุกวัน
+            <span class="headline__soft">งบประมาณ รายการซ้ำ หลายสกุลเงิน</span>
+          </h2>
+        </div>
+        <div class="band" data-reveal>
+          <figure class="band__item">
+            <div class="stage stage--shot">
+              <img src="/assets/home/budgets.webp" width="900" height="1183" loading="lazy" decoding="async"
+                alt="งบประมาณใน Qalta: กาแฟ $15 สำหรับวันนี้ และงบเดือนนี้ $7,000 สำหรับรายจ่ายทั้งหมด และ $300 สำหรับร้านอาหาร แต่ละรายการมีแถบความคืบหน้าบาง ๆ และยอดคงเหลือสีเขียว" />
+            </div>
+            <figcaption>
+              <h3>อยู่ในงบ</h3>
+              <p>กำหนดวงเงินตามหมวดหมู่หรือบัญชี</p>
+            </figcaption>
+          </figure>
+          <figure class="band__item">
+            <div class="stage stage--rows">
+              <img src="/assets/home/subscriptions.webp" width="900" height="559" loading="lazy" decoding="async"
+                alt="รายการชำระซ้ำใน Qalta: Spotify −$12.99, OpenAI −$20 และ Netflix −$19.99" />
+            </div>
+            <figcaption>
+              <h3>ติดตามค่าสมาชิก</h3>
+              <p>ดูว่าอะไรถูกเรียกเก็บซ้ำทุกเดือน</p>
+            </figcaption>
+          </figure>
+          <figure class="band__item">
+            <div class="stage stage--shot stage--wide-shot">
+              <img src="/assets/home/currency.webp" width="900" height="1499" loading="lazy" decoding="async"
+                alt="การเพิ่มรายจ่ายใน Qalta: $100 แสดงด้านล่างเป็น €87.8 พร้อมบัญชีกระเป๋าเงิน วันที่วันนี้ และแถวไอคอนหมวดหมู่" />
+            </div>
+            <figcaption>
+              <h3>หลายสกุลเงิน</h3>
+              <p>อัตราแลกเปลี่ยนล่าสุดสำหรับการเดินทางและงานทางไกล</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <ul class="list" data-reveal>
+          <li class="list__row">
+            <span class="round round--sm is-debt" aria-hidden="true"><svg class="icon"><use href="#i-hand-coins"/></svg></span>
+            <div><h3>หนี้</h3><p>ใครติดเงินใคร</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-goal"/></svg></span>
+            <div><h3>เป้าหมาย</h3><p>เงินออมที่ผูกกับบัญชี</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <div><h3>แยกพื้นที่</h3><p>สมุดบัญชีหนึ่งเล่มสำหรับบ้าน อีกเล่มสำหรับงานหรือทริป</p></div>
+          </li>
+          <li class="list__row">
+            <span class="round round--sm" aria-hidden="true"><svg class="icon"><use href="#i-import"/></svg></span>
+            <div><h3>นำเข้าและส่งออก</h3><p>CSV จาก CoinKeeper, YNAB, Monarch และแอปอื่น ๆ</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--narrow" aria-labelledby="privacy-title">
+      <div class="container privacy" data-reveal>
+        <span class="round" aria-hidden="true"><svg class="icon"><use href="#i-lock"/></svg></span>
+        <h2 class="headline" id="privacy-title">
+            บันทึกการเงินของคุณ
+            <span class="headline__soft">อยู่บน iPhone ของคุณ</span>
+          </h2>
+        <p class="lede">สำรองข้อมูลไปยัง iCloud ของคุณเองได้ตามต้องการ ไม่มีโฆษณา</p>
+        <p class="lede">พื้นที่แชร์จะถูกอัปโหลดก็ต่อเมื่อคุณเลือกแชร์เท่านั้น</p>
+        <p class="lede">เสียงและภาพสแกนถูกส่งไปยังเซิร์ฟเวอร์ของเราและ OpenAI เพื่ออ่านข้อมูลเท่านั้น</p>
+        <p class="privacy__link"><a class="text-link" href="/th/privacy-policy">นโยบายความเป็นส่วนตัว</a></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="themes-title">
+      <div class="container">
+        <div class="themes" data-reveal>
+          <div class="themes__copy">
+            <h2 class="headline" id="themes-title">
+              <span class="headline__soft">สะอาดตา</span>
+              สว่างและมืด
+            </h2>
+            <p class="lede">หน้าจอเดียวกัน ไม่ว่าแบบไหน</p>
+          </div>
+          <img class="themes__img" src="/assets/home/themes.webp" width="1100" height="1952" loading="lazy" decoding="async"
+            alt="หน้าหลักของ Qalta สองแบบ: ธีมสว่างพื้นหลังสีขาวอยู่ด้านหน้า และธีมมืดอยู่ด้านหลัง" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2 class="headline" id="faq-title">
+            คำถาม
+            <span class="headline__soft">และคำตอบสั้น ๆ</span>
+          </h2>
+        </div>
+        <div class="faq" data-reveal>
+          <details>
+            <summary>Qalta คืออะไร</summary>
+            <p>Qalta คือแอปบันทึกรายจ่ายและจัดงบประมาณสำหรับ iPhone คุณแค่พูดว่าใช้อะไรไปหรือสแกนใบเสร็จ แล้ว Qalta จะจดรายการและจัดเข้าหมวดหมู่ให้ นอกจากนี้ยังรองรับงบประมาณ ค่าสมาชิก เป้าหมาย หนี้ หลายสกุลเงิน และงบประมาณร่วมกัน</p>
+          </details>
+          <details>
+            <summary>ใช้งบประมาณร่วมกับคู่หรือครอบครัวได้ไหม</summary>
+            <p>ได้ สร้างพื้นที่แชร์แล้วเชิญคนอื่นด้วยลิงก์ พื้นที่หนึ่งมีได้สูงสุด 6 คน ทุกคนเห็นและแก้ไขบัญชี รายการ และงบประมาณชุดเดียวกัน การเปลี่ยนแปลงซิงค์อัตโนมัติ และแต่ละรายการแสดงว่าใครสร้างหรือแก้ไขล่าสุด พื้นที่แชร์เป็นส่วนหนึ่งของ Qalta Pro</p>
+          </details>
+          <details>
+            <summary>การบันทึกรายจ่ายด้วยเสียงทำงานอย่างไร</summary>
+            <p>แตะไมโครโฟนแล้วพูดประมาณว่า “กาแฟ $5 และ Netflix $10 ทุกเดือน” Qalta จะกรอกจำนวนเงิน หมวดหมู่ บัญชี และรอบการทำซ้ำให้ ประโยคเดียวมีได้หลายรายการ รวมถึงการโอนและค่าสมาชิก</p>
+          </details>
+          <details>
+            <summary>Qalta บันทึกการซื้อด้วย Apple Pay อัตโนมัติได้ไหม</summary>
+            <p>ได้ ระบบอัตโนมัติในคำสั่งลัดจะบันทึกทุกการชำระเงินด้วย Apple Pay พร้อมจำนวนเงินและร้านค้า บน iOS 27 การแจ้งเตือนการชำระเงินจากแอปธนาคารก็สร้างรายจ่ายได้เช่นกัน ทำตาม<a class="text-link" href="/th/tutorials/">คู่มือทีละขั้นตอน</a></p>
+          </details>
+          <details>
+            <summary>ย้ายประวัติจากแอปงบประมาณอื่นมาได้ไหม</summary>
+            <p>ได้ Qalta นำเข้าไฟล์ CSV จาก YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper และแอปอื่น ๆ และส่งออกข้อมูลของคุณเป็น CSV ได้ทุกเมื่อ</p>
+          </details>
+          <details>
+            <summary>ข้อมูลการเงินของฉันเป็นส่วนตัวไหม</summary>
+            <p>พื้นที่ส่วนตัวอยู่บน iPhone ของคุณ และสำรองไปยัง iCloud ของคุณเองได้ตามต้องการ พื้นที่แชร์จะถูกอัปโหลดก็ต่อเมื่อคุณเลือกแชร์ และมีเพียงคนที่คุณเชิญเท่านั้นที่เห็น เสียงบันทึกและภาพสแกนถูกส่งไปยังเซิร์ฟเวอร์ของ Qalta และ OpenAI เพื่ออ่านข้อมูลเท่านั้น ไม่มีโฆษณา</p>
+          </details>
+          <details>
+            <summary>Qalta ราคาเท่าไร</summary>
+            <p>ดาวน์โหลด Qalta ได้ฟรีพร้อมแพ็กเกจฟรี Qalta Pro เพิ่มรายการ เสียง และการสแกนได้ไม่จำกัด รวมถึงพื้นที่แชร์ ในราคา $3.99 ต่อเดือน หรือ $29.99 ต่อปี แพ็กเกจครอบครัวแชร์ Pro ได้สูงสุด 6 คน ในราคา $5.99 ต่อเดือน หรือ $49.99 ต่อปี ราคาเป็นดอลลาร์สหรัฐและแตกต่างกันไปตามภูมิภาค</p>
+          </details>
+          <details>
+            <summary>Qalta รองรับอุปกรณ์และภาษาอะไรบ้าง</summary>
+            <p>Qalta ใช้งานได้บน iPhone ที่มี iOS 16.4 ขึ้นไป รวมถึง Mac ที่ใช้ชิป Apple silicon และ Apple Vision Pro มีให้ใช้ในภาษาอังกฤษ ฝรั่งเศส เยอรมัน อิตาลี ญี่ปุ่น คาซัค เกาหลี โปแลนด์ โปรตุเกส รัสเซีย สเปน ไทย ตุรกี และยูเครน</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section close" aria-labelledby="close-title">
+      <div class="container close__inner" data-reveal>
+        <img class="close__icon" src="/assets/home/icon.webp" width="256" height="256" loading="lazy" decoding="async" alt="ไอคอนแอป Qalta" />
+        <h2 class="headline" id="close-title">จดเงินได้เร็วเท่าที่พูด</h2>
+        <a class="pill pill--solid" href="https://apps.apple.com/th/app/id6756010294" target="_blank" rel="noopener noreferrer">ดาวน์โหลดบน App Store</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <nav class="foot__links" aria-label="เว็บไซต์">
+        <a href="/th/tutorials/">คู่มือ</a>
+        <a href="mailto:help.qalta.app@outlook.com">ความช่วยเหลือ</a>
+        <a href="/th/privacy-policy">นโยบายความเป็นส่วนตัว</a>
+        <a href="/th/terms-and-conditions">ข้อกำหนด</a>
+      </nav>
+      <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
+    </div>
+    <div class="container">
+      <nav class="langs" aria-label="ภาษา">
+        <svg class="langs__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <a href="/" hreflang="en" lang="en" data-set-lang="en">English</a>
+        <a href="/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a>
+        <a href="/es/" hreflang="es" lang="es" data-set-lang="es">Español</a>
+        <a href="/fr/" hreflang="fr" lang="fr" data-set-lang="fr">Français</a>
+        <a href="/it/" hreflang="it" lang="it" data-set-lang="it">Italiano</a>
+        <a href="/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a>
+        <a href="/kk/" hreflang="kk" lang="kk" data-set-lang="kk">Қазақша</a>
+        <a href="/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a>
+        <a href="/pl/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a>
+        <a href="/pt/" hreflang="pt" lang="pt" data-set-lang="pt">Português</a>
+        <a href="/ru/" hreflang="ru" lang="ru" data-set-lang="ru">Русский</a>
+        <a href="/th/" hreflang="th" lang="th" data-set-lang="th" aria-current="true">ไทย</a>
+        <a href="/tr/" hreflang="tr" lang="tr" data-set-lang="tr">Türkçe</a>
+        <a href="/uk/" hreflang="uk" lang="uk" data-set-lang="uk">Українська</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) document.cookie = "lang=" + link.getAttribute("data-set-lang") + "; path=/; max-age=31536000; samesite=lax";
+    });
+  </script>
+  <script>
+    (function () {
+      var items = document.querySelectorAll("[data-reveal]");
+      if (!("IntersectionObserver" in window)) {
+        items.forEach(function (el) { el.classList.add("is-in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

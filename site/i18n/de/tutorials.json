@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "Anleitungen für Automationen",
+    "description": "Schritt-für-Schritt-Anleitungen, mit denen Qalta Apple Pay-Käufe und Bankmitteilungen automatisch erfasst – für iOS 26 und iOS 27.",
+    "ogTitle": "Qalta: Anleitungen für Automationen",
+    "ogImageAlt": "Qalta-Anleitungen für Automationen unter iOS 26 und iOS 27, neben dem Bildschirm Alle Kurzbefehle.",
+    "h1": "Anleitungen",
+    "lede": "So richtest du Automationen ein, die einen Kauf in Qalta speichern. Wähle die Anleitung für deine iOS-Version.",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Nach einer Apple Pay-Zahlung speichert Qalta den Kauf. Betrag und Händler kommen aus Wallet." },
+      "push-notification-ios-27": { "title": "Bankmitteilungen", "text": "Wenn eine Banking-App eine Zahlungsmitteilung sendet, speichert Qalta sie als Ausgabe." },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Dieselbe Apple Pay-Einrichtung, über den Tab Automation in Kurzbefehle." }
+    }
+  },
+  "shared": {
+    "videoTitle": "Ganzes Video",
+    "videoLede": "Lieber anhand einer Bildschirmaufnahme mitmachen?",
+    "allTutorials": "Alle Anleitungen"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "Apple Pay-Automation unter iOS 27",
+      "description": "Richte einen Kurzbefehl ein, damit jeder Apple Pay-Kauf in Qalta als Ausgabe gespeichert wird, mit Betrag und Händler aus Wallet. Für iOS 27.",
+      "ogTitle": "Apple Pay-Automation unter iOS 27",
+      "ogImageAlt": "Apple Pay-Automation unter iOS 27, neben dem Kurzbefehl Wallet-Ausgabe erstellen.",
+      "h1": "Apple Pay-Automation unter iOS 27",
+      "intro": [
+        "Nach einer Apple Pay-Zahlung kann Qalta den Kauf als Ausgabe speichern. Betrag und Händler kommen aus der Wallet-Transaktion; Kategorie und Konto wählst du jedes Mal oder legst sie vorab fest.",
+        "Du brauchst iOS 27, <strong>Qalta</strong> und <strong>Kurzbefehle</strong> sowie Karten in Wallet. Unter iOS 27 steckt der Wallet-Auslöser in einem neuen Kurzbefehl – einen eigenen Tab Automation gibt es nicht."
+      ],
+      "steps": [
+        {
+          "html": "<p>Öffne <strong>Kurzbefehle</strong> und tippe unten auf <strong>+</strong>, um einen neuen Kurzbefehl zu erstellen.</p>",
+          "caption": "Neuer Kurzbefehl",
+          "alt": "Alle Kurzbefehle mit der Plus-Taste"
+        },
+        {
+          "html": "<p>Ein leerer Editor öffnet sich. Tippe in der Aktionssuche auf den Chip <strong>Automation</strong> – oder gib „Automation“ ein.</p>",
+          "caption": "Chip Automation",
+          "alt": "Leerer Kurzbefehl-Editor mit dem Chip Automation"
+        },
+        {
+          "html": "<p>Tippe unter <strong>Apps</strong> auf <strong>Wallet</strong> – „When I tap a Wallet Card or Pass“ (Zahlung am Terminal).</p>",
+          "caption": "Wallet-Auslöser",
+          "alt": "Wallet-Auslöser in der Liste Automation"
+        },
+        {
+          "html": "<p>Im ersten Block steht <strong>When Any Card is tapped</strong>. Soll Qalta nur bei bestimmten Karten laufen, tippe auf den blauen Chip <strong>Any Card</strong>.</p>",
+          "caption": "Any Card",
+          "alt": "Auslöser When Any Card is tapped"
+        },
+        {
+          "html": "<p>Wähle die Karte, mit der du bezahlst (zum Beispiel <strong>Kaspi Gold</strong>). Tippe auf das Häkchen.</p>",
+          "caption": "Welche Karte erfasst wird",
+          "alt": "Zahlungskarte auswählen"
+        },
+        {
+          "html": "<p>Jetzt siehst du einen Block: <strong>When [deine Karte] is tapped</strong>. Gib unten im Suchfeld <strong>Qalta</strong> ein.</p>",
+          "caption": "Kartenauslöser ist eingerichtet",
+          "alt": "Wallet-Auslöser für die gewählte Karte"
+        },
+        {
+          "html": "<p>Tippe auf <strong>Wallet-Ausgabe erstellen</strong> (nicht „Transaktion erstellen“).</p>",
+          "caption": "Qalta-Aktion",
+          "alt": "Suche nach Wallet-Ausgabe erstellen"
+        },
+        {
+          "html": "<p>Du siehst zwei Blöcke: den Wallet-Auslöser und die Qalta-Aktion. Tippe auf das graue Feld <strong>Betrag</strong> – ein Ziffernblock erscheint. Tippe darüber auf <strong>Variable auswählen</strong>.</p>",
+          "caption": "Betrag, dann Variable auswählen",
+          "alt": "Feld Betrag und Variable auswählen"
+        },
+        {
+          "html": "<p>Tippe im Bildschirm Variable auswählen auf den blauen Chip <strong>Transaktion</strong> unter dem Wallet-Auslöser. Das ist die Apple Pay-Zahlung, nicht die Kurzbefehleingabe.</p>",
+          "caption": "Transaktion",
+          "alt": "Transaktion aus dem Wallet-Auslöser auswählen"
+        },
+        {
+          "html": "<p>Tippe auf den blauen Chip <strong>Transaktion</strong>, der jetzt in der Qalta-Aktion steht. Lass das Häkchen im Fenster nicht auf „Transaktion“ – tippe auf <strong>Betrag</strong>.</p>",
+          "caption": "Abrufen → Betrag",
+          "alt": "Eigenschaften der Transaktion: auf Betrag tippen"
+        },
+        {
+          "html": "<p>Wiederhole das für den Namen des Geschäfts. Tippe auf den Pfeil der Qalta-Aktion, um die Felder einzublenden. Tippe auf <strong>Händler</strong> → <strong>Variable auswählen</strong> → <strong>Transaktion</strong>. Tippe erneut auf den Chip und wähle <strong>Händler</strong> aus der Liste – nicht „Transaktion“.</p>",
+          "caption": "Abrufen → Händler",
+          "alt": "Händler aus der Transaktion auswählen"
+        },
+        {
+          "html": "<p>Die übrigen Felder sind optional. Optionen für <strong>Kategorie</strong> und <strong>Konto</strong>:</p><ul><li><strong>Auswählen</strong> – wähle eine bestimmte Kategorie oder ein bestimmtes Konto aus Qalta. Hast du nur ein Konto, mach es so: einmal auswählen. Jedes Mal fragen brauchst du dann nicht.</li><li><strong>Jedes Mal fragen</strong> – nach jeder Zahlung fragt Qalta, wo die Ausgabe gespeichert werden soll. Praktisch bei mehreren Kategorien oder Konten.</li><li>Du kannst <strong>Auswählen</strong> leer lassen – dann nutzt Qalta die Standardwerte und versucht, die Kategorie zu erkennen.</li></ul><p><strong>Währung</strong>, <strong>Notiz</strong> und <strong>Datum</strong> können leer bleiben. Aktiviere <strong>Beim Ausführen anzeigen</strong>, damit nach der Zahlung eine Bestätigung erscheint. Tippe auf den Zurück-Pfeil.</p>",
+          "caption": "Kategorie, Konto und Bestätigung",
+          "alt": "Kategorie, Konto und Beim Ausführen anzeigen"
+        },
+        {
+          "html": "<p>Der Kurzbefehl erscheint unter <strong>Alle Kurzbefehle</strong> als <strong>Wallet-Ausgabe erstellen</strong>. Nach deinem nächsten Apple Pay-Kauf mit der gewählten Karte bietet Qalta an, die Ausgabe zu speichern.</p>",
+          "caption": "Fertig",
+          "alt": "Wallet-Ausgabe erstellen in Alle Kurzbefehle"
+        }
+      ],
+      "videoLabel": "Anleitung zur Apple Pay-Automation unter iOS 27, auf Englisch",
+      "videoCaption": "Einrichtung unter iOS 27 Schritt für Schritt."
+    },
+    "push-notification-ios-27": {
+      "title": "Automation für Bankmitteilungen unter iOS 27",
+      "description": "Richte einen Kurzbefehl ein, damit eine Zahlungsmitteilung deiner Banking-App in Qalta als Ausgabe gespeichert wird, mit dem Betrag aus dem Text. Für iOS 27.",
+      "ogTitle": "Automation für Bankmitteilungen unter iOS 27",
+      "ogImageAlt": "Automation für Bankmitteilungen unter iOS 27, neben dem Kurzbefehl Bankausgabe speichern.",
+      "h1": "Automation für Bankmitteilungen unter iOS 27",
+      "intro": [
+        "Wenn deine Banking-App eine Zahlungsmitteilung sendet, kann Qalta sie als Ausgabe speichern. Betrag und Händler werden aus dem Text der Mitteilung gelesen.",
+        "Du brauchst iOS 27, <strong>Qalta</strong> und <strong>Kurzbefehle</strong> sowie eine Banking-App, die Mitteilungen auf dem Sperrbildschirm anzeigt. Unter iOS 26 gibt es diesen Auslöser nicht."
+      ],
+      "steps": [
+        {
+          "html": "<p>Öffne <strong>Kurzbefehle</strong> und tippe unten auf <strong>+</strong>, um einen neuen Kurzbefehl zu erstellen.</p>",
+          "caption": "Neuer Kurzbefehl",
+          "alt": "Alle Kurzbefehle mit der Plus-Taste"
+        },
+        {
+          "html": "<p>Ein leerer Editor öffnet sich. Tippe in der Aktionssuche auf den Chip <strong>Automation</strong> – oder gib „Automation“ ein.</p>",
+          "caption": "Chip Automation",
+          "alt": "Leerer Kurzbefehl-Editor mit dem Chip Automation"
+        },
+        {
+          "html": "<p>Tippe unter <strong>Apps</strong> auf <strong>Mitteilung</strong> – „When I receive a notification from …“.</p>",
+          "caption": "Auslöser Mitteilung",
+          "alt": "Auslöser Mitteilung in der Liste Automation"
+        },
+        {
+          "html": "<p>Im ersten Block steht <strong>When I receive a notification from App</strong>. Tippe auf den blauen Chip <strong>App</strong>, um deine Bank auszuwählen.</p>",
+          "caption": "App auswählen",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>Suche nach deiner Bank und tippe auf die App, die Zahlungshinweise sendet (zum Beispiel <strong>Kaspi.kz</strong>, nicht eine zugehörige Pay- oder QR-App).</p>",
+          "caption": "Banking-App",
+          "alt": "App-Auswahl mit der Suche nach der Bank"
+        },
+        {
+          "html": "<p>Jetzt siehst du <strong>When I receive a notification from [Bank]</strong>. Gib unten im Suchfeld <strong>Qalta</strong> ein.</p>",
+          "caption": "Bankauslöser ist eingerichtet",
+          "alt": "Auslöser Mitteilung für die gewählte Banking-App"
+        },
+        {
+          "html": "<p>Tippe auf <strong>Bankausgabe speichern</strong> (nicht „Wallet-Ausgabe erstellen“ und nicht „Transaktion erstellen“).</p>",
+          "caption": "Qalta-Aktion",
+          "alt": "Suche nach Bankausgabe speichern"
+        },
+        {
+          "html": "<p>Du siehst zwei Blöcke: den Mitteilungsauslöser und <strong>Bankausgabe aus Mitteilungstext (Body) in Qalta speichern</strong>. Tippe auf das graue Feld <strong>Mitteilungstext (Body)</strong>.</p>",
+          "caption": "Mitteilungstext (Body) antippen",
+          "alt": "Bankausgabe speichern mit dem Feld Mitteilungstext (Body)"
+        },
+        {
+          "html": "<p>Eine Tastatur erscheint. Tippe darüber auf <strong>Variable auswählen</strong> und dann auf den blauen Chip <strong>Mitteilung</strong> unter dem Auslöser.</p>",
+          "caption": "Variable auswählen → Mitteilung",
+          "alt": "Variable auswählen mit dem Chip Mitteilung"
+        },
+        {
+          "html": "<p>Tippe auf den blauen Chip <strong>Mitteilung</strong>, der jetzt in der Qalta-Aktion steht. Lass das Häkchen im Fenster nicht auf „Mitteilung“ – tippe auf <strong>Body</strong>. Qalta liest den Betrag aus dem Text der Mitteilung, nicht aus dem ganzen Mitteilungsobjekt.</p>",
+          "caption": "Abrufen → Body",
+          "alt": "Eigenschaften der Mitteilung: auf Body tippen"
+        },
+        {
+          "html": "<p>In der Qalta-Aktion steht jetzt <strong>Bankausgabe aus Body in Qalta speichern</strong>.</p>",
+          "caption": "Body ist zugeordnet",
+          "alt": "Body in Bankausgabe speichern zugeordnet"
+        },
+        {
+          "html": "<p>Die übrigen Felder sind optional. Tippe auf den Pfeil, um sie einzublenden. Optionen für <strong>Kategorie</strong> und <strong>Konto</strong>:</p><ul><li><strong>Auswählen</strong> – wähle eine bestimmte Kategorie oder ein bestimmtes Konto aus Qalta. Hast du nur ein Konto, mach es so: einmal auswählen. Jedes Mal fragen brauchst du dann nicht.</li><li><strong>Jedes Mal fragen</strong> – nach jeder Mitteilung fragt Qalta, wo die Ausgabe gespeichert werden soll. Praktisch bei mehreren Kategorien oder Konten.</li><li>Du kannst <strong>Auswählen</strong> leer lassen – dann nutzt Qalta die Standardwerte und versucht, die Kategorie zu erkennen.</li></ul><p><strong>Notiz</strong> und <strong>Datum</strong> können leer bleiben. Aktiviere <strong>Beim Ausführen anzeigen</strong>, damit eine Bestätigung erscheint. Tippe auf den Zurück-Pfeil.</p>",
+          "caption": "Kategorie, Konto und Bestätigung",
+          "alt": "Kategorie, Konto und Beim Ausführen anzeigen"
+        },
+        {
+          "html": "<p>Der Kurzbefehl erscheint unter <strong>Alle Kurzbefehle</strong> als <strong>Bankausgabe speichern</strong>. Nach der nächsten Zahlungsmitteilung dieser Banking-App bietet Qalta an, die Ausgabe zu speichern.</p>",
+          "caption": "Fertig",
+          "alt": "Bankausgabe speichern in Alle Kurzbefehle"
+        }
+      ],
+      "videoLabel": "Anleitung zur Automation für Bankmitteilungen unter iOS 27",
+      "videoCaption": "Einrichtung unter iOS 27 Schritt für Schritt."
+    },
+    "apple-pay-ios-26": {
+      "title": "Apple Pay-Automation unter iOS 26",
+      "description": "Richte eine Automation in Kurzbefehle ein, damit jeder Apple Pay-Kauf in Qalta als Ausgabe gespeichert wird, mit Betrag und Händler. Für iOS 26.",
+      "ogTitle": "Apple Pay-Automation unter iOS 26",
+      "ogImageAlt": "Apple Pay-Automation unter iOS 26, neben der Aktion Wallet-Ausgabe erstellen in Kurzbefehle.",
+      "h1": "Apple Pay-Automation unter iOS 26",
+      "intro": [
+        "Nach einer Apple Pay-Zahlung kann Qalta den Kauf als Ausgabe speichern. Betrag und Händler kommen aus der Transaktion; Kategorie und Konto wählst du jedes Mal oder legst sie vorab fest.",
+        "Du brauchst iOS 26, <strong>Qalta</strong> und <strong>Kurzbefehle</strong> sowie Karten in Wallet."
+      ],
+      "steps": [
+        {
+          "html": "<p>Öffne <strong>Einstellungen → Wallet &amp; Apple Pay</strong>. Aktiviere <strong>Live-Aktivitäten</strong> und <strong>Mobile Daten</strong>.</p>",
+          "caption": "Wallet-Berechtigungen",
+          "alt": "Berechtigungen für Wallet & Apple Pay"
+        },
+        {
+          "html": "<p>Öffne <strong>Kurzbefehle</strong>, wechsle zum Tab <strong>Automation</strong> und tippe auf <strong>Neue Automation</strong>.</p>",
+          "caption": "Neue Automation",
+          "alt": "Tab Automation in Kurzbefehle"
+        },
+        {
+          "html": "<p>Wähle <strong>Wallet</strong> – „When I tap a Wallet Card or Pass“ (Zahlung am Terminal).</p>",
+          "caption": "Wallet-Auslöser",
+          "alt": "Wallet-Auslöser in der Liste der Automationen"
+        },
+        {
+          "html": "<p>Wähle die Karten, die Qalta erfassen soll. Tippe auf <strong>Weiter</strong>.</p>",
+          "caption": "Welche Karten erfasst werden",
+          "alt": "Zahlungskarten auswählen"
+        },
+        {
+          "html": "<p>Behalte die Wallet-Kategorien, die dir wichtig sind (alle ist auch in Ordnung). Wähle <strong>Sofort ausführen</strong> (nicht Nach Bestätigung ausführen). Tippe auf <strong>Weiter</strong>.</p>",
+          "caption": "Kategorien",
+          "alt": "Wallet-Kategorien"
+        },
+        {
+          "html": "<p>Tippe im Kachelbildschirm oben links auf die graue Karte <strong>Neuen Kurzbefehl erstellen</strong>. Wähle keinen vorhandenen Kurzbefehl aus der Liste darunter.</p>",
+          "caption": "Neuer Kurzbefehl",
+          "alt": "Kachel Neuen Kurzbefehl erstellen"
+        },
+        {
+          "html": "<p>Ein leerer Editor öffnet sich. Gib unten in der Aktionssuche <strong>Qalta</strong> ein und tippe auf <strong>Wallet-Ausgabe erstellen</strong> (nicht „Transaktion erstellen“).</p>",
+          "caption": "Qalta-Aktion",
+          "alt": "Suche nach Wallet-Ausgabe erstellen"
+        },
+        {
+          "html": "<p>Du siehst zwei Blöcke: „Receive transaction as input“ und die Qalta-Aktion. Tippe in der Qalta-Aktion auf das graue Feld <strong>Betrag</strong> – ein Ziffernblock erscheint. Tippe darüber auf <strong>Variable auswählen</strong>.</p>",
+          "caption": "Betrag, dann Variable auswählen",
+          "alt": "Feld Betrag und Variable auswählen"
+        },
+        {
+          "html": "<p>Tippe im Bildschirm Variable auswählen auf den blauen Chip <strong>Kurzbefehleingabe</strong> unter „Receive transaction as input“.</p>",
+          "caption": "Kurzbefehleingabe",
+          "alt": "Kurzbefehleingabe als Variable auswählen"
+        },
+        {
+          "html": "<p>Tippe auf den blauen Chip <strong>Kurzbefehleingabe</strong>, der jetzt in der Qalta-Aktion steht. Im Fenster sollte als Typ <strong>Transaktion</strong> eingestellt sein. Lass das Häkchen nicht auf „Transaktion“ – scrolle durch die Liste und tippe auf <strong>Betrag</strong>.</p>",
+          "caption": "Typ Transaktion → Betrag",
+          "alt": "Eigenschaften der Transaktion: auf Betrag tippen"
+        },
+        {
+          "html": "<p>Wiederhole das für den Namen des Geschäfts. Tippe auf den Pfeil der Qalta-Aktion, um die Felder einzublenden. Tippe auf <strong>Händler</strong> → <strong>Variable auswählen</strong> → <strong>Kurzbefehleingabe</strong>. Tippe erneut auf den Chip, Typ <strong>Transaktion</strong>, und wähle dann <strong>Händler</strong> aus der Liste.</p>",
+          "caption": "Typ Transaktion → Händler",
+          "alt": "Händler aus der Transaktion auswählen"
+        },
+        {
+          "html": "<p>Die übrigen Felder sind optional. Optionen für <strong>Kategorie</strong> und <strong>Konto</strong>:</p><ul><li><strong>Auswählen</strong> – wähle eine bestimmte Kategorie oder ein bestimmtes Konto aus Qalta. Hast du nur ein Konto, mach es so: einmal auswählen. Jedes Mal fragen brauchst du dann nicht.</li><li><strong>Jedes Mal fragen</strong> – nach jeder Zahlung fragt Qalta, wo die Ausgabe gespeichert werden soll. Praktisch bei mehreren Kategorien oder Konten.</li><li>Du kannst <strong>Auswählen</strong> leer lassen – dann nutzt Qalta die Standardwerte und versucht, die Kategorie zu erkennen.</li></ul><p><strong>Währung</strong>, <strong>Notiz</strong> und <strong>Datum</strong> können leer bleiben. Aktiviere <strong>Beim Ausführen anzeigen</strong>, damit nach der Zahlung eine Bestätigung erscheint. Tippe oben auf das blaue Häkchen.</p>",
+          "caption": "Kategorie, Konto und Bestätigung",
+          "alt": "Kategorie, Konto und Beim Ausführen anzeigen"
+        },
+        {
+          "html": "<p>Die Automation erscheint unter <strong>Automation</strong>. Nach deinem nächsten Apple Pay-Kauf mit der gewählten Karte bietet Qalta an, die Ausgabe zu speichern.</p>",
+          "caption": "Fertig",
+          "alt": "Fertige Automation in der Liste"
+        }
+      ],
+      "videoLabel": "Anleitung zur Apple Pay-Automation unter iOS 26, auf Englisch",
+      "videoCaption": "Einrichtung unter iOS 26 Schritt für Schritt."
+    }
+  }
+}

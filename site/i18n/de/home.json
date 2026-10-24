@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "Qalta: KI-Ausgabentracker & gemeinsames Budget fürs iPhone",
+    "description": "Qalta ist ein Ausgabentracker und eine Budget-App fürs iPhone. Sag, was du ausgegeben hast, oder scanne einen Beleg, erfasse Apple Pay-Käufe automatisch und teile ein Budget mit Partner oder Familie.",
+    "ogTitle": "Qalta: Budget, Ausgabentracker",
+    "ogDescription": "Finanzen so schnell erfassen, wie du sprichst. Sag, was du ausgegeben hast, oder scanne einen Beleg – und teile ein Budget mit den Menschen, mit denen du lebst.",
+    "ogImageAlt": "Qalta: Finanzen im Griff, ohne den langweiligen Teil – neben dem Startbildschirm auf einem iPhone."
+  },
+  "hero": {
+    "title": "Finanzen im Griff",
+    "titleSoft": "ohne den langweiligen Teil",
+    "lede": "Sag, was du ausgegeben hast. Qalta schreibt es auf und sortiert es.",
+    "chipsLabel": "Highlights",
+    "chipVoice": "Sprache",
+    "chipScan": "Scan",
+    "chipPrivate": "Privat",
+    "altInsights": "Einblicke in Qalta: 91 % des Einkommens gespart, ein Ausgabendiagramm, der Ausgabentrend und die Ausgaben pro Tag.",
+    "altHome": "Der Startbildschirm von Qalta: eine Bilanz von $13,154 für diesen Monat, $14,400 Einnahmen in Grün, $1,246 Ausgaben in Orange und Buchungen nach Tagen gruppiert.",
+    "altAdd": "Eine Ausgabe in Qalta hinzufügen: leerer Betrag, das Konto Brieftasche, das heutige Datum, Kategorie-Symbole und ein Ziffernblock."
+  },
+  "voice": {
+    "title": "Einfach sagen",
+    "titleSoft": "Ausgaben in Sekunden erfasst",
+    "lede": "Aus einem Satz werden mehrere Einträge – sogar ein Abo und eine Überweisung.",
+    "alt": "Das Sprachfenster in Qalta. Aus einem gesprochenen Satz wurden drei Einträge: Essen & Trinken −$12, ein monatliches OpenAI-Abo −$19.90 und eine Überweisung von $1,000 von Brieftasche auf Bank, mit den Tasten Abbrechen und Speichern."
+  },
+  "scan": {
+    "title": "Dokumente scannen",
+    "titleSoft": "Betrag und Kategorie, schon ausgefüllt",
+    "lede": "Belege, Rechnungen, PDFs, CSVs und Kontoauszüge.",
+    "alt": "Der Scanner von Qalta in der Kameraansicht, mit einer Rechnung, einem Kontoauszug und einem Beleg sowie den Optionen PDF, CSV und Bild."
+  },
+  "shared": {
+    "title": "Finanzen gemeinsam führen",
+    "titleSoft": "Ein Budget für zwei oder die Familie",
+    "lede": "Teile einen Bereich mit Partner, Familie oder Mitbewohnern. Alle tragen Ausgaben ein, und die Summen sind auf jedem Handy gleich.",
+    "alt": "Drei Qalta-Münzavatare in Silber, Gold und Bronze über den Wolken.",
+    "points": [
+      {
+        "title": "Per Link einladen",
+        "text": "Bis zu 6 Personen pro Bereich. Link senden, schon sind sie dabei."
+      },
+      {
+        "title": "Immer synchron",
+        "text": "Konten, Budgets und Buchungen werden auf jedem Handy und deinen anderen Geräten aktualisiert."
+      },
+      {
+        "title": "Sehen, wer was eingetragen hat",
+        "text": "Bei jeder Buchung steht, wer sie erstellt und wer sie zuletzt bearbeitet hat."
+      },
+      {
+        "title": "Privates bleibt privat",
+        "text": "Private Bereiche bleiben auf deinem iPhone. Hochgeladen wird nur der Bereich, den du teilst."
+      }
+    ]
+  },
+  "ways": {
+    "title": "Erfassen, ohne",
+    "titleSoft": "die App zu öffnen",
+    "applePayTitle": "Apple Pay",
+    "applePayText": "Bezahl wie gewohnt. Qalta speichert Betrag und Ort.",
+    "bankTitle": "Bankmitteilungen",
+    "bankText": "Aus einer Zahlungsmitteilung wird eine Ausgabe.",
+    "shortcutsTitle": "Kurzbefehle",
+    "shortcutsText": "Siri, Auf Rückseite tippen, die Aktionstaste oder ein Widget.",
+    "guides": "Zu den Einrichtungsanleitungen"
+  },
+  "insights": {
+    "title": "Smarte Einblicke",
+    "titleSoft": "Ersparnisse, Trends, Prognosen",
+    "lede": "Trends, Abos und die Kategorien, die leicht untergehen.",
+    "altInsights": "Der Bildschirm Einblicke in Qalta: $3,309 für diesen Monat, 82 % des Einkommens gespart, ein Ausgabendiagramm sowie Kacheln für Ausgabentrend und Ausgaben pro Tag.",
+    "trend": "Ausgabentrend",
+    "trendNote": "ggü. Vorzeitraum",
+    "dailyAverage": "Ausgaben pro Tag",
+    "saved": "Diesen Monat gespart",
+    "savedNote": "des Einkommens",
+    "analytics": "Visuelle Analyse",
+    "analyticsNote": "Kreis, Linie, gestapelte Balken, Cashflow.",
+    "altAnalytics": "Analyse in Qalta: ein Liniendiagramm von Einnahmen und Ausgaben und ein Ringdiagramm mit $716 Ausgaben nach Kategorien.",
+    "largestExpense": "Größte Ausgabe",
+    "largestExpenseNote": "Reisen",
+    "largestIncome": "Größte Einnahme",
+    "largestIncomeNote": "Gehalt"
+  },
+  "tools": {
+    "title": "Alles für den Alltag",
+    "titleSoft": "Budgets, Wiederholungen, Währungen",
+    "budgetsTitle": "Im Budget bleiben",
+    "budgetsText": "Limits pro Kategorie oder Konto.",
+    "budgetsAlt": "Budgets in Qalta: Kaffee $15 für heute und Budgets für diesen Monat von $7,000 für alle Ausgaben und $300 für Restaurants, jeweils mit schmalem Fortschrittsbalken und dem Restbetrag in Grün.",
+    "subscriptionsTitle": "Abos im Blick",
+    "subscriptionsText": "Sieh, was jeden Monat wiederkommt.",
+    "subscriptionsAlt": "Wiederkehrende Zahlungen in Qalta: Spotify −$12.99, OpenAI −$20 und Netflix −$19.99.",
+    "currencyTitle": "Mehrere Währungen",
+    "currencyText": "Aktuelle Kurse für Reisen und Remote-Arbeit.",
+    "currencyAlt": "Eine Ausgabe in Qalta hinzufügen: $100, darunter als €87.8 angezeigt, mit dem Konto Brieftasche, dem heutigen Datum und einer Reihe von Kategorie-Symbolen.",
+    "debtsTitle": "Schulden",
+    "debtsText": "Wer wem was schuldet.",
+    "goalsTitle": "Ziele",
+    "goalsText": "Sparziele, mit einem Konto verknüpft.",
+    "spacesTitle": "Getrennte Bereiche",
+    "spacesText": "Eine Buchführung für Zuhause, eine andere für die Arbeit oder eine Reise.",
+    "importTitle": "Import und Export",
+    "importText": "CSV aus CoinKeeper, YNAB, Monarch und anderen."
+  },
+  "privacy": {
+    "title": "Deine Buchführung",
+    "titleSoft": "bleibt auf deinem iPhone",
+    "lines": [
+      "Optionales Backup in deiner eigenen iCloud. Keine Werbung.",
+      "Ein geteilter Bereich wird nur hochgeladen, wenn du ihn teilst.",
+      "Sprache und Scans gehen nur zum Auslesen an unseren Server und an OpenAI."
+    ],
+    "link": "Datenschutzerklärung"
+  },
+  "themes": {
+    "titleSoft": "Klar in",
+    "title": "Hell & Dunkel",
+    "lede": "Derselbe Bildschirm, so oder so.",
+    "alt": "Der Startbildschirm von Qalta zweimal: vorne im hellen Design mit weißem Hintergrund, dahinter im dunklen Design."
+  },
+  "faq": {
+    "title": "Fragen",
+    "titleSoft": "und kurze Antworten",
+    "items": [
+      {
+        "q": "Was ist Qalta?",
+        "a": "Qalta ist ein Ausgabentracker und eine Budget-App fürs iPhone. Du sagst, was du ausgegeben hast, oder scannst einen Beleg, und Qalta trägt die Buchung ein und ordnet sie einer Kategorie zu. Dazu kommen Budgets, Abos, Ziele, Schulden, mehrere Währungen und gemeinsame Budgets."
+      },
+      {
+        "q": "Kann ich ein Budget mit meinem Partner oder meiner Familie teilen?",
+        "a": "Ja. Erstelle einen geteilten Bereich und lade Personen per Link ein. In einem Bereich können bis zu 6 Personen sein. Alle sehen und bearbeiten dieselben Konten, Buchungen und Budgets, Änderungen werden automatisch synchronisiert, und bei jeder Buchung steht, wer sie erstellt oder zuletzt bearbeitet hat. Geteilte Bereiche gehören zu Qalta Pro."
+      },
+      {
+        "q": "Wie funktioniert das Erfassen von Ausgaben per Sprache?",
+        "a": "Tippe auf das Mikrofon und sag zum Beispiel „Kaffee $5 und Netflix $10 jeden Monat“. Qalta füllt Betrag, Kategorie, Konto und Wiederholung aus. Ein Satz kann mehrere Buchungen enthalten, auch Überweisungen und Abos."
+      },
+      {
+        "q": "Kann Qalta Apple Pay-Käufe automatisch erfassen?",
+        "a": "Ja. Eine Automation in Kurzbefehle speichert jede Apple Pay-Zahlung mit Betrag und Händler. Unter iOS 27 kann auch die Zahlungsmitteilung einer Banking-App eine Ausgabe anlegen. Folge den <a class=\"text-link\" href=\"{tutorialsUrl}\">Schritt-für-Schritt-Anleitungen</a>."
+      },
+      {
+        "q": "Kann ich meine Historie aus einer anderen Budget-App übernehmen?",
+        "a": "Ja. Qalta importiert CSV-Dateien aus YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper und anderen Apps und exportiert deine Daten jederzeit als CSV."
+      },
+      {
+        "q": "Bleiben meine Finanzdaten privat?",
+        "a": "Ein privater Bereich bleibt auf deinem iPhone, mit optionalem Backup in deiner eigenen iCloud. Ein geteilter Bereich wird nur hochgeladen, wenn du ihn teilst, und nur die Personen, die du einlädst, können ihn sehen. Sprachaufnahmen und Scans werden nur zum Auslesen an den Server von Qalta und an OpenAI gesendet. Es gibt keine Werbung."
+      },
+      {
+        "q": "Was kostet Qalta?",
+        "a": "Qalta ist kostenlos erhältlich und hat einen kostenlosen Plan. Qalta Pro bietet unbegrenzte Buchungen, Spracheingabe und Scans sowie geteilte Bereiche für $3.99 im Monat oder $29.99 im Jahr. Mit dem Familienplan teilst du Pro mit bis zu 6 Personen für $5.99 im Monat oder $49.99 im Jahr. Die Preise sind in US-Dollar angegeben und variieren je nach Region."
+      },
+      {
+        "q": "Welche Geräte und Sprachen unterstützt Qalta?",
+        "a": "Qalta läuft auf dem iPhone ab iOS 16.4 sowie auf Macs mit Apple Chip und auf Apple Vision Pro. Die App ist auf Deutsch, Englisch, Französisch, Italienisch, Japanisch, Kasachisch, Koreanisch, Polnisch, Portugiesisch, Russisch, Spanisch, Thailändisch, Türkisch und Ukrainisch verfügbar."
+      }
+    ]
+  },
+  "close": {
+    "title": "Finanzen so schnell erfassen, wie du&nbsp;sprichst.",
+    "iconAlt": "App-Symbol von Qalta"
+  },
+  "ld": {
+    "websiteDescription": "Qalta ist ein KI-Ausgabentracker und eine App für gemeinsame Budgets fürs iPhone.",
+    "appDescription": "Ein Finanztracker fürs iPhone. Ausgaben per Sprache erfassen, Belege und Kontoauszüge scannen, Apple Pay-Käufe und Bankmitteilungen automatisch eintragen und ein gemeinsames Budget mit Partner oder Familie führen, das sich über alle Geräte synchronisiert.",
+    "subCategory": "Budgetplanung, Ausgabenerfassung",
+    "featureList": [
+      "Ausgaben per Sprache erfassen: Aus einem Satz werden mehrere Buchungen",
+      "Scannen von Belegen, Rechnungen, PDFs, CSVs und Kontoauszügen",
+      "Automatisches Erfassen von Apple Pay-Käufen über Kurzbefehle",
+      "Ausgaben aus Push-Mitteilungen der Bank (iOS 27)",
+      "Geteilte Bereiche: ein gemeinsames Budget für bis zu 6 Personen, synchronisiert über alle Geräte",
+      "Budgets pro Kategorie oder Konto",
+      "Wiederkehrende Buchungen und Abo-Übersicht",
+      "Sparziele und Schulden",
+      "Einblicke und Analysen: Trends, Cashflow, Aufteilung nach Kategorien",
+      "Konten in mehreren Währungen mit aktuellen Wechselkursen",
+      "CSV-Import aus YNAB, Monarch, Copilot, Rocket Money, Spendee, Monefy, ZenMoney, CoinKeeper",
+      "Widgets für den Home-Bildschirm, Siri-Kurzbefehle, Auf Rückseite tippen und Aktionstaste",
+      "Standardmäßig privat: keine Werbung, optionales iCloud-Backup"
+    ],
+    "offerFree": "Kostenloser Plan",
+    "offerProMonthly": "Qalta Pro, monatlich",
+    "offerProAnnual": "Qalta Pro, jährlich",
+    "offerFamilyMonthly": "Qalta Pro Familie, monatlich",
+    "offerFamilyAnnual": "Qalta Pro Familie, jährlich"
+  }
+}

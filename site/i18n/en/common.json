@@ -1,0 +1,16 @@
+{
+  "brandTag": "Money manager",
+  "openInAppStore": "Open in App Store",
+  "appStoreShort": "App Store",
+  "download": "Download on the App Store",
+  "footerNavLabel": "Site",
+  "nav": {
+    "home": "Home",
+    "tutorials": "Tutorials",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms"
+  },
+  "languageLabel": "Language",
+  "legalNotice": "This translation is provided for convenience. If it differs from the <a href=\"{englishUrl}\">English version</a>, the English version applies."
+}

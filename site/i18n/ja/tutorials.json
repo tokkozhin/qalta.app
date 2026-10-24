@@ -1,0 +1,262 @@
+{
+  "index": {
+    "title": "オートメーションの使い方ガイド",
+    "description": "Apple Payの支払いや銀行の通知をQaltaに自動で記録するための、iOS 26・iOS 27向けステップごとのガイドです。",
+    "ogTitle": "Qalta オートメーションの使い方ガイド",
+    "ogImageAlt": "iOS 26・iOS 27向けQaltaオートメーションガイドと「すべてのショートカット」画面。",
+    "h1": "使い方ガイド",
+    "lede": "購入をQaltaに保存するオートメーションの設定方法です。お使いのiOSバージョンに合ったガイドを選んでください。",
+    "cards": {
+      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Apple Payで支払うと、Qaltaが購入を保存します。金額と店舗はウォレットから取得します。" },
+      "push-notification-ios-27": { "title": "銀行の通知", "text": "銀行アプリから支払いの通知が届くと、Qaltaが支出として保存します。" },
+      "apple-pay-ios-26": { "title": "Apple Pay", "text": "同じApple Payの設定を、ショートカットの「オートメーション」タブで行います。" }
+    }
+  },
+  "shared": {
+    "videoTitle": "動画で見る",
+    "videoLede": "画面収録を見ながら進めたい方はこちら。",
+    "allTutorials": "すべてのガイド"
+  },
+  "guides": {
+    "apple-pay-ios-27": {
+      "title": "iOS 27でApple Payのオートメーション",
+      "description": "Apple Payで支払うたびに、ウォレットの金額と店舗付きでQaltaに支出として保存されるショートカットを設定します。iOS 27向け。",
+      "ogTitle": "iOS 27でApple Payのオートメーション",
+      "ogImageAlt": "iOS 27でのApple Payオートメーションと「ウォレット支出を作成」ショートカット。",
+      "h1": "iOS 27でApple Payのオートメーション",
+      "intro": [
+        "Apple Payで支払った後、Qaltaがその購入を支出として保存できます。金額と店舗はウォレットの取引から取得されます。カテゴリと口座は毎回選ぶことも、あらかじめ設定しておくこともできます。",
+        "必要なのは、iOS 27、<strong>Qalta</strong>と<strong>ショートカット</strong>、ウォレットに追加したカードです。iOS 27では、ウォレットのトリガーは新しいショートカットの中にあり、独立した「オートメーション」タブはありません。"
+      ],
+      "steps": [
+        {
+          "html": "<p><strong>ショートカット</strong>を開き、下部の<strong>+</strong>ボタンをタップして新しいショートカットを作成します。</p>",
+          "caption": "新しいショートカット",
+          "alt": "プラスボタンのある「すべてのショートカット」"
+        },
+        {
+          "html": "<p>空のエディタが開きます。アクション検索で<strong>オートメーション</strong>のチップをタップするか、「オートメーション」と入力します。</p>",
+          "caption": "オートメーションのチップ",
+          "alt": "オートメーションのチップがある空のショートカットエディタ"
+        },
+        {
+          "html": "<p><strong>App</strong>の下にある<strong>ウォレット</strong>をタップします。「When I tap a Wallet Card or Pass」（端末での支払い）です。</p>",
+          "caption": "ウォレットのトリガー",
+          "alt": "オートメーション一覧のウォレットのトリガー"
+        },
+        {
+          "html": "<p>最初のブロックに<strong>When Any Card is tapped</strong>と表示されます。一部のカードだけでQaltaを実行したい場合は、青い<strong>Any Card</strong>のチップをタップします。</p>",
+          "caption": "Any Card",
+          "alt": "When Any Card is tapped のトリガー"
+        },
+        {
+          "html": "<p>支払いに使うカード（例：<strong>Kaspi Gold</strong>）を選び、チェックマークをタップします。</p>",
+          "caption": "記録するカード",
+          "alt": "支払いカードを選択"
+        },
+        {
+          "html": "<p>ブロックが1つ表示されます：<strong>When [あなたのカード] is tapped</strong>。下部の検索フィールドに<strong>Qalta</strong>と入力します。</p>",
+          "caption": "カードのトリガーを設定済み",
+          "alt": "選択したカードのウォレットのトリガー"
+        },
+        {
+          "html": "<p><strong>ウォレット支出を作成</strong>をタップします（「取引を作成」ではありません）。</p>",
+          "caption": "Qaltaのアクション",
+          "alt": "「ウォレット支出を作成」を検索"
+        },
+        {
+          "html": "<p>ウォレットのトリガーとQaltaのアクションの2つのブロックが表示されます。灰色の<strong>金額</strong>フィールドをタップするとテンキーが表示されます。その上の<strong>変数を選択</strong>をタップします。</p>",
+          "caption": "金額をタップして、変数を選択",
+          "alt": "金額フィールドと「変数を選択」"
+        },
+        {
+          "html": "<p>「変数を選択」画面で、ウォレットのトリガーの下にある青い<strong>Transaction</strong>のチップをタップします。これがApple Payの支払いで、「ショートカットの入力」ではありません。</p>",
+          "caption": "Transaction",
+          "alt": "ウォレットのトリガーからTransactionを選択"
+        },
+        {
+          "html": "<p>Qaltaのアクション内に入った青い<strong>Transaction</strong>のチップをタップします。表示されたシートで「Transaction」にチェックを残さず、<strong>Amount</strong>をタップします。</p>",
+          "caption": "取得 → Amount",
+          "alt": "Transactionのプロパティ：Amountをタップ"
+        },
+        {
+          "html": "<p>店名も同じように設定します。Qaltaのアクションの山形マークをタップしてフィールドを展開します。<strong>店舗</strong> → <strong>変数を選択</strong> → <strong>Transaction</strong>の順にタップします。もう一度チップをタップし、一覧から「Transaction」ではなく<strong>Merchant</strong>を選びます。</p>",
+          "caption": "取得 → Merchant",
+          "alt": "取引からMerchantを選択"
+        },
+        {
+          "html": "<p>残りのフィールドは任意です。<strong>カテゴリ</strong>と<strong>口座</strong>の設定方法：</p><ul><li><strong>選択</strong> — Qaltaの特定のカテゴリや口座を選びます。口座が1つだけなら、一度選んでおけば十分です。「毎回確認」は必要ありません。</li><li><strong>毎回確認</strong> — 支払いのたびに、Qaltaが支出の保存先を尋ねます。カテゴリや口座が複数ある場合に便利です。</li><li><strong>選択</strong>を空欄のままにすることもできます。その場合、Qaltaは既定の設定を使い、カテゴリの自動検出を試みます。</li></ul><p><strong>通貨</strong>、<strong>メモ</strong>、<strong>日付</strong>は空欄のままでかまいません。支払い後に確認が表示されるよう、<strong>実行時に表示</strong>をオンにします。戻る矢印をタップします。</p>",
+          "caption": "カテゴリ、口座、確認",
+          "alt": "カテゴリ、口座、実行時に表示"
+        },
+        {
+          "html": "<p>ショートカットが<strong>すべてのショートカット</strong>に<strong>ウォレット支出を作成</strong>として表示されます。次に選択したカードでApple Payを使うと、Qaltaが支出の保存を提案します。</p>",
+          "caption": "設定完了",
+          "alt": "「すべてのショートカット」内の「ウォレット支出を作成」"
+        }
+      ],
+      "videoLabel": "iOS 27向けApple Payオートメーションの使い方動画（英語）",
+      "videoCaption": "iOS 27での設定手順。"
+    },
+    "push-notification-ios-27": {
+      "title": "iOS 27で銀行の通知をオートメーション",
+      "description": "銀行アプリからの支払い通知が、本文から読み取った金額付きでQaltaに支出として保存されるショートカットを設定します。iOS 27向け。",
+      "ogTitle": "iOS 27で銀行の通知をオートメーション",
+      "ogImageAlt": "iOS 27での銀行の通知オートメーションと「銀行の支出を記録」ショートカット。",
+      "h1": "iOS 27で銀行の通知をオートメーション",
+      "intro": [
+        "銀行アプリから支払いの通知が届くと、Qaltaがそれを支出として保存できます。金額と店舗は通知のテキストから読み取ります。",
+        "必要なのは、iOS 27、<strong>Qalta</strong>と<strong>ショートカット</strong>、ロック画面に通知を送る銀行アプリです。このトリガーはiOS 26では使えません。"
+      ],
+      "steps": [
+        {
+          "html": "<p><strong>ショートカット</strong>を開き、下部の<strong>+</strong>ボタンをタップして新しいショートカットを作成します。</p>",
+          "caption": "新しいショートカット",
+          "alt": "プラスボタンのある「すべてのショートカット」"
+        },
+        {
+          "html": "<p>空のエディタが開きます。アクション検索で<strong>オートメーション</strong>のチップをタップするか、「オートメーション」と入力します。</p>",
+          "caption": "オートメーションのチップ",
+          "alt": "オートメーションのチップがある空のショートカットエディタ"
+        },
+        {
+          "html": "<p><strong>App</strong>の下にある<strong>通知</strong>をタップします。「When I receive a notification from …」です。</p>",
+          "caption": "通知のトリガー",
+          "alt": "オートメーション一覧の通知のトリガー"
+        },
+        {
+          "html": "<p>最初のブロックに<strong>When I receive a notification from App</strong>と表示されます。青い<strong>App</strong>のチップをタップして銀行を選びます。</p>",
+          "caption": "アプリを選ぶ",
+          "alt": "When I receive a notification from App"
+        },
+        {
+          "html": "<p>銀行を検索し、支払いの通知を送るアプリ（例：<strong>Kaspi.kz</strong>。関連するPayやQRのアプリではありません）をタップします。</p>",
+          "caption": "銀行アプリ",
+          "alt": "銀行を検索しているアプリ選択画面"
+        },
+        {
+          "html": "<p><strong>When I receive a notification from [銀行]</strong>と表示されます。下部の検索フィールドに<strong>Qalta</strong>と入力します。</p>",
+          "caption": "銀行のトリガーを設定済み",
+          "alt": "選択した銀行アプリの通知のトリガー"
+        },
+        {
+          "html": "<p><strong>銀行の支出を記録</strong>をタップします（「ウォレット支出を作成」でも「取引を作成」でもありません）。</p>",
+          "caption": "Qaltaのアクション",
+          "alt": "「銀行の支出を記録」を検索"
+        },
+        {
+          "html": "<p>通知のトリガーと<strong>Qalta で 通知の本文 から銀行の支出を記録</strong>の2つのブロックが表示されます。灰色の<strong>通知の本文</strong>フィールドをタップします。</p>",
+          "caption": "通知の本文をタップ",
+          "alt": "通知の本文フィールドのある「銀行の支出を記録」"
+        },
+        {
+          "html": "<p>キーボードが表示されます。その上の<strong>変数を選択</strong>をタップし、トリガーの下にある青い<strong>Notification</strong>のチップをタップします。</p>",
+          "caption": "変数を選択 → Notification",
+          "alt": "Notificationのチップがある「変数を選択」"
+        },
+        {
+          "html": "<p>Qaltaのアクション内に入った青い<strong>Notification</strong>のチップをタップします。表示されたシートで「Notification」にチェックを残さず、<strong>Body</strong>をタップします。Qaltaは通知オブジェクト全体ではなく、通知のテキストから金額を読み取ります。</p>",
+          "caption": "取得 → Body",
+          "alt": "Notificationのプロパティ：Bodyをタップ"
+        },
+        {
+          "html": "<p>Qaltaのアクションが<strong>Qalta で Body から銀行の支出を記録</strong>になっていれば完了です。</p>",
+          "caption": "Bodyを設定済み",
+          "alt": "「銀行の支出を記録」に設定されたBody"
+        },
+        {
+          "html": "<p>残りのフィールドは任意です。山形マークをタップして展開します。<strong>カテゴリ</strong>と<strong>口座</strong>の設定方法：</p><ul><li><strong>選択</strong> — Qaltaの特定のカテゴリや口座を選びます。口座が1つだけなら、一度選んでおけば十分です。「毎回確認」は必要ありません。</li><li><strong>毎回確認</strong> — 通知のたびに、Qaltaが支出の保存先を尋ねます。カテゴリや口座が複数ある場合に便利です。</li><li><strong>選択</strong>を空欄のままにすることもできます。その場合、Qaltaは既定の設定を使い、カテゴリの自動検出を試みます。</li></ul><p><strong>メモ</strong>と<strong>日付</strong>は空欄のままでかまいません。確認が表示されるよう、<strong>実行時に表示</strong>をオンにします。戻る矢印をタップします。</p>",
+          "caption": "カテゴリ、口座、確認",
+          "alt": "カテゴリ、口座、実行時に表示"
+        },
+        {
+          "html": "<p>ショートカットが<strong>すべてのショートカット</strong>に<strong>銀行の支出を記録</strong>として表示されます。次にその銀行アプリから支払いの通知が届くと、Qaltaが支出の保存を提案します。</p>",
+          "caption": "設定完了",
+          "alt": "「すべてのショートカット」内の「銀行の支出を記録」"
+        }
+      ],
+      "videoLabel": "iOS 27向け銀行の通知オートメーションの使い方動画",
+      "videoCaption": "iOS 27での設定手順。"
+    },
+    "apple-pay-ios-26": {
+      "title": "iOS 26でApple Payのオートメーション",
+      "description": "Apple Payで支払うたびに、金額と店舗が入力された状態でQaltaに支出として保存されるショートカットのオートメーションを設定します。iOS 26向け。",
+      "ogTitle": "iOS 26でApple Payのオートメーション",
+      "ogImageAlt": "iOS 26でのApple Payオートメーションと、ショートカットの「ウォレット支出を作成」アクション。",
+      "h1": "iOS 26でApple Payのオートメーション",
+      "intro": [
+        "Apple Payで支払った後、Qaltaがその購入を支出として保存できます。金額と店舗は取引から取得されます。カテゴリと口座は毎回選ぶことも、あらかじめ設定しておくこともできます。",
+        "必要なのは、iOS 26、<strong>Qalta</strong>と<strong>ショートカット</strong>、ウォレットに追加したカードです。"
+      ],
+      "steps": [
+        {
+          "html": "<p><strong>設定 → ウォレットと Apple Pay</strong>を開きます。<strong>ライブアクティビティ</strong>と<strong>モバイルデータ通信</strong>をオンにします。</p>",
+          "caption": "ウォレットの許可",
+          "alt": "ウォレットと Apple Pay の許可"
+        },
+        {
+          "html": "<p><strong>ショートカット</strong>を開き、<strong>オートメーション</strong>タブで<strong>新規オートメーション</strong>をタップします。</p>",
+          "caption": "新規オートメーション",
+          "alt": "ショートカットの「オートメーション」タブ"
+        },
+        {
+          "html": "<p><strong>ウォレット</strong>を選びます。「When I tap a Wallet Card or Pass」（端末での支払い）です。</p>",
+          "caption": "ウォレットのトリガー",
+          "alt": "オートメーション一覧のウォレットのトリガー"
+        },
+        {
+          "html": "<p>Qaltaで記録したいカードを選び、<strong>次へ</strong>をタップします。</p>",
+          "caption": "記録するカード",
+          "alt": "支払いカードを選択"
+        },
+        {
+          "html": "<p>必要なウォレットのカテゴリを残します（すべてのままでもかまいません）。<strong>すぐに実行</strong>を選びます（Run After Confirmationではありません）。<strong>次へ</strong>をタップします。</p>",
+          "caption": "カテゴリ",
+          "alt": "ウォレットのカテゴリ"
+        },
+        {
+          "html": "<p>タイル画面で、左上の灰色の<strong>Create New Shortcut</strong>カードをタップします。下の一覧から既存のショートカットを選ばないでください。</p>",
+          "caption": "新しいショートカット",
+          "alt": "Create New Shortcut のタイル"
+        },
+        {
+          "html": "<p>空のエディタが開きます。下部のアクション検索に<strong>Qalta</strong>と入力し、<strong>ウォレット支出を作成</strong>をタップします（「取引を作成」ではありません）。</p>",
+          "caption": "Qaltaのアクション",
+          "alt": "「ウォレット支出を作成」を検索"
+        },
+        {
+          "html": "<p>「Receive transaction as input」とQaltaのアクションの2つのブロックが表示されます。Qaltaのアクションにある灰色の<strong>金額</strong>フィールドをタップするとテンキーが表示されます。その上の<strong>変数を選択</strong>をタップします。</p>",
+          "caption": "金額をタップして、変数を選択",
+          "alt": "金額フィールドと「変数を選択」"
+        },
+        {
+          "html": "<p>「変数を選択」画面で、「Receive transaction as input」の下にある青い<strong>ショートカットの入力</strong>のチップをタップします。</p>",
+          "caption": "ショートカットの入力",
+          "alt": "変数として「ショートカットの入力」を選択"
+        },
+        {
+          "html": "<p>Qaltaのアクション内に入った青い<strong>ショートカットの入力</strong>のチップをタップします。シートでは、種類が<strong>Transaction</strong>になっているはずです。「Transaction」にチェックを残さず、一覧をスクロールして<strong>Amount</strong>をタップします。</p>",
+          "caption": "種類 Transaction → Amount",
+          "alt": "Transactionのプロパティ：Amountをタップ"
+        },
+        {
+          "html": "<p>店名も同じように設定します。Qaltaのアクションの山形マークをタップしてフィールドを展開します。<strong>店舗</strong> → <strong>変数を選択</strong> → <strong>ショートカットの入力</strong>の順にタップします。もう一度チップをタップし、種類を<strong>Transaction</strong>にして、一覧から<strong>Merchant</strong>を選びます。</p>",
+          "caption": "種類 Transaction → Merchant",
+          "alt": "取引からMerchantを選択"
+        },
+        {
+          "html": "<p>残りのフィールドは任意です。<strong>カテゴリ</strong>と<strong>口座</strong>の設定方法：</p><ul><li><strong>選択</strong> — Qaltaの特定のカテゴリや口座を選びます。口座が1つだけなら、一度選んでおけば十分です。「毎回確認」は必要ありません。</li><li><strong>毎回確認</strong> — 支払いのたびに、Qaltaが支出の保存先を尋ねます。カテゴリや口座が複数ある場合に便利です。</li><li><strong>選択</strong>を空欄のままにすることもできます。その場合、Qaltaは既定の設定を使い、カテゴリの自動検出を試みます。</li></ul><p><strong>通貨</strong>、<strong>メモ</strong>、<strong>日付</strong>は空欄のままでかまいません。支払い後に確認が表示されるよう、<strong>実行時に表示</strong>をオンにします。上部の青いチェックマークをタップします。</p>",
+          "caption": "カテゴリ、口座、確認",
+          "alt": "カテゴリ、口座、実行時に表示"
+        },
+        {
+          "html": "<p>オートメーションが<strong>オートメーション</strong>に表示されます。次に選択したカードでApple Payを使うと、Qaltaが支出の保存を提案します。</p>",
+          "caption": "設定完了",
+          "alt": "一覧に表示された完成したオートメーション"
+        }
+      ],
+      "videoLabel": "iOS 26向けApple Payオートメーションの使い方動画（英語）",
+      "videoCaption": "iOS 26での設定手順。"
+    }
+  }
+}

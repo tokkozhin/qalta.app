@@ -1,0 +1,16 @@
+{
+  "brandTag": "家計簿アプリ",
+  "openInAppStore": "App Storeで開く",
+  "appStoreShort": "App Store",
+  "download": "App Storeからダウンロード",
+  "footerNavLabel": "サイト",
+  "nav": {
+    "home": "ホーム",
+    "tutorials": "使い方ガイド",
+    "support": "サポート",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "languageLabel": "言語",
+  "legalNotice": "この翻訳は便宜上提供しているものです。<a href=\"{englishUrl}\">英語版</a>と内容が異なる場合は、英語版が優先されます。"
+}
