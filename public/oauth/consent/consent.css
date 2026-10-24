@@ -88,6 +88,42 @@ li {
   word-break: break-word;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brand img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.provider-button {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.provider-icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .brand img {
+    filter: brightness(0) invert(1);
+  }
+}
+
 .actions {
   display: grid;
   gap: 10px;

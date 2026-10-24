@@ -7,6 +7,7 @@ const app = document.getElementById("app");
 
 if (!CONFIG?.supabaseUrl || !CONFIG?.supabasePublishableKey) {
   app.replaceChildren(
+    brand(),
     Object.assign(document.createElement("p"), {
       className: "error",
       textContent:
@@ -101,6 +102,62 @@ function el(tag, props = {}, children = []) {
   return node;
 }
 
+function brand() {
+  return el("div", { className: "brand" }, [
+    el("img", { src: "../../assets/vector_logo.svg", alt: "", width: 30, height: 30 }),
+    el("span", { textContent: "Qalta" }),
+  ]);
+}
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+function svgElement(tag, attributes) {
+  const node = document.createElementNS(SVG_NS, tag);
+  for (const [name, value] of Object.entries(attributes)) {
+    node.setAttribute(name, value);
+  }
+  return node;
+}
+
+function providerIcon(provider) {
+  const apple = provider === "apple";
+  const icon = svgElement("svg", {
+    class: "provider-icon",
+    viewBox: apple ? "0 0 448 512" : "0 0 24 24",
+    "aria-hidden": "true",
+    focusable: "false",
+  });
+  const paths = apple
+    ? [
+        {
+          d: "M318.7 268.7c-.2-36.7 16.4-64.3 50-84.8-18.8-26.8-47.3-41.5-85.3-44.4-35.9-2.8-75.1 21-89.5 21-15.3 0-49.9-20-77.3-20C59 140.6 0 184.8 0 274c0 26.3 4.8 53.4 14.4 81.4 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 76.2-17.9 32.1 0 48.6 17.9 76.7 17.9 48.7-.7 90.5-82.5 102.7-119.3-65.3-30.8-58.5-90.7-58.5-92.6zM262.5 104.4c27.6-32.8 25.1-62.6 24.3-73.4-24.4 1.4-52.6 16.6-68.6 35.4-17.7 20.1-28.1 45-25.9 73 26.4 2 50.5-11.5 70.2-35z",
+          fill: "currentColor",
+        },
+      ]
+    : [
+        {
+          d: "M24 12.276c0-.816-.073-1.604-.209-2.365H12v4.48h6.741a5.76 5.76 0 0 1-2.498 3.78v3.086h4.045C22.653 19.063 24 15.946 24 12.276z",
+          fill: "#4285F4",
+        },
+        {
+          d: "M12 24c3.24 0 5.957-1.077 7.943-2.743l-4.045-3.086c-1.077.72-2.452 1.145-3.898 1.145-2.994 0-5.532-2.021-6.435-4.744H1.383v3.183A12 12 0 0 0 12 24z",
+          fill: "#34A853",
+        },
+        {
+          d: "M5.565 14.572a7.18 7.18 0 0 1 0-5.144V6.245H1.383a12 12 0 0 0 0 11.51l4.182-3.183z",
+          fill: "#FBBC05",
+        },
+        {
+          d: "M12 4.684c1.765 0 3.35.606 4.6 1.793l3.45-3.45C17.953 1.152 15.235 0 12 0A12 12 0 0 0 1.383 6.245l4.182 3.183C6.468 6.705 9.006 4.684 12 4.684z",
+          fill: "#EA4335",
+        },
+      ];
+  for (const attributes of paths) {
+    icon.append(svgElement("path", attributes));
+  }
+  return icon;
+}
+
 function render(...children) {
   app.replaceChildren(...children);
 }
@@ -134,11 +191,20 @@ function renderSignIn() {
     if (error) showError(t.signInFailed);
   };
   render(
+    brand(),
     el("h1", { textContent: t.signInTitle }),
     el("p", { textContent: t.signInBody }),
     el("div", { className: "actions" }, [
-      el("button", { className: "primary", textContent: t.apple, onclick: signIn("apple") }),
-      el("button", { textContent: t.google, onclick: signIn("google") }),
+      el(
+        "button",
+        { className: "provider-button primary", onclick: signIn("apple") },
+        [providerIcon("apple"), el("span", { textContent: t.apple })],
+      ),
+      el(
+        "button",
+        { className: "provider-button", onclick: signIn("google") },
+        [providerIcon("google"), el("span", { textContent: t.google })],
+      ),
     ]),
   );
 }
@@ -188,6 +254,7 @@ async function renderConsent(session) {
   approve.disabled = isPremium !== true;
 
   render(
+    brand(),
     el("h1", { textContent: t.consentTitle(client) }),
     el("p", { textContent: t.consentBody }),
     el(
@@ -229,6 +296,7 @@ async function renderGrants(session) {
     ]);
   });
   render(
+    brand(),
     el("h1", { textContent: t.grantsTitle }),
     ...(rows.length ? rows : [el("p", { textContent: t.grantsEmpty })]),
     accountFooter(session.user.email),
