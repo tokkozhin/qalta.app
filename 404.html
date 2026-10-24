@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting to Qalta</title>
+  </head>
+  <body>
+    <p>Redirecting to <a id="redirect-link" href="https://qalta.app/">Qalta</a>…</p>
+    <script>
+      (() => {
+        const source = new URL(window.location.href);
+const basePath = "/qalta.app";
+let path = source.pathname;
+if (path === basePath || path.startsWith(basePath + "/")) {
+  path = path.slice(basePath.length) || "/";
+}
+const destination = new URL(path, "https://qalta.app");
+destination.search = source.search;
+destination.hash = source.hash;
+document.getElementById("redirect-link").href = destination.href;
+window.location.replace(destination.href);
+      })();
+    </script>
+  </body>
+</html>
