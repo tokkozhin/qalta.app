@@ -5,6 +5,7 @@ import { DEFAULT_LANG, LANGS, PAGES_FILES, i18nDir, publicDir, siteDir } from ".
 import { renderHome } from "./templates/home.mjs";
 import { absUrl } from "./templates/layout.mjs";
 import { renderLegal } from "./templates/legal.mjs";
+import { renderSupport } from "./templates/support.mjs";
 import { GUIDE_GROUPS, renderGuide, renderTutorialsIndex } from "./templates/tutorials.mjs";
 
 const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
@@ -31,6 +32,7 @@ function dictionary(lang) {
 }
 
 const pages = [
+  { path: "/support", out: "support.html", render: renderSupport },
   { path: "/", out: "index.html", render: renderHome },
   { path: "/tutorials/", out: "tutorials/index.html", render: renderTutorialsIndex },
   ...GUIDE_GROUPS.flatMap((g) => g.slugs).map((slug) => ({

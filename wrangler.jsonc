@@ -7,9 +7,16 @@
   "observability": {
     "enabled": true
   },
+  "vars": {
+    "OPENAI_APPS_CHALLENGE": ""
+  },
   "routes": [
     {
       "pattern": "qalta.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "mcp.qalta.app",
       "custom_domain": true
     }
   ],

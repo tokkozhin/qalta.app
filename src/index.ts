@@ -1,3 +1,5 @@
+import { handleMcp } from "./mcp.ts";
+
 /** Keep in sync with `LANGUAGES` in `site/config.mjs`. */
 const LANGS = ["en", "de", "es", "fr", "it", "ja", "kk", "ko", "pl", "pt", "ru", "th", "tr", "uk"] as const;
 type Lang = (typeof LANGS)[number];
@@ -54,6 +56,18 @@ export default {
   async fetch(request, env): Promise<Response> {
     const url = new URL(request.url);
     const { pathname } = url;
+
+    if (pathname === "/.well-known/openai-apps-challenge") {
+      if (request.method !== "GET" && request.method !== "HEAD") {
+        return new Response(null, { status: 405, headers: { Allow: "GET, HEAD" } });
+      }
+      const challenge = env.OPENAI_APPS_CHALLENGE;
+      return new Response(request.method === "HEAD" ? null : challenge || "Not configured", {
+        status: challenge ? 200 : 404,
+        headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" },
+      });
+    }
+    if (url.hostname === "mcp.qalta.app") return handleMcp(request);
 
     const legacy = LEGACY_REDIRECTS[pathname];
     if (legacy) return redirect(url, legacy, 301);

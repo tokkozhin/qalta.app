@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qalta.app/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -22,7 +42,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -42,7 +62,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -62,7 +82,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -82,7 +102,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -102,7 +122,7 @@
   </url>
   <url>
     <loc>https://qalta.app/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -122,7 +142,7 @@
   </url>
   <url>
     <loc>https://qalta.app/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -141,8 +161,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/de/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/de/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -162,7 +202,7 @@
   </url>
   <url>
     <loc>https://qalta.app/de/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -182,7 +222,7 @@
   </url>
   <url>
     <loc>https://qalta.app/de/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -202,7 +242,7 @@
   </url>
   <url>
     <loc>https://qalta.app/de/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -222,7 +262,7 @@
   </url>
   <url>
     <loc>https://qalta.app/de/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -242,7 +282,7 @@
   </url>
   <url>
     <loc>https://qalta.app/de/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -262,7 +302,7 @@
   </url>
   <url>
     <loc>https://qalta.app/de/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -281,8 +321,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/es/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/es/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -302,7 +362,7 @@
   </url>
   <url>
     <loc>https://qalta.app/es/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -322,7 +382,7 @@
   </url>
   <url>
     <loc>https://qalta.app/es/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -342,7 +402,7 @@
   </url>
   <url>
     <loc>https://qalta.app/es/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -362,7 +422,7 @@
   </url>
   <url>
     <loc>https://qalta.app/es/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -382,7 +442,7 @@
   </url>
   <url>
     <loc>https://qalta.app/es/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -402,7 +462,7 @@
   </url>
   <url>
     <loc>https://qalta.app/es/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -421,8 +481,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/fr/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/fr/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -442,7 +522,7 @@
   </url>
   <url>
     <loc>https://qalta.app/fr/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -462,7 +542,7 @@
   </url>
   <url>
     <loc>https://qalta.app/fr/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -482,7 +562,7 @@
   </url>
   <url>
     <loc>https://qalta.app/fr/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -502,7 +582,7 @@
   </url>
   <url>
     <loc>https://qalta.app/fr/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -522,7 +602,7 @@
   </url>
   <url>
     <loc>https://qalta.app/fr/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -542,7 +622,7 @@
   </url>
   <url>
     <loc>https://qalta.app/fr/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -561,8 +641,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/it/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/it/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -582,7 +682,7 @@
   </url>
   <url>
     <loc>https://qalta.app/it/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -602,7 +702,7 @@
   </url>
   <url>
     <loc>https://qalta.app/it/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -622,7 +722,7 @@
   </url>
   <url>
     <loc>https://qalta.app/it/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -642,7 +742,7 @@
   </url>
   <url>
     <loc>https://qalta.app/it/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -662,7 +762,7 @@
   </url>
   <url>
     <loc>https://qalta.app/it/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -682,7 +782,7 @@
   </url>
   <url>
     <loc>https://qalta.app/it/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -701,8 +801,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/ja/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/ja/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -722,7 +842,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ja/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -742,7 +862,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ja/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -762,7 +882,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ja/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -782,7 +902,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ja/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -802,7 +922,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ja/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -822,7 +942,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ja/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -841,8 +961,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/kk/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/kk/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -862,7 +1002,7 @@
   </url>
   <url>
     <loc>https://qalta.app/kk/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -882,7 +1022,7 @@
   </url>
   <url>
     <loc>https://qalta.app/kk/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -902,7 +1042,7 @@
   </url>
   <url>
     <loc>https://qalta.app/kk/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -922,7 +1062,7 @@
   </url>
   <url>
     <loc>https://qalta.app/kk/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -942,7 +1082,7 @@
   </url>
   <url>
     <loc>https://qalta.app/kk/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -962,7 +1102,7 @@
   </url>
   <url>
     <loc>https://qalta.app/kk/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -981,8 +1121,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/ko/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/ko/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1002,7 +1162,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ko/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1022,7 +1182,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ko/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1042,7 +1202,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ko/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1062,7 +1222,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ko/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1082,7 +1242,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ko/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1102,7 +1262,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ko/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -1121,8 +1281,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/pl/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/pl/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1142,7 +1322,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pl/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1162,7 +1342,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pl/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1182,7 +1362,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pl/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1202,7 +1382,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pl/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1222,7 +1402,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pl/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1242,7 +1422,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pl/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -1261,8 +1441,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/pt/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/pt/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1282,7 +1482,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pt/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1302,7 +1502,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pt/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1322,7 +1522,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pt/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1342,7 +1542,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pt/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1362,7 +1562,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pt/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1382,7 +1582,7 @@
   </url>
   <url>
     <loc>https://qalta.app/pt/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -1401,8 +1601,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/ru/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/ru/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1422,7 +1642,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ru/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1442,7 +1662,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ru/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1462,7 +1682,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ru/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1482,7 +1702,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ru/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1502,7 +1722,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ru/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1522,7 +1742,7 @@
   </url>
   <url>
     <loc>https://qalta.app/ru/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -1541,8 +1761,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/th/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/th/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1562,7 +1802,7 @@
   </url>
   <url>
     <loc>https://qalta.app/th/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1582,7 +1822,7 @@
   </url>
   <url>
     <loc>https://qalta.app/th/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1602,7 +1842,7 @@
   </url>
   <url>
     <loc>https://qalta.app/th/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1622,7 +1862,7 @@
   </url>
   <url>
     <loc>https://qalta.app/th/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1642,7 +1882,7 @@
   </url>
   <url>
     <loc>https://qalta.app/th/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1662,7 +1902,7 @@
   </url>
   <url>
     <loc>https://qalta.app/th/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -1681,8 +1921,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/tr/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/tr/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1702,7 +1962,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tr/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1722,7 +1982,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tr/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1742,7 +2002,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tr/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1762,7 +2022,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tr/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1782,7 +2042,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tr/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1802,7 +2062,7 @@
   </url>
   <url>
     <loc>https://qalta.app/tr/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />
@@ -1821,8 +2081,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/terms-and-conditions" />
   </url>
   <url>
+    <loc>https://qalta.app/uk/support</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://qalta.app/es/support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://qalta.app/fr/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://qalta.app/it/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://qalta.app/ja/support" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://qalta.app/kk/support" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://qalta.app/ko/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://qalta.app/pl/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://qalta.app/pt/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://qalta.app/ru/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://qalta.app/th/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://qalta.app/tr/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://qalta.app/uk/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qalta.app/support" />
+  </url>
+  <url>
     <loc>https://qalta.app/uk/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/" />
@@ -1842,7 +2122,7 @@
   </url>
   <url>
     <loc>https://qalta.app/uk/tutorials/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/" />
@@ -1862,7 +2142,7 @@
   </url>
   <url>
     <loc>https://qalta.app/uk/tutorials/apple-pay-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-27" />
@@ -1882,7 +2162,7 @@
   </url>
   <url>
     <loc>https://qalta.app/uk/tutorials/push-notification-ios-27</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/push-notification-ios-27" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/push-notification-ios-27" />
@@ -1902,7 +2182,7 @@
   </url>
   <url>
     <loc>https://qalta.app/uk/tutorials/apple-pay-ios-26</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/tutorials/apple-pay-ios-26" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/tutorials/apple-pay-ios-26" />
@@ -1922,7 +2202,7 @@
   </url>
   <url>
     <loc>https://qalta.app/uk/privacy-policy</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/privacy-policy" />
@@ -1942,7 +2222,7 @@
   </url>
   <url>
     <loc>https://qalta.app/uk/terms-and-conditions</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://qalta.app/terms-and-conditions" />
     <xhtml:link rel="alternate" hreflang="de" href="https://qalta.app/de/terms-and-conditions" />

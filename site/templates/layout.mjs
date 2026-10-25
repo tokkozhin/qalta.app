@@ -1,4 +1,4 @@
-import { DEFAULT_LANG, LANGUAGES, SITE, SUPPORT_EMAIL, appStoreUrl } from "../config.mjs";
+import { DEFAULT_LANG, LANGUAGES, SITE, appStoreUrl } from "../config.mjs";
 
 export const localPath = (lang, path) => (lang === DEFAULT_LANG ? path : `/${lang}${path}`);
 export const absUrl = (lang, path) => `${SITE}${localPath(lang, path)}`;
@@ -104,7 +104,7 @@ export function footer(ctx, pagePath) {
     <div class="container foot__inner">
       <nav class="foot__links" aria-label="${attr(t.common.footerNavLabel)}">
         <a href="${localPath(lang, "/tutorials/")}">${html(nav.tutorials)}</a>
-        <a href="mailto:${SUPPORT_EMAIL}">${html(nav.support)}</a>
+        <a href="${localPath(lang, "/support")}">${html(nav.support)}</a>
         <a href="${localPath(lang, "/privacy-policy")}">${html(nav.privacy)}</a>
         <a href="${localPath(lang, "/terms-and-conditions")}">${html(nav.terms)}</a>
       </nav>
