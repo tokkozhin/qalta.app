@@ -1,0 +1,88 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "qalta",
+  "version": "0.1.0",
+  "description": "Read and manage personal finance records in Qalta cloud spaces.",
+  "homepage": "https://qalta.app",
+  "author": { "name": "Tokkozhin" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Qalta",
+        "developerName": "Tokkozhin",
+        "shortDescription": "Track spending, log expenses",
+        "longDescription": "Connect your existing Qalta account to ask about spending, budgets, savings goals, debts, and recurring payments, or record income and expenses.\n\nQalta works with cloud spaces accessible to your signed-in account. Private spaces stored only on your device are not available to the connector. A Qalta account and a cloud space are required.\n\nChanges update your Qalta records and sync to your devices and other members of a shared space. Transfers are bookkeeping entries between accounts in Qalta. The connector does not move money at banks, make payments, or execute investment trades.",
+        "category": "Finance",
+        "capabilities": [
+          "Read accounts, transactions, and balances",
+          "Record and edit income and expenses",
+          "Manage budgets, savings goals, and debt records"
+        ],
+        "websiteURL": "https://qalta.app",
+        "supportURL": "https://qalta.app/support",
+        "privacyPolicyURL": "https://qalta.app/privacy-policy",
+        "termsOfServiceURL": "https://qalta.app/terms-and-conditions",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "defaultPrompt": [
+          "How much did I spend on groceries last month?",
+          "Log 12.40 for coffee from my card today.",
+          "What's left in my dining out budget?"
+        ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Use a demo cloud space with grocery expenses dated in the previous calendar month. Resolve the space and clarify if more than one matches.",
+              "prompt": "How much did I spend on groceries last month?",
+              "tools_triggered": "list_spaces, get_summary",
+              "expected_behavior": "Query the previous calendar month in the user's timezone. State the cloud space, groceries total, and currency supported by the returned category breakdown; do not invent amounts."
+            },
+            {
+              "description": "The demo space has a regular account named Card and an expense category named Coffee. Confirm the operation before saving unless the user explicitly waived confirmation.",
+              "prompt": "Log 12.40 for coffee from my Card account today.",
+              "tools_triggered": "list_spaces, list_accounts, list_categories, add_transaction",
+              "expected_behavior": "Resolve the real account and category IDs, then create one expense for 12.40 in the account currency dated today. Report success only after a successful tool result. Verify the created entry in Qalta; do not duplicate it on retry."
+            },
+            {
+              "description": "The demo cloud space has a current Dining out budget and expenses against that budget.",
+              "prompt": "What's left in my dining out budget?",
+              "tools_triggered": "list_spaces, list_budgets",
+              "expected_behavior": "Identify the current Dining out budget and report its limit, spending, remaining amount, currency, and period consistently with the tool response. Do not modify records."
+            },
+            {
+              "description": "The demo cloud space has a Japan trip savings goal linked to a funded account.",
+              "prompt": "How is my Japan trip savings goal going?",
+              "tools_triggered": "list_spaces, list_goals",
+              "expected_behavior": "Report the matching goal's current saved amount, target, currency, and progress from the returned data. Do not claim the target has been met unless the data supports it."
+            },
+            {
+              "description": "The demo cloud space has a debt account named Anna with a nonzero amount owed to the demo user.",
+              "prompt": "How much does Anna owe me?",
+              "tools_triggered": "list_spaces, list_accounts",
+              "expected_behavior": "Read debt accounts with kind=debt and report Anna's balance and currency, correctly distinguishing they_owe from i_owe. Do not record a payment or modify debt records."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Qalta records finances but cannot execute bank payments. Do not call add_transfer, add_transaction, or a debt-writing tool as a substitute for paying rent.",
+              "prompt": "Pay my rent from my bank account now."
+            },
+            {
+              "description": "Private spaces stored only on another person's device are unavailable. Explain the access boundary; do not fabricate data or attempt cross-user access.",
+              "prompt": "Show me my partner's private on-device space even though they haven't shared it with me."
+            },
+            {
+              "description": "Qalta cannot trade investments. Explain this limitation without invoking a bookkeeping tool as if it executed a real purchase.",
+              "prompt": "Buy $500 of Apple shares using the money in my Qalta Card account."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "Initial Qalta connector release for reading and managing finance records in authorized cloud spaces."
+      }
+    }
+  }
+}
