@@ -15,14 +15,14 @@ OpenAI's current submission guide asks for a dedicated sample account when sign-
 
 ## Account and access prerequisite
 
-Qalta's web consent page currently offers Google and Apple sign-in. The user chose to create a separate reviewer account; the personal Qalta/Google account must not be used. The dedicated reviewer identity must:
+Qalta's mobile app offers Google and Apple sign-in. The web consent page supports those providers plus email/password for an account that already has a password linked. The user chose to create a separate reviewer account; the personal Qalta/Google account must not be used. The dedicated reviewer identity must:
 
 - have an active Qalta Pro entitlement, because cloud spaces and MCP access require Pro;
 - own one synced cloud space with the fixture below;
 - sign in without personal-account data, private local-only spaces, MFA approval, email/SMS codes, or magic links;
 - remain available with the same access and sample data during review.
 
-OpenAI's current submission guide explicitly says reviewer sign-in must work immediately without MFA approval, email or SMS codes, or magic links. Therefore, do not use email OTP or magic-link login for the review account. If Qalta adds email authentication, use a dedicated confirmed email/password account for reviewers and provide its credentials only in the portal's private Reviewer credentials fields. Email OTP can still be offered as an optional sign-in method to regular users.
+OpenAI's current submission guide explicitly says reviewer sign-in must work immediately without MFA approval, email or SMS codes, or magic links. Therefore, do not use email OTP or magic-link login for the review account. Create the demo account in the mobile app through Google, then sign into the web consent page with that same Google identity and use **Set or change your Qalta password** to add a password to that same Supabase account. Sign out and confirm email/password sign-in works before entering the credentials in the portal's private Reviewer credentials fields. This web consent flow does not add email/password login to the mobile app, and email-only signup is not offered.
 
 Do not create or accept legal terms for a third-party identity account on the user's behalf. The user must create the dedicated identity and accept the provider's terms. Do not send or store its password in chat, source control, the ZIP, or this runbook. Keep the password in the portal's secure Reviewer credentials section only. The current Google login can be used only if it does not trigger a reviewer-blocking security challenge.
 

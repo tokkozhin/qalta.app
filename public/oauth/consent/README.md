@@ -1,9 +1,11 @@
 # Qalta AI connector consent page
 
 Served at **https://qalta.app/oauth/consent/**. It is the OAuth consent screen
-for the MCP connector: sign in with Apple or Google, review the agent's access,
-approve or deny. The same URL without `?authorization_id=` lists connected agents
-and lets the user revoke them.
+for the MCP connector: sign in with Apple, Google, or an email/password already
+linked to the Qalta account, review the agent's access, and approve or deny. A
+signed-in user can add or change the password for that same account. The same
+URL without `?authorization_id=` lists connected agents and lets the user revoke
+them.
 
 ## Files
 
@@ -70,7 +72,9 @@ serves `public/oauth/consent/index.html` for `/oauth/consent/` and redirects
 
 ## Test
 
-- signed out → Apple and Google buttons;
+- signed out → Apple and Google buttons plus email/password form;
+- sign in with Google, set a password on the same account, sign out, then sign in with that email/password;
+- wrong email/password → generic error; no sign-up or email-code flow is offered here;
 - free account → “Qalta Pro required”, approve disabled;
 - Pro account → scopes, redirect host, allow/deny;
 - approve → the MCP client receives the code;

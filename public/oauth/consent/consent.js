@@ -23,8 +23,25 @@ const TEXT = {
   en: {
     signInTitle: "Sign in to Qalta",
     signInBody: "Use the same account you use in the Qalta app.",
+    emailSignInHint:
+      "Use the email and password already linked to your Qalta account. To add or reset a password, sign in with Apple or Google first.",
     apple: "Continue with Apple",
     google: "Continue with Google",
+    email: "Email",
+    password: "Password",
+    emailSignIn: "Sign in with email",
+    or: "or",
+    passwordSetupTitle: "Set or change your Qalta password",
+    passwordSetupBody:
+      "This adds email and password sign-in to the account you are already signed in to. Apple and Google will continue to work.",
+    newPassword: "New password (at least 8 characters)",
+    confirmPassword: "Confirm new password",
+    setPassword: "Save password",
+    passwordMismatch: "The passwords do not match.",
+    passwordTooShort: "Use at least 8 characters.",
+    passwordUpdated: "Password saved. You can use it with this email the next time you sign in.",
+    emailSignInFailed: "Could not sign in with that email and password.",
+    passwordUpdateFailed: "Could not save the password. Sign in again and try once more.",
     consentTitle: (client) => `Allow ${client} to access Qalta?`,
     consentBody: "The agent will act on your behalf in your Qalta cloud spaces:",
     scopes: [
@@ -55,8 +72,25 @@ const TEXT = {
   ru: {
     signInTitle: "Вход в Qalta",
     signInBody: "Используйте тот же аккаунт, что и в приложении Qalta.",
+    emailSignInHint:
+      "Используйте email и пароль, уже привязанные к аккаунту Qalta. Чтобы задать или изменить пароль, сначала войдите через Apple или Google.",
     apple: "Продолжить с Apple",
     google: "Продолжить с Google",
+    email: "Email",
+    password: "Пароль",
+    emailSignIn: "Войти по email",
+    or: "или",
+    passwordSetupTitle: "Задать или изменить пароль Qalta",
+    passwordSetupBody:
+      "Пароль добавится к уже открытому аккаунту. Вход через Apple и Google продолжит работать.",
+    newPassword: "Новый пароль (не менее 8 символов)",
+    confirmPassword: "Повторите новый пароль",
+    setPassword: "Сохранить пароль",
+    passwordMismatch: "Пароли не совпадают.",
+    passwordTooShort: "Используйте не менее 8 символов.",
+    passwordUpdated: "Пароль сохранён. Теперь можно входить с этим email и паролем.",
+    emailSignInFailed: "Не удалось войти с этим email и паролем.",
+    passwordUpdateFailed: "Не удалось сохранить пароль. Войдите снова и повторите попытку.",
     consentTitle: (client) => `Разрешить ${client} доступ к Qalta?`,
     consentBody: "Агент будет действовать от вашего имени в облачных пространствах Qalta:",
     scopes: [
@@ -190,6 +224,56 @@ function renderSignIn() {
     });
     if (error) showError(t.signInFailed);
   };
+  const email = el("input", {
+    type: "email",
+    name: "email",
+    autocomplete: "username",
+    inputMode: "email",
+    required: true,
+  });
+  const password = el("input", {
+    type: "password",
+    name: "password",
+    autocomplete: "current-password",
+    required: true,
+  });
+  const submit = el("button", {
+    className: "primary",
+    type: "submit",
+    textContent: t.emailSignIn,
+  });
+  const message = el("p", { className: "form-message" });
+  message.setAttribute("aria-live", "polite");
+  const emailForm = el("form", { className: "password-form" }, [
+    inputField(t.email, email),
+    inputField(t.password, password),
+    submit,
+    message,
+  ]);
+  emailForm.onsubmit = async (event) => {
+    event.preventDefault();
+    submit.disabled = true;
+    message.className = "form-message";
+    message.textContent = "";
+    let data;
+    try {
+      ({ data } = await supabase.auth.signInWithPassword({
+        email: email.value.trim(),
+        password: password.value,
+      }));
+    } catch {
+      data = null;
+    }
+    if (!data?.session) {
+      message.className = "form-message error";
+      message.textContent = t.emailSignInFailed;
+      submit.disabled = false;
+      return;
+    }
+    password.value = "";
+    if (authorizationId) await renderConsent(data.session);
+    else await renderGrants(data.session);
+  };
   render(
     brand(),
     el("h1", { textContent: t.signInTitle }),
@@ -197,16 +281,90 @@ function renderSignIn() {
     el("div", { className: "actions" }, [
       el(
         "button",
-        { className: "provider-button primary", onclick: signIn("apple") },
+        { className: "provider-button primary", type: "button", onclick: signIn("apple") },
         [providerIcon("apple"), el("span", { textContent: t.apple })],
       ),
       el(
         "button",
-        { className: "provider-button", onclick: signIn("google") },
+        { className: "provider-button", type: "button", onclick: signIn("google") },
         [providerIcon("google"), el("span", { textContent: t.google })],
       ),
     ]),
+    el("p", { className: "divider", textContent: t.or }),
+    emailForm,
+    el("p", { className: "hint", textContent: t.emailSignInHint }),
   );
+}
+
+function inputField(label, input) {
+  return el("label", { className: "field" }, [el("span", { textContent: label }), input]);
+}
+
+function passwordSetup() {
+  const details = el("details", { className: "password-setup" });
+  const newPassword = el("input", {
+    type: "password",
+    name: "new-password",
+    autocomplete: "new-password",
+    minLength: 8,
+    required: true,
+  });
+  const confirmPassword = el("input", {
+    type: "password",
+    name: "confirm-password",
+    autocomplete: "new-password",
+    minLength: 8,
+    required: true,
+  });
+  const submit = el("button", {
+    className: "primary",
+    type: "submit",
+    textContent: t.setPassword,
+  });
+  const message = el("p", { className: "form-message" });
+  message.setAttribute("aria-live", "polite");
+  const form = el("form", { className: "password-form" }, [
+    inputField(t.newPassword, newPassword),
+    inputField(t.confirmPassword, confirmPassword),
+    submit,
+    message,
+  ]);
+  form.onsubmit = async (event) => {
+    event.preventDefault();
+    message.className = "form-message error";
+    if (newPassword.value.length < 8) {
+      message.textContent = t.passwordTooShort;
+      return;
+    }
+    if (newPassword.value !== confirmPassword.value) {
+      message.textContent = t.passwordMismatch;
+      return;
+    }
+    submit.disabled = true;
+    message.textContent = "";
+    let updated = false;
+    try {
+      const { error } = await supabase.auth.updateUser({ password: newPassword.value });
+      updated = !error;
+    } catch {
+      updated = false;
+    }
+    if (!updated) {
+      message.textContent = t.passwordUpdateFailed;
+      submit.disabled = false;
+      return;
+    }
+    form.reset();
+    message.className = "form-message success";
+    message.textContent = t.passwordUpdated;
+    submit.disabled = false;
+  };
+  details.append(
+    el("summary", { textContent: t.passwordSetupTitle }),
+    el("p", { className: "hint", textContent: t.passwordSetupBody }),
+    form,
+  );
+  return details;
 }
 
 function accountFooter(email) {
@@ -268,6 +426,7 @@ async function renderConsent(session) {
       textContent: isPremium === true ? t.warning : t.proRequired,
     }),
     el("div", { className: "actions" }, [approve, deny]),
+    passwordSetup(),
     accountFooter(session.user.email),
   );
 }
@@ -299,6 +458,7 @@ async function renderGrants(session) {
     brand(),
     el("h1", { textContent: t.grantsTitle }),
     ...(rows.length ? rows : [el("p", { textContent: t.grantsEmpty })]),
+    passwordSetup(),
     accountFooter(session.user.email),
   );
 }
