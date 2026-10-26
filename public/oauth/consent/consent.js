@@ -218,9 +218,13 @@ function hostOf(value) {
 
 function renderSignIn() {
   const signIn = (provider) => async () => {
+    const options = { redirectTo: returnUrl() };
+    if (provider === "google") {
+      options.queryParams = { prompt: "select_account" };
+    }
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
-      options: { redirectTo: returnUrl() },
+      options,
     });
     if (error) showError(t.signInFailed);
   };
