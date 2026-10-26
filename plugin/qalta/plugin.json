@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "qalta",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Read and manage personal finance records in Qalta cloud spaces.",
   "homepage": "https://qalta.app",
   "author": { "name": "Tokkozhin" },
@@ -81,7 +81,7 @@
         }
       },
       "publication": {
-        "release_notes": "Initial Qalta connector release for reading and managing finance records in authorized cloud spaces."
+        "release_notes": "Use OAuth with Dynamic Client Registration and refresh access without requesting OpenID Connect ID tokens. Supabase signing keys and existing Qalta user sessions are unchanged."
       }
     }
   }
