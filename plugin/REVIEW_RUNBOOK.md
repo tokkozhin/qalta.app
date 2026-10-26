@@ -19,10 +19,12 @@ Qalta's web consent page currently offers Google and Apple sign-in. The user cho
 
 - have an active Qalta Pro entitlement, because cloud spaces and MCP access require Pro;
 - own one synced cloud space with the fixture below;
-- sign in without personal-account data, private local-only spaces, or reviewer-blocking MFA/OTP steps;
+- sign in without personal-account data, private local-only spaces, MFA approval, email/SMS codes, or magic links;
 - remain available with the same access and sample data during review.
 
-Do not create or accept legal terms for a third-party identity account on the user's behalf. The user must create the dedicated Google identity and accept Google's terms. Do not send or store its password in chat, source control, the ZIP, or this runbook. Enter reviewer credentials only in the portal's secure Reviewer credentials section. If the chosen login path requires an email code or magic link, confirm it works with the portal's reviewer flow before relying on it.
+OpenAI's current submission guide explicitly says reviewer sign-in must work immediately without MFA approval, email or SMS codes, or magic links. Therefore, do not use email OTP or magic-link login for the review account. If Qalta adds email authentication, use a dedicated confirmed email/password account for reviewers and provide its credentials only in the portal's private Reviewer credentials fields. Email OTP can still be offered as an optional sign-in method to regular users.
+
+Do not create or accept legal terms for a third-party identity account on the user's behalf. The user must create the dedicated identity and accept the provider's terms. Do not send or store its password in chat, source control, the ZIP, or this runbook. Keep the password in the portal's secure Reviewer credentials section only. The current Google login can be used only if it does not trigger a reviewer-blocking security challenge.
 
 The user authorized a no-charge Pro grant for this dedicated demo account only. Use the existing RevenueCat `Qalta Pro` entitlement with a bounded expiration long enough for review (default 30 days; extend only if the review is still active). The RevenueCat project webhook is configured without event filters. Qalta's app configures RevenueCat with the authenticated Supabase user UUID, and the webhook accepts promotional `NON_RENEWING_PURCHASE` events. Search RevenueCat by the exact demo email and confirm the matching customer ID equals the demo account's Supabase user UUID before granting. Do not grant access to any other account. The grant expires automatically; early revocation is available from the RevenueCat customer profile.
 
