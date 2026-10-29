@@ -1,17 +1,38 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/+esm";
+import TEXT from "./translations.js";
 
 // Public project values are generated into the committed config.js by
 // `npm run consent:config`. Only a publishable key or legacy anon key is allowed.
 const CONFIG = window.QALTA_AUTH_CONFIG;
 const app = document.getElementById("app");
+const params = new URLSearchParams(location.search);
+const normalizeLanguage = (candidate) => {
+  const code = String(candidate || "").trim().toLowerCase().split(/[-_]/)[0];
+  return Object.hasOwn(TEXT, code) ? code : null;
+};
+const cookieLang = document.cookie.split(";").map((part) => part.trim()).find((part) => part.startsWith("lang="))?.slice(5);
+const lang = normalizeLanguage(params.get("lang"))
+  ?? normalizeLanguage(cookieLang)
+  ?? navigator.languages?.map(normalizeLanguage).find(Boolean)
+  ?? normalizeLanguage(navigator.language)
+  ?? "en";
+const t = TEXT[lang] || TEXT.en;
+document.documentElement.lang = lang;
+document.title = t.pageTitle;
+
+function message(key, values = {}) {
+  return Object.entries(values).reduce(
+    (value, [name, replacement]) => value.replaceAll("{" + name + "}", replacement),
+    t[key],
+  );
+}
 
 if (!CONFIG?.supabaseUrl || !CONFIG?.supabasePublishableKey) {
   app.replaceChildren(
     brand(),
     Object.assign(document.createElement("p"), {
       className: "error",
-      textContent:
-        "This page is not configured. Run `pnpm consent:config` and deploy config.js.",
+      textContent: t.configurationError,
     }),
   );
   throw new Error("Missing QALTA_AUTH_CONFIG");
@@ -19,112 +40,6 @@ if (!CONFIG?.supabaseUrl || !CONFIG?.supabasePublishableKey) {
 
 const SITE_URL = (CONFIG.siteUrl || "https://qalta.app").replace(/\/$/, "");
 const CONSENT_PATH = "/oauth/consent/";
-const TEXT = {
-  en: {
-    signInTitle: "Sign in to Qalta",
-    signInBody: "Use the same account you use in the Qalta app.",
-    emailSignInHint:
-      "Use the email and password already linked to your Qalta account. To add or reset a password, sign in with Apple or Google first.",
-    apple: "Continue with Apple",
-    google: "Continue with Google",
-    email: "Email",
-    password: "Password",
-    emailSignIn: "Sign in with email",
-    or: "or",
-    passwordSetupTitle: "Set or change your Qalta password",
-    passwordSetupBody:
-      "This adds email and password sign-in to the account you are already signed in to. Apple and Google will continue to work.",
-    newPassword: "New password (at least 8 characters)",
-    confirmPassword: "Confirm new password",
-    setPassword: "Save password",
-    passwordMismatch: "The passwords do not match.",
-    passwordTooShort: "Use at least 8 characters.",
-    passwordUpdated: "Password saved. You can use it with this email the next time you sign in.",
-    emailSignInFailed: "Could not sign in with that email and password.",
-    passwordUpdateFailed: "Could not save the password. Sign in again and try once more.",
-    consentTitle: (client) => `Allow ${client} to access Qalta?`,
-    consentBody: "The agent will act on your behalf in your Qalta cloud spaces:",
-    scopes: [
-      "Read spaces, accounts, balances, categories, budgets, goals, transactions and recurring payments",
-      "Create and edit categories, budgets, goals and regular accounts",
-      "Add income, expenses and transfers, including batches of transactions",
-      "Create debt accounts and record lending, borrowing and repayments",
-      "Delete transactions, categories, budgets, goals and accounts only after a separate confirmation step",
-    ],
-    warning:
-      "Changes are real and sync to all your devices and to members of shared spaces. Whether the agent asks before each change depends on the agent and its settings. You are responsible for what you let it do. Local-only spaces stay on your phone.",
-    redirectHost: (host) =>
-      `After approval the agent receives access at ${host}. Check that you trust this app.`,
-    approve: "Allow access",
-    deny: "Deny",
-    signedInAs: (email) => `Signed in as ${email}`,
-    switchAccount: "Use another account",
-    proRequired:
-      "AI agents need Qalta Pro with cloud spaces. Subscribe in the app, then connect again.",
-    grantsTitle: "Connected AI agents",
-    grantsEmpty: "No agents are connected.",
-    revoke: "Revoke",
-    grantedAt: (date) => `Connected ${date}`,
-    missing: "This link is incomplete. Start connecting from your AI agent again.",
-    failed: "Something went wrong. Try again.",
-    signInFailed: "Could not start sign-in. Try again.",
-  },
-  ru: {
-    signInTitle: "Вход в Qalta",
-    signInBody: "Используйте тот же аккаунт, что и в приложении Qalta.",
-    emailSignInHint:
-      "Используйте email и пароль, уже привязанные к аккаунту Qalta. Чтобы задать или изменить пароль, сначала войдите через Apple или Google.",
-    apple: "Продолжить с Apple",
-    google: "Продолжить с Google",
-    email: "Email",
-    password: "Пароль",
-    emailSignIn: "Войти по email",
-    or: "или",
-    passwordSetupTitle: "Задать или изменить пароль Qalta",
-    passwordSetupBody:
-      "Пароль добавится к уже открытому аккаунту. Вход через Apple и Google продолжит работать.",
-    newPassword: "Новый пароль (не менее 8 символов)",
-    confirmPassword: "Повторите новый пароль",
-    setPassword: "Сохранить пароль",
-    passwordMismatch: "Пароли не совпадают.",
-    passwordTooShort: "Используйте не менее 8 символов.",
-    passwordUpdated: "Пароль сохранён. Теперь можно входить с этим email и паролем.",
-    emailSignInFailed: "Не удалось войти с этим email и паролем.",
-    passwordUpdateFailed: "Не удалось сохранить пароль. Войдите снова и повторите попытку.",
-    consentTitle: (client) => `Разрешить ${client} доступ к Qalta?`,
-    consentBody: "Агент будет действовать от вашего имени в облачных пространствах Qalta:",
-    scopes: [
-      "Читать пространства, счета, балансы, категории, бюджеты, цели, транзакции и регулярные платежи",
-      "Создавать и редактировать категории, бюджеты, цели и обычные счета",
-      "Добавлять доходы, расходы и переводы, в том числе пакетами",
-      "Создавать долговые счета и записывать займы, долги и возвраты",
-      "Удалять транзакции, категории, бюджеты, цели и счета только после отдельного подтверждения",
-    ],
-    warning:
-      "Изменения настоящие: они синхронизируются на все ваши устройства и участникам общих пространств. Спрашивает ли агент подтверждение перед каждым изменением, зависит от агента и его настроек. Вы сами отвечаете за то, что ему разрешаете. Локальные пространства остаются только на телефоне.",
-    redirectHost: (host) =>
-      `После подтверждения агент получит доступ на ${host}. Убедитесь, что доверяете этому приложению.`,
-    approve: "Разрешить доступ",
-    deny: "Отклонить",
-    signedInAs: (email) => `Вы вошли как ${email}`,
-    switchAccount: "Другой аккаунт",
-    proRequired:
-      "Для ИИ-агентов нужна Qalta Pro с облачными пространствами. Оформите подписку в приложении и подключитесь снова.",
-    grantsTitle: "Подключённые ИИ-агенты",
-    grantsEmpty: "Нет подключённых агентов.",
-    revoke: "Отключить",
-    grantedAt: (date) => `Подключён ${date}`,
-    missing: "Ссылка неполная. Начните подключение заново из вашего ИИ-агента.",
-    failed: "Что-то пошло не так. Попробуйте ещё раз.",
-    signInFailed: "Не удалось начать вход. Попробуйте ещё раз.",
-  },
-};
-
-const lang = navigator.language?.toLowerCase().startsWith("ru") ? "ru" : "en";
-const t = TEXT[lang];
-document.documentElement.lang = lang;
-
-const params = new URLSearchParams(location.search);
 const authorizationId = params.get("authorization_id");
 const supabase = createClient(CONFIG.supabaseUrl, CONFIG.supabasePublishableKey, {
   auth: { flowType: "pkce", detectSessionInUrl: true, persistSession: true },
@@ -373,7 +288,7 @@ function passwordSetup() {
 
 function accountFooter(email) {
   return el("p", { className: "account" }, [
-    `${t.signedInAs(email ?? "")} · `,
+    `${message("signedInAs", { email: email ?? "" })} · `,
     el("button", {
       className: "link",
       textContent: t.switchAccount,
@@ -417,14 +332,14 @@ async function renderConsent(session) {
 
   render(
     brand(),
-    el("h1", { textContent: t.consentTitle(client) }),
+    el("h1", { textContent: message("consentTitle", { client }) }),
     el("p", { textContent: t.consentBody }),
     el(
       "ul",
       {},
       t.scopes.map((scope) => el("li", { textContent: scope })),
     ),
-    ...(redirectHost ? [el("p", { className: "redirect", textContent: t.redirectHost(redirectHost) })] : []),
+    ...(redirectHost ? [el("p", { className: "redirect", textContent: message("redirectHost", { host: redirectHost }) })] : []),
     el("div", {
       className: "warning",
       textContent: isPremium === true ? t.warning : t.proRequired,
@@ -454,7 +369,7 @@ async function renderGrants(session) {
     };
     const date = new Date(grant.granted_at).toLocaleDateString(lang);
     return el("div", { className: "grant" }, [
-      el("div", {}, [name, el("small", { textContent: t.grantedAt(date) })]),
+      el("div", {}, [name, el("small", { textContent: message("grantedAt", { date }) })]),
       revoke,
     ]);
   });

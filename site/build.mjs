@@ -5,11 +5,20 @@ import { DEFAULT_LANG, LANGS, PAGES_FILES, i18nDir, publicDir, siteDir } from ".
 import { renderHome } from "./templates/home.mjs";
 import { absUrl } from "./templates/layout.mjs";
 import { renderLegal } from "./templates/legal.mjs";
+import { renderMcp } from "./templates/mcp.mjs";
 import { renderSupport } from "./templates/support.mjs";
 import { GUIDE_GROUPS, renderGuide, renderTutorialsIndex } from "./templates/tutorials.mjs";
 
 const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
 const guides = readJson(`${siteDir}guides.json`);
+const consentTranslations = Object.fromEntries(
+  LANGS.map((lang) => [lang, readJson(`${i18nDir}/${lang}/consent.json`)]),
+);
+
+writeFileSync(
+  `${publicDir}/oauth/consent/translations.js`,
+  `export default ${JSON.stringify(consentTranslations)};\n`,
+);
 
 /** Missing keys fall back to English; arrays fall back whole when their length differs. */
 function merge(base, override) {
@@ -33,6 +42,7 @@ function dictionary(lang) {
 
 const pages = [
   { path: "/support", out: "support.html", render: renderSupport },
+  { path: "/mcp", out: "mcp.html", render: renderMcp },
   { path: "/", out: "index.html", render: renderHome },
   { path: "/tutorials/", out: "tutorials/index.html", render: renderTutorialsIndex },
   ...GUIDE_GROUPS.flatMap((g) => g.slugs).map((slug) => ({

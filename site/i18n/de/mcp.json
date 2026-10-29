@@ -1,0 +1,13 @@
+{
+  "title": "MCP für Qalta",
+  "description": "Verbinde einen KI-Assistenten über MCP mit Qalta.",
+  "h1": "MCP",
+  "lede": "Verbinde einen KI-Assistenten mit deinem Qalta-Cloudbereich.",
+  "sectionTitle": "KI-Assistent verbinden",
+  "steps": [
+    "Melde dich bei Qalta an und prüfe, ob der gewünschte Cloudbereich synchronisiert wird. Private Bereiche, die nur auf deinem Gerät gespeichert sind, sind für den Connector nicht verfügbar.",
+    "Füge in den Einstellungen deines Assistenten den MCP-Server https://mcp.qalta.app/mcp hinzu.",
+    "Melde dich über Qalta an und prüfe die Berechtigungen, bevor du den Zugriff bestätigst.",
+    "Beginne mit einer Leseanfrage, zum Beispiel: „Wie viel habe ich diesen Monat für Lebensmittel ausgegeben?“"
+  ]
+}

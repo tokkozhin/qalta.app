@@ -1,0 +1,13 @@
+{
+  "title": "MCP para Qalta",
+  "description": "Conecte um assistente de IA à Qalta usando MCP.",
+  "h1": "MCP",
+  "lede": "Conecte um assistente de IA ao seu espaço na nuvem da Qalta.",
+  "sectionTitle": "Conectar um assistente de IA",
+  "steps": [
+    "Entre na Qalta e confirme que o espaço na nuvem que deseja usar está sincronizando. Espaços privados armazenados apenas no seu dispositivo não ficam disponíveis para o conector.",
+    "Nas configurações do assistente, adicione o servidor MCP https://mcp.qalta.app/mcp.",
+    "Entre pela Qalta e confira as permissões antes de aprovar o acesso.",
+    "Comece com uma solicitação de leitura, por exemplo: “Quanto gastei com supermercado este mês?”"
+  ]
+}

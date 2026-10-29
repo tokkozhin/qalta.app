@@ -34,4 +34,4 @@ export const LANGUAGES = [
 ];
 export const LANGS = LANGUAGES.map((l) => l.code);
 
-export const PAGES_FILES = ["common", "home", "tutorials", "privacy", "terms"];
+export const PAGES_FILES = ["common", "home", "tutorials", "privacy", "terms", "support", "mcp", "consent"];

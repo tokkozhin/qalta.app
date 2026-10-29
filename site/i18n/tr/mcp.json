@@ -1,0 +1,13 @@
+{
+  "title": "Qalta için MCP",
+  "description": "Yapay zekâ asistanını MCP ile Qalta’ya bağlayın.",
+  "h1": "MCP",
+  "lede": "Yapay zekâ asistanını Qalta bulut alanınıza bağlayın.",
+  "sectionTitle": "Yapay zekâ asistanını bağlayın",
+  "steps": [
+    "Qalta’da oturum açın ve kullanmak istediğiniz bulut alanının eşitlendiğini kontrol edin. Yalnızca cihazınızda saklanan özel alanlara bağlayıcı erişemez.",
+    "Asistanınızın ayarlarına https://mcp.qalta.app/mcp MCP sunucusunu ekleyin.",
+    "Qalta üzerinden oturum açın ve erişimi onaylamadan önce izinleri gözden geçirin.",
+    "“Bu ay market alışverişine ne kadar harcadım?” gibi yalnızca okuma yapan bir istekle başlayın."
+  ]
+}

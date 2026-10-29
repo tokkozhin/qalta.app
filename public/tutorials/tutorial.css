@@ -8,7 +8,6 @@
   margin: 0 0 8px;
   border-radius: 24px;
   background: var(--card);
-  border: 1px solid var(--edge);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -60,7 +59,6 @@ ol.steps > li::before {
   margin-bottom: 14px;
   border-radius: 999px;
   background: var(--card);
-  border: 1px solid var(--edge);
   font-size: 0.9375rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -97,7 +95,6 @@ figcaption {
   line-height: 0;
   border-radius: 28px;
   overflow: hidden;
-  border: 1px solid var(--edge);
   background: var(--card);
 }
 .player video {

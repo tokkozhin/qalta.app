@@ -104,6 +104,7 @@ export function footer(ctx, pagePath) {
     <div class="container foot__inner">
       <nav class="foot__links" aria-label="${attr(t.common.footerNavLabel)}">
         <a href="${localPath(lang, "/tutorials/")}">${html(nav.tutorials)}</a>
+        <a href="${localPath(lang, "/mcp")}">MCP</a>
         <a href="${localPath(lang, "/support")}">${html(nav.support)}</a>
         <a href="${localPath(lang, "/privacy-policy")}">${html(nav.privacy)}</a>
         <a href="${localPath(lang, "/terms-and-conditions")}">${html(nav.terms)}</a>
