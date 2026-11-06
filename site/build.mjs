@@ -1,7 +1,8 @@
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { checkLang } from "./check-i18n.mjs";
-import { DEFAULT_LANG, LANGS, PAGES_FILES, i18nDir, publicDir, siteDir } from "./config.mjs";
+import { toMarkdown } from "./markdown.mjs";
+import { DEFAULT_LANG, LANGS, PAGES_FILES, SITE, i18nDir, publicDir, siteDir } from "./config.mjs";
 import { renderHome } from "./templates/home.mjs";
 import { absUrl } from "./templates/layout.mjs";
 import { renderLegal } from "./templates/legal.mjs";
@@ -75,10 +76,36 @@ for (const lang of LANGS) {
   for (const page of pages) {
     const file = `${publicDir}/${lang === DEFAULT_LANG ? "" : `${lang}/`}${page.out}`;
     mkdirSync(dirname(file), { recursive: true });
-    writeFileSync(file, page.render(ctx));
+    const rendered = page.render(ctx);
+    writeFileSync(file, rendered);
+    // LLMs ask for the same page with `.md` appended (see src/index.ts).
+    writeFileSync(file.replace(/\.html$/, ".md"), toMarkdown(rendered));
   }
   built.push(lang);
 }
+
+// Single-fetch full text of the site for LLMs: every English page's Markdown,
+// separated by horizontal rules, in documentation order. Regenerated on each
+// build so it never drifts from the pages.
+// Reading order: home first, then the tutorials index and guides, then the rest.
+const fullOrder = (out) =>
+  out === "index.html" ? 0 : out.startsWith("tutorials/") ? 1 : out === "mcp.html" ? 2 : out === "support.html" ? 3 : out === "privacy-policy.html" ? 4 : 5;
+const fullSections = [...pages]
+  .sort((a, b) => fullOrder(a.out) - fullOrder(b.out))
+  .map((page) => {
+    const mdFile = `${publicDir}/${page.out.replace(/\.html$/, ".md")}`;
+    return readFileSync(mdFile, "utf8").replace(/^---\n[\s\S]*?\n---\n+/, "").trim();
+  });
+writeFileSync(
+  `${publicDir}/llms-full.txt`,
+  `---
+title: "Qalta — full site text"
+description: "The full text of qalta.app in English: what Qalta is, pricing, tutorials, MCP connection, support, privacy policy, and terms."
+url: ${SITE}/llms-full.txt
+---
+
+${fullSections.join("\n\n---\n\n")}\n`,
+);
 
 const today = new Date().toISOString().slice(0, 10);
 const priority = (path) => (path === "/" ? "1.0" : path.startsWith("/tutorials") ? "0.7" : "0.3");

@@ -11,6 +11,7 @@
     "test:mcp": "node --experimental-strip-types --test site/mcp.test.mjs"
   },
   "devDependencies": {
+    "turndown": "^7.2.5",
     "wrangler": "4.152.0"
   },
   "overrides": {

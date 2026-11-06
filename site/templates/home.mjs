@@ -121,7 +121,6 @@ export function renderHome(ctx) {
     stylesheet: "/home.css",
     extraMeta: `  <meta name="author" content="Daniel Tokkozhin" />
   <meta name="application-name" content="Qalta" />
-  <link rel="alternate" type="text/markdown" title="Qalta for AI assistants" href="${SITE}/llms.txt" />
 `,
     extraHead: `  <link rel="preload" as="image" href="/assets/home/hero-home.webp" type="image/webp" fetchpriority="high" />
   <script>document.documentElement.classList.add("js");</script>

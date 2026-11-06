@@ -1,0 +1,16 @@
+---
+title: "MCP pour Qalta"
+description: "Connectez un assistant IA à Qalta avec MCP."
+url: https://qalta.app/fr/mcp
+---
+
+# MCP
+
+Connectez un assistant IA à votre espace cloud Qalta.
+
+## Connecter un assistant IA
+
+1.  Connectez-vous à Qalta et vérifiez que l’espace cloud souhaité est synchronisé. Les espaces privés stockés uniquement sur votre appareil ne sont pas accessibles au connecteur.
+2.  Dans les réglages de votre assistant, ajoutez le serveur MCP https://mcp.qalta.app/mcp.
+3.  Connectez-vous via Qalta et vérifiez les autorisations avant d’approuver l’accès.
+4.  Commencez par une demande de lecture, par exemple : « Combien ai-je dépensé en courses ce mois-ci ? »
