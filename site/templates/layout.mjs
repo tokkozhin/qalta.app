@@ -32,6 +32,8 @@ export function head(ctx, page) {
   const alternates = LANGUAGES.map(
     (l) => `  <link rel="alternate" hreflang="${l.code}" href="${absUrl(l.code, page.path)}" />`,
   ).join("\n");
+  const markdownPath = page.path.endsWith("/") ? `${page.path}index.md` : `${page.path}.md`;
+  const markdownAlternate = absUrl(lang, markdownPath);
   const localeAlternates = LANGUAGES.filter((l) => l.code !== lang)
     .map((l) => `  <meta property="og:locale:alternate" content="${l.ogLocale}" />`)
     .join("\n");
@@ -48,6 +50,7 @@ export function head(ctx, page) {
   <meta name="apple-itunes-app" content="app-id=6756010294" />
 ${alternates}
   <link rel="alternate" hreflang="x-default" href="${absUrl(DEFAULT_LANG, page.path)}" />
+  <link rel="alternate" type="text/markdown" title="Qalta for AI assistants" href="${markdownAlternate}" />
 ${page.extraMeta ?? ""}  <meta property="og:site_name" content="Qalta" />
   <meta property="og:locale" content="${current.ogLocale}" />
 ${localeAlternates}
@@ -108,6 +111,7 @@ export function footer(ctx, pagePath) {
         <a href="${localPath(lang, "/support")}">${html(nav.support)}</a>
         <a href="${localPath(lang, "/privacy-policy")}">${html(nav.privacy)}</a>
         <a href="${localPath(lang, "/terms-and-conditions")}">${html(nav.terms)}</a>
+        <a href="/llms.txt" lang="en">llms.txt</a>
       </nav>
       <p>© <span data-year>2026</span> Daniel Tokkozhin</p>
     </div>

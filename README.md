@@ -10,10 +10,16 @@ Do not edit the generated HTML in `public/` by hand. Edit the English strings in
 
 ```sh
 npm run check:i18n   # every language has the same keys, tags, and links as English
-npm run build        # writes public/**/*.html and public/sitemap.xml
+npm run build        # writes public/**/*.html, public/**/*.md and public/sitemap.xml
 npm run dev          # build and serve locally
 npm run deploy       # build and deploy
 ```
+
+## Markdown for LLMs
+
+Every generated page has a Markdown twin next to it (`/` → `/index.md`, `/tutorials/x` → `/tutorials/x.md`, per language), produced at build time by `site/markdown.mjs` from the same HTML. The Worker answers `Accept: text/markdown` with that twin (RFC 9110 q-values, `406 Not Acceptable` for unsupported types, `Vary: Accept`), adds a `Link: <...>; rel="alternate"; type="text/markdown"` header to HTML pages (and the reverse to Markdown), and every page carries a matching `<link rel="alternate" type="text/markdown">`. The Markdown variant excludes `<header>`/`<footer>` navigation; only `<main>` content travels. `/oauth/consent/` is a functional UI and is excluded from negotiation. `public/robots.txt` allows AI crawlers and carries a `Content-Signal: search=yes, ai-input=yes, ai-train=yes` line. The footer links to `/llms.txt` on every page; `/llms.txt` links the Markdown twins, and `/llms-full.txt` is the full English text of the site in one file, regenerated on each build.
+
+Measurement: the Worker emits one JSON log line per request to `.md`, `/llms.txt`, `/llms-full.txt`, or `/robots.txt` (`"event":"content-fetch"`, with `ua`, `ref`, `accept`), so Workers Logs / Observability can split AI crawlers (GPTBot, ClaudeBot, OAI-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended, CCBot) from on-demand fetchers (ChatGPT-User, Claude-User, Claude-SearchBot, Perplexity-User) without any client-side JavaScript. The `*.txt` path exclusion was removed from `run_worker_first` for this. Query the logs and count by User-Agent; classify by exclusion rather than by a fixed bot list.
 
 Deployment uses `wrangler.jsonc` for the existing `qalta-app` Worker and `qalta.app` custom domain. Run `npm run deploy:check` and `npm run test:consent` before `npm run deploy`. OAuth consent is served at `/oauth/consent/` without language redirects.
 
