@@ -4,7 +4,10 @@ import { absUrl, attr, footer, head, header, html, jsonLd, localPath, plain } fr
 export const GUIDE_GROUPS = [
   { title: "iOS 27", slugs: ["apple-pay-ios-27", "push-notification-ios-27"] },
   { title: "iOS 26", slugs: ["apple-pay-ios-26"] },
+  { titleKey: "anyIosVersion", slugs: ["back-tap"] },
 ];
+
+const BACK_TAP_SHORTCUT_URL = "https://www.icloud.com/shortcuts/876c51a66dd1491ea01d86fa92e8247a";
 
 const breadcrumbs = (ctx, items) => ({
   "@type": "BreadcrumbList",
@@ -56,7 +59,7 @@ export function renderTutorialsIndex(ctx) {
     extraHead: jsonLd(data),
   };
   const groups = GUIDE_GROUPS.map(
-    (g) => `    <h2>${g.title}</h2>
+    (g) => `    <h2>${html(g.titleKey ? ix[g.titleKey] : g.title)}</h2>
     <div class="cards">
 ${g.slugs
   .map(
@@ -188,6 +191,86 @@ ${steps}
         <figcaption>${html(g.videoCaption)}</figcaption>
       </figure>
     </section>
+
+    <p><a class="home" href="${localPath(lang, "/tutorials/")}">${html(shared.allTutorials)}</a></p>
+
+  </main>
+
+${footer(ctx, path)}</body>
+</html>
+`;
+}
+
+export function renderBackTapGuide(ctx) {
+  const { lang, t } = ctx;
+  const g = t.tutorials.guides["back-tap"];
+  const shared = t.tutorials.shared;
+  const path = "/tutorials/back-tap";
+  const url = absUrl(lang, path);
+  const ogImage = "tutorials.png";
+  const data = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": `${url}#howto`,
+        name: g.h1,
+        description: g.description,
+        image: `${SITE}/assets/og/${ogImage}`,
+        inLanguage: lang,
+        url,
+        tool: [
+          { "@type": "HowToTool", name: "Qalta" },
+          { "@type": "HowToTool", name: "Apple Shortcuts" },
+        ],
+        about: { "@type": "MobileApplication", "@id": `${SITE}/#app`, name: "Qalta", operatingSystem: "iOS" },
+        publisher: { "@type": "Organization", "@id": `${SITE}/#organization`, name: "Qalta", url: `${SITE}/` },
+        step: g.steps.map((step, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: plain(step),
+          text: plain(step),
+          url: `${url}#step-${i + 1}`,
+        })),
+      },
+      breadcrumbs(ctx, [
+        ["Qalta", "/"],
+        [t.common.nav.tutorials, "/tutorials/"],
+        [g.h1, path],
+      ]),
+    ],
+  };
+  const page = {
+    path,
+    title: `${g.title} — Qalta`,
+    description: g.description,
+    ogTitle: g.ogTitle,
+    ogImage,
+    ogImageAlt: g.ogImageAlt,
+    stylesheet: "/tutorials/tutorial.css?back-tap-spacing",
+    extraHead: jsonLd(data),
+  };
+  const steps = g.steps
+    .map((step, i) => `      <li id="step-${i + 1}">${html(step)}</li>`)
+    .join("\n");
+
+  return `${head(ctx, page)}<body>
+${header(ctx)}
+  <main class="doc container">
+
+    <h1>${html(g.h1)}</h1>
+${g.intro.map((p) => `    <p class="lede">${html(p)}</p>`).join("\n")}
+
+    <p class="shortcut-install-wrap"><a class="shortcut-install" href="${BACK_TAP_SHORTCUT_URL}" target="_blank" rel="noopener noreferrer">${html(g.addShortcut)}</a></p>
+
+    <section aria-labelledby="setup-heading">
+      <h2 id="setup-heading">${html(g.stepsTitle)}</h2>
+      <ol class="steps">
+${steps}
+      </ol>
+    </section>
+
+    <aside class="notice back-tap-note"><strong>${html(g.noteTitle)}</strong> ${html(g.note)}</aside>
 
     <p><a class="home" href="${localPath(lang, "/tutorials/")}">${html(shared.allTutorials)}</a></p>
 

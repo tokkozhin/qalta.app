@@ -31,7 +31,6 @@
       "!/tutorials/*.css",
       "!/*.png",
       "!/*.svg",
-      "!/*.txt",
       "!/*.xml"
     ]
   }

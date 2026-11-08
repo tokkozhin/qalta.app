@@ -7,10 +7,24 @@
     "h1": "Tutoriels",
     "lede": "Comment installer des automatisations qui enregistrent un achat dans Qalta. Choisissez le guide correspondant à votre version d’iOS.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Après un paiement Apple Pay, Qalta enregistre l’achat. Le montant et le commerçant viennent de Wallet." },
-      "push-notification-ios-27": { "title": "Notifications bancaires", "text": "Quand une app bancaire affiche une notification de paiement, Qalta l’enregistre comme dépense." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "La même configuration Apple Pay, via l’onglet Automatisation de Raccourcis." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Après un paiement Apple Pay, Qalta enregistre l’achat. Le montant et le commerçant viennent de Wallet."
+      },
+      "push-notification-ios-27": {
+        "title": "Notifications bancaires",
+        "text": "Quand une app bancaire affiche une notification de paiement, Qalta l’enregistre comme dépense."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "La même configuration Apple Pay, via l’onglet Automatisation de Raccourcis."
+      },
+      "back-tap": {
+        "title": "Toucher le dos",
+        "text": "Touchez trois fois le dos de l’iPhone, saisissez le montant et la catégorie, puis créez une dépense dans Qalta."
+      }
+    },
+    "anyIosVersion": "Pour toutes les versions d’iOS"
   },
   "shared": {
     "videoTitle": "Vidéo complète",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Tutoriel d’automatisation Apple Pay pour iOS 26, en anglais",
       "videoCaption": "Configuration pas à pas sur iOS 26."
+    },
+    "back-tap": {
+      "title": "Créer une dépense Qalta avec Toucher le dos",
+      "description": "Ajoutez le raccourci Back tap expense, puis associez-le au triple toucher sur votre iPhone. Saisissez un montant et choisissez une catégorie pour créer une dépense dans Qalta.",
+      "ogTitle": "Créer des dépenses Qalta avec Toucher le dos",
+      "ogImageAlt": "Guide Qalta pour associer le raccourci Back tap expense au triple toucher sur iPhone",
+      "h1": "Créer une dépense Qalta avec Toucher le dos",
+      "intro": [
+        "Utilisez Toucher le dos pour lancer un raccourci de dépense Qalta en touchant trois fois le dos de votre iPhone."
+      ],
+      "addShortcut": "Ajouter Back tap expense à Raccourcis",
+      "stepsTitle": "Configurer le triple toucher",
+      "steps": [
+        "<p>Ouvrez le lien ci-dessus sur votre iPhone et touchez <strong>Ajouter le raccourci</strong> dans Raccourcis. Il apparaîtra sous le nom <strong>Back tap expense</strong>.</p>",
+        "<p>Ouvrez <strong>Réglages → Accessibilité → Toucher → Toucher le dos</strong>.</p>",
+        "<p>Touchez <strong>Triple toucher</strong>, faites défiler jusqu’à <strong>Raccourcis</strong>, puis choisissez <strong>Back tap expense</strong>.</p>",
+        "<p>Vous pouvez maintenant toucher trois fois le dos de votre iPhone. Le raccourci demande le montant et la catégorie, puis crée la dépense dans <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "Qalta est nécessaire.",
+      "note": "À son lancement, le raccourci demande le montant et la catégorie de la dépense. Vérifiez que Qalta est installée."
     }
   }
 }

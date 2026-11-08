@@ -7,10 +7,24 @@
     "h1": "Tutorials",
     "lede": "How to install automations that save a purchase in Qalta. Pick the guide for your iOS version.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "After an Apple Pay payment, Qalta saves the purchase. Amount and merchant come from Wallet." },
-      "push-notification-ios-27": { "title": "Bank notifications", "text": "When a bank app posts a payment notification, Qalta saves it as an expense." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Same Apple Pay setup, using the Automation tab in Shortcuts." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "After an Apple Pay payment, Qalta saves the purchase. Amount and merchant come from Wallet."
+      },
+      "push-notification-ios-27": {
+        "title": "Bank notifications",
+        "text": "When a bank app posts a payment notification, Qalta saves it as an expense."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "Same Apple Pay setup, using the Automation tab in Shortcuts."
+      },
+      "back-tap": {
+        "title": "Back Tap",
+        "text": "Triple-tap the back of your iPhone to enter an amount and category, then create an expense in Qalta."
+      }
+    },
+    "anyIosVersion": "For every iOS version"
   },
   "shared": {
     "videoTitle": "Full video",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Apple Pay automation tutorial for iOS 26 in English",
       "videoCaption": "Setup walkthrough on iOS 26."
+    },
+    "back-tap": {
+      "title": "Create a Qalta expense with Back Tap",
+      "description": "Add the Back tap expense shortcut, then assign it to Triple Tap on your iPhone. Enter an amount and choose a category to create an expense in Qalta.",
+      "ogTitle": "Create Qalta expenses with Back Tap",
+      "ogImageAlt": "Qalta tutorial for assigning the Back tap expense shortcut to Triple Tap on iPhone",
+      "h1": "Create a Qalta expense with Back Tap",
+      "intro": [
+        "Use Back Tap to launch a Qalta expense shortcut with three taps on the back of your iPhone."
+      ],
+      "addShortcut": "Add Back tap expense to Shortcuts",
+      "stepsTitle": "Set up Triple Tap",
+      "steps": [
+        "<p>Open the link above on your iPhone and tap <strong>Add Shortcut</strong> in Shortcuts. It will appear as <strong>Back tap expense</strong>.</p>",
+        "<p>Open <strong>Settings → Accessibility → Touch → Back Tap</strong>.</p>",
+        "<p>Tap <strong>Triple Tap</strong>, scroll to <strong>Shortcuts</strong>, then select <strong>Back tap expense</strong>.</p>",
+        "<p>Now triple-tap the back of your iPhone. The shortcut asks for an amount and category, then creates the expense in <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "You need Qalta.",
+      "note": "When it runs, the shortcut asks for the amount and expense category before creating an expense. Make sure Qalta is installed."
     }
   }
 }

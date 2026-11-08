@@ -1,0 +1,17 @@
+---
+title: "Pomoc Qalta"
+description: "Skontaktuj się z pomocą Qalta."
+url: https://qalta.app/pl/support
+---
+
+# Pomoc Qalta
+
+Pomoc Qalta
+
+## Napisz do nas
+
+Napisz do nas e-mail. Podaj wersje Qalta i iOS, używanego asystenta AI, czas wystąpienia problemu oraz kroki pozwalające go odtworzyć. Pomocny może być też zrzut ekranu z ukrytymi danymi osobowymi.
+
+[help.qalta.app@outlook.com](mailto:help.qalta.app@outlook.com)
+
+Nie wysyłaj haseł, kodów logowania, tokenów dostępu ani pełnych wyciągów finansowych.

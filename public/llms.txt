@@ -44,13 +44,18 @@
 
 ## Pages
 
-The site is available in 14 languages. English pages live at the root; other languages use a prefix: /de/, /es/, /fr/, /it/, /ja/, /kk/, /ko/, /pl/, /pt/, /ru/, /th/, /tr/, /uk/ (for example https://qalta.app/ru/tutorials/apple-pay-ios-26). Visitors are redirected to their browser language automatically.
+The site is available in 14 languages. English pages live at the root; other languages use a prefix: /de/, /es/, /fr/, /it/, /ja/, /kk/, /ko/, /pl/, /pt/, /ru/, /th/, /tr/, /uk/ (for example https://qalta.app/ru/tutorials/apple-pay-ios-26.md). Visitors are redirected to their browser language automatically.
 
-- [Home](https://qalta.app/): features, shared budgets, FAQ
-- [Tutorials](https://qalta.app/tutorials/): automation setup guides
-- [Apple Pay automation on iOS 27](https://qalta.app/tutorials/apple-pay-ios-27)
-- [Bank notification automation on iOS 27](https://qalta.app/tutorials/push-notification-ios-27)
-- [Apple Pay automation on iOS 26](https://qalta.app/tutorials/apple-pay-ios-26)
-- [Apple Pay automation on iOS 26, in Russian](https://qalta.app/tutorials/apple-pay-ios-26-ru)
-- [Privacy Policy](https://qalta.app/privacy-policy)
-- [Terms and Conditions](https://qalta.app/terms-and-conditions)
+Every page also has a Markdown twin at the same path with `.md` appended, and agents sending `Accept: text/markdown` receive Markdown at the page URL itself. The full text of the site in one file: https://qalta.app/llms-full.txt
+
+- [Home](https://qalta.app/index.md): features, shared budgets, FAQ
+- [Tutorials](https://qalta.app/tutorials/index.md): automation setup guides
+- [Apple Pay automation on iOS 27](https://qalta.app/tutorials/apple-pay-ios-27.md)
+- [Bank notification automation on iOS 27](https://qalta.app/tutorials/push-notification-ios-27.md)
+- [Apple Pay automation on iOS 26](https://qalta.app/tutorials/apple-pay-ios-26.md)
+- [Apple Pay automation on iOS 26, in Russian](https://qalta.app/ru/tutorials/apple-pay-ios-26.md)
+- [Back Tap expense shortcut](https://qalta.app/tutorials/back-tap.md)
+- [Back Tap expense shortcut, in Russian](https://qalta.app/ru/tutorials/back-tap.md)
+- [Connect an AI assistant (MCP)](https://qalta.app/mcp.md)
+- [Privacy Policy](https://qalta.app/privacy-policy.md)
+- [Terms and Conditions](https://qalta.app/terms-and-conditions.md)
