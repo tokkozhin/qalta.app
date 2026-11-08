@@ -33,3 +33,13 @@ Apple Payで支払うと、Qaltaが購入を保存します。金額と店舗は
 同じApple Payの設定を、ショートカットの「オートメーション」タブで行います。
 
 ](https://qalta.app/ja/tutorials/apple-pay-ios-26)
+
+## すべてのiOSバージョンに対応
+
+[
+
+### 背面タップ
+
+iPhoneの背面を3回タップし、金額とカテゴリを入力すると、Qaltaに支出を作成できます。
+
+](https://qalta.app/ja/tutorials/back-tap)

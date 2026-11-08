@@ -33,3 +33,13 @@ Wenn eine Banking-App eine Zahlungsmitteilung sendet, speichert Qalta sie als Au
 Dieselbe Apple Pay-Einrichtung, über den Tab Automation in Kurzbefehle.
 
 ](https://qalta.app/de/tutorials/apple-pay-ios-26)
+
+## Für alle iOS-Versionen
+
+[
+
+### Auf Rückseite tippen
+
+Tippe dreimal auf die Rückseite deines iPhones, gib Betrag und Kategorie ein und erstelle eine Ausgabe in Qalta.
+
+](https://qalta.app/de/tutorials/back-tap)

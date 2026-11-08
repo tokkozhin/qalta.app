@@ -7,10 +7,24 @@
     "h1": "가이드",
     "lede": "결제 내역을 Qalta에 저장하는 자동화를 설정하는 방법입니다. 사용 중인 iOS 버전에 맞는 가이드를 선택하세요.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Apple Pay로 결제하면 Qalta가 결제 내역을 저장합니다. 금액과 판매자는 지갑에서 가져옵니다." },
-      "push-notification-ios-27": { "title": "은행 알림", "text": "은행 앱이 결제 알림을 보내면 Qalta가 지출로 저장합니다." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "같은 Apple Pay 설정을 단축어의 자동화 탭에서 진행합니다." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Apple Pay로 결제하면 Qalta가 결제 내역을 저장합니다. 금액과 판매자는 지갑에서 가져옵니다."
+      },
+      "push-notification-ios-27": {
+        "title": "은행 알림",
+        "text": "은행 앱이 결제 알림을 보내면 Qalta가 지출로 저장합니다."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "같은 Apple Pay 설정을 단축어의 자동화 탭에서 진행합니다."
+      },
+      "back-tap": {
+        "title": "뒷면 탭",
+        "text": "iPhone 뒷면을 세 번 탭하고 금액과 카테고리를 입력하면 Qalta에 지출이 등록됩니다."
+      }
+    },
+    "anyIosVersion": "모든 iOS 버전에서 사용 가능"
   },
   "shared": {
     "videoTitle": "전체 영상",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "iOS 26 Apple Pay 자동화 영어 가이드 영상",
       "videoCaption": "iOS 26 설정 과정 영상."
+    },
+    "back-tap": {
+      "title": "뒷면 탭으로 Qalta에 지출 등록하기",
+      "description": "Back tap expense 단축어를 추가하고 iPhone의 삼중 탭에 지정하세요. 금액을 입력하고 카테고리를 선택하면 Qalta에 지출이 등록됩니다.",
+      "ogTitle": "뒷면 탭으로 Qalta 지출 등록하기",
+      "ogImageAlt": "iPhone 삼중 탭에 Back tap expense 단축어를 지정하는 Qalta 안내",
+      "h1": "뒷면 탭으로 Qalta에 지출 등록하기",
+      "intro": [
+        "iPhone 뒷면을 세 번 탭해 Qalta 지출 단축어를 실행할 수 있습니다."
+      ],
+      "addShortcut": "Back tap expense 단축어 추가",
+      "stepsTitle": "삼중 탭 설정하기",
+      "steps": [
+        "<p>iPhone에서 위 링크를 열고 단축어 앱에서 <strong>단축어 추가</strong>를 탭하세요. <strong>Back tap expense</strong>라는 이름으로 추가됩니다.</p>",
+        "<p><strong>설정 → 손쉬운 사용 → 터치 → 뒷면 탭</strong>으로 이동하세요.</p>",
+        "<p><strong>삼중 탭</strong>을 탭하고 <strong>단축어</strong>까지 스크롤한 다음 <strong>Back tap expense</strong>를 선택하세요.</p>",
+        "<p>이제 iPhone 뒷면을 세 번 탭하면 단축어가 실행됩니다. 금액과 카테고리를 입력하면 <strong>Qalta</strong>에 지출이 등록됩니다.</p>"
+      ],
+      "noteTitle": "Qalta가 필요합니다.",
+      "note": "단축어를 실행하면 지출 금액과 카테고리를 입력하게 됩니다. iPhone에 Qalta를 설치해 주세요."
     }
   }
 }

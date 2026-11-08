@@ -33,3 +33,13 @@ Gdy aplikacja banku wyśle powiadomienie o płatności, Qalta zapisze je jako wy
 Ta sama konfiguracja Apple Pay, przez kartę Automatyzacja w Skrótach.
 
 ](https://qalta.app/pl/tutorials/apple-pay-ios-26)
+
+## Dla każdej wersji iOS
+
+[
+
+### Stuknięcie w tył
+
+Stuknij trzy razy tył iPhone’a, wpisz kwotę i kategorię, a następnie utwórz wydatek w Qalta.
+
+](https://qalta.app/pl/tutorials/back-tap)

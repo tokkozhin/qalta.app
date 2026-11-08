@@ -7,10 +7,24 @@
     "h1": "Rehberler",
     "lede": "Bir alışverişi Qalta’ya kaydeden otomasyonlar nasıl kurulur? iOS sürümünüze uygun rehberi seçin.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Apple Pay ile ödeme yaptıktan sonra Qalta alışverişi kaydeder. Tutar ve işyeri Cüzdan’dan gelir." },
-      "push-notification-ios-27": { "title": "Banka bildirimleri", "text": "Banka uygulaması bir ödeme bildirimi gönderdiğinde Qalta bunu gider olarak kaydeder." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Aynı Apple Pay kurulumu, Kestirmeler’deki Otomasyon sekmesiyle." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Apple Pay ile ödeme yaptıktan sonra Qalta alışverişi kaydeder. Tutar ve işyeri Cüzdan’dan gelir."
+      },
+      "push-notification-ios-27": {
+        "title": "Banka bildirimleri",
+        "text": "Banka uygulaması bir ödeme bildirimi gönderdiğinde Qalta bunu gider olarak kaydeder."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "Aynı Apple Pay kurulumu, Kestirmeler’deki Otomasyon sekmesiyle."
+      },
+      "back-tap": {
+        "title": "Arkaya Dokun",
+        "text": "iPhone’un arkasına üç kez dokunun, tutarı ve kategoriyi girin; Qalta’da bir gider oluşturulsun."
+      }
+    },
+    "anyIosVersion": "Tüm iOS sürümleri için"
   },
   "shared": {
     "videoTitle": "Videonun tamamı",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "iOS 26 için İngilizce Apple Pay otomasyonu rehberi",
       "videoCaption": "iOS 26’da kurulumun adım adım gösterimi."
+    },
+    "back-tap": {
+      "title": "Arkaya Dokun ile Qalta’da gider oluşturma",
+      "description": "Back tap expense kestirmesini ekleyin ve iPhone’unuzdaki üç kez dokunma hareketine atayın. Qalta’da gider oluşturmak için tutarı girip kategori seçin.",
+      "ogTitle": "Arkaya Dokun ile Qalta’da gider oluşturun",
+      "ogImageAlt": "Back tap expense kestirmesini iPhone’da üç kez dokunmaya atamak için Qalta rehberi",
+      "h1": "Arkaya Dokun ile Qalta’da gider oluşturma",
+      "intro": [
+        "iPhone’un arkasına üç kez dokunarak Qalta’nın gider kestirmesini çalıştırın."
+      ],
+      "addShortcut": "Back tap expense kestirmesini ekle",
+      "stepsTitle": "Üç kez dokunmayı ayarlama",
+      "steps": [
+        "<p>Yukarıdaki bağlantıyı iPhone’unuzda açın ve Kestirmeler uygulamasında <strong>Kestirme Ekle</strong> seçeneğine dokunun. Kestirme <strong>Back tap expense</strong> adıyla görünür.</p>",
+        "<p><strong>Ayarlar → Erişilebilirlik → Dokunma → Arkaya Dokun</strong> bölümünü açın.</p>",
+        "<p><strong>Üç Kez Dokun</strong> seçeneğine dokunun, <strong>Kestirmeler</strong> bölümüne kaydırın ve <strong>Back tap expense</strong> kestirmesini seçin.</p>",
+        "<p>Artık iPhone’un arkasına üç kez dokunun. Kestirme tutarı ve kategoriyi sorar, ardından <strong>Qalta</strong>’da gider oluşturur.</p>"
+      ],
+      "noteTitle": "Qalta yüklü olmalı.",
+      "note": "Kestirme çalıştığında gider tutarını ve kategorisini sorar. iPhone’unuzda Qalta’nın yüklü olduğundan emin olun."
     }
   }
 }

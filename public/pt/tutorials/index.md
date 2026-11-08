@@ -33,3 +33,13 @@ Quando o app do banco envia uma notificação de pagamento, o Qalta a salva como
 A mesma configuração do Apple Pay, pela aba Automação do app Atalhos.
 
 ](https://qalta.app/pt/tutorials/apple-pay-ios-26)
+
+## Para qualquer versão do iOS
+
+[
+
+### Tocar Atrás
+
+Toque três vezes na traseira do iPhone, informe o valor e a categoria e crie uma despesa no Qalta.
+
+](https://qalta.app/pt/tutorials/back-tap)

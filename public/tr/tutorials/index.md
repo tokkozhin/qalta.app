@@ -33,3 +33,13 @@ Banka uygulaması bir ödeme bildirimi gönderdiğinde Qalta bunu gider olarak k
 Aynı Apple Pay kurulumu, Kestirmeler’deki Otomasyon sekmesiyle.
 
 ](https://qalta.app/tr/tutorials/apple-pay-ios-26)
+
+## Tüm iOS sürümleri için
+
+[
+
+### Arkaya Dokun
+
+iPhone’un arkasına üç kez dokunun, tutarı ve kategoriyi girin; Qalta’da bir gider oluşturulsun.
+
+](https://qalta.app/tr/tutorials/back-tap)

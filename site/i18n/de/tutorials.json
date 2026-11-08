@@ -7,10 +7,24 @@
     "h1": "Anleitungen",
     "lede": "So richtest du Automationen ein, die einen Kauf in Qalta speichern. Wähle die Anleitung für deine iOS-Version.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Nach einer Apple Pay-Zahlung speichert Qalta den Kauf. Betrag und Händler kommen aus Wallet." },
-      "push-notification-ios-27": { "title": "Bankmitteilungen", "text": "Wenn eine Banking-App eine Zahlungsmitteilung sendet, speichert Qalta sie als Ausgabe." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Dieselbe Apple Pay-Einrichtung, über den Tab Automation in Kurzbefehle." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Nach einer Apple Pay-Zahlung speichert Qalta den Kauf. Betrag und Händler kommen aus Wallet."
+      },
+      "push-notification-ios-27": {
+        "title": "Bankmitteilungen",
+        "text": "Wenn eine Banking-App eine Zahlungsmitteilung sendet, speichert Qalta sie als Ausgabe."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "Dieselbe Apple Pay-Einrichtung, über den Tab Automation in Kurzbefehle."
+      },
+      "back-tap": {
+        "title": "Auf Rückseite tippen",
+        "text": "Tippe dreimal auf die Rückseite deines iPhones, gib Betrag und Kategorie ein und erstelle eine Ausgabe in Qalta."
+      }
+    },
+    "anyIosVersion": "Für alle iOS-Versionen"
   },
   "shared": {
     "videoTitle": "Ganzes Video",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Anleitung zur Apple Pay-Automation unter iOS 26, auf Englisch",
       "videoCaption": "Einrichtung unter iOS 26 Schritt für Schritt."
+    },
+    "back-tap": {
+      "title": "Mit „Auf Rückseite tippen“ eine Ausgabe in Qalta erstellen",
+      "description": "Füge den Kurzbefehl „Back tap expense“ hinzu und weise ihn dem dreimaligen Tippen auf deinem iPhone zu. Gib Betrag und Kategorie ein, um eine Ausgabe in Qalta zu erstellen.",
+      "ogTitle": "Qalta-Ausgaben mit Tippen auf die Rückseite erstellen",
+      "ogImageAlt": "Qalta-Anleitung: Den Kurzbefehl Back tap expense dem dreimaligen Tippen auf dem iPhone zuweisen",
+      "h1": "Mit Tippen auf die Rückseite eine Ausgabe in Qalta erstellen",
+      "intro": [
+        "Mit „Auf Rückseite tippen“ startest du einen Qalta-Kurzbefehl für Ausgaben, indem du dreimal auf die Rückseite deines iPhones tippst."
+      ],
+      "addShortcut": "„Back tap expense“ zu Kurzbefehle hinzufügen",
+      "stepsTitle": "Dreimaliges Tippen einrichten",
+      "steps": [
+        "<p>Öffne den Link oben auf deinem iPhone und tippe in Kurzbefehle auf <strong>Kurzbefehl hinzufügen</strong>. Er erscheint als <strong>Back tap expense</strong>.</p>",
+        "<p>Öffne <strong>Einstellungen → Bedienungshilfen → Tippen → Auf Rückseite tippen</strong>.</p>",
+        "<p>Tippe auf <strong>Dreimal tippen</strong>, scrolle zu <strong>Kurzbefehle</strong> und wähle <strong>Back tap expense</strong>.</p>",
+        "<p>Tippe jetzt dreimal auf die Rückseite deines iPhones. Der Kurzbefehl fragt nach Betrag und Kategorie und erstellt dann die Ausgabe in <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "Qalta wird benötigt.",
+      "note": "Beim Start fragt der Kurzbefehl nach Betrag und Ausgabenkategorie. Installiere dafür Qalta auf deinem iPhone."
     }
   }
 }

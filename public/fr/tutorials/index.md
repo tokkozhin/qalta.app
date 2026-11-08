@@ -33,3 +33,13 @@ Quand une app bancaire affiche une notification de paiement, Qalta l’enregistr
 La même configuration Apple Pay, via l’onglet Automatisation de Raccourcis.
 
 ](https://qalta.app/fr/tutorials/apple-pay-ios-26)
+
+## Pour toutes les versions d’iOS
+
+[
+
+### Toucher le dos
+
+Touchez trois fois le dos de l’iPhone, saisissez le montant et la catégorie, puis créez une dépense dans Qalta.
+
+](https://qalta.app/fr/tutorials/back-tap)

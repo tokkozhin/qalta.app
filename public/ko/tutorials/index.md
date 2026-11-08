@@ -33,3 +33,13 @@ Apple Pay로 결제하면 Qalta가 결제 내역을 저장합니다. 금액과 �
 같은 Apple Pay 설정을 단축어의 자동화 탭에서 진행합니다.
 
 ](https://qalta.app/ko/tutorials/apple-pay-ios-26)
+
+## 모든 iOS 버전에서 사용 가능
+
+[
+
+### 뒷면 탭
+
+iPhone 뒷면을 세 번 탭하고 금액과 카테고리를 입력하면 Qalta에 지출이 등록됩니다.
+
+](https://qalta.app/ko/tutorials/back-tap)

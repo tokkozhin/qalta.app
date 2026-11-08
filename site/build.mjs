@@ -8,7 +8,7 @@ import { absUrl } from "./templates/layout.mjs";
 import { renderLegal } from "./templates/legal.mjs";
 import { renderMcp } from "./templates/mcp.mjs";
 import { renderSupport } from "./templates/support.mjs";
-import { GUIDE_GROUPS, renderGuide, renderTutorialsIndex } from "./templates/tutorials.mjs";
+import { GUIDE_GROUPS, renderBackTapGuide, renderGuide, renderTutorialsIndex } from "./templates/tutorials.mjs";
 
 const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
 const guides = readJson(`${siteDir}guides.json`);
@@ -49,7 +49,7 @@ const pages = [
   ...GUIDE_GROUPS.flatMap((g) => g.slugs).map((slug) => ({
     path: `/tutorials/${slug}`,
     out: `tutorials/${slug}.html`,
-    render: (ctx) => renderGuide(ctx, slug, guides[slug]),
+    render: (ctx) => (slug === "back-tap" ? renderBackTapGuide(ctx) : renderGuide(ctx, slug, guides[slug])),
   })),
   {
     path: "/privacy-policy",

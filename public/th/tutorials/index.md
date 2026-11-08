@@ -33,3 +33,13 @@ url: https://qalta.app/th/tutorials/
 ตั้งค่า Apple Pay แบบเดียวกัน ผ่านแท็บระบบอัตโนมัติในคำสั่งลัด
 
 ](https://qalta.app/th/tutorials/apple-pay-ios-26)
+
+## ใช้ได้กับ iOS ทุกเวอร์ชัน
+
+[
+
+### แตะด้านหลัง
+
+แตะด้านหลัง iPhone สามครั้ง ระบุจำนวนเงินและหมวดหมู่ แล้วสร้างรายจ่ายใน Qalta
+
+](https://qalta.app/th/tutorials/back-tap)

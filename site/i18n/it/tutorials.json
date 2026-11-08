@@ -7,10 +7,24 @@
     "h1": "Guide",
     "lede": "Come configurare le automazioni che salvano un acquisto in Qalta. Scegli la guida per la tua versione di iOS.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Dopo un pagamento con Apple Pay, Qalta salva l’acquisto. Importo ed esercente arrivano da Wallet." },
-      "push-notification-ios-27": { "title": "Notifiche bancarie", "text": "Quando l’app della banca invia una notifica di pagamento, Qalta la salva come spesa." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "La stessa configurazione di Apple Pay, tramite il pannello Automazione di Comandi Rapidi." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Dopo un pagamento con Apple Pay, Qalta salva l’acquisto. Importo ed esercente arrivano da Wallet."
+      },
+      "push-notification-ios-27": {
+        "title": "Notifiche bancarie",
+        "text": "Quando l’app della banca invia una notifica di pagamento, Qalta la salva come spesa."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "La stessa configurazione di Apple Pay, tramite il pannello Automazione di Comandi Rapidi."
+      },
+      "back-tap": {
+        "title": "Tocco posteriore",
+        "text": "Tocca tre volte il retro dell’iPhone, inserisci importo e categoria e crea una spesa in Qalta."
+      }
+    },
+    "anyIosVersion": "Per tutte le versioni di iOS"
   },
   "shared": {
     "videoTitle": "Video completo",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Guida in inglese all’automazione Apple Pay per iOS 26",
       "videoCaption": "Configurazione passo passo su iOS 26."
+    },
+    "back-tap": {
+      "title": "Crea una spesa Qalta con Tocco posteriore",
+      "description": "Aggiungi il comando rapido Back tap expense e assegnalo al triplo tocco sul tuo iPhone. Inserisci un importo e scegli una categoria per creare una spesa in Qalta.",
+      "ogTitle": "Crea spese Qalta con Tocco posteriore",
+      "ogImageAlt": "Guida Qalta per assegnare il comando rapido Back tap expense al triplo tocco su iPhone",
+      "h1": "Crea una spesa Qalta con Tocco posteriore",
+      "intro": [
+        "Usa Tocco posteriore per avviare un comando rapido Qalta per le spese toccando tre volte il retro dell’iPhone."
+      ],
+      "addShortcut": "Aggiungi Back tap expense a Comandi rapidi",
+      "stepsTitle": "Configura il triplo tocco",
+      "steps": [
+        "<p>Apri il link qui sopra sul tuo iPhone e tocca <strong>Aggiungi comando rapido</strong> in Comandi rapidi. Lo troverai come <strong>Back tap expense</strong>.</p>",
+        "<p>Apri <strong>Impostazioni → Accessibilità → Tocco → Tocco posteriore</strong>.</p>",
+        "<p>Tocca <strong>Triplo tocco</strong>, scorri fino a <strong>Comandi rapidi</strong> e seleziona <strong>Back tap expense</strong>.</p>",
+        "<p>Ora tocca tre volte il retro dell’iPhone. Il comando rapido chiede importo e categoria, poi crea la spesa in <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "Serve Qalta.",
+      "note": "All’avvio, il comando rapido chiede l’importo e la categoria della spesa. Assicurati di avere Qalta installata."
     }
   }
 }

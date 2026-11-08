@@ -7,10 +7,24 @@
     "h1": "Tutoriais",
     "lede": "Como configurar automações que salvam uma compra no Qalta. Escolha o guia da sua versão do iOS.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Depois de um pagamento com Apple Pay, o Qalta salva a compra. Valor e estabelecimento vêm do Wallet." },
-      "push-notification-ios-27": { "title": "Notificações do banco", "text": "Quando o app do banco envia uma notificação de pagamento, o Qalta a salva como despesa." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "A mesma configuração do Apple Pay, pela aba Automação do app Atalhos." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Depois de um pagamento com Apple Pay, o Qalta salva a compra. Valor e estabelecimento vêm do Wallet."
+      },
+      "push-notification-ios-27": {
+        "title": "Notificações do banco",
+        "text": "Quando o app do banco envia uma notificação de pagamento, o Qalta a salva como despesa."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "A mesma configuração do Apple Pay, pela aba Automação do app Atalhos."
+      },
+      "back-tap": {
+        "title": "Tocar Atrás",
+        "text": "Toque três vezes na traseira do iPhone, informe o valor e a categoria e crie uma despesa no Qalta."
+      }
+    },
+    "anyIosVersion": "Para qualquer versão do iOS"
   },
   "shared": {
     "videoTitle": "Vídeo completo",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Tutorial de automação do Apple Pay no iOS 26, em inglês",
       "videoCaption": "Passo a passo da configuração no iOS 26."
+    },
+    "back-tap": {
+      "title": "Criar uma despesa no Qalta com Tocar Atrás",
+      "description": "Adicione o atalho Back tap expense e associe-o ao toque triplo no iPhone. Informe um valor e escolha uma categoria para criar uma despesa no Qalta.",
+      "ogTitle": "Crie despesas no Qalta com Tocar Atrás",
+      "ogImageAlt": "Tutorial do Qalta para associar o atalho Back tap expense ao toque triplo no iPhone",
+      "h1": "Criar uma despesa no Qalta com Tocar Atrás",
+      "intro": [
+        "Use o recurso Tocar Atrás para iniciar um atalho de despesas do Qalta tocando três vezes na traseira do iPhone."
+      ],
+      "addShortcut": "Adicionar Back tap expense aos Atalhos",
+      "stepsTitle": "Configurar o toque triplo",
+      "steps": [
+        "<p>Abra o link acima no iPhone e toque em <strong>Adicionar Atalho</strong> no app Atalhos. Ele aparecerá como <strong>Back tap expense</strong>.</p>",
+        "<p>Abra <strong>Ajustes → Acessibilidade → Toque → Tocar Atrás</strong>.</p>",
+        "<p>Toque em <strong>Toque Triplo</strong>, role até <strong>Atalhos</strong> e selecione <strong>Back tap expense</strong>.</p>",
+        "<p>Agora toque três vezes na traseira do iPhone. O atalho pedirá o valor e a categoria e, em seguida, criará a despesa no <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "Você precisa do Qalta.",
+      "note": "Ao executar, o atalho pede o valor e a categoria da despesa. Verifique se o Qalta está instalado."
     }
   }
 }

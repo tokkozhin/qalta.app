@@ -33,3 +33,13 @@ When a bank app posts a payment notification, Qalta saves it as an expense.
 Same Apple Pay setup, using the Automation tab in Shortcuts.
 
 ](https://qalta.app/tutorials/apple-pay-ios-26)
+
+## For every iOS version
+
+[
+
+### Back Tap
+
+Triple-tap the back of your iPhone to enter an amount and category, then create an expense in Qalta.
+
+](https://qalta.app/tutorials/back-tap)

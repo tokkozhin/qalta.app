@@ -7,10 +7,24 @@
     "h1": "Poradniki",
     "lede": "Jak skonfigurować automatyzacje, które zapisują zakupy w Qalta. Wybierz poradnik dla swojej wersji iOS.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Po płatności Apple Pay Qalta zapisuje zakup. Kwota i sprzedawca pochodzą z Portfela." },
-      "push-notification-ios-27": { "title": "Powiadomienia z banku", "text": "Gdy aplikacja banku wyśle powiadomienie o płatności, Qalta zapisze je jako wydatek." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "Ta sama konfiguracja Apple Pay, przez kartę Automatyzacja w Skrótach." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Po płatności Apple Pay Qalta zapisuje zakup. Kwota i sprzedawca pochodzą z Portfela."
+      },
+      "push-notification-ios-27": {
+        "title": "Powiadomienia z banku",
+        "text": "Gdy aplikacja banku wyśle powiadomienie o płatności, Qalta zapisze je jako wydatek."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "Ta sama konfiguracja Apple Pay, przez kartę Automatyzacja w Skrótach."
+      },
+      "back-tap": {
+        "title": "Stuknięcie w tył",
+        "text": "Stuknij trzy razy tył iPhone’a, wpisz kwotę i kategorię, a następnie utwórz wydatek w Qalta."
+      }
+    },
+    "anyIosVersion": "Dla każdej wersji iOS"
   },
   "shared": {
     "videoTitle": "Pełne wideo",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Poradnik wideo po angielsku: automatyzacja Apple Pay w iOS 26",
       "videoCaption": "Konfiguracja krok po kroku w iOS 26."
+    },
+    "back-tap": {
+      "title": "Dodaj wydatek w Qalta przez Stuknięcie w tył",
+      "description": "Dodaj skrót Back tap expense i przypisz go do trzykrotnego stuknięcia w tył iPhone’a. Wpisz kwotę i wybierz kategorię, aby utworzyć wydatek w Qalta.",
+      "ogTitle": "Dodawaj wydatki w Qalta przez Stuknięcie w tył",
+      "ogImageAlt": "Instrukcja Qalta przypisywania skrótu Back tap expense do trzykrotnego stuknięcia w tył iPhone’a",
+      "h1": "Dodaj wydatek w Qalta przez Stuknięcie w tył",
+      "intro": [
+        "Użyj funkcji Stuknięcie w tył, aby uruchomić skrót wydatków Qalta trzema stuknięciami w tył iPhone’a."
+      ],
+      "addShortcut": "Dodaj Back tap expense do aplikacji Skróty",
+      "stepsTitle": "Skonfiguruj trzykrotne stuknięcie",
+      "steps": [
+        "<p>Otwórz powyższy link na iPhonie i stuknij <strong>Dodaj skrót</strong> w aplikacji Skróty. Pojawi się tam jako <strong>Back tap expense</strong>.</p>",
+        "<p>Otwórz <strong>Ustawienia → Dostępność → Dotyk → Stuknięcie w tył</strong>.</p>",
+        "<p>Stuknij <strong>Trzykrotne stuknięcie</strong>, przewiń do sekcji <strong>Skróty</strong> i wybierz <strong>Back tap expense</strong>.</p>",
+        "<p>Teraz stuknij trzy razy tył iPhone’a. Skrót poprosi o kwotę i kategorię, a następnie utworzy wydatek w <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "Potrzebujesz Qalta.",
+      "note": "Po uruchomieniu skrót poprosi o kwotę i kategorię wydatku. Upewnij się, że Qalta jest zainstalowana."
     }
   }
 }

@@ -54,6 +54,8 @@ Every page also has a Markdown twin at the same path with `.md` appended, and ag
 - [Bank notification automation on iOS 27](https://qalta.app/tutorials/push-notification-ios-27.md)
 - [Apple Pay automation on iOS 26](https://qalta.app/tutorials/apple-pay-ios-26.md)
 - [Apple Pay automation on iOS 26, in Russian](https://qalta.app/ru/tutorials/apple-pay-ios-26.md)
+- [Back Tap expense shortcut](https://qalta.app/tutorials/back-tap.md)
+- [Back Tap expense shortcut, in Russian](https://qalta.app/ru/tutorials/back-tap.md)
 - [Connect an AI assistant (MCP)](https://qalta.app/mcp.md)
 - [Privacy Policy](https://qalta.app/privacy-policy.md)
 - [Terms and Conditions](https://qalta.app/terms-and-conditions.md)

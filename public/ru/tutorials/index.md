@@ -33,3 +33,13 @@ url: https://qalta.app/ru/tutorials/
 Та же настройка Apple Pay, но через вкладку «Автоматизация» в Командах.
 
 ](https://qalta.app/ru/tutorials/apple-pay-ios-26)
+
+## Для любой версии iOS
+
+[
+
+### Касание задней панели
+
+Трижды коснитесь задней панели iPhone, укажите сумму и категорию — Qalta создаст расход.
+
+](https://qalta.app/ru/tutorials/back-tap)

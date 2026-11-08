@@ -7,10 +7,24 @@
     "h1": "使い方ガイド",
     "lede": "購入をQaltaに保存するオートメーションの設定方法です。お使いのiOSバージョンに合ったガイドを選んでください。",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Apple Payで支払うと、Qaltaが購入を保存します。金額と店舗はウォレットから取得します。" },
-      "push-notification-ios-27": { "title": "銀行の通知", "text": "銀行アプリから支払いの通知が届くと、Qaltaが支出として保存します。" },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "同じApple Payの設定を、ショートカットの「オートメーション」タブで行います。" }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Apple Payで支払うと、Qaltaが購入を保存します。金額と店舗はウォレットから取得します。"
+      },
+      "push-notification-ios-27": {
+        "title": "銀行の通知",
+        "text": "銀行アプリから支払いの通知が届くと、Qaltaが支出として保存します。"
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "同じApple Payの設定を、ショートカットの「オートメーション」タブで行います。"
+      },
+      "back-tap": {
+        "title": "背面タップ",
+        "text": "iPhoneの背面を3回タップし、金額とカテゴリを入力すると、Qaltaに支出を作成できます。"
+      }
+    },
+    "anyIosVersion": "すべてのiOSバージョンに対応"
   },
   "shared": {
     "videoTitle": "動画で見る",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "iOS 26向けApple Payオートメーションの使い方動画（英語）",
       "videoCaption": "iOS 26での設定手順。"
+    },
+    "back-tap": {
+      "title": "背面タップでQaltaに支出を記録する",
+      "description": "「Back tap expense」ショートカットを追加し、iPhoneのトリプルタップに割り当てます。金額とカテゴリを入力して、Qaltaに支出を作成できます。",
+      "ogTitle": "背面タップでQaltaに支出を記録",
+      "ogImageAlt": "iPhoneのトリプルタップにBack tap expenseショートカットを割り当てるQaltaのガイド",
+      "h1": "背面タップでQaltaに支出を記録する",
+      "intro": [
+        "iPhoneの背面を3回タップすると、Qaltaの支出ショートカットを起動できます。"
+      ],
+      "addShortcut": "Back tap expenseをショートカットに追加",
+      "stepsTitle": "トリプルタップを設定する",
+      "steps": [
+        "<p>iPhoneで上のリンクを開き、ショートカットアプリで<strong>ショートカットを追加</strong>をタップします。<strong>Back tap expense</strong>という名前で追加されます。</p>",
+        "<p><strong>設定 → アクセシビリティ → タッチ → 背面タップ</strong>を開きます。</p>",
+        "<p><strong>トリプルタップ</strong>をタップし、<strong>ショートカット</strong>までスクロールして<strong>Back tap expense</strong>を選びます。</p>",
+        "<p>これでiPhoneの背面を3回タップすると起動します。ショートカットで金額とカテゴリを入力すると、<strong>Qalta</strong>に支出が作成されます。</p>"
+      ],
+      "noteTitle": "Qaltaが必要です。",
+      "note": "起動すると、ショートカットで金額と支出カテゴリを入力します。Qaltaをインストールしておいてください。"
     }
   }
 }

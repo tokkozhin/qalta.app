@@ -7,10 +7,24 @@
     "h1": "Tutoriales",
     "lede": "Cómo instalar automatizaciones que guardan una compra en Qalta. Elige la guía para tu versión de iOS.",
     "cards": {
-      "apple-pay-ios-27": { "title": "Apple Pay", "text": "Tras un pago con Apple Pay, Qalta guarda la compra. El importe y el comercio vienen de Wallet." },
-      "push-notification-ios-27": { "title": "Notificaciones del banco", "text": "Cuando la app de tu banco envía una notificación de pago, Qalta la guarda como gasto." },
-      "apple-pay-ios-26": { "title": "Apple Pay", "text": "La misma configuración de Apple Pay, desde la pestaña Automatización de Atajos." }
-    }
+      "apple-pay-ios-27": {
+        "title": "Apple Pay",
+        "text": "Tras un pago con Apple Pay, Qalta guarda la compra. El importe y el comercio vienen de Wallet."
+      },
+      "push-notification-ios-27": {
+        "title": "Notificaciones del banco",
+        "text": "Cuando la app de tu banco envía una notificación de pago, Qalta la guarda como gasto."
+      },
+      "apple-pay-ios-26": {
+        "title": "Apple Pay",
+        "text": "La misma configuración de Apple Pay, desde la pestaña Automatización de Atajos."
+      },
+      "back-tap": {
+        "title": "Tocar atrás",
+        "text": "Toca tres veces la parte trasera del iPhone, indica el importe y la categoría y crea un gasto en Qalta."
+      }
+    },
+    "anyIosVersion": "Para cualquier versión de iOS"
   },
   "shared": {
     "videoTitle": "Vídeo completo",
@@ -257,6 +271,26 @@
       ],
       "videoLabel": "Tutorial de automatización de Apple Pay para iOS 26, en inglés",
       "videoCaption": "Configuración paso a paso en iOS 26."
+    },
+    "back-tap": {
+      "title": "Crear un gasto en Qalta con Tocar atrás",
+      "description": "Añade el atajo Back tap expense y asígnalo a Toque triple en el iPhone. Indica el importe y elige una categoría para crear un gasto en Qalta.",
+      "ogTitle": "Crear gastos en Qalta con Tocar atrás",
+      "ogImageAlt": "Guía de Qalta para asignar el atajo Back tap expense a Toque triple en el iPhone",
+      "h1": "Crear un gasto en Qalta con Tocar atrás",
+      "intro": [
+        "Usa Tocar atrás para iniciar un atajo de gastos de Qalta tocando tres veces la parte trasera del iPhone."
+      ],
+      "addShortcut": "Añadir Back tap expense a Atajos",
+      "stepsTitle": "Configurar Toque triple",
+      "steps": [
+        "<p>Abre el enlace de arriba en el iPhone y toca <strong>Añadir atajo</strong> en Atajos. Aparecerá como <strong>Back tap expense</strong>.</p>",
+        "<p>Abre <strong>Ajustes → Accesibilidad → Tocar → Tocar atrás</strong>.</p>",
+        "<p>Toca <strong>Toque triple</strong>, desplázate hasta <strong>Atajos</strong> y selecciona <strong>Back tap expense</strong>.</p>",
+        "<p>Ahora toca tres veces la parte trasera del iPhone. El atajo te pedirá el importe y la categoría y después creará el gasto en <strong>Qalta</strong>.</p>"
+      ],
+      "noteTitle": "Necesitas Qalta.",
+      "note": "Al ejecutarlo, el atajo pide el importe y la categoría del gasto. Asegúrate de tener Qalta instalada."
     }
   }
 }
